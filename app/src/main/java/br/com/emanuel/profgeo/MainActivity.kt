@@ -6,6 +6,8 @@ import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
+import android.view.WindowManager
+import android.widget.FrameLayout
 import android.webkit.JavascriptInterface
 import android.webkit.WebResourceRequest
 import android.webkit.WebResourceResponse
@@ -13,6 +15,9 @@ import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.webkit.WebViewAssetLoader
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.ByteArrayInputStream
@@ -26,6 +31,9 @@ import java.util.zip.ZipInputStream
 
 class MainActivity : Activity() {
     private lateinit var web: WebView
+    private lateinit var safeRoot: FrameLayout
+    @Volatile private var safeZone = "{}"
+    private var darkTheme = false
     private val executor = Executors.newSingleThreadExecutor()
     private val busy = AtomicBoolean(false)
     private val prefs by lazy { getSharedPreferences("profgeo", MODE_PRIVATE) }
@@ -36,8 +44,19 @@ class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
+        if (android.os.Build.VERSION.SDK_INT >= 28) {
+            window.attributes = window.attributes.apply {
+                layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
+            }
+        }
+        safeRoot = FrameLayout(this)
+        safeRoot.clipToPadding = true
         web = WebView(this)
         web.setBackgroundColor(Color.rgb(247, 248, 242))
+        web.isVerticalScrollBarEnabled = false
+        web.overScrollMode = View.OVER_SCROLL_NEVER
         web.settings.apply {
             javaScriptEnabled = true
             domStorageEnabled = true
@@ -69,24 +88,51 @@ class MainActivity : Activity() {
                 if (request.url.host == "appassets.androidplatform.net") return false
                 return true
             }
+            override fun onPageFinished(view: WebView?, url: String?) {
+                super.onPageFinished(view, url)
+                emit("onNativeInsets", JSONObject(safeZone))
+            }
         }
         web.addJavascriptInterface(Bridge(), "ProfGeoAndroid")
-        setContentView(web)
-        if (android.os.Build.VERSION.SDK_INT >= 30) {
-            web.setOnApplyWindowInsetsListener { view, insets ->
-                val bars = insets.getInsets(android.view.WindowInsets.Type.systemBars() or android.view.WindowInsets.Type.ime())
-                view.setPadding(bars.left, bars.top, bars.right, bars.bottom)
-                insets
+        safeRoot.addView(web, FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT))
+        setContentView(safeRoot)
+        ViewCompat.setOnApplyWindowInsetsListener(safeRoot) { rootView, insets ->
+            val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout())
+            val keyboard = insets.getInsets(WindowInsetsCompat.Type.ime())
+            val imeVisible = insets.isVisible(WindowInsetsCompat.Type.ime())
+            val bottom = if (imeVisible) maxOf(bars.bottom, keyboard.bottom) else bars.bottom
+            if (rootView.paddingLeft != bars.left || rootView.paddingTop != bars.top || rootView.paddingRight != bars.right || rootView.paddingBottom != bottom) {
+                rootView.setPadding(bars.left, bars.top, bars.right, bottom)
             }
-        } else {
-            @Suppress("DEPRECATION")
-            web.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+            val zone = JSONObject().put("top", bars.top).put("left", bars.left).put("right", bars.right)
+                .put("bottom", bars.bottom).put("keyboard", keyboard.bottom).put("keyboardVisible", imeVisible)
+                .put("density", resources.displayMetrics.density.toDouble()).toString()
+            if (zone != safeZone) { safeZone = zone; emit("onNativeInsets", JSONObject(zone)) }
+            // The native container owns the safe area. Do not let WebView apply it a second time.
+            WindowInsetsCompat.CONSUMED
         }
+        applyNativeTheme(false)
+        ViewCompat.requestApplyInsets(safeRoot)
         web.loadUrl("$origin/assets/index.html")
     }
 
+    @Suppress("DEPRECATION")
+    private fun applyNativeTheme(dark: Boolean) {
+        darkTheme = dark
+        val background = if (dark) Color.rgb(16, 32, 30) else Color.rgb(247, 248, 242)
+        safeRoot.setBackgroundColor(background)
+        web.setBackgroundColor(background)
+        window.statusBarColor = Color.TRANSPARENT
+        window.navigationBarColor = if (android.os.Build.VERSION.SDK_INT == 26) Color.rgb(18, 62, 54) else Color.TRANSPARENT
+        if (android.os.Build.VERSION.SDK_INT >= 29) window.isNavigationBarContrastEnforced = false
+        WindowCompat.getInsetsController(window, web).apply {
+            isAppearanceLightStatusBars = !dark
+            isAppearanceLightNavigationBars = !dark
+        }
+    }
+
     private fun response(code: Int) = WebResourceResponse("text/plain", "UTF-8", code, if (code == 403) "Forbidden" else "Not Found", emptyMap(), ByteArrayInputStream(byteArrayOf()))
-    private fun emit(name: String, value: JSONObject) = runOnUiThread { if (!isDestroyed) web.evaluateJavascript("window.$name(${value});", null) }
+    private fun emit(name: String, value: JSONObject) = runOnUiThread { if (!isDestroyed) web.evaluateJavascript("window.$name && window.$name(${value});", null) }
     private fun bundledCatalog() = JSONObject(assets.open("content/catalog.json").bufferedReader().use { it.readText() })
     private fun readCatalog(): JSONObject = try { JSONObject(File(root, "catalog.json").readText()) } catch (_: Exception) { bundledCatalog() }
     private fun unit(id: String): JSONObject {
@@ -204,6 +250,12 @@ class MainActivity : Activity() {
         @JavascriptInterface fun syncUnits() = sync()
         @JavascriptInterface fun shouldSync() = System.currentTimeMillis() - prefs.getLong("lastSync", 0) > 6 * 60 * 60 * 1000
         @JavascriptInterface fun version() = BuildConfig.VERSION_NAME
+        @JavascriptInterface fun getSafeZone() = safeZone
+        @JavascriptInterface fun setAppearance(dark: Boolean) = runOnUiThread { if (dark != darkTheme) applyNativeTheme(dark) }
+        @JavascriptInterface fun hideKeyboard() = runOnUiThread {
+            (getSystemService(INPUT_METHOD_SERVICE) as android.view.inputmethod.InputMethodManager)
+                .hideSoftInputFromWindow(web.windowToken, 0)
+        }
         @JavascriptInterface fun closeApp() = runOnUiThread { finish() }
         @JavascriptInterface fun openLink(link: String) {
             val u = Uri.parse(link)

@@ -30,6 +30,13 @@ jobs:
           java -jar "$SDK_TOOLS" verify --verbose --print-certs downloads/ProfGeo.apk > /tmp/signature.txt
           python3 tools/verify_release.py /tmp/signature.txt
           python3 -m pip install Pillow
+      - name: Preparar a versão anterior para verificar atualização por cima
+        if: steps.apk.outputs.ready == 'true'
+        run: |
+          PREVIOUS="$(python3 -c "import json;print(json.load(open('downloads/release.json')).get('previousVersionName') or '')")"
+          if [ -n "$PREVIOUS" ]; then
+            curl --fail --location --silent --show-error "https://github.com/emanoelb5-lgtm/ProfGeo/releases/download/v$PREVIOUS/ProfGeo.apk" -o /tmp/ProfGeo-anterior.apk
+          fi
       - name: Habilitar emulador para testar a instalação final
         if: steps.apk.outputs.ready == 'true'
         run: |
@@ -45,6 +52,7 @@ jobs:
           target: google_apis
           disable-animations: true
           script: |
+            if test -f /tmp/ProfGeo-anterior.apk; then adb install /tmp/ProfGeo-anterior.apk; fi
             adb install -r downloads/ProfGeo.apk
             adb logcat -c
             adb shell am start -W -n br.com.emanuel.profgeo/.MainActivity
@@ -72,5 +80,5 @@ jobs:
           if gh release view "v$VERSION" >/dev/null 2>&1; then
             gh release upload "v$VERSION" downloads/ProfGeo.apk downloads/ProfGeo.apk.sha256 downloads/release.json --clobber
           else
-            gh release create "v$VERSION" downloads/ProfGeo.apk downloads/ProfGeo.apk.sha256 downloads/release.json --title "ProfGeo $VERSION · Unidade 1.1" --notes-file docs/RELEASE.md --latest
+            gh release create "v$VERSION" downloads/ProfGeo.apk downloads/ProfGeo.apk.sha256 downloads/release.json --title "ProfGeo $VERSION · Interface Premium e área segura" --notes-file docs/RELEASE.md --latest
           fi

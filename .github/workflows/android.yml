@@ -72,6 +72,21 @@ jobs:
             mkdir -p dist
             adb shell screencap -p /sdcard/ProfGeo.png
             adb pull /sdcard/ProfGeo.png dist/android-home.png
+      - name: Testar área segura no Android 15
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          arch: x86_64
+          target: google_apis
+          avd-name: profgeo35
+          disable-animations: true
+          script: |
+            gradle :app:connectedDebugAndroidTest --no-daemon
+            adb install -r app/build/outputs/apk/debug/app-debug.apk
+            adb shell am start -W -n br.com.emanuel.profgeo/.MainActivity
+            sleep 5
+            adb shell screencap -p /sdcard/ProfGeo35.png
+            adb pull /sdcard/ProfGeo35.png dist/android-home-api35.png
       - name: Preparar artefatos para assinatura persistente
         run: |
           mkdir -p dist/signing-tools dist/content dist/reports

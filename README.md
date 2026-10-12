@@ -10,6 +10,12 @@
 Android 8 ou superior · Sem conta · Estudo offline · Conteúdo expansível
 </div>
 
+## Interface renovada — versão 1.1.0
+
+Tela inicial com acesso direto ao estudo, cartões de progresso, navegação flutuante e leitura mais confortável nos temas claro e escuro. A área segura é aplicada uma única vez pelo Android, respeitando barras do sistema e recortes da câmera. A navegação reserva seu espaço real e recolhe durante a escrita, mantendo anotações e redações acessíveis ao abrir o teclado.
+
+A atualização mantém o identificador e a assinatura da versão anterior. Instale por cima para conservar seu progresso.
+
 ## O que já está no aplicativo
 
 A primeira versão inclui integralmente a **unidade 1.1 do módulo 1: Concepções teórico-metodológicas da Geografia e seu ensino**, correspondente ao item 1.1 do Anexo III do edital de seleção PROFGEO-UFPA n. 03/2026, para ingresso em 2027.

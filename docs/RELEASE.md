@@ -1,13 +1,12 @@
-Primeira versão do **ProfGeo**, aplicativo de estudo para o ENA do mestrado em Ensino de Geografia.
+**ProfGeo 1.1.0 — interface Premium e área segura**
 
-- Unidade **1.1** completa: 12 lições, 56 questões comentadas e 18 cartões.
-- Animações interativas em pixel art por código e fotografias reais incluídas para estudo offline.
-- Plano dos 3 módulos e 15 itens do Anexo III do edital enviado.
-- Busca manual e automática de novas unidades; progresso, notas e favoritos preservados.
-- Revisão dos erros, intervalos de revisão e oficina de redação com autoavaliação.
-- Fonte ajustável, tema escuro, redução de movimento e backup do progresso.
-- Certificado persistente para instalar versões futuras por cima.
+- Tela inicial redesenhada, com o acesso ao estudo em destaque e cartões de progresso mais compactos.
+- Navegação flutuante, temas claro e escuro renovados, melhor hierarquia de textos e leitura.
+- Recuos corrigidos para barras do sistema, câmera e gestos, inclusive no Android 15 e posteriores.
+- Espaço de navegação calculado pela altura real dos botões, incluindo fonte maior e tela horizontal.
+- Navegação recolhida ao abrir o teclado e campo de escrita mantido visível.
+- Avisos de atualização automática sem interromper a leitura quando não há conteúdo novo.
+- Mesmo conteúdo da unidade 1.1: 12 lições, 56 questões comentadas e 18 cartões.
+- Mesma assinatura e identificador: instalar por cima da versão anterior preserva o progresso.
 
-**Instalação:** baixe `ProfGeo.apk`, abra no Android e autorize a instalação pelo aplicativo que abriu o arquivo quando solicitado. Android 8 ou superior.
-
-Exercícios autorais. App independente, sem vínculo oficial com PROFGEO ou UFPA. A versão inicial cobre a unidade 1.1; as demais aparecem como planejadas.
+Baixe `ProfGeo.apk` e instale sem desinstalar a versão anterior. Android 8 ou superior.

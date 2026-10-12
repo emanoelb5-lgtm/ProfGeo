@@ -6,8 +6,8 @@ android {
         applicationId = "br.com.emanuel.profgeo"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     val keyPath = System.getenv("PROFGEO_KEYSTORE")
@@ -30,6 +30,7 @@ android {
     buildFeatures { buildConfig = true }
 }
 dependencies {
+    implementation("androidx.core:core:1.15.0")
     implementation("androidx.webkit:webkit:1.12.1")
     androidTestImplementation("androidx.test:runner:1.6.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
