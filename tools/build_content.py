@@ -1,5 +1,6 @@
 """Valida e empacota conteúdo declarativo; imagens baixadas no GitHub Actions."""
 import argparse,hashlib,io,json,re,shutil,urllib.request,urllib.parse,zipfile,time
+from PIL import Image
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser();p.add_argument('--download-media',action='store_true');p.add_argument('--check',action='store_true');a=p.parse_args()
@@ -48,8 +49,13 @@ for mod in entries:
    used={b['src'] for l in u['lessons'] for b in l['blocks'] if b['type']=='photo'}
    for src in sorted(used):
     f=ROOT/'content'/src
-    if a.download_media:assert f.is_file(),f
-    if f.is_file():put(src,f.read_bytes())
+    assert f.is_file() and f.stat().st_size>0, 'Imagem ausente ou vazia: '+src
+    assert f.suffix.lower() in {'.jpg','.jpeg','.png','.webp'}, 'Imagem incompatível: '+src
+    data=f.read_bytes()
+    with Image.open(io.BytesIO(data)) as image:
+     assert image.width*9==image.height*16, 'Imagem fora da proporção 16:9: '+src
+     image.verify()
+    put(src,data)
    put('media/CREDITS.txt',json.dumps(sources,ensure_ascii=False,indent=2).encode())
   entry['package']='packages/'+archive.name;entry['sha256']=hashlib.sha256(archive.read_bytes()).hexdigest();entry['bytes']=archive.stat().st_size
 if not a.check:CAT.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')

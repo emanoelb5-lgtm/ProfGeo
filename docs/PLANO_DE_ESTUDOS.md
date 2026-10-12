@@ -5,7 +5,7 @@ Estrutura baseada exclusivamente nos títulos e na numeração do **Anexo III do
 | Unidade | Conteúdo programático | Percurso sugerido para sua produção |
 |---|---|---|
 | **1.1** | **Concepções teórico-metodológicas da Geografia e seu ensino** | **Disponível:** 12 lições, 56 questões, 18 cartões, animações, fotos e redação. |
-| 1.2 | Saberes disciplinares, curriculares, saberes da experiência e da ação pedagógica dos docentes | Reconhecer e comparar saberes em situações de ensino; analisar planejamento e mediação. |
+| **1.2** | **Saberes disciplinares, curriculares, saberes da experiência e da ação pedagógica dos docentes** | **Disponível:** 12 lições, 60 questões, 24 cartões, 7 atividades, fotos, esquemas, animações e redação. |
 | 1.3 | Conceitos, categorias e conteúdos de geografia no Ensino Fundamental e Médio | Trabalhar espaço, lugar, paisagem, território e região com escalas e exemplos escolares. |
 | 1.4 | Programas, documentos e regulamentações que disciplinam e orientam o ensino de Geografia | Ler documentos em suas versões vigentes; relacionar objetivos, currículo e ensino. |
 | 1.5 | Pesquisa e produção do conhecimento no campo da Geografia Escolar | Formular problemas de pesquisa, distinguir métodos, fontes e finalidades da pesquisa escolar. |

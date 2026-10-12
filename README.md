@@ -10,6 +10,12 @@
 Android 8 ou superior · Sem conta · Estudo offline · Conteúdo expansível
 </div>
 
+## Nova unidade disponível — 1.2
+
+**Saberes disciplinares, curriculares, saberes da experiência e da ação pedagógica dos docentes**: 12 lições, 60 questões comentadas (40 de prática e 20 no simulado), 24 cartões, 7 atividades de associação ou ordenação e oficina de redação. Inclui duas fotos novas, seis esquemas em 16:9 e quatro cenas interativas, com exemplos de ensino de Geografia e situações do Pará e do campo.
+
+No APK 1.1.1, abra **Ajustes → Buscar novas unidades**. Depois, em **Unidades**, escolha **1.2**. Não é necessário reinstalar o aplicativo; a unidade fica salva para estudo offline. [Percurso, referências e créditos da 1.2](docs/UNIDADE_1_2.md).
+
 ## Animações mais detalhadas — versão 1.1.1
 
 As sete cenas da unidade 1.1 têm pixel art mais detalhada, com vegetação, construções, sombras, personagens e movimento de barcos, ônibus e chuva. O desenho passa a 640 × 360, sempre em 16:9. Os controles continuam mudando a cena e sua explicação. Tudo funciona offline; a animação pausa fora da tela e respeita a redução de movimento.
@@ -47,7 +53,7 @@ O aplicativo não solicita acesso a contatos, câmera ou localização. As respo
 
 ## Como novas unidades chegam
 
-O plano completo contém os **3 módulos e os 15 itens do Anexo III**. Nesta versão, apenas a unidade 1.1 foi criada; as demais aparecem claramente como **planejadas**.
+O plano completo contém os **3 módulos e os 15 itens do Anexo III**. As unidades **1.1 e 1.2 estão disponíveis**; as demais aparecem como **planejadas**. O APK publicado inclui a 1.1, e o mecanismo de conteúdo baixa a 1.2.
 
 Quando você pedir **“Faça a próxima unidade do ProfGeo”**, o próximo conteúdo será produzido e publicado neste repositório. No app, abra **Ajustes → Buscar novas unidades**. Com a busca automática ativada, o app também verifica ao abrir, com intervalo mínimo de seis horas.
 
@@ -59,7 +65,7 @@ As unidades são arquivos JSON e pacotes ZIP declarativos com imagens. O aplicat
 
 | Módulo | Unidades | Situação |
 |---|---|---|
-| 1 — Saberes e conhecimentos da Geografia no espaço escolar | 1.1 a 1.5 | 1.1 disponível; 1.2 a 1.5 planejadas |
+| 1 — Saberes e conhecimentos da Geografia no espaço escolar | 1.1 a 1.5 | 1.1 e 1.2 disponíveis; 1.3 a 1.5 planejadas |
 | 2 — Formação docente em Geografia | 2.1 a 2.5 | Planejadas |
 | 3 — As linguagens no ensino de Geografia | 3.1 a 3.5 | Planejadas |
 
@@ -85,3 +91,5 @@ A numeração e os temas vêm do Anexo III do edital enviado. O anexo não apres
 Exercícios, exemplos hipotéticos e animações foram produzidos para este estudo. Não são questões oficiais, previsão de cobrança ou reprodução de um curso institucional. O aplicativo é independente e não possui vínculo oficial com UFPA, UFSM ou PROFGEO.
 
 Fotografias: Fabio Gomes, **Complexo Ver-o-Peso.jpg**, CC BY-SA 4.0; Cayambe, **Belém Ver-o-Peso 01.jpg**, CC BY-SA 3.0, via Wikimedia Commons. Exibição com recorte 16:9 e crédito preservado. Os arquivos e as licenças estão em [media-sources.json](content/media-sources.json). Fotos não autorizam inferir renda, identidade ou condições individuais dos sujeitos retratados.
+
+Na unidade 1.2: Alebasi24, **Escola Técnica de Paulínia (ETEP) — sala de aula**, e Fronteira, **Vista do Rio Guamá a partir do campus da UFPA**, ambas CC BY-SA 4.0 e redimensionadas mantendo 16:9. Seis esquemas didáticos autorais complementam a leitura. [Fontes e créditos completos](docs/UNIDADE_1_2.md#fotografias-e-esquemas).

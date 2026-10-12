@@ -1,4 +1,79 @@
 const {test,expect}=require('@playwright/test');
+test('unidade 1.2 abre todos os recursos, preserva a 1.1 e salva a produção',async({page})=>{
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('/');await expect(page.getByRole('heading',{name:'Seu próximo passo.',exact:true})).toBeVisible();
+ await page.evaluate(()=>GeoApp.action('lesson:1.1:l01'));
+ await page.locator('#lesson-note').fill('Anotação anterior da unidade 1.1.');
+ await page.evaluate(()=>GeoApp.action('unit:1.2'));
+ await expect(page.locator('.lesson-item')).toHaveCount(12);
+ const lessons=await page.evaluate(()=>GeoApp.getUnit('1.2').then(u=>u.lessons));
+ for(const lesson of lessons){
+  await page.evaluate(a=>GeoApp.action(a),'lesson:1.2:'+lesson.id);
+  await expect(page.getByRole('heading',{name:lesson.title,exact:true})).toBeVisible();
+  for(const img of await page.locator('figure img').all()){
+   await img.scrollIntoViewIfNeeded();
+   await expect.poll(()=>img.evaluate(i=>i.complete&&i.naturalWidth>0)).toBeTruthy();
+   expect(await img.evaluate(i=>[i.naturalWidth,i.naturalHeight])).toEqual([1280,720]);
+  }
+  for(const canvas of await page.locator('canvas').all()){
+   await canvas.scrollIntoViewIfNeeded();expect(await canvas.evaluate(c=>[c.width,c.height])).toEqual([640,360]);
+   const choices=page.locator('.anim-controls .chip');await choices.last().click();
+   expect((await page.locator('.anim-description').textContent()).length).toBeGreaterThan(90);
+  }
+  if(lesson.practice?.type==='match'){
+   for(let i=0;i<lesson.practice.pairs.length;i++)await page.locator(`[data-match="${i}"]`).selectOption(lesson.practice.pairs[i][1]);
+   await page.getByRole('button',{name:'Conferir associações'}).click();await expect(page.locator('#practice-result')).toContainText('Você relacionou todas as ideias.');
+  }
+  if(lesson.practice?.type==='order'){
+   for(let i=0;i<lesson.practice.items.length;i++)await page.locator(`[data-order="${i}"]`).fill(String(i+1));
+   await page.getByRole('button',{name:'Conferir sequência'}).click();await expect(page.locator('#practice-result')).toContainText('Você relacionou todas as ideias.');
+  }
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBeTruthy();
+ }
+ await page.evaluate(()=>GeoApp.action('lesson:1.2:l05'));await page.locator('#lesson-note').fill('Divulgar não substitui investigar a prática.');
+ await page.evaluate(()=>GeoApp.action('flash:1.2'));await page.getByRole('button',{name:/Toque para revelar/}).click();await expect(page.locator('.flash-card')).toContainText('Conceitos');
+ await page.evaluate(()=>GeoApp.action('essay:1.2'));await page.locator('[data-essayline]').first().fill('Os saberes docentes se articulam em decisões de ensino.');
+ await page.locator('[data-rubric]').first().check();
+ await page.reload();await expect(page.getByRole('heading',{name:'Seu próximo passo.',exact:true})).toBeVisible();
+ const state=await page.evaluate(()=>GeoApp.getState());
+ expect(state.notes['1.1:l01']).toContain('Anotação anterior');expect(state.notes['1.2:l05']).toContain('investigar');
+ expect(state.essays['1.2'].lines[0]).toContain('saberes docentes');expect(state.essays['1.2'].rubric).toContain(0);
+ await page.evaluate(()=>GeoApp.action('lesson:1.2:l05'));await expect(page.locator('#lesson-note')).toHaveValue('Divulgar não substitui investigar a prática.');
+ expect(errors).toEqual([]);
+});
+
+test('prática, revisão e simulado da 1.2 usam questões e comentários próprios',async({page})=>{
+ await page.goto('/');await expect(page.getByRole('heading',{name:'Seu próximo passo.',exact:true})).toBeVisible();
+ await page.evaluate(()=>GeoApp.action('practice:1.2:l01'));
+ const stem=await page.locator('.question-card h2').textContent();
+ const actual=await page.evaluate(stem=>GeoApp.getUnit('1.2').then(u=>u.questions.find(q=>q.stem===stem)),stem);
+ await page.locator('.option').nth((actual.answer+1)%actual.options.length).click();await page.getByRole('button',{name:'Confirmar resposta'}).click();
+ await expect(page.locator('.feedback')).toContainText(actual.feedback[(actual.answer+1)%actual.options.length]);
+ const state=await page.evaluate(()=>GeoApp.getState());expect(state.review['1.2:'+actual.id].lastCorrect).toBe(false);
+ await page.evaluate(()=>GeoApp.action('final:1.2'));await expect(page.getByText('1 / 20',{exact:true})).toBeVisible();
+ for(let i=0;i<20;i++){
+  const stem=await page.locator('.question-card h2').textContent();
+  const question=await page.evaluate(stem=>GeoApp.getUnit('1.2').then(u=>u.questions.find(q=>q.stem===stem)),stem);
+  expect(question.pool).toBe('final');await page.locator('.option').nth(question.answer).click();await page.getByRole('button',{name:'Confirmar resposta'}).click();
+  await expect(page.locator('.feedback')).toContainText(question.feedback[question.answer]);
+  await page.getByRole('button',{name:i===19?'Ver meu resultado':'Próxima questão',exact:true}).click();
+ }
+ const session=await page.evaluate(()=>GeoApp.getState().sessions.at(-1));expect(session.unit).toBe('1.2');expect(session.correct).toBe(20);expect(session.total).toBe(20);
+});
+
+test('lições da 1.2 continuam legíveis com fonte máxima e tela de 320 pixels',async({page})=>{
+ await page.setViewportSize({width:320,height:568});await page.goto('/');
+ await page.evaluate(()=>GeoApp.action('nav:settings'));await page.locator('#font-size').selectOption('24');await page.locator('#dark-mode').check();
+ for(const id of ['l01','l03','l05','l06','l07','l10','l12']){
+  await page.evaluate(a=>GeoApp.action(a),'lesson:1.2:'+id);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBeTruthy();
+  await page.locator('[data-action^="practice:"]').scrollIntoViewIfNeeded();
+  const button=await page.locator('[data-action^="practice:"]').boundingBox();const nav=await page.locator('.nav').boundingBox();expect(button.y+button.height).toBeLessThanOrEqual(nav.y);
+ }
+ await page.setViewportSize({width:412,height:915});await page.evaluate(()=>GeoApp.action('unit:1.2'));await page.screenshot({path:'dist/u12-unidade.png'});
+ await page.evaluate(()=>GeoApp.action('lesson:1.2:l05'));await page.screenshot({path:'dist/u12-leitura.png'});
+});
+
 test('percurso completo, correção, anotações, redação e restauração',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/');await expect(page.getByRole('heading',{name:'Seu próximo passo.',exact:true})).toBeVisible();

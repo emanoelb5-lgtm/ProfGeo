@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "minAppVersion": 1,
-  "revision": 1,
+  "revision": 2,
   "updatedAt": "2026-10-12",
   "source": {
     "title": "Edital PROFGEO-UFPA n. 03/2026",
@@ -28,15 +28,18 @@
           "status": "published",
           "revision": 1,
           "package": "packages/1.1-r1.zip",
-          "sha256": "3760cb82fbe2c816fe60ef46689ccf496b6edf7735c3fc0256e89596f6bf8c8a",
-          "bytes": 435756
+          "sha256": "0d4ac79b85d0857e5f23129da9ebcee9a86af26864b1e4972897497bc84bf74a",
+          "bytes": 436193
         },
         {
           "id": "1.2",
           "title": "Saberes disciplinares, curriculares, saberes da experiência e da ação pedagógica dos docentes",
           "editalItem": "1.2",
-          "status": "planned",
-          "revision": 0
+          "status": "published",
+          "revision": 1,
+          "package": "packages/1.2-r1.zip",
+          "sha256": "b20b1f7c6ab35b358a41fdceb1f0ea7d5861c287940c6d597081c0b42e538e0c",
+          "bytes": 631496
         },
         {
           "id": "1.3",

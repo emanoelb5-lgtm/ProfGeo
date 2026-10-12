@@ -4,19 +4,19 @@ O app lê **conteúdo declarativo**. Não baixa nem executa JavaScript, HTML ou 
 
 ## Passos editoriais
 
-1. Leia `content/catalog.json` e escolha o próximo item com `status: planned`; a próxima unidade é **1.2**.
+1. Leia `content/catalog.json` e escolha o próximo item com `status: planned`; a próxima unidade é **1.3**. As unidades 1.1 e 1.2 já estão disponíveis.
 2. Desenvolva conteúdo completo, progressivo, com linguagem clara e exemplos pertinentes. Use fontes primárias, identifique a bibliografia complementar e verifique legislação ou documentos em suas versões vigentes.
-3. Salve `content/units/1.2.json`. Use `schemaVersion: 1`, `id: "1.2"`, `moduleId: "1"`, `revision: 1`, título fiel ao edital, objetivos, lições, questões, cartões, referências e oficina escrita.
+3. Salve `content/units/1.3.json`. Use `schemaVersion: 1`, `id: "1.3"`, `moduleId: "1"`, `revision: 1`, título fiel ao edital, objetivos, lições, questões, cartões, referências e oficina escrita.
 4. Preserve identificadores de lições e exercícios quando corrigir uma unidade já publicada. Aumente `revision` ao modificar o conteúdo. Não reutilize um ID de questão para um problema diferente.
 5. No catálogo, mude a unidade correspondente para `status: "published"` e informe sua revisão. Incremente a revisão do catálogo e sua data.
 6. Acrescente imagens em `content/media`, ou fontes de download em `content/media-sources.json`. Imagens e animações devem ser exibidas em **16:9**. Preserve créditos e licenças; casos inventados devem estar claramente identificados.
 7. Execute `python3 tools/build_content.py --download-media` e `node --test tests/engine.test.cjs`. Confira as telas e os exercícios, principalmente enunciado, resposta e feedback.
-8. Publique os arquivos em `main`. O workflow de conteúdo valida e gera `content/packages/1.2-r1.zip`, atualiza tamanho e SHA-256 no catálogo e publica os arquivos.
+8. Publique os arquivos em `main`. O workflow de conteúdo valida e gera `content/packages/1.3-r1.zip`, atualiza tamanho e SHA-256 no catálogo e publica os arquivos.
 9. No app, **Ajustes → Buscar novas unidades**. Confira o download, abra a unidade, desligue a internet e verifique que ela permanece disponível.
 
 ## Estrutura de uma unidade
 
-Use `content/units/1.1.json` como exemplo funcional. Campos principais:
+Use `content/units/1.1.json` e `content/units/1.2.json` como exemplos funcionais. Campos principais:
 
 | Campo | Contrato |
 |---|---|
