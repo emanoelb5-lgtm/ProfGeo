@@ -1,0 +1,38 @@
+name: APK · verificar e publicar versão assinada
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['downloads/ProfGeo.apk', 'downloads/release.json', '.github/workflows/publish.yml']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar presença do APK assinado
+        id: apk
+        run: |
+          if test -f downloads/ProfGeo.apk; then echo "ready=true" >> "$GITHUB_OUTPUT"; else echo "ready=false" >> "$GITHUB_OUTPUT"; fi
+      - name: Verificar assinatura e integridade
+        if: steps.apk.outputs.ready == 'true'
+        run: |
+          test -f downloads/ProfGeo.apk
+          cd downloads
+          sha256sum -c ProfGeo.apk.sha256
+          cd ..
+          SDK_TOOLS="$(find "$ANDROID_HOME/build-tools" -name apksigner.jar | sort -V | tail -n 1)"
+          java -jar "$SDK_TOOLS" verify --verbose --print-certs downloads/ProfGeo.apk > /tmp/signature.txt
+          python3 tools/verify_release.py /tmp/signature.txt
+      - name: Publicar download na página de versões
+        if: steps.apk.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION="$(python3 -c "import json;print(json.load(open('downloads/release.json'))['versionName'])")"
+          if gh release view "v$VERSION" >/dev/null 2>&1; then
+            gh release upload "v$VERSION" downloads/ProfGeo.apk downloads/ProfGeo.apk.sha256 downloads/release.json --clobber
+          else
+            gh release create "v$VERSION" downloads/ProfGeo.apk downloads/ProfGeo.apk.sha256 downloads/release.json --title "ProfGeo $VERSION · Unidade 1.1" --notes-file docs/RELEASE.md --latest
+          fi

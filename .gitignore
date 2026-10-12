@@ -1,0 +1,13 @@
+.gradle/
+**/build/
+local.properties
+*.jks
+*.keystore
+*.p12
+*.pem
+*password*
+node_modules/
+test-results/
+app/src/main/assets/content/
+dist/
+__pycache__/

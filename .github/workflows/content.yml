@@ -1,0 +1,36 @@
+name: Conteúdo · validar e publicar unidades
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['content/units/**', 'content/media-sources.json', 'tools/build_content.py', '.github/workflows/content.yml']
+permissions:
+  contents: write
+concurrency:
+  group: content-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validar lições, exercícios e imagens
+        run: |
+          python3 -m pip install Pillow
+          python3 tools/build_content.py --download-media
+          node --test tests/engine.test.cjs
+      - name: Publicar catálogo e pacotes com integridade
+        run: |
+          git config user.name 'ProfGeo Actions'
+          git config user.email 'actions@users.noreply.github.com'
+          git add content/catalog.json content/packages content/media
+          if ! git diff --cached --quiet; then
+            git commit -m 'content: publicar pacotes e catálogo verificados'
+            git pull --rebase origin main
+            git push origin main
+          fi

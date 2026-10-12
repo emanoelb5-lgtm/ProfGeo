@@ -1,0 +1,1 @@
+const {defineConfig}=require('@playwright/test');module.exports=defineConfig({testDir:'tests',testMatch:'ui.spec.cjs',use:{baseURL:'http://127.0.0.1:8765',viewport:{width:412,height:915}},webServer:{command:'python3 -m http.server 8765 --directory app/src/main/assets',url:'http://127.0.0.1:8765',reuseExistingServer:true},reporter:'list',timeout:60000});

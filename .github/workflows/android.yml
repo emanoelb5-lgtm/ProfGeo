@@ -1,0 +1,95 @@
+name: Android · compilar e testar
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['app/**', 'build.gradle.kts', 'settings.gradle.kts', 'gradle.properties', 'tools/**', 'tests/**', 'package.json', 'playwright.config.cjs', '.github/workflows/android.yml']
+permissions:
+  contents: read
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Preparar imagens, validar conteúdo e gerar pacotes
+        run: |
+          python3 -m pip install Pillow
+          python3 tools/build_content.py --download-media
+          node --test tests/engine.test.cjs
+      - name: Testar telas e interações
+        run: |
+          npm install --ignore-scripts
+          npx playwright install --with-deps chromium
+          npx playwright test
+      - name: Preparar assinatura no runner quando os segredos estiverem configurados
+        env:
+          PROFGEO_KEYSTORE_BASE64: ${{ secrets.PROFGEO_KEYSTORE_BASE64 }}
+          PROFGEO_STORE_PASSWORD: ${{ secrets.PROFGEO_STORE_PASSWORD }}
+          PROFGEO_KEY_PASSWORD: ${{ secrets.PROFGEO_KEY_PASSWORD }}
+          PROFGEO_KEY_ALIAS: ${{ secrets.PROFGEO_KEY_ALIAS }}
+        run: |
+          if [ -n "$PROFGEO_KEYSTORE_BASE64" ]; then
+            test "$PROFGEO_KEY_ALIAS" = "profgeo"
+            printf '%s' "$PROFGEO_KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/profgeo.jks"
+            echo "PROFGEO_KEYSTORE=$RUNNER_TEMP/profgeo.jks" >> "$GITHUB_ENV"
+          fi
+      - name: Compilar APK de produção e testes Android
+        env:
+          PROFGEO_STORE_PASSWORD: ${{ secrets.PROFGEO_STORE_PASSWORD }}
+          PROFGEO_KEY_PASSWORD: ${{ secrets.PROFGEO_KEY_PASSWORD }}
+        run: gradle :app:assembleRelease :app:assembleDebug :app:assembleDebugAndroidTest :app:lintRelease --no-daemon
+      - name: Habilitar aceleração do emulador
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Testar o app no Android real do emulador
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          arch: x86_64
+          target: google_apis
+          disable-animations: true
+          script: |
+            gradle :app:connectedDebugAndroidTest --no-daemon
+            adb shell am start -n br.com.emanuel.profgeo/.MainActivity
+            mkdir -p dist
+            adb shell screencap -p /sdcard/ProfGeo.png
+            adb pull /sdcard/ProfGeo.png dist/android-home.png
+      - name: Preparar artefatos para assinatura persistente
+        run: |
+          mkdir -p dist/signing-tools dist/content dist/reports
+          if test -f app/build/outputs/apk/release/app-release-unsigned.apk; then cp app/build/outputs/apk/release/app-release-unsigned.apk dist/ProfGeo-unsigned.apk; else cp app/build/outputs/apk/release/app-release.apk dist/ProfGeo-unsigned.apk; fi
+          cp -r content/. dist/content/
+          SDK_TOOLS="$(find "$ANDROID_HOME/build-tools" -name apksigner.jar | sort -V | tail -n 1)"
+          cp "$SDK_TOOLS" dist/signing-tools/apksigner.jar
+          ZIPALIGN_PATH="$(find "$ANDROID_HOME/build-tools" -name zipalign | sort -V | tail -n 1)"
+          "$ZIPALIGN_PATH" -c 4 dist/ProfGeo-unsigned.apk
+          cp -r app/build/reports/. dist/reports/ || true
+          sha256sum dist/ProfGeo-unsigned.apk > dist/build-sha256.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ProfGeo-build-${{ github.sha }}
+          path: dist/
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: ProfGeo-diagnostico-${{ github.run_id }}
+          path: |
+            test-results/
+            app/build/reports/

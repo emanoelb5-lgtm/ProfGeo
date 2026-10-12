@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "minAppVersion": 1,
+  "revision": 1,
+  "updatedAt": "2026-10-12",
+  "source": {
+    "title": "Edital PROFGEO-UFPA n. 03/2026",
+    "annex": "III",
+    "ingressYear": 2027,
+    "examDate": "2026-10-31",
+    "examTime": "14h às 18h (Brasília)",
+    "objectiveQuestions": 20,
+    "essayMaxLines": 20,
+    "objectiveWeight": 0.5,
+    "essayWeight": 0.5,
+    "note": "Informações do edital enviado; consultar a página oficial para possíveis retificações.",
+    "url": "https://www.profgeo.propesp.ufpa.br/"
+  },
+  "modules": [
+    {
+      "id": "1",
+      "title": "Saberes e conhecimentos da Geografia no espaço escolar",
+      "units": [
+        {
+          "id": "1.1",
+          "title": "Concepções teórico-metodológicas da Geografia e seu ensino",
+          "editalItem": "1.1",
+          "status": "published",
+          "revision": 1,
+          "package": "packages/1.1-r1.zip",
+          "sha256": "1480da27022ba5dc4edd2483432c529a0dc81e562f60d21ff46a88f699a3d45b",
+          "bytes": 21242
+        },
+        {
+          "id": "1.2",
+          "title": "Saberes disciplinares, curriculares, saberes da experiência e da ação pedagógica dos docentes",
+          "editalItem": "1.2",
+          "status": "planned",
+          "revision": 0
+        },
+        {
+          "id": "1.3",
+          "title": "Conceitos, categorias e conteúdos de geografia no Ensino Fundamental e Médio",
+          "editalItem": "1.3",
+          "status": "planned",
+          "revision": 0
+        },
+        {
+          "id": "1.4",
+          "title": "Programas, documentos e regulamentações que disciplinam e orientam o ensino de Geografia",
+          "editalItem": "1.4",
+          "status": "planned",
+          "revision": 0
+        },
+        {
+          "id": "1.5",
+          "title": "Pesquisa e produção do conhecimento no campo da Geografia Escolar",
+          "editalItem": "1.5",
+          "status": "planned",
+          "revision": 0
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Formação docente em Geografia",
+      "units": [
+        {
+          "id": "2.1",
+          "title": "As teorias pedagógicas na formação docente e seus desdobramentos na prática docente",
+          "editalItem": "2.1",
+          "status": "planned",
+          "revision": 0
+        },
+        {
+          "id": "2.2",
+          "title": "Formação docente e políticas curriculares: suas incidências no ensino de Geografia",
+          "editalItem": "2.2",
+          "status": "planned",
+          "revision": 0
+        },
+        {
+          "id": "2.3",
+          "title": "A precarização do trabalho docente em Geografia",
+          "editalItem": "2.3",
+          "status": "planned",
+          "revision": 0
+        },
+        {
+          "id": "2.4",
+          "title": "Políticas públicas, legislação e perspectivas de formação docente em Geografia",
+          "editalItem": "2.4",
+          "status": "planned",
+          "revision": 0
+        },
+        {
+          "id": "2.5",
+          "title": "Diversidade, diferença e inclusão no ensino de Geografia",
+          "editalItem": "2.5",
+          "status": "planned",
+          "revision": 0
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "As linguagens no ensino de Geografia",
+      "units": [
+        {
+          "id": "3.1",
+          "title": "Linguagens: importância e participação na formação de raciocínios geográficos",
+          "editalItem": "3.1",
+          "status": "planned",
+          "revision": 0
+        },
+        {
+          "id": "3.2",
+          "title": "Especificidades e potencialidades das diferentes linguagens na educação geográfica",
+          "editalItem": "3.2",
+          "status": "planned",
+          "revision": 0
+        },
+        {
+          "id": "3.3",
+          "title": "Cartografias, geotecnologias e tecnologias da informação e comunicação",
+          "editalItem": "3.3",
+          "status": "planned",
+          "revision": 0
+        },
+        {
+          "id": "3.4",
+          "title": "Arte, Fotografia, Cinema e outras linguagens visuais",
+          "editalItem": "3.4",
+          "status": "planned",
+          "revision": 0
+        },
+        {
+          "id": "3.5",
+          "title": "Proposições metodológicas para o ensino de Geografia",
+          "editalItem": "3.5",
+          "status": "planned",
+          "revision": 0
+        }
+      ]
+    }
+  ]
+}

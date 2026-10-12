@@ -1,0 +1,1 @@
+{"name":"profgeo-validation","version":"1.0.0","private":true,"scripts":{"test":"node --test tests/engine.test.cjs","test:ui":"playwright test"},"devDependencies":{"@playwright/test":"1.56.1"}}
