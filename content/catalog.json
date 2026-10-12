@@ -28,8 +28,8 @@
           "status": "published",
           "revision": 1,
           "package": "packages/1.1-r1.zip",
-          "sha256": "1480da27022ba5dc4edd2483432c529a0dc81e562f60d21ff46a88f699a3d45b",
-          "bytes": 21242
+          "sha256": "3760cb82fbe2c816fe60ef46689ccf496b6edf7735c3fc0256e89596f6bf8c8a",
+          "bytes": 435756
         },
         {
           "id": "1.2",
