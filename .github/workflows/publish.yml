@@ -29,6 +29,7 @@ jobs:
           SDK_TOOLS="$(find "$ANDROID_HOME/build-tools" -name apksigner.jar | sort -V | tail -n 1)"
           java -jar "$SDK_TOOLS" verify --verbose --print-certs downloads/ProfGeo.apk > /tmp/signature.txt
           python3 tools/verify_release.py /tmp/signature.txt
+          python3 -m pip install Pillow
       - name: Habilitar emulador para testar a instalação final
         if: steps.apk.outputs.ready == 'true'
         run: |

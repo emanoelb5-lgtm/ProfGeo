@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['app/**', 'build.gradle.kts', 'settings.gradle.kts', 'gradle.properties', 'tools/**', 'tests/**', 'package.json', 'playwright.config.cjs', '.github/workflows/android.yml']
+    paths: ['app/**', 'build.gradle.kts', 'settings.gradle.kts', 'gradle.properties', 'tools/build_content.py', 'tests/**', 'package.json', 'playwright.config.cjs', '.github/workflows/android.yml']
 permissions:
   contents: read
 concurrency:
@@ -66,7 +66,9 @@ jobs:
           disable-animations: true
           script: |
             gradle :app:connectedDebugAndroidTest --no-daemon
-            adb shell am start -n br.com.emanuel.profgeo/.MainActivity
+            adb install -r app/build/outputs/apk/debug/app-debug.apk
+            adb shell am start -W -n br.com.emanuel.profgeo/.MainActivity
+            sleep 5
             mkdir -p dist
             adb shell screencap -p /sdcard/ProfGeo.png
             adb pull /sdcard/ProfGeo.png dist/android-home.png
@@ -75,6 +77,7 @@ jobs:
           mkdir -p dist/signing-tools dist/content dist/reports
           if test -f app/build/outputs/apk/release/app-release-unsigned.apk; then cp app/build/outputs/apk/release/app-release-unsigned.apk dist/ProfGeo-unsigned.apk; else cp app/build/outputs/apk/release/app-release.apk dist/ProfGeo-unsigned.apk; fi
           cp -r content/. dist/content/
+          python3 -c 'import json,os;json.dump({"commit":os.environ["GITHUB_SHA"],"runUrl":"https://github.com/"+os.environ["GITHUB_REPOSITORY"]+"/actions/runs/"+os.environ["GITHUB_RUN_ID"]},open("dist/build-metadata.json","w"))'
           SDK_TOOLS="$(find "$ANDROID_HOME/build-tools" -name apksigner.jar | sort -V | tail -n 1)"
           cp "$SDK_TOOLS" dist/signing-tools/apksigner.jar
           ZIPALIGN_PATH="$(find "$ANDROID_HOME/build-tools" -name zipalign | sort -V | tail -n 1)"
