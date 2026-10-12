@@ -23,12 +23,17 @@ public class SafeZoneTest {
  @Test public void cutoutAndBarsAreConsumedOnceAndDockFitsViewport()throws Exception{
   try(ActivityScenario<MainActivity> s=ActivityScenario.launch(MainActivity.class)){
    ready(s);
-   s.onActivity(a->{FrameLayout root=container(a);WindowInsetsCompat fake=new WindowInsetsCompat.Builder().setInsets(WindowInsetsCompat.Type.systemBars(),Insets.of(0,32,0,48)).setInsets(WindowInsetsCompat.Type.displayCutout(),Insets.of(44,72,18,0)).setInsets(WindowInsetsCompat.Type.ime(),Insets.NONE).setVisible(WindowInsetsCompat.Type.ime(),false).build();ViewCompat.dispatchApplyWindowInsets(root,fake);});
+   s.onActivity(a->{FrameLayout root=container(a);WindowInsetsCompat fake=new WindowInsetsCompat.Builder().setInsets(WindowInsetsCompat.Type.systemBars(),Insets.of(0,32,0,48)).setInsets(WindowInsetsCompat.Type.displayCutout(),Insets.of(44,72,18,0)).setVisible(WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.displayCutout(),true).setInsets(WindowInsetsCompat.Type.ime(),Insets.NONE).setVisible(WindowInsetsCompat.Type.ime(),false).build();ViewCompat.dispatchApplyWindowInsets(root,fake);
+    try{org.json.JSONObject zone=new org.json.JSONObject(a.new Bridge().getSafeZone());
+     assertEquals("Insets reportados: "+zone,72,zone.getInt("top"));assertEquals(44,zone.getInt("left"));assertEquals(18,zone.getInt("right"));assertEquals(48,zone.getInt("bottom"));
+    }catch(org.json.JSONException e){throw new AssertionError(e);}
+    assertEquals(72,root.getPaddingTop());assertEquals(44,root.getPaddingLeft());assertEquals(18,root.getPaddingRight());assertEquals(48,root.getPaddingBottom());
+    assertEquals(0,web(a).getPaddingTop());assertEquals(0,web(a).getPaddingBottom());
+   });
    Thread.sleep(350);
-   assertEquals("true",js(s,"(()=>{let z=JSON.parse(ProfGeoAndroid.getSafeZone());return z.top===72 && z.left===44 && z.right===18 && z.bottom===48})()"));
    assertEquals("true",js(s,"getComputedStyle(document.body).getPropertyValue('--safe-top').trim()==='0px' && GeoSafeArea.snapshot().nativePadded"));
    assertEquals("true",js(s,"(()=>{let r=document.querySelector('.nav').getBoundingClientRect();return r.left>=8 && r.right<=innerWidth-8 && r.bottom<=innerHeight-8 && document.documentElement.scrollWidth<=innerWidth+1})()"));
-   s.onActivity(a->{FrameLayout r=container(a);assertEquals(72,r.getPaddingTop());assertEquals(44,r.getPaddingLeft());assertEquals(18,r.getPaddingRight());assertEquals(48,r.getPaddingBottom());assertEquals(0,web(a).getPaddingTop());assertEquals(0,web(a).getPaddingBottom());ViewCompat.requestApplyInsets(r);});
+   s.onActivity(a->ViewCompat.requestApplyInsets(container(a)));
   }
  }
  @Test public void realKeyboardKeepsNoteVisibleWithoutNavigationOverlap()throws Exception{

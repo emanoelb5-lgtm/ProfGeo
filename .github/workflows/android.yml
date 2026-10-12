@@ -111,3 +111,4 @@ jobs:
           path: |
             test-results/
             app/build/reports/
+            dist/
