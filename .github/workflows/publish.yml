@@ -75,5 +75,5 @@ jobs:
           if gh release view "v$VERSION" >/dev/null 2>&1; then
             gh release upload "v$VERSION" downloads/ProfGeo.apk downloads/ProfGeo.apk.sha256 downloads/release.json --clobber
           else
-            gh release create "v$VERSION" downloads/ProfGeo.apk downloads/ProfGeo.apk.sha256 downloads/release.json --title "ProfGeo $VERSION · Interface Premium e área segura" --notes-file docs/RELEASE.md --latest
+            gh release create "v$VERSION" downloads/ProfGeo.apk downloads/ProfGeo.apk.sha256 downloads/release.json --title "ProfGeo $VERSION" --notes-file docs/RELEASE.md --latest
           fi

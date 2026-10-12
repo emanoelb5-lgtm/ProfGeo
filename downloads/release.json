@@ -1,15 +1,15 @@
 {
   "applicationId": "br.com.emanuel.profgeo",
-  "versionCode": 2,
-  "versionName": "1.1.0",
+  "versionCode": 3,
+  "versionName": "1.1.1",
   "certificateSha256": "cfccadc639798f222b959225b2de81174fbba84ad4288cd0017bf189bdbd7a54",
-  "apkSha256": "c0c8cad454eaca2d2101a488e117a7309530e3732279228acfd65b2c57ffc9cc",
-  "bytes": 2217449,
+  "apkSha256": "7a0e6a8a089d37830604bb47769d259fc40e48a2c6287ddf8273a0ad8812096b",
+  "bytes": 2221614,
   "builtWith": "GitHub Actions",
   "minimumAndroid": "8.0",
   "unit": "1.1",
   "privateKeyInPublicRepository": false,
-  "previousVersionName": "1.0.0",
-  "buildCommit": "ecc50f5e6da69ba431ed3c72ade4ec53d201e218",
-  "buildRun": "https://github.com/emanoelb5-lgtm/ProfGeo/actions/runs/38270602853"
+  "previousVersionName": "1.1.0",
+  "buildCommit": "472f99cbef96a7bcd5d6f2dbee1f2988722165dc",
+  "buildRun": "https://github.com/emanoelb5-lgtm/ProfGeo/actions/runs/38281840442"
 }

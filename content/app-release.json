@@ -1,6 +1,6 @@
 {
-  "versionCode": 2,
-  "versionName": "1.1.0",
+  "versionCode": 3,
+  "versionName": "1.1.1",
   "url": "https://github.com/emanoelb5-lgtm/ProfGeo/releases/latest",
-  "notes": "Interface renovada, área segura de tela corrigida e melhor uso do teclado."
+  "notes": "As sete animações ganham pixel art mais detalhada em 16:9, movimentos mais suaves e pausa fora da tela. Estudo offline e progresso preservados."
 }
