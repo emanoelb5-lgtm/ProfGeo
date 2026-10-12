@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['downloads/ProfGeo.apk', 'downloads/release.json', '.github/workflows/publish.yml']
+    paths: ['downloads/ProfGeo.apk', 'downloads/release.json', '.github/workflows/publish.yml', 'tools/capture_startup.py', 'tools/verify_startup.py', 'tests/test_capture_startup.py']
 permissions:
   contents: write
 jobs:
@@ -30,6 +30,7 @@ jobs:
           java -jar "$SDK_TOOLS" verify --verbose --print-certs downloads/ProfGeo.apk > /tmp/signature.txt
           python3 tools/verify_release.py /tmp/signature.txt
           python3 -m pip install Pillow
+          python3 -m unittest discover -s tests -p 'test_capture_startup.py'
       - name: Preparar a versão anterior para verificar atualização por cima
         if: steps.apk.outputs.ready == 'true'
         run: |
@@ -58,13 +59,7 @@ jobs:
             adb shell am start -W -n br.com.emanuel.profgeo/.MainActivity
             sleep 7
             adb shell pidof br.com.emanuel.profgeo
-            mkdir -p final-qa
-            adb shell uiautomator dump /sdcard/profgeo-ui.xml
-            adb pull /sdcard/profgeo-ui.xml final-qa/ui.xml
-            adb shell screencap -p /sdcard/profgeo-final.png
-            adb pull /sdcard/profgeo-final.png final-qa/android-home.png
-            adb logcat -d > final-qa/startup.log
-            cat final-qa/ui.xml
+            python3 tools/capture_startup.py final-qa
             python3 tools/verify_startup.py final-qa
       - uses: actions/upload-artifact@v4
         if: always() && steps.apk.outputs.ready == 'true'
