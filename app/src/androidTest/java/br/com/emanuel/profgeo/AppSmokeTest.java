@@ -23,7 +23,7 @@ public class AppSmokeTest {
       assertEquals("15",js(scenario,"JSON.parse(ProfGeoAndroid.getCatalog()).modules.reduce((n,m)=>n+m.units.length,0)"));
       assertEquals("56",js(scenario,"JSON.parse(ProfGeoAndroid.getUnit('1.1')).questions.length"));
       js(scenario,"GeoApp.action('lesson:1.1:l01')");Thread.sleep(500);
-      assertEquals("true",js(scenario,"document.querySelector('canvas').width===320 && document.querySelector('canvas').height===180"));
+      assertEquals("true",js(scenario,"document.querySelector('canvas').width===640 && document.querySelector('canvas').height===360"));
       js(scenario,"document.getElementById('lesson-note').value='Teste de persistência';document.getElementById('lesson-note').dispatchEvent(new Event('input',{bubbles:true}))");
       assertEquals("true",js(scenario,"JSON.parse(ProfGeoAndroid.readState()).notes['1.1:l01']==='Teste de persistência'"));
       assertEquals("true",js(scenario,"document.querySelector('img')===null || document.querySelector('img').src.startsWith('https://appassets.androidplatform.net/')"));

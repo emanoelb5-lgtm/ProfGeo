@@ -6,7 +6,7 @@ test('percurso completo, correção, anotações, redação e restauração',asy
  await expect(page.locator('.lesson-item')).toHaveCount(12);
  await page.locator('.lesson-item').first().click();
  await expect(page.locator('canvas')).toBeVisible();
- const dimensions=await page.locator('canvas').evaluate(c=>[c.width,c.height]);expect(dimensions).toEqual([320,180]);
+ const dimensions=await page.locator('canvas').evaluate(c=>[c.width,c.height]);expect(dimensions).toEqual([640,360]);
  await page.getByRole('button',{name:'Infraestrutura melhorada'}).click();await expect(page.locator('.anim-description')).toContainText('melhoria');
  await page.locator('#lesson-note').fill('O evento natural interage com condições sociais.');
  await page.getByRole('button',{name:/Praticar esta lição/}).click();
@@ -64,4 +64,46 @@ test('capturas do novo visual para revisão',async({page})=>{
  await page.evaluate(()=>GeoApp.action('unit:1.1'));await page.screenshot({path:'dist/ui-unit.png'});
  await page.evaluate(()=>GeoApp.action('lesson:1.1:l01'));await page.screenshot({path:'dist/ui-reader.png'});
  await page.evaluate(()=>GeoApp.action('nav:settings'));await page.locator('#dark-mode').check();await page.evaluate(()=>GeoApp.action('nav:home'));await page.screenshot({path:'dist/ui-home-dark.png'});
+});
+
+test('as sete cenas mantêm escolhas didáticas, detalhes e proporção 16:9',async({page})=>{
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.emulateMedia({reducedMotion:'reduce'});await page.goto('/');
+ const scenes=[['l01','inequality',2],['l03','river',2],['l05','quantitative',2],['l07','lived',3],['l09','mediation',4],['l10','scale',3],['l11','lenses',4]];
+ const fs=require('node:fs');fs.mkdirSync('dist',{recursive:true});
+ for(const [lesson,kind,count] of scenes){
+  await page.evaluate(a=>GeoApp.action(a),'lesson:1.1:'+lesson);
+  const canvas=page.locator('canvas');await canvas.scrollIntoViewIfNeeded();
+  const controls=page.locator('.anim-controls .chip');await expect(controls).toHaveCount(count);
+  expect(await canvas.evaluate(c=>[c.width,c.height])).toEqual([640,360]);
+  let previous=await canvas.evaluate(c=>c.toDataURL());
+  for(let i=1;i<count;i++){
+   await controls.nth(i).click();await expect(controls.nth(i)).toHaveAttribute('aria-pressed','true');
+   await expect(page.locator('.anim-controls [aria-pressed="true"]')).toHaveCount(1);
+   const next=await canvas.evaluate(c=>c.toDataURL());expect(next).not.toBe(previous);previous=next;
+   expect((await page.locator('.anim-description').textContent()).length).toBeGreaterThan(90);
+  }
+  fs.writeFileSync('dist/animation-'+kind+'.png',Buffer.from(previous.split(',')[1],'base64'));
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBeTruthy();
+ }
+ expect(errors).toEqual([]);
+});
+
+test('movimento pausa fora da tela e a redução de movimento conserva a interação',async({page})=>{
+ await page.emulateMedia({reducedMotion:'no-preference'});await page.goto('/');
+ await page.evaluate(()=>GeoApp.action('lesson:1.1:l01'));
+ const canvas=page.locator('canvas');await canvas.scrollIntoViewIfNeeded();
+ const frame=await canvas.evaluate(c=>c.toDataURL());
+ await expect.poll(()=>canvas.evaluate(c=>c.toDataURL())).not.toBe(frame);
+ await page.evaluate(()=>window.scrollTo(0,document.documentElement.scrollHeight));await page.waitForTimeout(150);
+ expect(await canvas.evaluate(c=>{const r=c.getBoundingClientRect();return r.bottom<0||r.top>innerHeight})).toBeTruthy();
+ const hidden=await canvas.evaluate(c=>c.toDataURL());await page.waitForTimeout(180);
+ expect(await canvas.evaluate(c=>c.toDataURL())).toBe(hidden);
+ await canvas.scrollIntoViewIfNeeded();await page.emulateMedia({reducedMotion:'reduce'});
+ await page.waitForTimeout(100);const still=await canvas.evaluate(c=>c.toDataURL());
+ await page.waitForTimeout(180);expect(await canvas.evaluate(c=>c.toDataURL())).toBe(still);
+ await page.getByRole('button',{name:'Infraestrutura melhorada',exact:true}).click();
+ await expect(page.locator('.anim-description')).toContainText('melhoria');
+ expect(await canvas.evaluate(c=>c.toDataURL())).not.toBe(still);
+ await page.evaluate(()=>GeoAnimations.mount(false));await expect(page.locator('.anim-controls .chip')).toHaveCount(2);
 });

@@ -22,6 +22,8 @@ Este repositório contém um aplicativo Android de estudo individual para o ENA 
 
 ## Interface e áreas seguras
 
+- Desde 1.1.1, `animation-art.js` desenha as sete cenas em 640 × 360 (16:9), com cenários em cache. `animations.js` conserva os controles e as explicações e pausa os frames fora da tela ou em segundo plano. Preserve a redução de movimento.
+
 - A partir de 1.1.0, o contêiner nativo `safeRoot` aplica barras do sistema, câmera e teclado e consome os insets. Não reaplique recuos na própria WebView.
 - `body.native-safe-area` zera os recuos CSS de sistema, porque já foram descontados pelo Android. Preserve essa regra para evitar duplicação.
 - `safety.js` mede a altura da navegação flutuante e reserva espaço correspondente no conteúdo. Evite substituir por um espaço fixo, que pode cortar botões com fonte maior ou tela horizontal.

@@ -10,7 +10,11 @@
 Android 8 ou superior · Sem conta · Estudo offline · Conteúdo expansível
 </div>
 
-## Interface renovada — versão 1.1.0
+## Animações mais detalhadas — versão 1.1.1
+
+As sete cenas da unidade 1.1 têm pixel art mais detalhada, com vegetação, construções, sombras, personagens e movimento de barcos, ônibus e chuva. O desenho passa a 640 × 360, sempre em 16:9. Os controles continuam mudando a cena e sua explicação. Tudo funciona offline; a animação pausa fora da tela e respeita a redução de movimento.
+
+## Interface Premium e área segura
 
 Tela inicial com acesso direto ao estudo, cartões de progresso, navegação flutuante e leitura mais confortável nos temas claro e escuro. A área segura é aplicada uma única vez pelo Android, respeitando barras do sistema e recortes da câmera. A navegação reserva seu espaço real e recolhe durante a escrita, mantendo anotações e redações acessíveis ao abrir o teclado.
 
