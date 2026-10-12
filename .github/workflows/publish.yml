@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
       - name: Verificar presença do APK assinado
         id: apk
         run: |
@@ -25,6 +29,38 @@ jobs:
           SDK_TOOLS="$(find "$ANDROID_HOME/build-tools" -name apksigner.jar | sort -V | tail -n 1)"
           java -jar "$SDK_TOOLS" verify --verbose --print-certs downloads/ProfGeo.apk > /tmp/signature.txt
           python3 tools/verify_release.py /tmp/signature.txt
+      - name: Habilitar emulador para testar a instalação final
+        if: steps.apk.outputs.ready == 'true'
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Instalar e abrir o APK assinado
+        if: steps.apk.outputs.ready == 'true'
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          arch: x86_64
+          target: google_apis
+          disable-animations: true
+          script: |
+            adb install -r downloads/ProfGeo.apk
+            adb logcat -c
+            adb shell am start -W -n br.com.emanuel.profgeo/.MainActivity
+            sleep 7
+            adb shell pidof br.com.emanuel.profgeo
+            mkdir -p final-qa
+            adb shell uiautomator dump /sdcard/profgeo-ui.xml
+            adb pull /sdcard/profgeo-ui.xml final-qa/ui.xml
+            adb shell screencap -p /sdcard/profgeo-final.png
+            adb pull /sdcard/profgeo-final.png final-qa/android-home.png
+            adb logcat -d > final-qa/startup.log
+            python3 tools/verify_startup.py final-qa
+      - uses: actions/upload-artifact@v4
+        if: steps.apk.outputs.ready == 'true'
+        with:
+          name: ProfGeo-instalacao-${{ github.run_id }}
+          path: final-qa/
       - name: Publicar download na página de versões
         if: steps.apk.outputs.ready == 'true'
         env:

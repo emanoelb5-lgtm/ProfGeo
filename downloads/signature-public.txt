@@ -1,0 +1,18 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v3.2 scheme (APK Signature Scheme v3.2): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+V3.0 Signer: certificate DN: CN=ProfGeo, OU=Estudo, O=Emanuel Bonfim, C=BR
+V3.0 Signer: certificate SHA-256 digest: cfccadc639798f222b959225b2de81174fbba84ad4288cd0017bf189bdbd7a54
+V3.0 Signer: certificate SHA-1 digest: 8495a9f1addaaba580f29b8b911b03e0249b374a
+V3.0 Signer: certificate MD5 digest: 4e7349d8990676e3935a97274793968d
+V3.0 Signer: key algorithm: RSA
+V3.0 Signer: key size (bits): 3072
+V3.0 Signer: public key SHA-256 digest: 9361245ad20f875d784f9103e649f4ada58deb93be0695f2e65029e63853fadc
+V3.0 Signer: public key SHA-1 digest: e824ba7e97fb7a566222e1746822ff9818a601db
+V3.0 Signer: public key MD5 digest: c353eaa1584cf877e072d467d7ad2865
