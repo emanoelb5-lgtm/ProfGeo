@@ -31,4 +31,31 @@ public class AppSmokeTest {
       assertEquals("true",js(scenario,"GeoApp.getState().notes['1.1:l01']==='Teste de persistência'"));
     }
   }
+  @Test public void downloadedUnitOpensOfflineAndInvalidPackagesAreRejected() throws Exception {
+    android.content.Context ctx=androidx.test.platform.app.InstrumentationRegistry.getInstrumentation().getTargetContext();
+    String source;
+    try(java.io.InputStream in=ctx.getAssets().open("content/units/1.1.json")) {
+      java.io.ByteArrayOutputStream b=new java.io.ByteArrayOutputStream();byte[] buf=new byte[8192];int n;while((n=in.read(buf))!=-1)b.write(buf,0,n);source=b.toString("UTF-8");
+    }
+    org.json.JSONObject fixture=new org.json.JSONObject(source);fixture.put("id","1.2");fixture.put("title","Unidade de teste de expansão");
+    java.io.ByteArrayOutputStream bytes=new java.io.ByteArrayOutputStream();
+    try(java.util.zip.ZipOutputStream z=new java.util.zip.ZipOutputStream(bytes)) {z.putNextEntry(new java.util.zip.ZipEntry("unit.json"));z.write(fixture.toString().getBytes(java.nio.charset.StandardCharsets.UTF_8));z.closeEntry();}
+    java.io.ByteArrayOutputStream attack=new java.io.ByteArrayOutputStream();
+    try(java.util.zip.ZipOutputStream z=new java.util.zip.ZipOutputStream(attack)) {z.putNextEntry(new java.util.zip.ZipEntry("../../outside.json"));z.write("{}".getBytes());z.closeEntry();}
+    try(ActivityScenario<MainActivity> scenario=ActivityScenario.launch(MainActivity.class)) {
+      java.util.concurrent.atomic.AtomicReference<Exception> failure=new java.util.concurrent.atomic.AtomicReference<>();
+      scenario.onActivity(a->{try{java.lang.reflect.Method install=MainActivity.class.getDeclaredMethod("install",String.class,int.class,byte[].class);install.setAccessible(true);install.invoke(a,"1.2",1,bytes.toByteArray());}catch(Exception e){failure.set(e);}});
+      assertNull(failure.get());
+      Thread.sleep(1000);
+      assertEquals("true",js(scenario,"JSON.parse(ProfGeoAndroid.getUnit('1.2')).title==='Unidade de teste de expansão'"));
+      assertEquals("true",js(scenario,"JSON.parse(ProfGeoAndroid.getUnit('1.2'))._base.includes('/content/units/1.2/')"));
+      scenario.onActivity(a->{try{java.lang.reflect.Method install=MainActivity.class.getDeclaredMethod("install",String.class,int.class,byte[].class);install.setAccessible(true);install.invoke(a,"1.2",2,attack.toByteArray());}catch(Exception expected){failure.set(expected);}});
+      assertNotNull(failure.get());
+      assertEquals("1",js(scenario,"JSON.parse(ProfGeoAndroid.getUnit('1.2')).revision"));
+      assertFalse(new java.io.File(ctx.getFilesDir(),"outside.json").exists());
+      scenario.recreate();Thread.sleep(1000);
+      assertEquals("true",js(scenario,"JSON.parse(ProfGeoAndroid.getUnit('1.2')).title==='Unidade de teste de expansão'"));
+    }
+  }
+
 }
