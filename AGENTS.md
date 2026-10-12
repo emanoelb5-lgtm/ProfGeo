@@ -19,3 +19,11 @@ Este repositório contém um aplicativo Android de estudo individual para o ENA 
 - Compile com GitHub Actions, aumente `versionCode` quando atualizar um APK publicado e use a mesma assinatura para instalação por cima. Não mande desinstalar para atualizar.
 - Entregue um link realmente publicado e verificado para `ProfGeo.apk`. Mantenha README e Releases claros.
 - Execute verificações adequadas às mudanças. A suíte atual cobre conteúdo, interações, persistência, tela de celular, instalação de unidade declarativa e rejeição de pacote inválido.
+
+## Interface e áreas seguras
+
+- A partir de 1.1.0, o contêiner nativo `safeRoot` aplica barras do sistema, câmera e teclado e consome os insets. Não reaplique recuos na própria WebView.
+- `body.native-safe-area` zera os recuos CSS de sistema, porque já foram descontados pelo Android. Preserve essa regra para evitar duplicação.
+- `safety.js` mede a altura da navegação flutuante e reserva espaço correspondente no conteúdo. Evite substituir por um espaço fixo, que pode cortar botões com fonte maior ou tela horizontal.
+- Ao abrir o teclado, a navegação e o cabeçalho de leitura recolhem e o campo ativo permanece visível. Não remova os testes de escrita e restauração.
+- Confira alterações de layout em telas de 320 a 915 pixels, com fonte máxima, tema escuro e teclado. A suíte instrumentada também verifica recuos e teclado no Android 11 e 15.
