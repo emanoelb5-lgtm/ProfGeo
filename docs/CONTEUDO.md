@@ -18,6 +18,8 @@ O app lê **conteúdo declarativo**. Não baixa nem executa JavaScript, HTML ou 
 
 Use `content/units/1.1.json` e `content/units/1.2.json` como exemplos funcionais. Campos principais:
 
+A 1.1 foi reescrita na revisão 2: use seu encadeamento entre problema, explicação, caso resolvido, ensino e prática como referência didática. O roteiro está em `docs/UNIDADE_1_1_REFEITA.md`. O pacote r1 da 1.1 é mantido como registro para preservar a identidade e o sentido das questões antigas.
+
 | Campo | Contrato |
 |---|---|
 | `schemaVersion` | `1`; uma mudança de contrato exige versão nova do motor. |

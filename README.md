@@ -10,6 +10,14 @@
 Android 8 ou superior · Sem conta · Estudo offline · Conteúdo expansível
 </div>
 
+## Unidade 1.1 refeita — revisão didática 2
+
+**Concepções teórico-metodológicas da Geografia e seu ensino** foi reescrita como um percurso explicado. Um caso hipotético de acesso à escola conecta as primeiras lições; cada concepção é apresentada pelo problema que enfrenta, pelo raciocínio de sua explicação e pelas consequências para o ensino. O laboratório do Ver-o-Peso permite aplicar as ideias a outro caso. As resoluções mostram como ler enunciados e construir um argumento para a redação.
+
+São **12 lições reescritas**, **12 atividades**, **56 questões de prática**, um **novo simulado com 20 casos** e **24 cartões**. Os termos filosóficos são explicados no contexto dos exemplos. As animações têm perguntas de observação e uma leitura orientada do resultado; imagens e cenas continuam em 16:9.
+
+No aplicativo, abra **Ajustes → Buscar novas unidades** e retome a **1.1 desde a primeira lição**. A revisão chega como conteúdo, sem reinstalação. Anotações, favoritos, redações e o histórico das perguntas anteriores são preservados. [Percurso e referências da revisão](docs/UNIDADE_1_1_REFEITA.md).
+
 ## Nova unidade disponível — 1.2
 
 **Saberes disciplinares, curriculares, saberes da experiência e da ação pedagógica dos docentes**: 12 lições, 60 questões comentadas (40 de prática e 20 no simulado), 24 cartões, 7 atividades de associação ou ordenação e oficina de redação. Inclui duas fotos novas, seis esquemas em 16:9 e quatro cenas interativas, com exemplos de ensino de Geografia e situações do Pará e do campo.
@@ -28,11 +36,11 @@ A atualização mantém o identificador e a assinatura da versão anterior. Inst
 
 ## O que já está no aplicativo
 
-A primeira versão inclui integralmente a **unidade 1.1 do módulo 1: Concepções teórico-metodológicas da Geografia e seu ensino**, correspondente ao item 1.1 do Anexo III do edital de seleção PROFGEO-UFPA n. 03/2026, para ingresso em 2027.
+A **unidade 1.1 do módulo 1: Concepções teórico-metodológicas da Geografia e seu ensino** corresponde ao item 1.1 do Anexo III do edital de seleção PROFGEO-UFPA n. 03/2026, para ingresso em 2027. O APK 1.1.1 inclui a versão inicial; a busca de conteúdo instala a revisão didática 2 descrita acima.
 
 - **12 lições** em sequência, com explicações claras, sínteses e exemplos do cotidiano e do Pará.
-- **56 questões autorais comentadas**: 36 de prática e 20 no simulado da unidade; explicação de todas as alternativas.
-- **18 cartões de conceitos**, atividades de associação e organização de etapas.
+- **76 questões autorais comentadas** na revisão 2: 56 de prática e 20 casos novos no simulado; explicação de todas as alternativas.
+- **24 cartões de conceitos** e **12 atividades** de associação ou organização de etapas.
 - **Animações em pixel art produzidas por código**, com escolhas que mudam a análise. Cenas e imagens em 16:9.
 - **Fotografias reais da internet incluídas no APK**, com autoria, origem e licença. Depois de instalar, não precisam de internet.
 - Progresso salvo, retomada da última lição, favoritos, anotações, histórico e revisão de erros.
@@ -40,7 +48,7 @@ A primeira versão inclui integralmente a **unidade 1.1 do módulo 1: Concepçõ
 - **Oficina de redação**, com 20 linhas de treino, exemplo de texto e autoavaliação; não atribui nota oficial.
 - Fonte ajustável, tema escuro, redução de movimento e cópia/restauração do progresso.
 
-O tempo sugerido para a unidade é de aproximadamente **2h30**, dividido em sessões no seu ritmo. O simulado desta versão abrange a unidade 1.1; ele não representa ainda um simulado completo dos três módulos.
+O tempo sugerido para a unidade revisada é de aproximadamente **3h45**, dividido em sessões no seu ritmo. O simulado abrange a unidade 1.1; não representa um simulado completo dos três módulos.
 
 ## Instalar e começar
 

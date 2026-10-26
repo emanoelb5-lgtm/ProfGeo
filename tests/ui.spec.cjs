@@ -88,8 +88,13 @@ test('percurso completo, correção, anotações, redação e restauração',asy
  await page.locator('.option').nth(0).click();await page.getByRole('button',{name:'Confirmar resposta'}).click();
  await expect(page.locator('.feedback')).toContainText('Vamos entender');
  await expect(page.locator('.option.correct')).toHaveCount(1);
- await page.getByRole('button',{name:/Próxima questão/}).click();await page.locator('.option').nth(1).click();await page.getByRole('button',{name:'Confirmar resposta'}).click();
- await page.getByRole('button',{name:/Próxima questão/}).click();await page.locator('.option').nth(0).click();await page.getByRole('button',{name:'Confirmar resposta'}).click();await page.getByRole('button',{name:'Ver meu resultado'}).click();
+ const total=await page.evaluate(()=>GeoApp.getUnit('1.1').then(u=>u.questions.filter(q=>q.lesson==='l01'&&q.pool==='lesson').length));
+ for(let i=1;i<total;i++){
+  await page.getByRole('button',{name:'Próxima questão',exact:true}).click();
+  const stem=await page.locator('.question-card h2').textContent();const answer=await page.evaluate(stem=>GeoApp.getUnit('1.1').then(u=>u.questions.find(q=>q.stem===stem).answer),stem);
+  await page.locator('.option').nth(answer).click();await page.getByRole('button',{name:'Confirmar resposta'}).click();
+ }
+ await page.getByRole('button',{name:'Ver meu resultado',exact:true}).click();
  const state=await page.evaluate(()=>GeoApp.getState());expect(Object.keys(state.completed)).toHaveLength(1);expect(state.notes['1.1:l01']).toContain('condições');
  await page.getByRole('button',{name:'Ir à oficina de redação'}).click();await page.locator('[data-essayline]').first().fill('O ensino pode ampliar a compreensão de relações espaciais.');await page.locator('[data-rubric]').first().check();
  await page.getByRole('button',{name:'Ajustes',exact:true}).click();await page.locator('#font-size').selectOption('21');await page.locator('#dark-mode').check();
@@ -98,6 +103,32 @@ test('percurso completo, correção, anotações, redação e restauração',asy
  expect(await page.evaluate(()=>GeoApp.getState().essays['1.1'].lines[0])).toContain('relações espaciais');
  expect(errors).toEqual([]);
 });
+test('revisão 2 da 1.1 abre o percurso, as atividades e conserva o caderno',async({page})=>{
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.addInitScript(()=>localStorage.setItem('profgeo.state',JSON.stringify({schemaVersion:1,completed:{'1.1:l01':{at:1}},notes:{'1.1:l01':'Anotação da primeira versão'},favorites:['1.1:l01'],answers:{'1.1:q01':{choice:1,correct:true,attempts:2,lastAt:1}},essays:{'1.1':{lines:['Redação que já estava salva'],rubric:[0,4]}}})));
+ await page.goto('/');await expect(page.getByRole('heading',{name:'Seu próximo passo.',exact:true})).toBeVisible();
+ const unit=await page.evaluate(()=>GeoApp.getUnit('1.1'));expect(unit.revision).toBe(2);
+ for(const lesson of unit.lessons){
+  await page.evaluate(a=>GeoApp.action(a),'lesson:1.1:'+lesson.id);
+  await expect(page.getByRole('heading',{name:lesson.title,exact:true})).toBeVisible();
+  if(lesson.practice.type==='match'){
+   for(let i=0;i<lesson.practice.pairs.length;i++)await page.locator(`[data-match="${i}"]`).selectOption(lesson.practice.pairs[i][1]);
+   await page.getByRole('button',{name:'Conferir associações'}).click();
+  }else{
+   for(let i=0;i<lesson.practice.items.length;i++)await page.locator(`[data-order="${i}"]`).fill(String(i+1));
+   await page.getByRole('button',{name:'Conferir sequência'}).click();
+  }
+  await expect(page.locator('#practice-result')).toContainText('Você relacionou todas as ideias.');
+  for(const image of await page.locator('figure img').all()){
+   await image.scrollIntoViewIfNeeded();await expect.poll(()=>image.evaluate(i=>i.complete&&i.naturalWidth>0)).toBeTruthy();
+   expect(await image.evaluate(i=>i.naturalWidth*9===i.naturalHeight*16)).toBe(true);
+  }
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBeTruthy();
+ }
+ const state=await page.evaluate(()=>GeoApp.getState());expect(state.notes['1.1:l01']).toBe('Anotação da primeira versão');expect(state.completed['1.1:l01'].at).toBe(1);expect(state.answers['1.1:q01'].correct).toBe(true);expect(state.essays['1.1'].lines[0]).toBe('Redação que já estava salva');expect(state.favorites).toContain('1.1:l01');
+ await page.evaluate(()=>GeoApp.action('essay:1.1'));await expect(page.locator('[data-essayline]').first()).toHaveValue('Redação que já estava salva');await expect(page.locator('[data-rubric="4"]')).toBeChecked();expect(errors).toEqual([]);
+});
+
 test('simulado de 20 questões, exercício de associação e conteúdo seguro',async({page})=>{
  await page.goto('/');await page.evaluate(()=>GeoApp.action('lesson:1.1:l02'));await expect(page.locator('[data-match]')).toHaveCount(4);
  await page.getByRole('button',{name:'Conferir associações'}).click();await expect(page.locator('#practice-result')).toContainText('0 de 4');

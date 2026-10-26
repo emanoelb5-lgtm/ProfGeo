@@ -21,14 +21,18 @@ public class AppSmokeTest {
       for(int i=0;i<40;i++){ready=js(scenario,"typeof GeoApp !== 'undefined' && !!GeoApp.getState() && document.querySelector('h1').textContent.includes('Seu próximo passo')");if("true".equals(ready))break;Thread.sleep(250);}
       assertEquals("true",ready);
       assertEquals("15",js(scenario,"JSON.parse(ProfGeoAndroid.getCatalog()).modules.reduce((n,m)=>n+m.units.length,0)"));
-      assertEquals("56",js(scenario,"JSON.parse(ProfGeoAndroid.getUnit('1.1')).questions.length"));
+      assertEquals("76",js(scenario,"JSON.parse(ProfGeoAndroid.getUnit('1.1')).questions.length"));
+      assertEquals("2",js(scenario,"JSON.parse(ProfGeoAndroid.getUnit('1.1')).revision"));
       js(scenario,"GeoApp.action('lesson:1.1:l01')");Thread.sleep(500);
       assertEquals("true",js(scenario,"document.querySelector('canvas').width===640 && document.querySelector('canvas').height===360"));
+      js(scenario,"GeoApp.getState().answers['1.1:q01']={choice:1,correct:true,attempts:2,lastAt:1};GeoApp.getState().essays['1.1']={lines:['Texto anterior à revisão didática'],rubric:[0,4]}");
       js(scenario,"document.getElementById('lesson-note').value='Teste de persistência';document.getElementById('lesson-note').dispatchEvent(new Event('input',{bubbles:true}))");
       assertEquals("true",js(scenario,"JSON.parse(ProfGeoAndroid.readState()).notes['1.1:l01']==='Teste de persistência'"));
       assertEquals("true",js(scenario,"document.querySelector('img')===null || document.querySelector('img').src.startsWith('https://appassets.androidplatform.net/')"));
       scenario.recreate();Thread.sleep(1200);
       assertEquals("true",js(scenario,"GeoApp.getState().notes['1.1:l01']==='Teste de persistência'"));
+      assertEquals("true",js(scenario,"GeoApp.getState().answers['1.1:q01'].correct===true && GeoApp.getState().answers['1.1:q01'].choice===1"));
+      assertEquals("true",js(scenario,"GeoApp.getState().essays['1.1'].lines[0]==='Texto anterior à revisão didática'"));
     }
   }
   @Test public void downloadedUnitOpensOfflineAndInvalidPackagesAreRejected() throws Exception {

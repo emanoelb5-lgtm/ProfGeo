@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "minAppVersion": 1,
-  "revision": 2,
-  "updatedAt": "2026-10-12",
+  "revision": 3,
+  "updatedAt": "2026-10-26",
   "source": {
     "title": "Edital PROFGEO-UFPA n. 03/2026",
     "annex": "III",
@@ -26,10 +26,10 @@
           "title": "Concepções teórico-metodológicas da Geografia e seu ensino",
           "editalItem": "1.1",
           "status": "published",
-          "revision": 1,
-          "package": "packages/1.1-r1.zip",
-          "sha256": "0d4ac79b85d0857e5f23129da9ebcee9a86af26864b1e4972897497bc84bf74a",
-          "bytes": 436193
+          "revision": 2,
+          "package": "packages/1.1-r2.zip",
+          "sha256": "e70370e03ae34d053fce834c499a5ca1b346bf2ddc82c07ff9d9593f9147ba43",
+          "bytes": 454753
         },
         {
           "id": "1.2",

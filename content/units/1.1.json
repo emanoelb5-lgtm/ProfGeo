@@ -2,106 +2,171 @@
   "schemaVersion": 1,
   "id": "1.1",
   "moduleId": "1",
-  "revision": 1,
+  "revision": 2,
   "title": "Concepções teórico-metodológicas da Geografia e seu ensino",
-  "shortTitle": "Como a Geografia explica o mundo",
-  "subtitle": "Da leitura do espaço às escolhas que fazem o aluno aprender.",
+  "shortTitle": "Aprender a pensar e ensinar Geografia",
+  "subtitle": "Um percurso explicado: problema, concepção, exemplo resolvido, ensino e treino para a prova.",
   "editalItem": "1.1",
-  "estimatedMinutes": 147,
+  "estimatedMinutes": 226,
   "objectives": [
-    "Distinguir teoria, método e recurso de ensino.",
-    "Comparar correntes e reconhecer seus alcances e limites.",
-    "Relacionar concepções a situações de Geografia escolar.",
-    "Argumentar com conceitos e exemplos didáticos."
+    "Distinguir informação, explicação, teoria, método, metodologia de ensino e recurso.",
+    "Compreender o raciocínio de concepções geográficas, com seus alcances e limites.",
+    "Comparar concepções por problemas, fontes e explicações, sem rótulos automáticos.",
+    "Analisar a mediação e as evidências de aprendizagem em uma aula de Geografia.",
+    "Resolver casos e construir um argumento com conceito, intervenção e exemplo analisado."
   ],
   "lessons": [
     {
       "id": "l01",
-      "title": "Para que aprender Geografia?",
-      "kicker": "Comece pelo cotidiano",
-      "minutes": 7,
+      "title": "Da informação à explicação geográfica",
+      "kicker": "Qual problema vamos aprender a explicar?",
+      "minutes": 13,
       "blocks": [
         {
           "type": "text",
-          "body": "Imagine duas comunidades próximas de um rio. Uma dispõe de saneamento e acesso seguro à escola. Na outra, uma chuva intensa interrompe o caminho dos estudantes. Saber o nome do rio é útil, mas não explica essa diferença. Precisamos relacionar natureza, sociedade, decisões públicas e formas de ocupar o espaço."
+          "title": "O fio que vai ligar a unidade",
+          "body": "Você vai estudar maneiras de compreender o espaço e as consequências dessas escolhas para o ensino. A pergunta central é: por que olhar o mesmo lugar pode produzir explicações e aulas diferentes? Ao final, você deverá conseguir analisar uma proposta de ensino e justificar a concepção que a orienta.\nVamos acompanhar uma situação inventada: duas comunidades vivem próximas de um rio e seus alunos precisam chegar à escola no período chuvoso. Em uma área, há acesso estruturado; na outra, o trajeto apresenta mais obstáculos. A chuva é parte do problema, mas a diferença entre os acessos pede uma explicação. Este caso didático não é um diagnóstico de uma comunidade real."
+        },
+        {
+          "type": "text",
+          "title": "Informar e explicar são trabalhos diferentes",
+          "body": "Uma informação responde, por exemplo, qual é o rio ou onde fica a escola. Uma explicação procura mostrar relações: como o trajeto, a chuva, o transporte e as condições da via participam da dificuldade de chegar à escola. A informação pode ser correta e necessária sem, ainda, responder ao problema.\nPense em uma fotografia de uma estrada com água. Ela permite observar uma condição naquele registro. Para explicar os acessos diferentes, precisamos investigar também usos da via, obras e decisões. A diferença entre observar e explicar será importante em todas as concepções estudadas."
+        },
+        {
+          "type": "callout",
+          "title": "Antes de mexer na cena",
+          "body": "Preveja: se a chuva continuar igual e uma condição de acesso melhorar, o efeito sobre o trajeto precisa permanecer o mesmo? Formule sua hipótese antes de escolher “Infraestrutura melhorada”.",
+          "tone": "tip"
         },
         {
           "type": "animation",
           "kind": "inequality",
-          "title": "Uma chuva, duas condições",
-          "caption": "Mude a infraestrutura da cena e observe como o mesmo evento natural pode ter efeitos diferentes. Cena hipotética: não representa um diagnóstico de uma comunidade real."
+          "title": "Uma chuva, duas condições de acesso",
+          "caption": "Compare “Acesso vulnerável” e “Infraestrutura melhorada”. Observe o que muda na via e na circulação. A cena é hipotética: ilustra uma relação, sem calcular riscos nem garantir que uma obra resolva todo problema."
         },
         {
           "type": "text",
-          "body": "A Geografia escolar ajuda o estudante a interpretar onde os fenômenos acontecem, por que se distribuem de determinado modo e como lugares diferentes se relacionam. É uma formação para compreender e agir no mundo. O conteúdo não se resume a capitais, relevo ou localização."
+          "title": "Leia o resultado com raciocínio",
+          "body": "A melhoria representada altera uma condição do acesso, enquanto o evento natural continua fazendo parte da situação. Portanto, a dificuldade não pode ser atribuída apenas à presença da chuva. É necessário relacionar condições naturais e formas de organização do espaço.\nO raciocínio foi: identificar o problema, comparar condições, observar uma diferença e formular uma explicação que considere a relação entre elas. Isso é mais consistente que concluir “a chuva explica tudo” ou “a natureza não importa”."
+        },
+        {
+          "type": "compare",
+          "title": "Uma primeira questão resolvida",
+          "left": {
+            "title": "Resposta incompleta",
+            "body": "“As aulas são prejudicadas porque chove.” Identifica um fator, mas não explica por que trajetos próximos podem apresentar dificuldades diferentes."
+          },
+          "right": {
+            "title": "Resposta ampliada",
+            "body": "“A chuva interage com as condições das vias e dos transportes. Para entender os acessos, precisamos comparar essas condições e investigar como foram constituídas.”"
+          }
+        },
+        {
+          "type": "text",
+          "title": "Por que isso muda o ensino?",
+          "body": "Se o objetivo for nomear o rio, o professor pode verificar o reconhecimento do nome. Se for explicar diferenças de acesso, precisará propor comparações, oferecer fontes e pedir justificativas. A maneira de compreender o espaço participa, assim, da escolha do que o estudante deverá aprender a fazer.\nNomes e localizações ajudam a situar a investigação. O limite aparece quando a aula termina na lista e não ensina a estabelecer relações."
         },
         {
           "type": "callout",
-          "title": "Sua pergunta de partida",
-          "body": "Como uma maneira de interpretar o espaço influencia uma aula de Geografia? Essa pergunta acompanha toda a unidade.",
+          "title": "Transfira a ideia",
+          "body": "Troque a escola por uma feira: saber o nome da estrada explica sozinho a chegada dos produtos? Não. Precisamos relacionar trajetos, condições de circulação e abastecimento. Você usou o mesmo raciocínio em outra situação.",
           "tone": "tip"
         },
         {
-          "type": "list",
-          "title": "Ao final desta unidade, você conseguirá",
-          "items": [
-            "Distinguir uma teoria geográfica de uma técnica de ensino.",
-            "Reconhecer perspectivas tradicionais, quantitativas, críticas, humanísticas e culturais.",
-            "Relacionar essas perspectivas a decisões de ensino, sem reduzir a aula a rótulos.",
-            "Construir um argumento curto sobre ensino de Geografia com conceito e exemplo."
-          ]
+          "type": "text",
+          "title": "Seu percurso",
+          "body": "Na lição 2, você vai dar nome às escolhas que acabamos de fazer: teoria, método, metodologia de ensino e recurso. Nas lições 3 a 8, vai comparar concepções. Depois, vai transformar essa compreensão em uma aula, investigar outro lugar e resolver situações de prova. Ao terminar cada leitura, explique a ideia com suas palavras antes da prática."
         }
       ],
-      "summary": "Geografia escolar articula conhecimentos para interpretar relações espaciais. Localizar é um passo; explicar e relacionar também são necessários."
+      "summary": "Uma informação localiza ou descreve; uma explicação relaciona condições e processos. Uma concepção geográfica orienta o que buscamos explicar e quais relações o aluno será ajudado a construir.",
+      "practice": {
+        "type": "order",
+        "title": "Reconstrua o raciocínio do caso",
+        "items": [
+          "Identificar que o problema é a diferença de acesso à escola.",
+          "Comparar chuva, trajetos e condições das vias.",
+          "Relacionar o evento natural à organização do acesso.",
+          "Justificar a explicação e indicar o que ainda precisa ser investigado."
+        ]
+      }
     },
     {
       "id": "l02",
-      "title": "Teoria, método e recurso",
-      "kicker": "Entenda os termos do edital",
-      "minutes": 8,
+      "title": "Teoria, método e ensino: o que muda?",
+      "kicker": "Dê sentido aos termos do edital",
+      "minutes": 16,
       "blocks": [
         {
           "type": "text",
-          "body": "Concepção teórica é a maneira de compreender o objeto estudado: o que consideramos importante e como explicamos suas relações. Uma perspectiva crítica, por exemplo, pergunta como relações de poder e produção participam da organização do espaço."
+          "title": "Agora podemos nomear nossas escolhas",
+          "body": "Na lição anterior, você percebeu que “chove” não explica sozinho os acessos diferentes. Ao procurar infraestrutura, transporte e decisões, passou a escolher relações importantes para compreender o espaço. Essa escolha tem uma dimensão teórica. Teoria não é um palpite pessoal: envolve conceitos e argumentos para construir e discutir explicações.\nUma concepção teórico-metodológica reúne uma maneira de compreender o objeto e um modo de investigá-lo. A parte teórica ajuda a perguntar o que conta na explicação; a metodológica ajuda a justificar como se chega a ela. O título do edital pede, assim, mais que reconhecer nomes de correntes."
         },
         {
           "type": "text",
-          "body": "Método é o caminho de investigação e interpretação. Inclui como formular problemas, construir relações e avaliar explicações. Metodologia de ensino organiza as condições para o aluno aprender: objetivos, perguntas, atividades, mediação e avaliação."
+          "title": "Método: como sustentar a explicação?",
+          "body": "Suponha que investigamos se diferenças nas vias participam da dificuldade de chegar à escola. Precisamos definir o que comparar, quais fontes consultar e como confrontar a hipótese com as informações. Um relato indica uma dificuldade; mapas, registros e outras observações ajudam a examinar seu alcance.\nEsse caminho faz parte do método. Ele não é apenas a lista “entrevista, fotografia e mapa”: essa lista reúne procedimentos ou fontes. O método envolve a lógica que dá sentido à escolha e à interpretação deles."
         },
         {
           "type": "table",
-          "title": "Três decisões diferentes",
+          "title": "Siga uma decisão de ponta a ponta",
           "headers": [
-            "Decisão",
-            "Exemplo"
+            "Plano da decisão",
+            "Aplicação ao caso"
           ],
           "rows": [
             [
-              "O que quero compreender?",
-              "Desigualdade no acesso à cidade."
+              "Teoria: como compreender o espaço?",
+              "Investigar como decisões sociais e condições materiais participam dos acessos desiguais."
             ],
             [
-              "Como vou investigar e interpretar?",
-              "Relacionar moradia, transporte, renda e políticas em diferentes escalas."
+              "Método: como investigar?",
+              "Comparar trajetos, examinar sua história e confrontar fontes sobre circulação e infraestrutura."
             ],
             [
-              "Como vou ensinar?",
-              "Comparar mapas e relatos, formular hipóteses e discutir evidências."
+              "Metodologia de ensino: como ajudar a aprender?",
+              "Pedir uma hipótese, orientar a comparação e discutir as explicações construídas pela turma."
+            ],
+            [
+              "Recurso: com que apoio?",
+              "Mapa dos trajetos, fotografias, tabela e relatos."
             ]
           ]
         },
         {
+          "type": "compare",
+          "title": "A mesma ferramenta, duas aulas",
+          "left": {
+            "title": "Uso 1 do mapa",
+            "body": "A turma copia nomes das vias e a posição da escola. O mapa apoia uma tarefa de identificação."
+          },
+          "right": {
+            "title": "Uso 2 do mapa",
+            "body": "A turma compara acessos, relaciona condições das vias e justifica diferenças. O mapa participa de uma investigação explicativa."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Resolva a confusão mais frequente",
+          "body": "Ser digital não diz qual concepção orienta o mapa. Uma tabela pode apoiar um modelo de distribuição ou uma análise crítica da desigualdade. Uma entrevista pode investigar vivências do lugar ou fornecer dados sobre relações de trabalho. A diferença está no problema e na função das informações na explicação.\nUma exposição do professor também não impede, por si só, a aprendizagem ativa. Ele pode explicar um conceito para que os alunos o usem em uma comparação. Analise o conjunto da proposta, não apenas um recurso ou um momento isolado."
+        },
+        {
+          "type": "text",
+          "title": "Dois termos que agora fazem sentido",
+          "body": "Epistemologia é a reflexão sobre como produzimos e justificamos conhecimento. Perguntar “por que uma fotografia permite observar o trajeto, mas não provar a causa da desigualdade?” é enfrentar um problema epistemológico. O termo nomeia uma reflexão sobre evidência e explicação que você já começou a fazer.\nParadigma se refere a um quadro de referências compartilhadas que orienta problemas e formas de explicação em uma comunidade científica. Ajuda a compreender por que certos modos de pesquisar se fortalecem e passam a ser questionados. Não significa que todos os pesquisadores de uma época pensem igual."
+        },
+        {
           "type": "callout",
-          "title": "Um recurso não define a concepção",
-          "body": "Mapa, aula expositiva, fotografia, aplicativo e saída de campo podem servir a perspectivas distintas. O que diferencia a proposta é o problema, a explicação construída e a participação intelectual do estudante.",
+          "title": "Verificação com resposta explicada",
+          "body": "“Vou organizar um debate com a turma.” Isso define uma concepção geográfica? Ainda não. Define parte de uma estratégia de ensino. Para analisar a concepção, precisamos saber qual problema será debatido e com quais conceitos, fontes e relações.",
           "tone": "tip"
         },
         {
           "type": "text",
-          "body": "Epistemologia é a reflexão sobre como o conhecimento é produzido, justificado e limitado. Paradigma é um conjunto de referências que orienta perguntas e explicações em uma comunidade científica. Aqui, esses termos ajudam a entender as correntes sem exigir decorar definições isoladas."
+          "title": "Ponte para as próximas lições",
+          "body": "Para cada concepção, procure três respostas: qual problema ela destaca, como constrói sua explicação e que aprendizagem pode orientar na escola. Esse encadeamento permitirá comparar natureza, regiões, modelos, produção do espaço e experiência do lugar."
         }
       ],
-      "summary": "Pergunte sempre: qual interpretação do espaço orienta a aula, como a investigação é feita e o que o aluno precisa aprender?",
+      "summary": "Teoria orienta a compreensão; método organiza a investigação; metodologia de ensino organiza a aprendizagem; recurso oferece apoio. Eles se articulam, mas um mapa ou um debate não define sozinho a concepção.",
       "practice": {
         "type": "match",
         "title": "Associe a decisão ao seu papel",
@@ -127,261 +192,584 @@
     },
     {
       "id": "l03",
-      "title": "A formação da Geografia moderna",
-      "kicker": "Natureza e ação humana",
-      "minutes": 10,
+      "title": "Natureza e sociedade: determinismo e possibilismo",
+      "kicker": "Uma condição natural é um destino social?",
+      "minutes": 20,
       "blocks": [
         {
           "type": "text",
-          "body": "Na consolidação da Geografia moderna, especialmente no século XIX, cresceram os estudos sistemáticos de relações entre sociedades e natureza, distribuição de fenômenos e diferenças entre regiões. Esses estudos ocorreram em contextos de expansão dos Estados nacionais e de projetos coloniais. Não formavam uma única teoria homogênea."
+          "title": "Retome nossa primeira explicação",
+          "body": "Agora analise a resposta: “As comunidades próximas ao rio terão sempre a mesma dificuldade porque o ambiente decide sua vida”. Ela reconhece o rio, mas transforma uma condição em resultado inevitável. Como explicaria grupos que usam técnicas e organizam acessos diferentes?\nEssa dificuldade ajuda a compreender o debate entre determinismo ambiental e possibilismo, tradicionalmente apresentado no estudo da Geografia moderna. Primeiro entenda a lógica; depois situe os nomes históricos."
         },
         {
           "type": "text",
-          "body": "Determinismo ambiental é o nome usual de explicações que atribuem ao meio natural um poder decisivo sobre características sociais. É problemático transformar clima ou relevo em destino das populações. A tradição associou esse debate a Friedrich Ratzel, mas sua obra é mais complexa do que a caricatura de que o clima explica tudo."
+          "title": "Por que esse debate surgiu?",
+          "body": "No século XIX, a Geografia se institucionalizou em universidades, sociedades científicas e sistemas de ensino, em contextos de formação dos Estados nacionais e expansão colonial. Conhecer territórios, comparar áreas e explicar relações entre sociedade e natureza eram problemas importantes. Esse contexto ajuda a compreender as perguntas, sem tornar todas as obras daquela época iguais.\nAs histórias da ciência e da disciplina escolar se relacionam, mas a escola não é apenas uma cópia posterior de uma teoria universitária. Finalidades educativas e mediação também participam da construção do conteúdo escolar, como veremos na lição 9."
+        },
+        {
+          "type": "compare",
+          "title": "Duas lógicas de explicação",
+          "left": {
+            "title": "Determinismo ambiental",
+            "body": "Uma condição natural é tomada como causa decisiva de características sociais. O limite é tratá-la como destino e reduzir a análise das mediações históricas e sociais."
+          },
+          "right": {
+            "title": "Possibilismo",
+            "body": "O meio oferece condições e possibilidades, mobilizadas de modos distintos por grupos humanos, por técnicas e práticas historicamente constituídas."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Autores e contexto, sem caricaturas",
+          "body": "Friedrich Ratzel é tradicionalmente associado ao debate determinista; Paul Vidal de la Blache, à escola francesa e ao possibilismo. Essas associações são referências de estudo, não resumos suficientes de toda a obra de cada autor. Nem toda consideração da natureza é determinismo; possibilismo não quer dizer que a sociedade pode fazer qualquer coisa.\nA noção de gêneros de vida, associada à tradição vidaliana, ajuda a estudar formas de relação entre grupos e meio por práticas e técnicas constituídas ao longo do tempo. Não significa um modo de vida imutável, nem elimina limitações materiais."
+        },
+        {
+          "type": "callout",
+          "title": "Use a cena para testar uma explicação",
+          "body": "Em “Rio como destino”, identifique a relação que foi apagada. Depois mude para “Rio + práticas sociais” e explique por que a presença do mesmo rio não obriga todos os grupos a organizar a vida da mesma maneira.",
+          "tone": "tip"
         },
         {
           "type": "animation",
           "kind": "river",
-          "title": "O rio não decide sozinho",
-          "caption": "Alterne entre uma explicação que transforma o rio em destino e outra que considera escolhas, técnicas e organização social."
+          "title": "O rio participa da vida, mas não a decide sozinho",
+          "caption": "Compare as técnicas e práticas representadas. Os cenários hipotéticos ajudam a distinguir condição natural, mediação técnica e explicação de destino inevitável."
         },
         {
           "type": "text",
-          "body": "Possibilismo é a designação tradicionalmente associada à escola francesa e a Paul Vidal de la Blache. Destaca que o meio oferece condições e possibilidades, mobilizadas por grupos humanos por meio de práticas e técnicas. “Gêneros de vida” ajuda a pensar modos de vida historicamente constituídos. Isso não significa liberdade ilimitada diante da natureza."
+          "title": "Caso resolvido: “o clima explica o atraso”",
+          "body": "Primeiro, identifique o resultado que a frase tenta explicar: uma condição social definida como “atraso”. Segundo, identifique a causa apresentada: o clima. Terceiro, examine “inevitável”: essa palavra dispensa investigar história, acesso à terra, técnicas, trabalho e decisões políticas. O defeito está na redução, não no simples fato de mencionar o clima.\nUma resposta mais consistente reconhece as condições naturais e investiga como se combinam a processos sociais. Não precisa afirmar que chuva e relevo não importam. Condicionar uma atividade e determinar sozinho sua organização são afirmações diferentes."
+        },
+        {
+          "type": "text",
+          "title": "Transforme a compreensão em uma aula",
+          "body": "O professor pode apresentar dois usos distintos das margens de um rio e pedir hipóteses. Orienta a comparação de técnicas, trajetos e organização, usando fontes além da imagem. A aprendizagem aparece quando o aluno deixa de repetir “é assim porque tem rio” e consegue explicar as mediações.\nEm uma questão, associe a concepção com base nesse motivo. O nome decorado, sem a lógica da explicação, deixa o conhecimento frágil diante de um caso novo."
         },
         {
           "type": "callout",
-          "title": "Como isso aparece em uma questão",
-          "body": "“O clima torna inevitável o atraso” é uma pista determinista e naturaliza relações sociais. “Grupos usam técnicas distintas diante de condições semelhantes” destaca mediações e possibilidades.",
+          "title": "Ligação com a lição 4",
+          "body": "Para comparar usos das margens, precisamos observar, descrever e definir critérios. Como esses procedimentos podem contribuir para explicar as áreas, sem terminar em uma lista?",
           "tone": "tip"
-        },
-        {
-          "type": "text",
-          "body": "Na escola, não basta reconhecer o rótulo. Explique por que uma justificativa é inadequada: ela apaga história, relações de poder, técnicas e escolhas políticas. A natureza condiciona a vida; não autoriza hierarquizar povos nem declarar inevitáveis as desigualdades."
         }
       ],
-      "summary": "Condições naturais importam, mas não determinam sozinhas sociedades. Determinismo e possibilismo são referências históricas, não descrições completas das obras de seus autores."
+      "summary": "Determinismo ambiental transforma condições naturais em resultados sociais necessários. O possibilismo destaca condições, técnicas e práticas históricas, sem supor liberdade ilimitada. O nome do autor não substitui a análise da explicação.",
+      "practice": {
+        "type": "match",
+        "title": "Qual ideia está sendo enfatizada?",
+        "pairs": [
+          [
+            "O clima tornaria inevitável uma característica social.",
+            "Lógica determinista"
+          ],
+          [
+            "Condições semelhantes são mobilizadas de maneiras distintas.",
+            "Lógica possibilista"
+          ],
+          [
+            "Modos de relação com o meio se constituem em práticas históricas.",
+            "Gêneros de vida"
+          ],
+          [
+            "A obra de um autor não cabe em uma frase de manual.",
+            "Cuidado com a simplificação histórica"
+          ]
+        ]
+      }
     },
     {
       "id": "l04",
-      "title": "Descrição e Geografia regional",
-      "kicker": "O alcance e o limite do inventário",
-      "minutes": 8,
+      "title": "Descrever e comparar regiões",
+      "kicker": "Quando observar ajuda a explicar?",
+      "minutes": 16,
       "blocks": [
         {
           "type": "text",
-          "body": "Sob o nome “Geografia tradicional” são agrupadas tradições diversas. São recorrentes a descrição, a observação, a classificação e a diferenciação de áreas. A abordagem regional procura compreender combinações de características em determinados recortes, e não apenas listar elementos isolados."
+          "title": "A descrição é um começo necessário",
+          "body": "Na lição 3, você comparou relações com o meio. Antes de explicar uma diferença, alguém precisa observar o que se parece e o que varia. Descrever é produzir uma apresentação organizada do objeto estudado.\nO limite surge quando a descrição vira explicação completa. Dizer que uma área possui rio, estrada e feira identifica elementos. Falta perguntar como se articulam: de que modo as condições dos acessos participam do abastecimento da feira, por exemplo."
         },
         {
           "type": "text",
-          "body": "Na escola, uma prática tradicional frequentemente se expressa em inventários: enumerar rios, cidades, atividades econômicas e formas de relevo. Esse conhecimento pode ser útil. O limite aparece quando a aula para na enumeração e não investiga processos, conflitos e relações entre lugares."
+          "title": "O que se chama Geografia tradicional?",
+          "body": "A expressão reúne tradições diferentes. Observação, descrição, classificação e diferenciação de áreas são aspectos recorrentes. A Geografia regional procurou compreender combinações de características de áreas, não apenas escrever inventários sem relação. Uma prática escolar de memorização pode ser criticada sem reduzir toda essa produção científica a uma lista.\nEmpirismo destaca a importância da experiência e da observação na produção do conhecimento. O positivismo, influente em parte desse debate, valoriza o estudo de fatos e relações observáveis. Não são dois nomes intercambiáveis para toda a Geografia tradicional. O problema de uma descrição limitada aparece quando os dados parecem falar sozinhos: reunir características não explica automaticamente sua organização."
         },
         {
           "type": "compare",
-          "title": "Da descrição para a explicação",
+          "title": "Passe do inventário ao problema",
           "left": {
-            "title": "Inventário",
-            "body": "A comunidade tem um rio, uma escola, uma estrada e uma feira."
+            "title": "Inventário inicial",
+            "body": "“Há três comunidades, duas escolas, uma estrada e um rio.” São elementos que podem integrar a análise."
           },
           "right": {
-            "title": "Problema geográfico",
-            "body": "Como as condições da estrada influenciam a circulação da produção e o acesso à escola ao longo do ano?"
+            "title": "Pergunta explicativa",
+            "body": "“Como os acessos conectam as comunidades às escolas, e quais diferenças aparecem no período chuvoso?” Agora os elementos entram em relações."
           }
         },
         {
           "type": "text",
-          "body": "Comparar regiões exige declarar os critérios de recorte. Regiões climáticas e regiões definidas por redes urbanas podem ter limites diferentes. A ideia de região é uma forma de organização e interpretação do espaço, não uma caixa natural válida para qualquer pergunta."
+          "title": "Região: um recorte precisa de critério",
+          "body": "Organize comunidades segundo o principal acesso à escola: fluvial ou terrestre. Esse é um critério. Se o critério mudar para participação em um circuito de comercialização, os agrupamentos podem mudar: comunidades com acessos distintos podem vender na mesma feira.\nO limite da região depende também do problema que orienta o recorte. Isso não torna qualquer divisão igualmente adequada. É necessário explicitar o critério, mostrar as informações utilizadas e verificar se o recorte ajuda a compreender o fenômeno."
+        },
+        {
+          "type": "table",
+          "title": "Exercício resolvido de regionalização",
+          "headers": [
+            "Decisão",
+            "Por que ela importa"
+          ],
+          "rows": [
+            [
+              "Pergunta: como se organiza o acesso à escola?",
+              "Define o fenômeno a analisar."
+            ],
+            [
+              "Critério: principal rede de acesso utilizada.",
+              "Permite justificar o agrupamento."
+            ],
+            [
+              "Fontes: trajetos, mapas e relatos confrontados.",
+              "Sustentam e permitem discutir o recorte."
+            ],
+            [
+              "Novo critério: circuito de abastecimento.",
+              "Pode produzir outra regionalização, adequada a outra pergunta."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Como isso aparece no ensino?",
+          "body": "A tarefa pode começar por localizar comunidades e classificar trajetos. O professor pede, então, a justificativa do agrupamento e sua comparação com outro critério. O aluno aprende a organizar informações e a compreender que representar uma região envolve escolhas fundamentadas.\nSe a tarefa termina em decorar uma divisão como a única possível, a aprendizagem fica restrita. A diferença entre as propostas é o trabalho intelectual solicitado, não a presença de um mapa regional."
         },
         {
           "type": "callout",
-          "title": "Não transforme descrição em inimiga",
-          "body": "Observar e descrever fornecem evidências. Uma boa análise usa esses passos para construir explicações; não precisa abandonar os nomes e os fatos.",
+          "title": "Explique sem olhar a tabela",
+          "body": "Por que regiões climáticas e áreas de influência de uma cidade podem ter limites diferentes? Porque seus critérios e relações de análise diferem. Uma mudança de limite não prova que um dos mapas esteja errado.",
           "tone": "tip"
-        }
-      ],
-      "summary": "Descrição e classificação são úteis. A aprendizagem fica limitada quando o inventário substitui a investigação das relações espaciais."
-    },
-    {
-      "id": "l05",
-      "title": "A perspectiva teórico-quantitativa",
-      "kicker": "Padrões, modelos e medidas",
-      "minutes": 9,
-      "blocks": [
-        {
-          "type": "text",
-          "body": "A Geografia teórico-quantitativa ganhou força a partir de meados do século XX. Busca explicar padrões de distribuição e organização espacial com modelos, hipóteses, relações matemáticas e procedimentos estatísticos. Uma influência importante é o neopositivismo. A finalidade não é apenas contar, mas construir e testar explicações."
         },
         {
           "type": "text",
-          "body": "Imagine medir o tempo de viagem entre comunidades e escolas. Um mapa permite identificar concentração de trajetos longos; um modelo pode relacionar tempo, distância e acesso por estrada ou rio. Isso contribui para avaliar padrões espaciais."
+          "title": "A pergunta que abre a lição 5",
+          "body": "Alguns geógrafos buscaram ir além da descrição de cada área para explicar regularidades entre muitas áreas. Para isso, enfatizaram modelos, hipóteses e medidas. Agora vamos entender como esses elementos constroem uma investigação."
+        }
+      ],
+      "summary": "Observar e descrever ajudam a construir o problema. Regionalizar exige critérios e fontes. A aprendizagem avança quando o aluno justifica o recorte e relaciona processos, em vez de apenas decorar um inventário.",
+      "practice": {
+        "type": "match",
+        "title": "Relacione cada decisão à sua função",
+        "pairs": [
+          [
+            "Identificar rios, escolas e vias.",
+            "Descrição inicial"
+          ],
+          [
+            "Agrupar áreas pelo principal acesso utilizado.",
+            "Critério de regionalização"
+          ],
+          [
+            "Explicar a relação entre acesso e circulação.",
+            "Análise de relações"
+          ],
+          [
+            "Considerar o recorte o único possível para qualquer pergunta.",
+            "Limite a ser revisto"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l05",
+      "title": "Modelos e padrões: a Geografia quantitativa",
+      "kicker": "Como formular e testar uma hipótese?",
+      "minutes": 19,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Da área particular à busca de regularidades",
+          "body": "A lição 4 mostrou como descrever e diferenciar áreas. Agora pergunte: existem relações que ajudam a explicar a distribuição de serviços entre vários lugares? A Geografia teórico-quantitativa, fortalecida em meados do século XX, enfatizou modelos, hipóteses e padrões espaciais.\nO ponto não é apenas usar números. Um modelo seleciona relações e simplifica uma situação para investigá-las. Uma hipótese é uma resposta provisória, que precisa ser confrontada com dados. A passagem dos dados à explicação deve ser discutida, não presumida."
+        },
+        {
+          "type": "text",
+          "title": "Entenda o termo neopositivismo",
+          "body": "A referência ao neopositivismo, importante nesse debate, ajuda a compreender a valorização da formulação lógica, das hipóteses verificáveis e da busca de regularidades. Em vez de conhecer cada área somente por suas particularidades, examinam-se relações que possam ser formuladas e testadas explicitamente.\nAlguém define as variáveis, escolhe os dados e interpreta os resultados; o computador não toma essas decisões sozinho. Explanation in Geography, livro de David Harvey publicado em 1969, integra esse momento de discussão metodológica. Autores também podem mudar de orientação ao longo de sua trajetória."
+        },
+        {
+          "type": "callout",
+          "title": "Faça uma previsão",
+          "body": "Hipótese didática: “Entre as rotas da cena, a de menor distância terá menor tempo de viagem”. Escolha A, depois B. Compare os dois tipos de medida antes de decidir se a hipótese se sustenta neste caso.",
+          "tone": "tip"
         },
         {
           "type": "animation",
           "kind": "quantitative",
-          "title": "Distância e tempo não são a mesma coisa",
-          "caption": "Escolha uma rota para observar distâncias e tempos hipotéticos. Todos os valores desta animação são inventados para explicar o conceito."
+          "title": "O dado testa uma hipótese",
+          "caption": "Dados inventados: rota A, 8 km e 45 minutos; rota B, 15 km e 25 minutos. Não são medições de comunidades reais. Comparar distância não é o mesmo que comparar tempo."
+        },
+        {
+          "type": "text",
+          "title": "Resolução passo a passo",
+          "body": "A é menor em distância: 8 é menor que 15. Porém, leva mais tempo: 45 minutos contra 25. Os dados desse caso não sustentam a previsão de que menor distância corresponde a menor tempo. A comparação pede considerar meio de transporte, condições do trajeto e outras relações pertinentes.\nFormular uma hipótese, deduzir uma consequência e confrontá-la com dados ilustra um raciocínio hipotético-dedutivo. Não se resume a realizar uma operação de cálculo.\nVocê não provou que a estrada é sempre mais rápida que o rio. Examinou uma hipótese em duas rotas fictícias. Generalizar uma relação exige outros dados e critérios. Distinguir resultado situado de afirmação universal ajuda a resolver questões."
+        },
+        {
+          "type": "table",
+          "title": "Outro exemplo: duas médias iguais",
+          "headers": [
+            "Conjunto fictício de tempos",
+            "Leitura"
+          ],
+          "rows": [
+            [
+              "Grupo X: 20, 30 e 40 minutos.",
+              "Média: 30 minutos. Os três valores estão próximos desse resumo."
+            ],
+            [
+              "Grupo Y: 5, 5 e 80 minutos.",
+              "Média: 30 minutos. Um trajeto muito longo fica escondido pelo resumo."
+            ],
+            [
+              "Os dois têm média de 30 minutos.",
+              "Isso não significa condições iguais. É necessário examinar a distribuição."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Como ensinar esse raciocínio?",
+          "body": "O professor pede uma previsão, oferece dados e orienta a comparação entre o previsto e o observado. A aprendizagem aparece quando o aluno explica por que manteve ou reviu a hipótese, quais medidas usou e até onde a conclusão vale. Somar corretamente é parte da tarefa, mas não substitui a interpretação.\nUma tabela também pode alimentar uma análise crítica da desigualdade. O papel do modelo na explicação, e não apenas a presença de números, é o que estamos analisando."
         },
         {
           "type": "callout",
-          "title": "Potencial e limite",
-          "body": "Medidas ajudam a comparar e testar hipóteses. Porém, uma média pode esconder desigualdades e um modelo depende de suas escolhas e pressupostos. É preciso perguntar quem ficou fora dos dados.",
+          "title": "O problema que permanece",
+          "body": "Uma comparação mostra quais trajetos são longos. Mas por que determinadas áreas receberam certos investimentos, quem se beneficia dos fluxos e como se constituíram as diferenças? A lição 6 aprofunda essas perguntas.",
           "tone": "tip"
-        },
-        {
-          "type": "text",
-          "body": "No ensino, gráficos e estatísticas podem apoiar diferentes perspectivas. Usar um gráfico não torna toda aula “teórico-quantitativa”. A concepção se reconhece pelo papel explicativo dado aos modelos e pela forma de produzir conhecimento."
         }
       ],
-      "summary": "A perspectiva teórico-quantitativa enfatiza modelos e padrões espaciais. Estatísticas são úteis, mas precisam ser interpretadas com seus limites e pressupostos."
+      "summary": "Modelos e hipóteses ajudam a explicar padrões espaciais. Os dados precisam de interpretação: a média pode ocultar diferenças e uma comparação não autoriza qualquer generalização.",
+      "practice": {
+        "type": "match",
+        "title": "Reconheça as partes da investigação",
+        "pairs": [
+          [
+            "Menor distância corresponderia a menor tempo.",
+            "Hipótese a examinar"
+          ],
+          [
+            "Selecionar distância e tempo para representar a relação.",
+            "Construção do modelo"
+          ],
+          [
+            "Comparar 8 km / 45 min e 15 km / 25 min.",
+            "Confronto com os dados"
+          ],
+          [
+            "Não estender duas rotas a todas as estradas e rios.",
+            "Limite da conclusão"
+          ]
+        ]
+      }
     },
     {
       "id": "l06",
-      "title": "Geografias críticas",
-      "kicker": "Espaço, poder e desigualdades",
-      "minutes": 10,
+      "title": "Produção do espaço: as Geografias críticas",
+      "kicker": "Como as diferenças se constituem?",
+      "minutes": 20,
       "blocks": [
         {
           "type": "text",
-          "body": "O movimento de renovação crítica questiona explicações que tratam a organização do espaço como neutra ou desligada da história. Tem diferentes vertentes; o materialismo histórico e dialético é uma referência importante em muitas delas. Trabalho, produção, Estado, poder e desigualdade passam ao centro de várias investigações."
+          "title": "Faça uma pergunta nova ao resultado",
+          "body": "Você identificou acessos diferentes e viu como medidas mostram padrões. Agora pergunte como esses acessos foram produzidos: quem decidiu abrir a via, a que atividades atende e como os investimentos foram distribuídos? A desigualdade deixa de ser apenas uma diferença registrada e passa a ser um problema histórico e social.\nGeografias críticas designa vertentes que questionam interpretações que tratam a organização espacial como neutra ou natural. Não formam uma escola homogênea. Muitas dialogam com o materialismo histórico e dialético; compreender essa referência ajuda a analisar suas explicações."
         },
         {
           "type": "text",
-          "body": "O espaço é produzido e transformado socialmente. Estradas, moradias e áreas agrícolas materializam escolhas, técnicas, investimentos e conflitos. Por isso, a distribuição dos serviços não pode ser explicada apenas pelo relevo ou por decisões individuais isoladas."
+          "title": "Histórico e dialético em uma situação concreta",
+          "body": "Histórico indica que a situação presente foi construída ao longo do tempo: a estrada resulta de projetos, técnicas, trabalho e decisões. Dialético chama atenção para relações e contradições: a mesma via pode facilitar a circulação de mercadorias e não assegurar transporte adequado a todos os moradores.\nNão basta reunir causas independentes. É preciso examinar como produção, trabalho, Estado e outras relações se articulam na organização espacial. No caso da escola, pode-se investigar como a distribuição de infraestrutura se relaciona às atividades econômicas e às escolhas públicas. A resposta depende de evidências, não de uma conclusão antecipada."
         },
         {
           "type": "photo",
           "src": "media/ver-o-peso.jpg",
-          "title": "Uma paisagem também tem relações de trabalho",
-          "caption": "O Ver-o-Peso, em Belém, pode ser estudado por sua forma visível e por relações de circulação, trabalho e acesso. As perguntas desta unidade são propostas de investigação, não conclusões sobre trabalhadores fotografados.",
+          "title": "Da forma visível às relações que a organizam",
+          "caption": "No Ver-o-Peso, em Belém, observamos uma paisagem de circulação e comércio. Investigar trabalho, abastecimento e decisões exige outras fontes. A foto não demonstra renda nem condições individuais dos sujeitos.",
           "credit": "Fabio Gomes · Wikimedia Commons · CC BY-SA 4.0"
         },
         {
           "type": "text",
-          "body": "Milton Santos contribui para compreender o espaço por meio de relações indissociáveis entre objetos e ações. Uma estrada não é apenas uma forma: importa quem a utiliza, quais fluxos possibilita e que práticas e relações a acompanham. A separação entre materialidade e ação enfraquece a análise."
+          "title": "Objetos e ações: uma contribuição de Milton Santos",
+          "body": "Milton Santos propõe compreender o espaço pela relação indissociável entre sistemas de objetos e sistemas de ações. É preciso estudar a materialidade com os usos e as relações que lhe dão funcionamento. Estrada, ponte e escola não são formas separadas da circulação, do trabalho e das decisões que as conectam.\n“Sistemas” também importa: não estamos somando objetos sem relação. Uma escola integra trajetos, serviços e práticas; uma feira participa de redes de abastecimento. Para compreender uma forma, investigamos como opera nessas relações e como sua função pode mudar."
+        },
+        {
+          "type": "compare",
+          "title": "Caso resolvido: criticar e explicar",
+          "left": {
+            "title": "Denúncia sem desenvolvimento",
+            "body": "“O acesso é injusto.” A frase expressa uma avaliação, mas ainda não explica como a diferença foi constituída."
+          },
+          "right": {
+            "title": "Investigação crítica",
+            "body": "“Vamos comparar onde foram implantadas as vias, quais fluxos atendem e que decisões participaram dessa distribuição.” A proposta indica relações e fontes a investigar."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Uma aula crítica precisa ensinar a argumentar",
+          "body": "O professor reúne mapas de acessos, registros de obras e relatos. A turma compara fontes, analisa quem é atendido e justifica uma interpretação. Conceitos são oferecidos, e explicações concorrentes também devem ser examinadas.\nRepetir a opinião do professor não demonstra, por si só, aprendizagem crítica. Um avanço seria explicar uma relação entre investimento, circulação e acesso, apoiando-a nas fontes e reconhecendo o que ainda não se sabe. Exposição conceitual e dados quantitativos podem ajudar esse trabalho."
         },
         {
           "type": "callout",
-          "title": "Na sala de aula",
-          "body": "Compare acesso à água, transporte ou equipamentos públicos em áreas distintas. Pergunte como se produziram as diferenças e que relações conectam os lugares. Evite trocar explicação fundamentada por uma opinião genérica.",
+          "title": "Verifique sua compreensão",
+          "body": "Por que números não eliminam o caráter crítico de uma investigação? Porque medidas podem apoiar o estudo da desigualdade. O foco crítico aparece no problema da produção social, das relações e contradições que os dados ajudam a investigar.",
           "tone": "tip"
         },
         {
-          "type": "callout",
-          "title": "Crítica precisa de argumento",
-          "body": "Uma aula não se torna crítica só por denunciar um problema. Ela precisa construir relações e explicações, usar conceitos e examinar evidências.",
-          "tone": "warning"
+          "type": "text",
+          "title": "O que ainda queremos compreender?",
+          "body": "Investigar produção e poder não elimina a experiência das pessoas. A mesma praça pode integrar uma rede de trabalho e ter sentidos diferentes para seus usuários. A lição 7 muda o foco para compreender como o lugar é vivido, sem afirmar que sua materialidade desapareceu."
         }
       ],
-      "summary": "Analisar criticamente é investigar a produção social do espaço, suas relações de poder e contradições. Não é apenas expressar indignação."
+      "summary": "Uma análise crítica investiga como o espaço foi produzido, suas relações de poder e contradições. Em Milton Santos, objetos e ações são indissociáveis. Denunciar ou repetir uma opinião não substitui explicar relações com evidências.",
+      "practice": {
+        "type": "order",
+        "title": "Construa uma investigação crítica possível",
+        "items": [
+          "Identificar uma diferença de acesso que precisa ser explicada.",
+          "Examinar fontes sobre vias, usos, investimentos e decisões.",
+          "Relacionar essas informações à produção social do espaço.",
+          "Justificar a interpretação e discutir seus limites com a turma."
+        ]
+      }
     },
     {
       "id": "l07",
-      "title": "A perspectiva humanística",
-      "kicker": "Experiência e lugar vivido",
-      "minutes": 8,
+      "title": "Experiência e lugar: a Geografia humanística",
+      "kicker": "Como o espaço é vivido pelas pessoas?",
+      "minutes": 18,
       "blocks": [
         {
           "type": "text",
-          "body": "A Geografia humanística enfatiza experiências, percepções, sentidos e vínculos das pessoas com os lugares. A fenomenologia é uma referência importante. Yi-Fu Tuan é um autor associado a estudos de experiência, espaço e lugar. Não se trata de afirmar que tudo é opinião, mas de investigar modos de viver e significar o espaço."
+          "title": "Mude o foco sem abandonar o que aprendeu",
+          "body": "Na lição 6, você investigou a organização material e social do espaço. Agora imagine que duas pessoas percorrem o mesmo caminho: uma reconhece encontros, lembranças e segurança; outra relata medo ou afastamento. A distância medida não explica sozinha essa diferença de experiência.\nA perspectiva humanística enfatiza como as pessoas percebem, vivenciam e atribuem sentidos aos lugares. Yi-Fu Tuan é uma referência desse debate. A pergunta não é apenas onde a pessoa está, mas como sua relação com aquele espaço se constitui na experiência."
         },
         {
           "type": "text",
-          "body": "Uma feira pode ser um lugar de trabalho para alguém, um encontro familiar para outra pessoa e uma lembrança da infância para outra. Conhecer essas experiências amplia a interpretação do lugar e evita reduzir a cidade a coordenadas e estruturas materiais."
+          "title": "O que a fenomenologia ajuda a perguntar?",
+          "body": "A fenomenologia, referência importante para vertentes humanísticas, orienta a atenção ao modo como o mundo é vivido e ganha sentido para o sujeito. Em vez de tomar o lugar como um ponto neutro que seria igual para todos, investigamos como se apresenta na experiência.\nIsso não significa que qualquer impressão substitua uma explicação ou que o espaço material deixe de existir. Uma entrevista precisa ser situada: quem fala, de qual experiência, em que momento e com quais relações? Um relato não representa automaticamente todos os moradores."
+        },
+        {
+          "type": "callout",
+          "title": "Antes de ouvir os personagens",
+          "body": "Na praça da cena, preveja: trabalhar, encontrar amigos e recordar a infância precisam produzir o mesmo sentido de lugar? Escolha os três relatos e procure o vínculo que cada um enfatiza.",
+          "tone": "tip"
         },
         {
           "type": "animation",
           "kind": "lived",
-          "title": "O mesmo lugar, experiências diferentes",
-          "caption": "Toque nas pessoas da cena para ler relatos fictícios sobre a mesma praça. Nenhum relato representa automaticamente todas as pessoas de um grupo."
-        },
-        {
-          "type": "callout",
-          "title": "Possibilidade de ensino",
-          "body": "Mapas mentais, relatos de trajetos e entrevistas podem revelar sentidos do bairro. O professor pode comparar experiências e conectá-las a conceitos; não basta colecionar histórias.",
-          "tone": "tip"
+          "title": "A mesma praça, três experiências",
+          "caption": "Use os botões “Pessoa 1”, “Pessoa 2” e “Pessoa 3”. As falas são fictícias. Compare os sentidos de trabalho, pertencimento, memória e dificuldade; não os transforme em retratos de grupos inteiros."
         },
         {
           "type": "text",
-          "body": "Sentimentos de pertencimento e afastamento podem coexistir. Um lugar familiar para uma pessoa pode ser hostil para outra. Perguntar por experiências diferentes ajuda a compreender a complexidade do lugar, sem apagar estruturas sociais."
-        }
-      ],
-      "summary": "A perspectiva humanística investiga experiência, percepção e significados do lugar. Os relatos precisam de interpretação e não representam todos os sujeitos automaticamente."
-    },
-    {
-      "id": "l08",
-      "title": "Abordagens culturais",
-      "kicker": "Representações e diferenças",
-      "minutes": 8,
-      "blocks": [
-        {
-          "type": "text",
-          "body": "As abordagens culturais examinam práticas, símbolos, identidades, representações e seus vínculos espaciais. Há distintas tradições na Geografia cultural. Parte das abordagens contemporâneas também pergunta quem produz representações e como elas se relacionam com poder e diferença."
-        },
-        {
-          "type": "text",
-          "body": "Uma imagem que apresenta a Amazônia apenas como floresta vazia é uma representação seletiva. Ela pode apagar cidades, comunidades indígenas, populações ribeirinhas e agricultores. Estudar a representação exige perguntar o que foi mostrado, o que foi omitido e com que efeitos."
+          "title": "Resolva o exemplo",
+          "body": "A primeira pessoa destaca relações de trabalho; outra, encontro e pertencimento; a terceira reúne memória e dificuldade de circulação. A praça não mudou de localização entre as falas. Mudou a experiência narrada e a relação que está sendo analisada.\nÉ por isso que o lugar não se esgota em coordenadas. Também não precisa ser sempre acolhedor: familiaridade, afeto, conflito e desconforto podem coexistir. Conhecer um sentimento não dispensa perguntar em quais condições ele se constitui."
         },
         {
           "type": "compare",
-          "title": "Duas perguntas que se aproximam, mas não são idênticas",
+          "title": "Humanística e crítica: qual é a pergunta principal?",
           "left": {
             "title": "Experiência do lugar",
-            "body": "Como uma pessoa vive a feira e que sentidos atribui a ela?"
+            "body": "“Como a estudante vive o caminho e que sentidos atribui a ele?” O foco recai sobre experiência, percepção e significado."
           },
           "right": {
-            "title": "Representação cultural",
-            "body": "Como a feira é mostrada em uma campanha turística e que grupos aparecem ou desaparecem?"
+            "title": "Produção e relações de poder",
+            "body": "“Como investimentos e usos organizaram acessos diferentes?” O foco recai sobre constituição social, decisões e contradições."
           }
         },
         {
-          "type": "callout",
-          "title": "Cultura não é uma lista fixa",
-          "body": "Práticas mudam, são disputadas e variam dentro dos grupos. Evite representar “o amazônida”, “o indígena” ou “o agricultor” como personagens únicos e imutáveis.",
-          "tone": "tip"
+          "type": "text",
+          "title": "Da investigação à aprendizagem",
+          "body": "O professor pode pedir mapas mentais dos trajetos, solicitar que os alunos expliquem suas escolhas e comparar o que cada representação destaca. O objetivo não é escolher o desenho mais bonito, mas compreender o lugar vivido e usar conceitos para interpretá-lo.\nUm avanço ocorre quando o aluno percebe que sua experiência não é a única, compara sentidos e justifica sua interpretação. Se a atividade termina apenas na coleção de histórias, a formação conceitual ainda precisa ser trabalhada."
         },
         {
-          "type": "text",
-          "body": "Na escola, fotografias, músicas e notícias podem ser comparadas para analisar representações do espaço. Humanística e cultural podem dialogar, mas não são sinônimos. Identifique qual problema orienta cada abordagem."
+          "type": "callout",
+          "title": "Ponte para a lição 8",
+          "body": "Viver um lugar e produzir uma imagem pública dele são problemas próximos, mas distintos. A seguir, vamos investigar por que uma propaganda pode apresentar um lugar de maneira muito diferente daquela vivida por parte de seus moradores.",
+          "tone": "tip"
         }
       ],
-      "summary": "As abordagens culturais estudam práticas e representações espaciais, reconhecendo diversidade e disputas. Cultura não equivale a um conjunto imutável de costumes."
+      "summary": "A perspectiva humanística investiga experiência, percepção e significados do lugar. As vivências precisam ser contextualizadas; lugar não é apenas coordenada nem necessariamente um espaço de harmonia.",
+      "practice": {
+        "type": "match",
+        "title": "Identifique o foco de cada investigação",
+        "pairs": [
+          [
+            "Como se sente e que memórias tem quem percorre a praça?",
+            "Experiência e sentidos do lugar"
+          ],
+          [
+            "Que decisões e relações produziram acessos desiguais?",
+            "Produção social do espaço"
+          ],
+          [
+            "Que trajetos têm tempos semelhantes?",
+            "Padrão de distribuição"
+          ],
+          [
+            "O que um mapa mental enfatiza para quem o produziu?",
+            "Representação do vivido"
+          ]
+        ]
+      }
     },
     {
-      "id": "l09",
-      "title": "Geografia escolar e mediação",
-      "kicker": "Do conhecimento vivido ao conceito",
-      "minutes": 9,
+      "id": "l08",
+      "title": "Cultura e representações do espaço",
+      "kicker": "Quem mostra o lugar e o que fica de fora?",
+      "minutes": 18,
       "blocks": [
         {
           "type": "text",
-          "body": "Geografia escolar não é apenas uma versão encurtada da Geografia acadêmica. Ela seleciona e organiza conhecimentos para finalidades educativas, em condições escolares e em diálogo com alunos, currículos e saberes docentes. A ciência é uma referência fundamental, mas a aprendizagem demanda mediação."
+          "title": "Uma nova pergunta sobre o mesmo espaço",
+          "body": "Você compreendeu que uma praça pode ser vivida de maneiras diferentes. Agora imagine uma campanha fictícia que mostra a Amazônia apenas como floresta sem habitantes. O problema já não é somente como uma pessoa vive o lugar. Precisamos perguntar como se produz e circula uma representação que seleciona certos elementos e omite outros.\nAs abordagens culturais investigam práticas, símbolos, identidades e representações em suas relações com o espaço. Existem tradições diferentes nessa área; não se trata de um conjunto único de respostas nem de estudar apenas festas e costumes."
         },
         {
           "type": "text",
-          "body": "Na perspectiva histórico-cultural e em propostas socioconstrutivistas, o aluno participa ativamente da construção do conhecimento. O professor tem ação intencional: oferece conceitos, problemas, linguagens e intervenções para ampliar as explicações dos estudantes."
+          "title": "Representar é fazer escolhas",
+          "body": "Uma imagem não contém o lugar inteiro. Alguém seleciona enquadramento, palavras, personagens e temas. Essas escolhas podem favorecer uma ideia de natureza vazia, cidade moderna, lugar perigoso ou destino turístico. Por isso, interessa saber quem representa, para quem e com quais possíveis efeitos.\nExaminar a omissão de cidades e comunidades em uma propaganda não permite adivinhar a intenção individual de seu autor. Permite analisar o que o material mostra, o que deixa de mostrar e como isso participa da compreensão pública do espaço."
+        },
+        {
+          "type": "compare",
+          "title": "Não confunda duas perguntas",
+          "left": {
+            "title": "Humanística",
+            "body": "“O que a feira significa na experiência de quem trabalha nela?” Investiga o vínculo vivido pelo sujeito."
+          },
+          "right": {
+            "title": "Cultural",
+            "body": "“Como a feira é representada em uma campanha, e quais sujeitos aparecem?” Investiga a produção e circulação de sentidos e representações."
+          }
+        },
+        {
+          "type": "table",
+          "title": "Leia uma campanha fictícia em quatro passos",
+          "headers": [
+            "Passo",
+            "Aplicação"
+          ],
+          "rows": [
+            [
+              "1. Identificar o material.",
+              "Campanha turística com imagens de floresta."
+            ],
+            [
+              "2. Examinar a seleção.",
+              "Que elementos aparecem? Cidades e atividades de moradores estão ausentes?"
+            ],
+            [
+              "3. Comparar outras representações.",
+              "Consultar imagens, narrativas e fontes produzidas em outros contextos."
+            ],
+            [
+              "4. Justificar a interpretação.",
+              "Explicar que ideia de Amazônia o conjunto favorece, com base na análise dos materiais."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Por que cultura não é uma caixa fixa?",
+          "body": "As práticas mudam, são discutidas e variam dentro dos grupos. Afirmar que todo ribeirinho, indígena ou agricultor vive do mesmo modo transforma uma categoria social em personagem único. Uma investigação precisa perguntar pelas diferenças e pelas relações, não confirmar um retrato pronto.\nDa mesma forma, analisar um símbolo ou uma imagem não dispensa sua dimensão material e histórica. Sentidos, práticas e relações de poder podem se cruzar; a distinção de foco serve para orientar a pergunta, não para impedir qualquer diálogo entre abordagens."
+        },
+        {
+          "type": "text",
+          "title": "Como ensinar essa leitura?",
+          "body": "O professor pode colocar a campanha fictícia ao lado de fontes que apresentem cidades, trabalho e vivências. Os alunos identificam escolhas, comparam materiais e justificam uma interpretação. O objetivo é aprender a ler representações espacialmente situadas, e não apenas dizer se a imagem é bonita ou feia.\nA avaliação pode pedir que analisem outra campanha: conseguem reconhecer a seleção e apoiar a conclusão em elementos do material? Essa transferência mostra mais compreensão do que decorar “cultura = costumes”."
+        },
+        {
+          "type": "callout",
+          "title": "Retome antes de avançar",
+          "body": "Até aqui, você mudou a pergunta para examinar condições naturais, regiões, padrões, produção do espaço, experiências e representações. Agora precisamos compreender como o professor transforma essas formas de pensar em aprendizagem geográfica.",
+          "tone": "tip"
+        }
+      ],
+      "summary": "As abordagens culturais investigam práticas e representações espaciais, perguntando por seleção, diferenças e produção de sentidos. Humanística e cultural podem dialogar, mas não são nomes intercambiáveis.",
+      "practice": {
+        "type": "match",
+        "title": "Qual pergunta está sendo feita?",
+        "pairs": [
+          [
+            "Que vínculo uma moradora relata com sua praça?",
+            "Experiência do lugar"
+          ],
+          [
+            "Quem aparece e quem é omitido em uma campanha?",
+            "Seleção da representação"
+          ],
+          [
+            "Por que não presumir uma vida igual para todo um grupo?",
+            "Diversidade interna"
+          ],
+          [
+            "Que elementos do material sustentam minha interpretação?",
+            "Justificação da análise"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l09",
+      "title": "Como transformar essas ideias em aprendizagem",
+      "kicker": "Cotidiano, conceito e mediação",
+      "minutes": 21,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Conhecer a concepção não basta para ensinar",
+          "body": "Você já dispõe de perguntas e modos de explicar o espaço. Mas entregar uma definição de “produção do espaço” ou “lugar vivido” não garante que o aluno aprenda a usá-la. É necessário organizar uma situação em que a definição faça trabalho na interpretação de um problema.\nA Geografia escolar dialoga com conhecimentos científicos, experiências, currículos e condições de ensino. Não é somente uma versão menor de um livro universitário. O professor seleciona e organiza conhecimentos para finalidades educativas e acompanha como os estudantes os compreendem."
+        },
+        {
+          "type": "text",
+          "title": "Diferencie dois planos da discussão",
+          "body": "Uma concepção geográfica orienta como compreender o espaço. Uma concepção pedagógica orienta como compreender a aprendizagem e organizar o ensino. Elas se articulam, mas não formam uma única lista. “Geografia crítica” e “perspectiva histórico-cultural” não são dois nomes para a mesma classificação.\nNa discussão histórico-cultural mobilizada por Lana Cavalcanti, a mediação ajuda a articular conhecimentos cotidianos e científicos na formação de conceitos. O estudante participa da construção do conhecimento; o professor intervém intencionalmente. Participação ativa não exige que o aluno descubra tudo sozinho."
+        },
+        {
+          "type": "callout",
+          "title": "Acompanhe uma explicação em construção",
+          "body": "O ponto de partida será “na chuva, fica difícil chegar à escola”. Antes de escolher as etapas da cena, pense: o que o professor precisa acrescentar para o relato se tornar uma explicação geográfica?",
+          "tone": "tip"
         },
         {
           "type": "animation",
           "kind": "mediation",
-          "title": "A conversa precisa avançar",
-          "caption": "Percorra os passos: relato cotidiano, pergunta do professor, relação conceitual e explicação mais ampla."
+          "title": "Do relato à explicação: acompanhe a mudança",
+          "caption": "Percorra “1. Relato”, “2. Pergunta”, “3. Conceito” e “4. Explicação”. Observe o que cada intervenção acrescenta ao pensamento do aluno. A cena apresenta uma possibilidade, não um roteiro obrigatório para qualquer aula."
         },
         {
           "type": "text",
-          "body": "Exemplo hipotético de uma comunidade de Garrafão do Norte: um aluno diz que a estrada “fica ruim” no período chuvoso. O professor pergunta como isso afeta deslocamentos e circulação da produção, solicita observações e relaciona o caso a redes e acesso. O relato passa a sustentar uma explicação geográfica, sem ser descartado."
+          "title": "O que mudou em cada etapa?",
+          "body": "O relato identifica uma experiência importante, mas ainda pouco diferenciada. A pergunta orienta a comparação: que trajetos e grupos são mais afetados? Os conceitos de redes, acesso e circulação ajudam a interpretar relações entre caminhos, serviços e condições. A explicação final articula esses elementos.\nNote que o professor não apenas pediu que os alunos falassem. Ele forneceu instrumentos para pensar. Também não descartou o relato: ajudou a retomá-lo com maior poder explicativo. Essa mudança é a conexão entre cotidiano e conceito."
+        },
+        {
+          "type": "compare",
+          "title": "Caso resolvido: dois resultados de aula",
+          "left": {
+            "title": "Reprodução verbal",
+            "body": "O aluno recita: “rede é um conjunto de pontos interligados”. Ainda não sabemos se consegue usar essa ideia para analisar um acesso."
+          },
+          "right": {
+            "title": "Uso conceitual",
+            "body": "O aluno explica como escola, comunidade e trajetos se conectam, indica um ponto de interrupção e justifica como isso altera a circulação."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Faça a aprendizagem ir além do exemplo",
+          "body": "Depois da análise do acesso escolar, o professor apresenta o abastecimento de uma feira. Pergunta quais pontos e caminhos se conectam e como uma interrupção pode alterar a circulação. Se os alunos mobilizam as relações em outra situação, há uma evidência de generalização do conceito.\nA avaliação deve procurar essa ampliação da compreensão. Participar, desenhar e gostar da atividade são informações relevantes, mas não demonstram sozinhas que o estudante aprendeu a explicar. A exposição conceitual e a orientação de uma tarefa podem ser necessárias para esse avanço."
         },
         {
           "type": "callout",
-          "title": "Participação ativa não é abandono",
-          "body": "O estudante não precisa descobrir tudo sozinho. Mediação, orientação, exposição conceitual e comparação de fontes podem ajudá-lo a reconstruir sua explicação.",
+          "title": "Ponte para a lição 10",
+          "body": "A mediação precisa de operações concretas: localizar, comparar, reconhecer distribuições e estabelecer conexões. Vamos agora organizar essas operações em uma investigação, entendendo para que serve cada uma.",
           "tone": "tip"
-        },
-        {
-          "type": "text",
-          "body": "Avaliar é observar o que mudou na compreensão: o aluno passou a relacionar fenômenos? Usa conceitos com sentido? Justifica uma hipótese com evidências? Uma tarefa movimentada não garante esses avanços."
         }
       ],
-      "summary": "A mediação articula experiência cotidiana e conhecimento conceitual. O professor intervém de forma intencional; o aluno constrói e amplia explicações.",
+      "summary": "A mediação relaciona experiência e conceitos, com ação intencional do professor e atividade intelectual do estudante. A compreensão aparece quando o aluno usa o conceito para explicar uma situação, inclusive além do primeiro exemplo.",
       "practice": {
         "type": "order",
         "title": "Organize uma sequência de mediação",
@@ -395,124 +783,188 @@
     },
     {
       "id": "l10",
-      "title": "Raciocinar geograficamente",
-      "kicker": "Localizar, relacionar e explicar",
-      "minutes": 9,
+      "title": "Como construir uma explicação geográfica",
+      "kicker": "Localizar, comparar, conectar e mudar a escala",
+      "minutes": 18,
       "blocks": [
         {
           "type": "text",
-          "body": "Para raciocinar geograficamente, não basta identificar um fenômeno. É preciso examinar localização, distribuição, extensão, conexões e diferenças, considerando a escala de análise. Esses princípios ajudam a organizar perguntas e a construir explicações."
+          "title": "Dê função às operações de pensamento",
+          "body": "Na lição 9, o conceito ajudou a ampliar uma explicação. Para construí-la, o aluno precisa fazer algo com as informações. Localizar, reconhecer distribuições, comparar e relacionar escalas são operações que organizam a investigação. Não são palavras para recitar sem um problema.\nVamos usá-las no caso do acesso: onde ficam as escolas e os trajetos? As dificuldades estão concentradas ou dispersas? Que condições diferenciam os acessos? Com quais decisões e fluxos esses lugares se conectam? Cada pergunta acrescenta uma relação à análise."
         },
         {
           "type": "table",
-          "title": "Perguntas que fazem avançar",
+          "title": "Uma operação, uma contribuição",
           "headers": [
             "Operação",
-            "Pergunta"
+            "O que acrescenta ao caso"
           ],
           "rows": [
             [
-              "Localização",
-              "Onde acontece? A posição é absoluta ou relativa?"
+              "Localizar",
+              "Situar escola, comunidades e caminhos; reconhecer posição e acessos relativos."
             ],
             [
-              "Distribuição",
-              "Está concentrado, disperso ou ausente em certas áreas?"
+              "Examinar a distribuição",
+              "Verificar onde se concentram trajetos mais longos ou dificuldades."
             ],
             [
-              "Conexão",
-              "Quais fluxos e relações conectam esses lugares?"
+              "Comparar",
+              "Usar critérios comuns para analisar semelhanças e diferenças."
             ],
             [
-              "Comparação",
-              "O que é semelhante e diferente? Quais critérios uso?"
+              "Estabelecer conexões",
+              "Relacionar caminhos, transportes, serviços e decisões."
             ],
             [
-              "Escala",
-              "Que relações aparecem no bairro, no município ou na rede regional?"
+              "Articular escalas de análise",
+              "Investigar relações que ultrapassam um trajeto ou uma comunidade."
             ]
           ]
+        },
+        {
+          "type": "callout",
+          "title": "Antecipe a mudança de escala",
+          "body": "Um caminho está em uma comunidade, mas a decisão sobre uma via ou um serviço pode ultrapassar esse recorte. Na cena, observe o que se torna visível ao passar de comunidade para município e rede regional.",
+          "tone": "tip"
         },
         {
           "type": "animation",
           "kind": "scale",
-          "title": "O lugar está ligado a outros lugares",
-          "caption": "Alterne a escala para observar a relação hipotética entre escola, comunidade, município e circuitos regionais de circulação."
+          "title": "O lugar participa de relações mais amplas",
+          "caption": "Escolha “Comunidade”, “Município” e “Rede regional”. As conexões são hipotéticas. Explique que problema cada recorte ajuda a investigar; não se limite a dizer que a imagem ficou maior."
         },
         {
           "type": "text",
-          "body": "O local não é uma ilha. A circulação de alimentos de uma comunidade pode depender de decisões municipais, de estradas estaduais e de mercados em outras cidades. Mudar a escala permite perceber relações que não aparecem em uma observação restrita."
+          "title": "Caso resolvido: não confunda recorte e isolamento",
+          "body": "No recorte da comunidade, observamos trajetos e experiências próximas. Ao analisar o município, podemos comparar a distribuição de serviços. Na rede regional, surgem relações de abastecimento e circulação que ajudam a explicar o funcionamento de lugares próximos. Uma análise local não obriga a ignorar essas conexões.\nMudar a escala de análise não é apenas afastar a imagem. O avanço ocorre quando reconhecemos processos e relações que aquele recorte permite investigar. Um mapa mais abrangente pode continuar sendo usado só para listar nomes, sem produzir essa articulação."
+        },
+        {
+          "type": "compare",
+          "title": "Duas escalas, dois sentidos",
+          "left": {
+            "title": "Escala cartográfica",
+            "body": "É a relação de proporção entre distâncias no mapa e no terreno. Ajuda a compreender a representação e seu grau de redução."
+          },
+          "right": {
+            "title": "Escala geográfica de análise",
+            "body": "Diz respeito ao recorte e às relações dos processos investigados: comunidade, município ou rede regional, por exemplo."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Como avaliar uma explicação?",
+          "body": "Uma resposta forte indica a diferença observada, utiliza conceitos pertinentes e justifica relações com as fontes. Se o aluno afirma “a estrada é importante”, falta dizer para qual circulação e sob quais condições. Se explica como uma interrupção afeta o acesso e conecta a situação à rede de serviços, a ideia ficou mais determinada.\nO professor pode apresentar outro recorte e perguntar o que muda na explicação. Isso permite avaliar o uso das operações de pensamento, sem supor que aumentar o número de lugares citados seja o mesmo que compreender mais."
         },
         {
           "type": "callout",
-          "title": "Uma confusão comum",
-          "body": "Escala cartográfica expressa a relação entre distâncias no mapa e no terreno. Escala geográfica diz respeito ao recorte e ao nível de análise dos processos. Aqui, o foco é a análise dos processos, não um cálculo cartográfico.",
+          "title": "O próximo desafio",
+          "body": "Você já tem instrumentos para investigar. Na lição 11, vai aplicá-los a outro lugar e comparar concepções diante da mesma fotografia. O objetivo é transferir o raciocínio, sem depender da cena da escola.",
           "tone": "tip"
-        },
-        {
-          "type": "text",
-          "body": "No ensino, um bom percurso passa da pergunta ao levantamento de evidências, à comparação, à mobilização de conceitos e à explicação. Não precisa seguir um roteiro rígido em toda aula, mas deve dar sentido às atividades."
         }
       ],
-      "summary": "Raciocínio geográfico articula operações e conceitos para explicar relações espaciais. A escala de análise muda as relações que se tornam visíveis."
+      "summary": "Operações de pensamento ganham sentido quando ajudam a responder a um problema. Articular escalas é investigar relações entre recortes; não é apenas mudar o zoom nem confundir análise com proporção cartográfica.",
+      "practice": {
+        "type": "order",
+        "title": "Organize esta investigação possível",
+        "items": [
+          "Definir uma pergunta sobre diferenças no acesso.",
+          "Localizar e comparar os trajetos com critérios e fontes.",
+          "Relacionar a distribuição às conexões e escalas pertinentes.",
+          "Construir uma explicação e examinar seus limites."
+        ]
+      }
     },
     {
       "id": "l11",
-      "title": "Uma paisagem, várias perguntas",
-      "kicker": "Laboratório do Ver-o-Peso",
-      "minutes": 8,
+      "title": "Uma situação, diferentes concepções",
+      "kicker": "Laboratório explicado do Ver-o-Peso",
+      "minutes": 23,
       "blocks": [
+        {
+          "type": "text",
+          "title": "Agora o caso é outro",
+          "body": "Chegou o momento de verificar se você compreendeu além do exemplo inicial. Vamos estudar uma paisagem de feira. Antes de nomear uma concepção, separe o que a fotografia permite observar daquilo que exigiria outras informações. Depois compare que perguntas orientariam cada investigação.\nA mudança para o Ver-o-Peso testa sua capacidade de transferir o raciocínio: a relação entre problema, fonte e explicação continua válida, embora o lugar e as atividades sejam outros."
+        },
         {
           "type": "photo",
           "src": "media/belem-feira.jpg",
-          "title": "Observe antes de escolher a explicação",
-          "caption": "Use a fotografia como ponto de partida. Você pode observar formas e práticas visíveis; condições de renda e relações de poder exigem outras fontes, não podem ser deduzidas pela aparência das pessoas.",
+          "title": "Observe o registro e reconheça seus limites",
+          "caption": "A fotografia do Ver-o-Peso, em Belém, mostra um recorte da paisagem. Formas e práticas visíveis ajudam a iniciar perguntas; renda, condições de trabalho e trajetórias pessoais não podem ser deduzidas pela aparência dos sujeitos.",
           "credit": "Cayambe · Wikimedia Commons · CC BY-SA 3.0"
         },
         {
-          "type": "animation",
-          "kind": "lenses",
-          "title": "Troque a lente, mude a pergunta",
-          "caption": "Selecione uma perspectiva e compare o que ela destaca na mesma cena. A animação é uma síntese didática, não uma classificação automática de aulas."
-        },
-        {
           "type": "table",
-          "title": "Quatro caminhos de investigação",
+          "title": "Acompanhe cinco percursos",
           "headers": [
             "Foco",
-            "Pergunta possível"
+            "Pergunta, fonte e explicação procurada"
           ],
           "rows": [
             [
               "Descrição e diferenciação de áreas",
-              "Quais elementos e usos caracterizam a paisagem?"
+              "Que elementos e usos caracterizam a feira? Observações e representações ajudam a descrever e comparar sua organização."
             ],
             [
-              "Modelos e padrões",
-              "Como variam fluxos e distâncias de abastecimento?"
+              "Teórico-quantitativo",
+              "Que padrão de fluxos pode ser explicado por um modelo? Dados de origem, distância e tempo permitem testar relações."
             ],
             [
-              "Produção social e poder",
-              "Que relações de trabalho e decisões organizam o circuito?"
+              "Crítico",
+              "Como trabalho, decisões e relações de poder organizam o abastecimento? Documentos, dados e relatos ajudam a investigar sua produção social."
             ],
             [
-              "Experiência e significados",
-              "Como diferentes pessoas vivenciam e representam o lugar?"
+              "Humanístico",
+              "Como diferentes sujeitos vivem e significam a feira? Narrativas contextualizadas ajudam a compreender experiências do lugar."
+            ],
+            [
+              "Cultural",
+              "Como a feira é representada e quem aparece nas imagens públicas? A comparação de materiais permite analisar seleções e sentidos."
             ]
           ]
         },
         {
+          "type": "callout",
+          "title": "Use a animação como exercício de comparação",
+          "body": "A cena oferece quatro escolhas sintéticas. Em cada uma, explique o foco da pergunta e indique uma informação que a imagem não fornece. A representação cultural, estudada na lição 8, deve ser comparada também pela tabela, sem supor que tenha um botão próprio.",
+          "tone": "tip"
+        },
+        {
+          "type": "animation",
+          "kind": "lenses",
+          "title": "Mudar a pergunta muda a investigação",
+          "caption": "Compare “Descrever”, “Medir padrões”, “Investigar poder” e “Ouvir experiências”. São sínteses para orientar o estudo; não classificam automaticamente toda aula em uma etiqueta."
+        },
+        {
           "type": "text",
-          "body": "Nenhuma fotografia revela, sozinha, todos esses processos. Para conhecer o circuito de abastecimento, precisamos de informações sobre origem dos produtos e circulação. Para estudar experiências, podemos ouvir sujeitos. Para examinar políticas e trabalho, buscamos documentos e outras evidências."
+          "title": "Caso resolvido: uma pesquisa com números e entrevistas",
+          "body": "Considere uma investigação fictícia que usa dados de transporte e entrevistas para compreender como decisões sobre circulação beneficiam grupos de maneiras distintas. A presença dos números não determina uma concepção quantitativa, e a entrevista não determina uma concepção humanística. O foco explicativo é a constituição das diferenças e das relações de poder, aproximando o caso de uma análise crítica.\nSe a pergunta principal fosse como os trabalhadores vivem a feira e constroem vínculos com ela, o foco mudaria para a experiência do lugar. O tipo de fonte poderia ser parecido; sua função na explicação seria outra."
+        },
+        {
+          "type": "text",
+          "title": "É possível dialogar entre abordagens?",
+          "body": "Perguntas podem se aproximar, e fontes diferentes podem contribuir para um problema comum. Isso exige explicitar o que cada uma permite investigar e como as interpretações se articulam. Somar uma tabela, uma fala e uma foto não produz coerência por si só.\nAs concepções também possuem pressupostos e limites. Não é necessário afirmar que todas dizem a mesma coisa, nem escolher uma única técnica para cada corrente. O exercício é justificar a relação entre pergunta, conceito, procedimento e conclusão."
+        },
+        {
+          "type": "compare",
+          "title": "Como uma aula pode usar esse laboratório",
+          "left": {
+            "title": "Tarefa restrita",
+            "body": "Pedir que a turma copie os elementos da fotografia e memorize uma lista de correntes."
+          },
+          "right": {
+            "title": "Tarefa de compreensão",
+            "body": "Pedir que formule um problema, selecione fontes, explique uma relação e justifique qual foco orienta sua análise."
+          }
         },
         {
           "type": "callout",
-          "title": "Concepções podem dialogar",
-          "body": "Combinar dados, relatos e fotografias pode enriquecer a análise. A combinação precisa ter um problema comum e critérios claros; não é necessário encaixar toda atividade em uma única etiqueta.",
+          "title": "Retomada sem consulta",
+          "body": "Explique a diferença entre ouvir o significado da feira para uma pessoa e analisar como a feira aparece em uma campanha. Se conseguiu distinguir experiência vivida e seleção da representação, já está relacionando as lições 7 e 8 em um caso novo.",
           "tone": "tip"
         }
       ],
-      "summary": "Uma mesma paisagem comporta problemas distintos. Reconheça o foco da pergunta, a explicação buscada e as fontes necessárias.",
+      "summary": "Reconheça a concepção pela função dos conceitos e das fontes na explicação. A mesma paisagem permite perguntas distintas; combinar fontes exige coerência e reconhecer os limites de cada uma.",
       "practice": {
         "type": "match",
         "title": "Qual pergunta combina com cada foco?",
@@ -538,54 +990,105 @@
     },
     {
       "id": "l12",
-      "title": "Como levar isso para a prova",
-      "kicker": "Compare, justifique e exemplifique",
-      "minutes": 8,
+      "title": "Resolver questões e construir um argumento",
+      "kicker": "Do raciocínio estudado à prova",
+      "minutes": 24,
       "blocks": [
         {
           "type": "text",
-          "body": "Em uma questão, leia o que o professor ou pesquisador está tentando explicar. Identifique o objeto, os conceitos, as relações e o papel do aluno. Só depois associe a proposta a uma perspectiva. Palavras isoladas, como “mapa” ou “tecnologia”, não são suficientes."
+          "title": "Como estudar esta síntese",
+          "body": "Você percorreu uma explicação: partiu de um problema, distinguiu teoria e método, comparou concepções e investigou como ensinar esse raciocínio. Agora vai aplicar a sequência à leitura de questões e à escrita. Tente formular uma resposta antes de ler cada resolução.\nO treino desta unidade cobre o item 1.1. O Anexo III também contém outros temas. Os exemplos e o simulado são autorais: não reproduzem questões oficiais nem permitem prever a cobrança da seleção."
         },
         {
-          "type": "list",
-          "title": "Um roteiro de leitura",
-          "items": [
-            "Qual é o problema: inventário, padrão, desigualdade, experiência ou representação?",
-            "Que explicação é oferecida: causa natural única, modelo, produção social ou significados?",
-            "Que evidências sustentam a interpretação?",
-            "Como o ensino transforma a experiência em compreensão conceitual?"
+          "type": "table",
+          "title": "Compare pela lógica, não pela palavra isolada",
+          "headers": [
+            "Foco estudado",
+            "O que procurar na explicação"
+          ],
+          "rows": [
+            [
+              "Determinismo ambiental",
+              "Uma condição natural transformada em destino social necessário."
+            ],
+            [
+              "Possibilismo",
+              "Condições e possibilidades mobilizadas por práticas e técnicas históricas."
+            ],
+            [
+              "Tradições regionais",
+              "Observação, critérios, combinações e diferenciação de áreas."
+            ],
+            [
+              "Teórico-quantitativo",
+              "Modelo e hipótese para explicar padrões e regularidades."
+            ],
+            [
+              "Crítico",
+              "Produção social do espaço, relações de poder e contradições."
+            ],
+            [
+              "Humanístico",
+              "Experiência, percepção e sentidos do lugar."
+            ],
+            [
+              "Cultural",
+              "Práticas, representações, identidades e produção de sentidos espaciais."
+            ]
           ]
         },
         {
+          "type": "callout",
+          "title": "Questão resolvida 1 — pense antes de ler",
+          "body": "Uma aula compara gráficos de tempo de transporte e documentos sobre investimentos para discutir a produção de acessos desiguais. O uso dos gráficos permite classificá-la automaticamente como teórico-quantitativa?",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Resolução 1: encontre o papel da fonte",
+          "body": "Primeiro, identifique o problema: como os acessos desiguais foram produzidos. Segundo, veja a função dos dados: apoiar a investigação de investimentos e de seus efeitos sobre grupos. Terceiro, reconheça que os gráficos não decidem a concepção. O foco está próximo de uma leitura crítica, embora utilize técnicas quantitativas.\nUma alternativa que diga “todo gráfico é quantitativo, portanto a aula não pode ser crítica” confunde técnica e concepção. Uma alternativa adequada deve justificar a relação entre o problema e a explicação."
+        },
+        {
+          "type": "callout",
+          "title": "Questão resolvida 2 — compare dois objetivos",
+          "body": "Uma turma entrevista moradores sobre lembranças e pertencimento à praça. Outra compara campanhas que mostram a praça sem seus trabalhadores. Que diferença de foco ajuda a analisar as duas propostas?",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Resolução 2: não classifique pela entrevista ou pela imagem",
+          "body": "No primeiro objetivo, procure a experiência e os sentidos do lugar para sujeitos concretos: é um foco humanístico. No segundo, procure a seleção e a circulação de uma representação: é um foco cultural. Os temas podem dialogar, mas a distinção está na pergunta principal.\nSe o enunciado informar apenas que foram feitas entrevistas ou usadas fotografias, faltam elementos para decidir com segurança. Não acrescente ao caso uma intenção que ele não apresentou."
+        },
+        {
+          "type": "text",
+          "title": "Questão discursiva: construa um argumento",
+          "body": "Considere o tema de treino da oficina: como concepções teórico-metodológicas podem orientar práticas que ultrapassem a memorização. Comece com uma tese que responda ao tema. Em seguida, explique uma concepção ou conceito, analise uma situação de ensino e indique uma evidência de aprendizagem.\nUm planejamento possível é: defender a importância de explicar relações; esclarecer uma perspectiva crítica do acesso; descrever como a turma compararia fontes e mobilizaria conceitos; concluir pelo avanço na capacidade de justificar uma interpretação. É necessário mostrar por que a atividade ensina, e não apenas citar o nome de um jogo ou aplicativo."
+        },
+        {
           "type": "compare",
-          "title": "Reconheça o raciocínio incompleto",
+          "title": "Uma escrita mais determinada",
           "left": {
-            "title": "Associação apressada",
-            "body": "Usou fotografia, então a aula é humanística."
+            "title": "Afirmação genérica",
+            "body": "“A Geografia crítica é importante e os alunos precisam participar.” A frase não explica conceito, intervenção nem aprendizagem."
           },
           "right": {
-            "title": "Leitura fundamentada",
-            "body": "A aula analisa sentidos atribuídos pelos moradores e os relaciona ao lugar vivido; a fotografia é um dos recursos."
+            "title": "Argumento desenvolvido",
+            "body": "“Ao relacionar condições de circulação e decisões públicas, os alunos podem explicar acessos desiguais. O professor orienta a comparação de fontes e avalia se conseguem justificar essas relações.”"
           }
         },
         {
           "type": "callout",
-          "title": "Redação também precisa de treino",
-          "body": "No edital enviado, a prova inclui 20 questões objetivas e uma redação de até 20 linhas. As duas partes têm peso 0,50. Use a oficina de escrita do app para defender uma ideia, explicar um conceito e aplicar a um caso.",
+          "title": "Como usar o treino da unidade",
+          "body": "Há 56 questões de prática e um simulado novo de 20 situações, com comentários para todas as alternativas. Faça o simulado sem consultar a síntese; depois, explique o motivo de cada erro e releia a lição correspondente. As perguntas da versão anterior continuam na prática, com seus identificadores preservados.",
           "tone": "tip"
         },
         {
           "type": "text",
-          "body": "Exemplo de estrutura: apresente uma tese sobre a finalidade do ensino; explique a concepção ou conceito que sustenta a tese; analise uma situação didática; conclua conectando a atividade à aprendizagem. Não existe texto mágico que sirva para qualquer tema."
-        },
-        {
-          "type": "callout",
-          "title": "Seu próximo passo",
-          "body": "Faça o simulado da unidade. Depois revise os erros e escreva uma resposta curta. Os exercícios são autorais: não são questões oficiais nem previsão do que será cobrado.",
-          "tone": "tip"
+          "title": "Organize a revisão pela dificuldade",
+          "body": "Se confunde recurso e concepção, volte à lição 2. Se reconhece os nomes mas não explica as diferenças, compare os casos das lições 3 a 8. Se sabe a teoria mas não sabe como ensiná-la, retome as intervenções e evidências das lições 9 a 11. Use os cartões para recuperar as relações e a oficina para construir uma resposta própria.\nNo edital enviado, o treino envolve questões objetivas e redação de até 20 linhas. O modelo da oficina é um exemplo comentável, não um texto para repetir em qualquer tema. Seu objetivo é conseguir explicar, comparar e aplicar com autonomia."
         }
       ],
-      "summary": "Na prova, reconheça as relações que sustentam a proposta. Na redação, articule tese, conceito e exemplo didático, respeitando o tema e o limite de linhas.",
+      "summary": "Na prova, identifique problema, explicação e função das fontes antes de nomear a concepção. Na redação, articule tese, conceito, intervenção e evidência de aprendizagem. Uma palavra-chave ou um recurso não substitui esse raciocínio.",
       "practice": {
         "type": "order",
         "title": "Organize um argumento didático",
@@ -1309,7 +1812,7 @@
     },
     {
       "id": "f01",
-      "lesson": "l12",
+      "lesson": "l01",
       "stem": "Em uma aula, alunos apenas repetem nomes de rios e relevos. Qual mudança amplia a aprendizagem?",
       "options": [
         "Relacionar relevo, circulação e formas de ocupação em um problema.",
@@ -1325,12 +1828,12 @@
         "Reveja esta proposta: Afirmar que localizar nunca é útil. Essa leitura restringe ou distorce a análise. A observação ganha sentido quando permite explicar relações e processos."
       ],
       "tag": "descrição e explicação",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f02",
-      "lesson": "l12",
+      "lesson": "l01",
       "stem": "“A localização da escola explica sozinha todas as diferenças de aprendizagem”. Qual leitura é adequada?",
       "options": [
         "Aceitar sem analisar.",
@@ -1346,12 +1849,12 @@
         "Reveja esta proposta: Abandonar qualquer análise espacial. Essa leitura restringe ou distorce a análise. Uma condição espacial não substitui a investigação de outras relações relevantes."
       ],
       "tag": "sociedade e natureza",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f03",
-      "lesson": "l12",
+      "lesson": "l05",
       "stem": "Qual proposta usa um modelo para investigar um padrão espacial?",
       "options": [
         "Registrar memórias sem outro objetivo.",
@@ -1367,12 +1870,12 @@
         "Reveja esta proposta: Atribuir culturas ao clima de forma inevitável. Essa leitura restringe ou distorce a análise. Modelos ajudam a construir e testar explicações sobre padrões espaciais."
       ],
       "tag": "Geografia quantitativa",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f04",
-      "lesson": "l12",
+      "lesson": "l06",
       "stem": "Uma abordagem crítica de uma estrada considera:",
       "options": [
         "Somente a largura.",
@@ -1388,12 +1891,12 @@
         "Reveja esta proposta: Somente o tipo de tinta da sinalização. Essa leitura restringe ou distorce a análise. A produção social do espaço envolve formas, ações, decisões e relações de poder."
       ],
       "tag": "Geografia crítica",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f05",
-      "lesson": "l12",
+      "lesson": "l07",
       "stem": "Ao investigar sentimentos de pertencimento ao bairro, qual foco predomina?",
       "options": [
         "Experiência e significados do lugar.",
@@ -1409,12 +1912,12 @@
         "Reveja esta proposta: Escala cartográfica numérica. Essa leitura restringe ou distorce a análise. Experiências e vínculos ajudam a interpretar os sentidos do lugar vivido."
       ],
       "tag": "Geografia humanística",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f06",
-      "lesson": "l12",
+      "lesson": "l08",
       "stem": "Um vídeo sobre a Amazônia omite cidades e sujeitos diversos. Que análise é pertinente?",
       "options": [
         "Aceitar que a imagem mostra tudo.",
@@ -1430,12 +1933,12 @@
         "Reveja esta proposta: Deduzir identidades pela aparência. Essa leitura restringe ou distorce a análise. Representações são seletivas e podem apagar sujeitos, práticas e espaços."
       ],
       "tag": "Geografia cultural",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f07",
-      "lesson": "l12",
+      "lesson": "l09",
       "stem": "O que caracteriza uma mediação que parte do cotidiano?",
       "options": [
         "Encerrar a aula no relato espontâneo.",
@@ -1451,12 +1954,12 @@
         "Reveja esta proposta: Retirar a intervenção docente. Essa leitura restringe ou distorce a análise. O cotidiano é ponto de partida para ampliar a compreensão com intervenção intencional."
       ],
       "tag": "mediação",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f08",
-      "lesson": "l12",
+      "lesson": "l02",
       "stem": "Qual afirmação distingue recurso e teoria?",
       "options": [
         "Todo mapa é quantitativo.",
@@ -1472,12 +1975,12 @@
         "Reveja esta proposta: Uma saída de campo define automaticamente a teoria. Essa leitura restringe ou distorce a análise. O recurso não define, sozinho, a concepção que orienta a proposta."
       ],
       "tag": "teoria e método",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f09",
-      "lesson": "l12",
+      "lesson": "l03",
       "stem": "O limite de uma explicação ambiental determinista é:",
       "options": [
         "Reconhecer qualquer condição natural.",
@@ -1493,12 +1996,12 @@
         "Reveja esta proposta: Comparar técnicas diferentes. Essa leitura restringe ou distorce a análise. Natureza, técnicas e relações históricas precisam ser articuladas, evitando destinos sociais inevitáveis."
       ],
       "tag": "Geografia clássica",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f10",
-      "lesson": "l12",
+      "lesson": "l03",
       "stem": "A noção de possibilidades na relação sociedade-natureza envolve:",
       "options": [
         "Ausência de limites naturais.",
@@ -1514,12 +2017,12 @@
         "Reveja esta proposta: Negação da natureza. Essa leitura restringe ou distorce a análise. Natureza, técnicas e relações históricas precisam ser articuladas, evitando destinos sociais inevitáveis."
       ],
       "tag": "Geografia clássica",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f11",
-      "lesson": "l12",
+      "lesson": "l05",
       "stem": "Por que a média de deslocamento deve ser interpretada com cuidado?",
       "options": [
         "Porque médias nunca têm utilidade.",
@@ -1535,12 +2038,12 @@
         "Reveja esta proposta: Porque torna contexto desnecessário. Essa leitura restringe ou distorce a análise. A distribuição e os contextos dos dados precisam ser examinados além de uma medida resumida."
       ],
       "tag": "dados e modelos",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f12",
-      "lesson": "l12",
+      "lesson": "l10",
       "stem": "Ao mudar da comunidade para a rede regional, o estudo:",
       "options": [
         "Pode revelar conexões invisíveis no recorte restrito.",
@@ -1556,12 +2059,12 @@
         "Reveja esta proposta: Elimina toda observação. Essa leitura restringe ou distorce a análise. Escalas de análise permitem investigar diferentes relações entre lugares."
       ],
       "tag": "escalas",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f13",
-      "lesson": "l12",
+      "lesson": "l09",
       "stem": "Qual avaliação mostra um avanço conceitual?",
       "options": [
         "O aluno clicou em muitos botões.",
@@ -1577,12 +2080,12 @@
         "Reveja esta proposta: O aluno escreveu o nome do app. Essa leitura restringe ou distorce a análise. O uso de conceitos para explicar relações é uma evidência de aprendizagem."
       ],
       "tag": "avaliação",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f14",
-      "lesson": "l12",
+      "lesson": "l08",
       "stem": "Para estudar representações culturais, é importante:",
       "options": [
         "Tratar todo grupo como homogêneo.",
@@ -1598,12 +2101,12 @@
         "Reveja esta proposta: Supor costumes imutáveis. Essa leitura restringe ou distorce a análise. Cultura é histórica, diversa e atravessada por disputas de representação."
       ],
       "tag": "representações",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f15",
-      "lesson": "l12",
+      "lesson": "l09",
       "stem": "Geografia escolar e Geografia acadêmica:",
       "options": [
         "São idênticas em suas finalidades e condições.",
@@ -1619,12 +2122,12 @@
         "Reveja esta proposta: Diferem apenas pelo tamanho do livro. Essa leitura restringe ou distorce a análise. Finalidades educativas e mediação tornam a Geografia escolar uma organização específica do conhecimento."
       ],
       "tag": "Geografia escolar",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f16",
-      "lesson": "l12",
+      "lesson": "l04",
       "stem": "Uma descrição regional ganha força explicativa quando:",
       "options": [
         "Explicita critérios e relaciona processos.",
@@ -1640,12 +2143,12 @@
         "Reveja esta proposta: Substitui evidências por uma lista maior. Essa leitura restringe ou distorce a análise. Os critérios devem ser explicitados e o recorte precisa servir à pergunta de estudo."
       ],
       "tag": "região",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f17",
-      "lesson": "l12",
+      "lesson": "l11",
       "stem": "Qual frase evita reduzir uma perspectiva a caricatura?",
       "options": [
         "Ratzel pode ser explicado completamente por uma frase.",
@@ -1661,12 +2164,12 @@
         "Reveja esta proposta: Toda experiência individual representa a população inteira. Essa leitura restringe ou distorce a análise. As denominações introdutórias não descrevem toda a complexidade de cada tradição."
       ],
       "tag": "história do pensamento",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f18",
-      "lesson": "l12",
+      "lesson": "l11",
       "stem": "Qual conduta é adequada ao usar uma fotografia como fonte?",
       "options": [
         "Deduzir renda exata pelo rosto.",
@@ -1682,7 +2185,7 @@
         "Reveja esta proposta: Recusar qualquer observação. Essa leitura restringe ou distorce a análise. Fontes têm alcances e limites; sua articulação precisa de critérios."
       ],
       "tag": "fontes e evidências",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1703,12 +2206,12 @@
         "Reveja esta proposta: Substituir justificativa por indignação. Essa leitura restringe ou distorce a análise. Explicar o conceito e analisar o exemplo fortalece a justificativa da tese."
       ],
       "tag": "redação",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
       "id": "f20",
-      "lesson": "l12",
+      "lesson": "l11",
       "stem": "Qual combinação pode ser coerente em uma investigação?",
       "options": [
         "Mapas, dados e relatos articulados ao mesmo problema.",
@@ -1724,6 +2227,426 @@
         "Reveja esta proposta: Técnicas escolhidas sem objetivo de aprendizagem. Essa leitura restringe ou distorce a análise. Fontes têm alcances e limites; sua articulação precisa de critérios."
       ],
       "tag": "fontes e evidências",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "r2f01",
+      "lesson": "l02",
+      "stem": "Uma professora usa um mapa digital, uma tabela e entrevistas para investigar como decisões sobre transporte produziram acessos desiguais à escola. Que elemento permite reconhecer melhor a concepção geográfica da proposta?",
+      "options": [
+        "A quantidade de ferramentas utilizadas na comparação.",
+        "A centralidade das decisões e relações sociais na explicação do acesso.",
+        "O suporte digital como definidor de uma orientação quantitativa.",
+        "A presença de relatos como definidora de uma orientação humanística."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Combinar ferramentas informa os recursos, mas ainda é necessário analisar a função deles no problema.",
+        "O foco explicativo é a produção social das diferenças. Dados e relatos podem contribuir para essa investigação crítica.",
+        "O mapa digital pode apoiar orientações diferentes; sua tecnologia não determina a explicação construída.",
+        "Relatos também podem ser fontes de uma investigação crítica. É preciso examinar para que são utilizados."
+      ],
+      "tag": "teoria e recursos",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f02",
+      "lesson": "l03",
+      "stem": "Ao estudar dificuldades de circulação, um texto afirma que o relevo torna inevitável a mesma organização social em todas as comunidades da área. Qual revisão enfrenta o limite dessa explicação?",
+      "options": [
+        "Adotar a ideia de que condições naturais não participam de nenhuma atividade social.",
+        "Substituir a análise do relevo pela descrição dos nomes das comunidades.",
+        "Tratar as diferenças observadas como exceções sem interesse para a análise.",
+        "Reconhecer o relevo e investigar como técnicas, história e relações sociais medeiam seus efeitos."
+      ],
+      "answer": 3,
+      "feedback": [
+        "A resposta troca uma redução por outra. Recusar o destino ambiental não implica negar a natureza.",
+        "Mudar para uma lista de nomes não explica as mediações que a afirmação deixou de analisar.",
+        "As diferenças ajudam a questionar a necessidade do resultado e precisam ser investigadas.",
+        "A revisão conserva a importância da condição natural e recusa transformá-la em causa social suficiente."
+      ],
+      "tag": "determinismo e mediações",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f03",
+      "lesson": "l03",
+      "stem": "Duas comunidades próximas do mesmo rio organizam trajetos diferentes por técnicas e práticas construídas historicamente. Uma análise possibilista do caso deveria:",
+      "options": [
+        "Examinar as condições e possibilidades mobilizadas, sem presumir liberdade ilimitada.",
+        "Tomar as técnicas como prova de independência completa em relação ao meio.",
+        "Atribuir as duas organizações ao mesmo resultado necessário do ambiente.",
+        "Transformar cada modo de vida em uma característica permanente de seus habitantes."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A análise destaca a relação entre condições do meio e práticas e técnicas históricas, conservando seus limites.",
+        "Possibilismo não equivale a autonomia completa diante de condições materiais e naturais.",
+        "A resposta apresenta uma lógica de determinação necessária, e não a análise das possibilidades mobilizadas.",
+        "Os modos de relação com o meio são históricos; não devem ser tratados como identidades imóveis."
+      ],
+      "tag": "possibilismo",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f04",
+      "lesson": "l04",
+      "stem": "Um estudo agrupa comunidades pela rede de acesso à escola. Outro as agrupa pelo circuito de comercialização. Os mapas têm limites diferentes. Que conclusão é mais consistente?",
+      "options": [
+        "Os limites diferentes indicam que os dois estudos usaram informações incorretas.",
+        "A regionalização comercial independe de problema e de critérios explicitados.",
+        "A adequação de cada recorte depende do problema, dos critérios e das fontes.",
+        "O primeiro recorte elimina a pertinência de qualquer regionalização comercial."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Diferenças de limites podem resultar de critérios diferentes, não necessariamente de erro nos dados.",
+        "O critério e as fontes também precisam ser explicitados e discutidos nesse estudo.",
+        "A comparação pede examinar a finalidade de cada regionalização, e não exigir limites iguais para problemas distintos.",
+        "Duas perguntas podem justificar recortes distintos, sem que uma torne a outra desnecessária."
+      ],
+      "tag": "região e critérios",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f05",
+      "lesson": "l04",
+      "stem": "A turma começa localizando escolas e classificando trajetos, depois justifica os critérios e investiga relações com a circulação. Como analisar a contribuição da descrição?",
+      "options": [
+        "A investigação final dispensa conferir as informações produzidas na observação.",
+        "A descrição fornece uma base que é mobilizada e ampliada na explicação.",
+        "A classificação impede o desenvolvimento posterior de relações conceituais.",
+        "A descrição da primeira etapa demonstra que a sequência inteira é memorização."
+      ],
+      "answer": 1,
+      "feedback": [
+        "A explicação precisa voltar às evidências, não abandonar sua verificação.",
+        "A proposta usa observação e classificação como etapas relacionadas a uma pergunta explicativa.",
+        "Classificar pode apoiar a análise quando os critérios e as relações são discutidos.",
+        "É necessário analisar o percurso: a sequência não termina no reconhecimento de elementos."
+      ],
+      "tag": "descrição e explicação",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f06",
+      "lesson": "l05",
+      "stem": "A hipótese era que a menor distância corresponderia ao menor tempo. Nos dados fictícios, a rota C tem 4 km e 35 minutos; D tem 9 km e 20 minutos. Qual conclusão respeita o teste?",
+      "options": [
+        "A comparação demonstra que a relação entre distância e tempo nunca pode ser investigada.",
+        "O resultado permite concluir que o transporte de D será mais rápido em qualquer situação.",
+        "A hipótese foi confirmada porque C tem menor distância.",
+        "Os dados do caso não sustentam a hipótese e sugerem examinar outras condições do trajeto."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Uma previsão não sustentada ajuda a rever o modelo; não torna a relação impossível de estudar.",
+        "O resultado vale para os dados e condições apresentados. Generalizações exigem outros critérios e evidências.",
+        "A hipótese se refere à relação com o tempo; comparar apenas as distâncias não basta.",
+        "D tem maior distância e menor tempo. Isso contraria a previsão do caso, sem autorizar uma regra universal."
+      ],
+      "tag": "hipóteses e modelos",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f07",
+      "lesson": "l05",
+      "stem": "Dois grupos fictícios têm tempos de viagem P = 10, 20 e 60 minutos; Q = 25, 30 e 35 minutos. As médias são de 30 minutos. O que essa igualdade permite afirmar?",
+      "options": [
+        "O resumo é igual, mas a distribuição precisa ser examinada antes de concluir sobre o acesso.",
+        "As distribuições e as dificuldades individuais são equivalentes.",
+        "O grupo P não apresenta tempo muito diferente dos demais.",
+        "O grupo Q não pode ser comparado a P porque possui outra distribuição."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Os resumos são iguais e os valores se distribuem de maneira diferente. A interpretação exige considerar ambos.",
+        "A média igual não elimina a diferença entre os valores e as condições de cada grupo.",
+        "P contém um trajeto de 60 minutos, muito acima dos outros dois do conjunto.",
+        "A diferença de distribuição é precisamente uma informação relevante para a comparação."
+      ],
+      "tag": "média e distribuição",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f08",
+      "lesson": "l06",
+      "stem": "Uma via facilita o transporte de mercadorias, mas parte dos moradores continua com acesso escolar precário. Qual pergunta desenvolve uma análise crítica dessa situação?",
+      "options": [
+        "Que nome da estrada a turma deve memorizar antes da avaliação?",
+        "Qual relato individual permite dispensar todas as outras fontes?",
+        "Como a via foi produzida, quais usos privilegia e que relações explicam os efeitos diferentes?",
+        "Que característica natural torna necessários os mesmos efeitos para todos os usuários?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "O nome ajuda a identificar a via, mas não desenvolve a explicação dos efeitos socialmente diferentes.",
+        "Um relato é uma fonte situada e não substitui sozinho a investigação das relações.",
+        "A pergunta investiga produção, usos, interesses e contradições, em vez de presumir neutralidade da infraestrutura.",
+        "A formulação pressupõe uma determinação que não enfrenta a diferença descrita no caso."
+      ],
+      "tag": "produção do espaço",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f09",
+      "lesson": "l06",
+      "stem": "Um antigo armazém passa a funcionar como escola e integra novos fluxos de estudantes e serviços. À luz da relação entre objetos e ações, a análise deveria:",
+      "options": [
+        "Tratar o prédio como espaço de função inalterável por conservar parte de sua forma.",
+        "Relacionar sua materialidade às práticas e às redes que passam a lhe dar funcionamento.",
+        "Reduzir o novo funcionamento à mudança de nome na fachada.",
+        "Substituir o estudo da materialidade pela enumeração das opiniões sobre o prédio."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Uma forma material pode integrar ações e funções que se transformam historicamente.",
+        "A contribuição estudada pede compreender objetos e ações de modo indissociável e relacional.",
+        "O novo funcionamento envolve práticas, usos e conexões que não se esgotam no nome.",
+        "Reconhecer as ações não implica eliminar os objetos e suas condições materiais da análise."
+      ],
+      "tag": "objetos e ações",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f10",
+      "lesson": "l07",
+      "stem": "Duas pessoas percorrem a mesma praça: uma a descreve como lugar de encontro; outra, como lugar de desconforto e lembranças difíceis. Para um estudo humanístico, é pertinente:",
+      "options": [
+        "Escolher um relato e tratá-lo como sentido comum a todos os moradores.",
+        "Usar a localização idêntica para desconsiderar as diferenças de experiência.",
+        "Tomar o desconforto como prova de que a praça não pode ser considerada lugar.",
+        "Examinar como as experiências situadas constituem sentidos diferentes do lugar."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Um relato não representa automaticamente todos os sujeitos; as diferenças também precisam ser compreendidas.",
+        "A mesma posição não torna idênticas as relações vividas com aquele espaço.",
+        "Lugar não precisa significar harmonia: memória, conflito e desconforto podem participar da experiência.",
+        "O estudo considera os vínculos vividos e seus contextos, sem reduzir o lugar às coordenadas."
+      ],
+      "tag": "experiência do lugar",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f11",
+      "lesson": "l08",
+      "stem": "Uma campanha apresenta uma região como paisagem natural sem habitantes. Qual procedimento desenvolve uma análise cultural da representação?",
+      "options": [
+        "Examinar seleção, contexto e público, comparando outras fontes e os sentidos produzidos.",
+        "Avaliar a campanha pelo número de elementos naturais, dispensando os critérios de enquadramento.",
+        "Adotar o material como reprodução completa da região.",
+        "Deduzir pela ausência que a região de fato não possui habitantes."
+      ],
+      "answer": 0,
+      "feedback": [
+        "O procedimento analisa o que a representação favorece ou apaga e sustenta a interpretação na comparação.",
+        "Contar elementos pode descrever o material, mas não examina por si só a produção de sentidos.",
+        "Uma representação seleciona elementos; precisa ser analisada em seu contexto e alcance.",
+        "A omissão no registro não demonstra ausência no espaço representado."
+      ],
+      "tag": "representações culturais",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f12",
+      "lesson": "l08",
+      "stem": "Uma atividade investiga o significado da feira para trabalhadores; outra analisa como a feira aparece em propagandas. Como distinguir seus focos principais?",
+      "options": [
+        "As duas têm a mesma pergunta porque tratam da mesma localização.",
+        "A presença de pessoas nas duas elimina qualquer diferença entre seus objetivos.",
+        "A primeira enfatiza experiência do lugar; a segunda, seleção e circulação de representações.",
+        "A primeira é quantitativa porque envolve trabalho; a segunda é regional porque usa imagens."
+      ],
+      "answer": 2,
+      "feedback": [
+        "O lugar pode ser o mesmo, enquanto problema, fonte e explicação procurada mudam.",
+        "É necessário analisar para que se investigam os sujeitos e os materiais, não apenas reconhecer sua presença.",
+        "A distinção permite compreender perguntas humanísticas e culturais sem negar que possam dialogar.",
+        "Trabalho e imagem não definem, isoladamente, os focos explicativos propostos."
+      ],
+      "tag": "comparação de abordagens",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f13",
+      "lesson": "l09",
+      "stem": "Alunos dizem que a estrada “fica ruim” na chuva. O professor pede comparações, oferece os conceitos de rede e circulação e acompanha a revisão das explicações. O que caracteriza essa mediação?",
+      "options": [
+        "A identificação automática da teoria da aprendizagem com uma única corrente geográfica.",
+        "A articulação intencional entre experiência cotidiana e instrumentos conceituais.",
+        "A substituição do conhecimento do aluno por uma definição sem aplicação.",
+        "A retirada do professor para que cada estudante descubra todos os conceitos sozinho."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Concepção geográfica e concepção pedagógica são planos relacionados, mas não classificações equivalentes.",
+        "A intervenção retoma a experiência e oferece meios para elaborar uma explicação mais determinada.",
+        "O caso apresenta aplicação e revisão, não apenas transmissão verbal de uma definição.",
+        "A atividade do aluno ocorre com mediação e orientação; não exige ausência docente."
+      ],
+      "tag": "mediação conceitual",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f14",
+      "lesson": "l09",
+      "stem": "Após aprender o conceito de rede em trajetos escolares, a estudante o usa para explicar como a interrupção de um caminho altera o abastecimento de uma feira. Qual evidência apareceu?",
+      "options": [
+        "Repetição da mesma experiência pessoal, sem mudança de interpretação.",
+        "Abandono do conteúdo científico porque o exemplo passou a ser cotidiano.",
+        "Memorização do nome da escola como explicação de toda circulação.",
+        "Uso do conceito em outra situação, estabelecendo relações pertinentes."
+      ],
+      "answer": 3,
+      "feedback": [
+        "A estudante utiliza uma relação aprendida para compreender uma nova situação.",
+        "O cotidiano é interpretado com o conceito; a mudança de caso não implica abandono do conhecimento científico.",
+        "O caso mostra uma relação conceitual, e não apenas o reconhecimento de um nome.",
+        "A transferência indica que o conceito participa da interpretação além do exemplo inicial."
+      ],
+      "tag": "formação de conceitos",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f15",
+      "lesson": "l10",
+      "stem": "A turma amplia um mapa e passa a copiar mais nomes. Em outra tarefa, relaciona o trajeto local à distribuição municipal de serviços. Qual análise da escala é adequada?",
+      "options": [
+        "A segunda explicita relações entre recortes; alterar a imagem não demonstra isso por si só.",
+        "As duas tarefas comprovam articulação de escalas por mostrar mais lugares.",
+        "O tamanho da imagem determina sozinho o nível explicativo da investigação.",
+        "As tarefas usam o mesmo tipo de escala porque ambas possuem mapas."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A segunda conecta trajeto e organização de serviços. A primeira ainda pode permanecer no inventário.",
+        "Aumentar nomes ou área visível não mostra, sozinho, relações entre processos em diferentes recortes.",
+        "É necessário analisar o problema e as relações investigadas, além da representação gráfica.",
+        "Mapa e escala de análise não são termos idênticos; o suporte não define o raciocínio."
+      ],
+      "tag": "escalas de análise",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f16",
+      "lesson": "l06",
+      "stem": "Em uma aula anunciada como crítica, a turma apenas repete a avaliação do professor sobre uma desigualdade. Qual mudança oferece melhor evidência de aprendizagem?",
+      "options": [
+        "Trocar a fala repetida por um nome mais recente para a mesma atividade.",
+        "Usar uma tecnologia diferente sem mudar a exigência intelectual.",
+        "Solicitar uma explicação fundamentada que relacione processos e confronte as fontes.",
+        "Avaliar o acordo com o professor como critério suficiente de domínio conceitual."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Mudar o nome não altera necessariamente o que os alunos precisam compreender e justificar.",
+        "O novo suporte pode manter a mesma reprodução verbal, sem ampliar a análise.",
+        "A tarefa exige mobilizar conceitos e evidências para construir e discutir a interpretação.",
+        "Concordância não substitui demonstração das relações que sustentam uma explicação."
+      ],
+      "tag": "ensino e pensamento crítico",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f17",
+      "lesson": "l11",
+      "stem": "Uma fotografia da feira mostra bancas e circulação. Um estudante conclui que conhece, pela imagem, a renda e as condições de trabalho de cada pessoa. Qual intervenção é mais adequada?",
+      "options": [
+        "Transformar a aparência visível em medida suficiente de renda.",
+        "Explicitar o alcance do registro e selecionar outras fontes para investigar essas relações.",
+        "Aceitar a conclusão porque a fotografia registra uma situação real.",
+        "Descartar a fotografia como fonte para qualquer pergunta geográfica."
+      ],
+      "answer": 1,
+      "feedback": [
+        "A aparência não fornece esse tipo de medida, e utilizá-la assim produz uma inferência sem fundamento.",
+        "A fotografia ajuda a observar certos aspectos, enquanto a conclusão sobre renda e trabalho pede outras evidências.",
+        "Ser um registro real não elimina enquadramento, seleção e limites da informação.",
+        "O limite para uma conclusão não torna a fonte inútil para toda investigação."
+      ],
+      "tag": "fontes e inferências",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f18",
+      "lesson": "l11",
+      "stem": "Uma investigação reúne dados de fluxos, narrativas e imagens do mesmo lugar. Que condição dá coerência metodológica à combinação?",
+      "options": [
+        "A expectativa de que todas as fontes ofereçam exatamente a mesma informação.",
+        "O uso de recursos variados como prova automática de profundidade.",
+        "A análise de cada material sem relação com a pergunta inicial.",
+        "A explicitação do problema, da função de cada fonte e dos critérios de interpretação."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Fontes podem contribuir de modos distintos. É necessário justificar sua relação com o problema.",
+        "Variedade não substitui coerência entre procedimentos, conceitos e conclusão.",
+        "Materiais desconectados podem formar uma coleção de informações sem explicar o objeto.",
+        "A combinação é justificável quando permite discutir como as contribuições se articulam e quais limites conservam."
+      ],
+      "tag": "coerência metodológica",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f19",
+      "lesson": "l12",
+      "stem": "Um texto afirma que concepções geográficas devem orientar o ensino para além da memorização. Que desenvolvimento torna a tese mais consistente?",
+      "options": [
+        "A explicação de um conceito, uma intervenção didática analisada e uma evidência do avanço do aluno.",
+        "A repetição da importância da disciplina em diferentes frases.",
+        "A enumeração de ferramentas que poderiam ser usadas, sem relacioná-las ao objetivo.",
+        "Uma lista de autores sem explicar as ideias mobilizadas."
+      ],
+      "answer": 0,
+      "feedback": [
+        "O desenvolvimento conecta fundamento, ação de ensino e aprendizagem, construindo um argumento.",
+        "Reafirmar a tese sem explicação e aplicação não aumenta sua fundamentação.",
+        "Recursos precisam ser relacionados ao que se quer ensinar e ao que a turma deverá compreender.",
+        "A lista pode identificar referências, mas não demonstra como sustentam a tese."
+      ],
+      "tag": "argumentação para a redação",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f20",
+      "lesson": "l02",
+      "stem": "Ao comparar correntes, uma candidata associa uma lista de técnicas a cada uma, sem analisar problema e explicação. O que falta em sua preparação teórico-metodológica?",
+      "options": [
+        "Memorizar os nomes das técnicas em ordem alfabética.",
+        "Tratar cada autor como representante imutável de uma única frase.",
+        "Compreender como conceitos e procedimentos se articulam para justificar o conhecimento.",
+        "Substituir os casos de ensino pela classificação dos aparelhos usados em aula."
+      ],
+      "answer": 2,
+      "feedback": [
+        "A ordenação não resolve a ausência de relação entre problema, método e explicação.",
+        "A simplificação histórica pode reforçar o limite da classificação sem compreensão.",
+        "O foco teórico-metodológico está na relação entre compreensão do objeto, investigação e justificativa da explicação.",
+        "Classificar aparelhos mantém a confusão entre recurso e concepção que a preparação deve superar."
+      ],
+      "tag": "síntese teórico-metodológica",
       "pool": "final",
       "type": "single"
     }
@@ -1732,152 +2655,207 @@
     {
       "id": "c01",
       "front": "Teoria",
-      "back": "Referências para compreender e explicar o objeto de estudo."
+      "back": "Referências conceituais para compreender e explicar o objeto. Exemplo: perguntar como relações sociais participam dos acessos diferentes."
     },
     {
       "id": "c02",
       "front": "Método",
-      "back": "Caminho de investigação e interpretação, com perguntas, relações e critérios."
+      "back": "Caminho de investigação e interpretação, com perguntas, fontes e critérios. Não se resume a enumerar entrevista, mapa e fotografia."
     },
     {
       "id": "c03",
       "front": "Recurso didático",
-      "back": "Meio de apoio ao ensino; não determina sozinho a concepção."
+      "back": "Apoio ao ensino. O mesmo mapa pode servir à identificação de nomes ou à análise da produção dos acessos; o recurso não define sozinho a concepção."
     },
     {
       "id": "c04",
       "front": "Epistemologia",
-      "back": "Reflexão sobre produção, justificação e limites do conhecimento."
+      "back": "Reflexão sobre como o conhecimento é produzido, justificado e limitado. Exemplo: por que uma fotografia mostra formas, mas não prova sozinha a renda das pessoas?"
     },
     {
       "id": "c05",
       "front": "Determinismo ambiental",
-      "back": "Explicação que torna condições naturais decisivas para características sociais; pode naturalizar desigualdades."
+      "back": "Lógica que transforma uma condição natural em resultado social necessário. Reconhecer a chuva como fator não é, por si só, determinismo."
     },
     {
       "id": "c06",
       "front": "Possibilismo",
-      "back": "Condições do meio e possibilidades mobilizadas por práticas e técnicas historicamente constituídas."
+      "back": "Condições e possibilidades do meio mobilizadas por técnicas e práticas históricas. Não equivale a liberdade sem limites materiais."
     },
     {
       "id": "c07",
       "front": "Geografia tradicional",
-      "back": "Conjunto diverso de tradições, com destaque à observação, descrição, classificação e diferenciação de áreas."
+      "back": "Conjunto heterogêneo de tradições com observação, descrição, classificação e diferenciação de áreas. Não deve ser reduzido a uma única prática escolar de memorização."
     },
     {
       "id": "c08",
       "front": "Perspectiva teórico-quantitativa",
-      "back": "Explicação de padrões espaciais com modelos, hipóteses e procedimentos quantitativos."
+      "back": "Busca explicar padrões espaciais com modelos, hipóteses e procedimentos quantitativos. O modelo é confrontado com dados e possui pressupostos."
     },
     {
       "id": "c09",
       "front": "Geografias críticas",
-      "back": "Investigação da produção social do espaço, relações de poder, contradições e desigualdades."
+      "back": "Investigam a produção social do espaço, relações de poder e contradições. Uma denúncia precisa ser desenvolvida em explicação com conceitos e evidências."
     },
     {
       "id": "c10",
       "front": "Perspectiva humanística",
-      "back": "Investigação da experiência, da percepção e dos sentidos do lugar vivido."
+      "back": "Investiga como pessoas vivem, percebem e significam lugares. Narrativas precisam de contexto e não representam todos os sujeitos automaticamente."
     },
     {
       "id": "c11",
       "front": "Abordagens culturais",
-      "back": "Estudo de práticas, símbolos, identidades e representações vinculadas ao espaço."
+      "back": "Estudam práticas, símbolos, identidades e representações espaciais. Perguntam, por exemplo, quem representa um lugar e o que é selecionado ou omitido."
     },
     {
       "id": "c12",
       "front": "Objetos e ações",
-      "back": "Materialidade e práticas relacionadas de modo indissociável na interpretação do espaço."
+      "back": "Em Milton Santos, sistemas de objetos e de ações são indissociáveis. Uma estrada deve ser compreendida por sua materialidade, usos, práticas e conexões."
     },
     {
       "id": "c13",
       "front": "Mediação",
-      "back": "Intervenção intencional que articula conhecimentos cotidianos e conceitos para ampliar explicações."
+      "back": "Intervenção intencional que relaciona experiência e conceitos. O professor orienta a construção de uma explicação, sem exigir que o aluno descubra tudo sozinho."
     },
     {
       "id": "c14",
       "front": "Geografia escolar",
-      "back": "Organização de conhecimentos para finalidades educativas e condições específicas da escola."
+      "back": "Organiza conhecimentos para finalidades educativas, em diálogo com ciência, currículos, experiências e condições de ensino. Não é só conteúdo acadêmico encurtado."
     },
     {
       "id": "c15",
       "front": "Raciocínio geográfico",
-      "back": "Articulação de localização, distribuição, conexão, comparação e escala para explicar relações espaciais."
+      "back": "Localizar, comparar, examinar distribuições, conectar e articular escalas para responder a um problema. A operação precisa de uma finalidade explicativa."
     },
     {
       "id": "c16",
       "front": "Escala geográfica",
-      "back": "Recorte e nível de análise de processos e relações espaciais."
+      "back": "Recorte e nível de análise das relações de um processo. Relacionar trajeto local e rede municipal é mais que ampliar a imagem do mapa."
     },
     {
       "id": "c17",
       "front": "Escala cartográfica",
-      "back": "Relação de proporção entre distâncias representadas no mapa e no terreno."
+      "back": "Relação de proporção entre distâncias no mapa e no terreno. Não é sinônimo da escala geográfica dos processos investigados."
     },
     {
       "id": "c18",
       "front": "Evidência de aprendizagem",
-      "back": "Mudança na capacidade de usar conceitos, explicar relações e justificar interpretações."
+      "back": "O aluno usa conceitos e evidências para explicar relações e justificar uma interpretação, inclusive em uma situação diferente da estudada."
+    },
+    {
+      "id": "c19",
+      "front": "Hipótese e modelo: como se relacionam?",
+      "back": "A hipótese é uma resposta provisória. O modelo seleciona relações para investigá-la; os dados ajudam a sustentar, limitar ou rever a explicação."
+    },
+    {
+      "id": "c20",
+      "front": "Duas médias iguais demonstram o mesmo acesso?",
+      "back": "Não. Valores próximos da média e valores muito desiguais podem produzir o mesmo resumo. É necessário examinar a distribuição e as condições."
+    },
+    {
+      "id": "c21",
+      "front": "O que o histórico e o dialético ajudam a perguntar?",
+      "back": "Como uma situação foi produzida no tempo e quais relações e contradições a constituem. Uma via pode favorecer certos fluxos e manter restrições a outros usos."
+    },
+    {
+      "id": "c22",
+      "front": "Qual pergunta se aproxima da fenomenologia do lugar?",
+      "back": "Como aquele espaço é vivido e ganha sentido na experiência dos sujeitos. A localização comum não torna idênticos os vínculos."
+    },
+    {
+      "id": "c23",
+      "front": "Humanística e cultural: como distinguir o foco?",
+      "back": "Investigar o sentido vivido da feira enfatiza a experiência. Analisar como uma campanha mostra a feira enfatiza a seleção e a produção de representações."
+    },
+    {
+      "id": "c24",
+      "front": "Como fortalecer uma resposta de prova?",
+      "back": "Identifique o problema, explique o conceito, analise uma situação e justifique relações. Não classifique a concepção só por um recurso ou uma palavra."
     }
   ],
   "references": [
     {
-      "title": "Edital de seleção PROFGEO-UFPA n. 03/2026 — Anexo III",
+      "title": "Edital PROFGEO-UFPA n. 03/2026 — Anexo III, item 1.1",
       "author": "UFPA / PROFGEO",
       "year": 2026,
       "url": "https://www.profgeo.propesp.ufpa.br/",
-      "note": "Fonte do programa de estudo e das informações da prova. Arquivo enviado pelo estudante. Conferir retificações na página oficial."
+      "note": "Fonte do programa. O item define o tema, não uma bibliografia obrigatória. Este percurso, os exemplos e as questões são autorais."
+    },
+    {
+      "title": "Geografia: pequena história crítica",
+      "author": "Antonio Carlos Robert Moraes",
+      "year": 1981,
+      "note": "Leitura complementar de referência para a história do pensamento geográfico. As classificações de correntes não resumem integralmente os autores e suas obras."
+    },
+    {
+      "title": "Explanation in Geography",
+      "author": "David Harvey",
+      "year": 1969,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_1_REFEITA.md#modelos-e-explicacao",
+      "note": "Edward Arnold. Referência primária de discussão metodológica associada ao período da Nova Geografia. A ficha reúne o endereço bibliográfico da obra; os casos de teste de hipótese da unidade são exercícios próprios."
+    },
+    {
+      "title": "A natureza do espaço: técnica e tempo, razão e emoção",
+      "author": "Milton Santos",
+      "year": 1996,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_1_REFEITA.md#objetos-e-acoes",
+      "note": "Referência primária para a relação entre sistemas de objetos e de ações. A ficha liga ao catálogo da Edusp. Os exemplos de escola, estrada e feira são aplicações didáticas próprias."
+    },
+    {
+      "title": "Espaço, tempo, lugar: um arcabouço humanista",
+      "author": "Yi-Fu Tuan",
+      "year": 2011,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_1_REFEITA.md#experiencia-e-lugar",
+      "note": "Artigo em tradução publicado na Geograficidade. Fonte primária para a perspectiva da experiência e do lugar; a ficha oferece acesso ao periódico."
+    },
+    {
+      "title": "Lugar: uma perspectiva experiencial",
+      "author": "Yi-Fu Tuan",
+      "year": 2018,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_1_REFEITA.md#experiencia-e-lugar",
+      "note": "Tradução publicada na Geograficidade de texto original de 1973. Leitura primária complementar sobre a diversidade de experiências de lugar."
+    },
+    {
+      "title": "A geografia pós-estrutural e a abordagem cultural",
+      "author": "Paul Claval",
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_1_REFEITA.md#cultura-e-representacao",
+      "note": "Texto autoral na GEOUSP. Referência primária complementar para o debate cultural e sua diversidade. A ficha contém o link do artigo."
     },
     {
       "title": "Cotidiano, mediação pedagógica e formação de conceitos: uma contribuição de Vygotsky ao ensino de geografia",
       "author": "Lana de Souza Cavalcanti",
       "year": 2005,
       "url": "https://www.scielo.br/j/ccedes/a/WnXnVgTRQHZttxBQR44gt9x/?lang=pt",
-      "note": "Leitura complementar selecionada para mediação e formação conceitual; não é bibliografia obrigatória indicada no edital."
-    },
-    {
-      "title": "A natureza do espaço: técnica e tempo, razão e emoção",
-      "author": "Milton Santos",
-      "year": 1996,
-      "note": "Referência complementar para objetos, ações e organização espacial. Sínteses em linguagem didática, sem reprodução de capítulos."
-    },
-    {
-      "title": "Espaço e lugar: a perspectiva da experiência",
-      "author": "Yi-Fu Tuan",
-      "year": 1983,
-      "note": "Edição brasileira; referência complementar para experiência e lugar. A primeira edição original em inglês é de 1977."
-    },
-    {
-      "title": "Geografia: pequena história crítica",
-      "author": "Antonio Carlos Robert Moraes",
-      "year": 1981,
-      "note": "Referência complementar para história do pensamento geográfico. As correntes têm diversidade interna."
+      "note": "Cadernos Cedes. Fonte primária complementar para cotidiano, mediação e formação conceitual. As situações de ensino e as resoluções foram redigidas para esta unidade."
     },
     {
       "title": "Geografia, pesquisa e ensino",
       "author": "Editus / Universidade Estadual de Santa Cruz",
       "url": "https://uesc.br/editora/livrosdigitais2017/geografia_pesquisa_ensino.pdf",
-      "note": "Livro digital complementar sobre pesquisa e ensino, com debate de correntes geográficas."
+      "note": "Livro digital complementar com debate de história, pesquisa e ensino de Geografia."
     },
     {
-      "title": "Observando mudanças nas paisagens ao longo do tempo",
-      "author": "IBGE Educa",
-      "url": "https://educa.ibge.gov.br/professores/educa-atividades/17595-observando-mudancas-nas-paisagens-ao-longo-do-tempo.html",
-      "note": "Sugestão complementar de leitura e atividade com representações da paisagem."
+      "title": "Percurso didático, referências e atualização da unidade 1.1",
+      "author": "ProfGeo",
+      "year": 2026,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_1_REFEITA.md",
+      "note": "Apresenta o encadeamento das lições e as fontes selecionadas. Fotografias e animações mantêm os créditos originais. Não constitui bibliografia oficial da seleção."
     }
   ],
   "essay": {
     "title": "Oficina de redação",
     "prompt": "Discuta como as concepções teórico-metodológicas da Geografia podem orientar práticas de ensino que ultrapassem a memorização de informações. Explique uma concepção ou conceito e analise uma situação didática relacionada ao cotidiano dos estudantes.",
     "maxLines": 20,
-    "note": "Tema autoral de treino. Autoavaliação formativa; o app não atribui uma nota oficial nem corrige automaticamente o conteúdo.",
+    "note": "Tema autoral de treino em até 20 linhas digitadas. Use as resoluções da lição 12 para planejar e revisar. A autoavaliação é formativa; não é a grade oficial nem uma correção automática do conteúdo.",
     "rubric": [
       "Minha tese responde diretamente ao tema.",
       "Expliquei pelo menos um conceito com sentido.",
       "Analisei um exemplo didático, além de citá-lo.",
       "Relacionei a atividade à aprendizagem dos estudantes.",
-      "Meu texto é coerente, claro e tem até 20 linhas explícitas."
+      "Meu texto é coerente, claro e tem até 20 linhas explícitas.",
+      "Expliquei por que a intervenção proposta ajuda a aprender, em vez de apenas nomear um recurso.",
+      "Indiquei uma evidência de que o aluno passou a usar conceitos para explicar relações."
     ],
-    "model": "O ensino de Geografia contribui para compreender relações espaciais, por isso não deve se limitar à memorização de nomes e localizações. Esses conhecimentos podem servir de base, mas precisam integrar problemas que mobilizem conceitos e explicações.\nUma perspectiva crítica ajuda a investigar como relações sociais e decisões públicas participam da produção do espaço. Assim, diferenças de acesso não são tomadas como consequências inevitáveis do clima ou do relevo.\nEm uma aula sobre trajetos até a escola, o professor pode reunir relatos e representações dos alunos, comparar condições de circulação e relacioná-las a redes, infraestrutura e políticas. Sua mediação oferece conceitos e perguntas para ampliar interpretações do cotidiano.\nA aprendizagem pode ser avaliada pela capacidade de explicar relações e justificar conclusões com evidências. Desse modo, concepção teórica, mediação e atividade do estudante articulam conhecimentos para interpretar a realidade."
+    "model": "O ensino de Geografia deve ajudar o aluno a explicar relações espaciais. Nomes e localizações contribuem para esse trabalho, mas sua memorização não demonstra, sozinha, compreensão da organização do espaço.\nUma perspectiva crítica permite investigar como decisões e relações sociais participam da produção dos acessos. A dificuldade de chegar à escola, por exemplo, não se explica apenas pela chuva, mas também pelas condições de circulação e pela infraestrutura historicamente constituída.\nEm uma situação de ensino, a turma pode apresentar seus trajetos, comparar mapas e consultar informações sobre as vias. O professor orienta as perguntas e mobiliza os conceitos de rede, acesso e circulação, ajudando os estudantes a rever explicações iniciais.\nA avaliação deve verificar se o aluno consegue justificar diferenças com essas relações e com as fontes. Apresentar outra situação de circulação permite examinar se o conceito foi usado além do exemplo inicial.\nAssim, concepção, método e mediação articulam-se em decisões de ensino voltadas à aprendizagem. O avanço está na capacidade de interpretar e argumentar, e não apenas em repetir termos ou utilizar uma ferramenta atraente."
   }
 }

@@ -13,6 +13,9 @@ Este repositório contém um aplicativo Android de estudo individual para o ENA 
 
 ## Atualizações Android
 
+- A unidade 1.1 está na revisão didática **2**: 12 lições, 56 questões de prática, 20 casos novos no simulado e 24 cartões. `tools/author_unit_1_1.py` chama `tools/rewrite_unit_1_1.py`, que conserva os problemas anteriores a partir de `content/packages/1.1-r1.zip`. Preserve esse registro e não reutilize IDs antigos para problemas novos.
+- Ao produzir ou revisar material, explique o raciocínio com um caso acompanhado, articule as lições e faça a passagem entre conceito, interpretação geográfica e ensino. Explique termos no contexto e mostre resoluções antes de exigir aplicação autônoma. Não substitua esse encadeamento por listas de definições.
+
 - `applicationId` permanente: `br.com.emanuel.profgeo`.
 - O certificado SHA-256 público da identidade persistente é **cfccadc639798f222b959225b2de81174fbba84ad4288cd0017bf189bdbd7a54**. Nunca substitua por um certificado gerado a cada execução.
 - A chave e as credenciais são privadas; não estão neste repositório público. O proprietário tem o arquivo privado **ProfGeo-Assinatura-Persistente-Backup-Privado.zip**. Recupere essa identidade no fluxo privado autorizado e leia `docs/DESENVOLVIMENTO.md` para assinar o artefato compilado no Actions.
