@@ -37,3 +37,28 @@ test('revisão 2 da 1.2 conserva os 60 problemas antigos e o caderno, com simula
 test('um erro permanece para revisar; um novo acerto reinicia a progressão',()=>{const s=E.fresh(),q=u.questions[0],now=100000;E.answer(s,u.id,q,(q.answer+1)%q.options.length,now);assert.equal(E.errors(s,u).length,1);assert.equal(E.due(s,u,now+86400001).length,1);E.answer(s,u.id,q,q.answer,now+1000);assert.equal(E.errors(s,u).length,0);assert.equal(s.review['1.1:'+q.id].stage,1);E.answer(s,u.id,q,q.answer,now+2000);assert.equal(s.review['1.1:'+q.id].stage,2);assert.equal(s.review['1.1:'+q.id].due,now+2000+3*86400000)});
 test('atualizar conteúdo conserva progresso por identificadores',()=>{const s=E.fresh();s.completed['1.1:l01']={at:1};s.notes['1.1:l01']='Exemplo de uma comunidade';s.essays['1.1']={lines:['Minha tese'],rubric:[0]};const restored=E.merge(JSON.parse(JSON.stringify(s)));assert.equal(E.progress(restored,u).done,1);assert.equal(restored.notes['1.1:l01'],s.notes['1.1:l01']);assert.deepEqual(restored.essays,s.essays)});
 test('dados e imagens não podem executar conteúdo do repositório',()=>{assert.equal(E.escape('<img onerror="run()">'),'&lt;img onerror=&quot;run()&quot;&gt;');assert.equal(E.safeMedia('media/../../evil.js'),false);assert.equal(E.safeMedia('https://other.example/image.jpg'),false);assert.equal(E.safeMedia('media/foto.jpg'),true);const broken=structuredClone(u);broken.questions[0].answer=99;assert.throws(()=>E.validateUnit(broken));broken.questions[0].answer=1;broken.lessons[0].blocks[0].type='script';assert.throws(()=>E.validateUnit(broken))});
+test('unidade 1.3 acrescenta um percurso completo sem colidir com o caderno anterior',()=>{
+ const current=JSON.parse(fs.readFileSync('content/units/1.3.json'));
+ const catalog=JSON.parse(fs.readFileSync('content/catalog.json'));
+ E.validateUnit(current);assert.equal(current.revision,1);assert.equal(current.lessons.length,14);assert.equal(current.flashcards.length,30);
+ assert.equal(current.questions.filter(q=>q.pool==='lesson').length,56);assert.equal(current.questions.filter(q=>q.pool==='final').length,20);
+ assert.equal(catalog.modules.flatMap(m=>m.units).length,15);assert.equal(catalog.modules.flatMap(m=>m.units).filter(e=>e.status==='published').length,3);
+ const state=E.fresh();state.notes['1.1:l01']='Nota da 1.1';state.notes['1.2:l05']='Nota da 1.2';state.essays['1.2']={lines:['Redação anterior'],rubric:[0,5]};
+ const previous=JSON.parse(fs.readFileSync('content/units/1.2.json'));const old=previous.questions[0];E.answer(state,'1.2',old,old.answer,100000);
+ for(const q of current.questions)E.answer(state,'1.3',q,q.answer,100000);
+ const restored=E.merge(JSON.parse(JSON.stringify(state)));
+ assert.equal(restored.notes['1.1:l01'],state.notes['1.1:l01']);assert.equal(restored.notes['1.2:l05'],state.notes['1.2:l05']);assert.deepEqual(restored.essays,state.essays);
+ assert.equal(restored.answers['1.2:'+old.id].choice,old.answer);assert.equal(E.errors(restored,current).length,0);
+ assert.equal(Object.keys(restored.answers).filter(k=>k.startsWith('1.3:')).length,76);
+});
+test('novas fontes não alteram os pacotes publicados das unidades anteriores',()=>{
+ const crypto=require('node:crypto');const catalog=JSON.parse(fs.readFileSync('content/catalog.json'));
+ for(const [id,expected] of [['1.1','e70370e03ae34d053fce834c499a5ca1b346bf2ddc82c07ff9d9593f9147ba43'],['1.2','f8c80aaccaab1474a70e79e4887f57eec818d0e9c37c2a3105c692e99b624ac5']]){
+  const entry=catalog.modules.flatMap(m=>m.units).find(e=>e.id===id);const bytes=fs.readFileSync('content/'+entry.package);
+  assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),expected);assert.equal(entry.sha256,expected);
+ }
+ const {execFileSync}=require('node:child_process');
+ const credits=JSON.parse(execFileSync('python3',['-c','import zipfile;z=zipfile.ZipFile("content/packages/1.3-r1.zip");print(z.read("media/CREDITS.txt").decode())'],{encoding:'utf8'}));
+ const current=JSON.parse(fs.readFileSync('content/units/1.3.json'));const used=[...new Set(current.lessons.flatMap(l=>l.blocks.filter(b=>b.type==='photo').map(b=>b.src.split('/').at(-1))))].sort();
+ assert.deepEqual(credits.map(c=>c.filename).sort(),used);
+});

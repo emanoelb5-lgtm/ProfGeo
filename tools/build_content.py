@@ -42,21 +42,41 @@ for mod in entries:
    assert all(len(f)>25 for f in q['feedback'])
   for l in u['lessons']:assert any(q['lesson']==l['id'] and q['pool']=='lesson' for q in u['questions'])
   archive=ROOT/'content/packages'/f'{id}-r{u["revision"]}.zip';archive.parent.mkdir(exist_ok=True)
-  with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
-   def put(name,data):
-    zi=zipfile.ZipInfo(name,date_time=(2026,1,1,0,0,0));zi.compress_type=zipfile.ZIP_DEFLATED;z.writestr(zi,data)
-   put('unit.json',file.read_bytes())
-   used={b['src'] for l in u['lessons'] for b in l['blocks'] if b['type']=='photo'}
-   for src in sorted(used):
-    f=ROOT/'content'/src
-    assert f.is_file() and f.stat().st_size>0, 'Imagem ausente ou vazia: '+src
-    assert f.suffix.lower() in {'.jpg','.jpeg','.png','.webp'}, 'Imagem incompatível: '+src
-    data=f.read_bytes()
-    with Image.open(io.BytesIO(data)) as image:
-     assert image.width*9==image.height*16, 'Imagem fora da proporção 16:9: '+src
-     image.verify()
-    put(src,data)
-   put('media/CREDITS.txt',json.dumps(sources,ensure_ascii=False,indent=2).encode())
+  payload={'unit.json':file.read_bytes()}
+  used={b['src'] for l in u['lessons'] for b in l['blocks'] if b['type']=='photo'}
+  for src in sorted(used):
+   f=ROOT/'content'/src
+   assert f.is_file() and f.stat().st_size>0, 'Imagem ausente ou vazia: '+src
+   assert f.suffix.lower() in {'.jpg','.jpeg','.png','.webp'}, 'Imagem incompatível: '+src
+   data=f.read_bytes()
+   with Image.open(io.BytesIO(data)) as image:
+    assert image.width*9==image.height*16, 'Imagem fora da proporção 16:9: '+src
+    image.verify()
+   payload[src]=data
+  names={Path(src).name for src in used}
+  credits=[s for s in sources if s['filename'] in names]
+  assert {s['filename'] for s in credits}==names, 'Imagem sem crédito identificado.'
+  # Acrescentar fontes de outra unidade não deve alterar pacotes já publicados.
+  # Os arquivos antigos podem conter créditos globais: conserve seus bytes se
+  # o conteúdo e os créditos das imagens efetivamente usadas continuam iguais.
+  reuse=False
+  if archive.is_file():
+   try:
+    with zipfile.ZipFile(archive) as old:
+     prior=json.loads(old.read('media/CREDITS.txt'))
+     relevant={s['filename']:s for s in prior if s['filename'] in names}
+     reuse=(set(old.namelist())==set(payload)|{'media/CREDITS.txt'} and
+            relevant=={s['filename']:s for s in credits} and
+            all(old.read(name)==data for name,data in payload.items()))
+   except (OSError,KeyError,ValueError,zipfile.BadZipFile):
+    reuse=False
+  if not reuse:
+   payload['media/CREDITS.txt']=json.dumps(credits,ensure_ascii=False,indent=2).encode()
+   temporary=archive.with_suffix('.zip.tmp')
+   with zipfile.ZipFile(temporary,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
+    for name,data in payload.items():
+     zi=zipfile.ZipInfo(name,date_time=(2026,1,1,0,0,0));zi.compress_type=zipfile.ZIP_DEFLATED;z.writestr(zi,data)
+   temporary.replace(archive)
   entry['package']='packages/'+archive.name;entry['sha256']=hashlib.sha256(archive.read_bytes()).hexdigest();entry['bytes']=archive.stat().st_size
 if not a.check:CAT.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')
 assert len(seen)==15, 'Preserve os 15 itens do edital no plano de expansão.'
