@@ -18,11 +18,13 @@ São **12 lições reescritas**, **12 atividades**, **56 questões de prática**
 
 No aplicativo, abra **Ajustes → Buscar novas unidades** e retome a **1.1 desde a primeira lição**. A revisão chega como conteúdo, sem reinstalação. Anotações, favoritos, redações e o histórico das perguntas anteriores são preservados. [Percurso e referências da revisão](docs/UNIDADE_1_1_REFEITA.md).
 
-## Nova unidade disponível — 1.2
+## Unidade 1.2 refeita — revisão didática 2
 
-**Saberes disciplinares, curriculares, saberes da experiência e da ação pedagógica dos docentes**: 12 lições, 60 questões comentadas (40 de prática e 20 no simulado), 24 cartões, 7 atividades de associação ou ordenação e oficina de redação. Inclui duas fotos novas, seis esquemas em 16:9 e quatro cenas interativas, com exemplos de ensino de Geografia e situações do Pará e do campo.
+**Saberes disciplinares, curriculares, saberes da experiência e da ação pedagógica dos docentes** foi reescrita acompanhando uma professora fictícia: compreender o conteúdo, selecionar aprendizagens, enfrentar dificuldades, avaliar e investigar a prática. Os conceitos de Tardif, Gauthier e Shulman são explicados dentro desse percurso, com casos resolvidos e transferência para outra situação.
 
-No APK 1.1.1, abra **Ajustes → Buscar novas unidades**. Depois, em **Unidades**, escolha **1.2**. Não é necessário reinstalar o aplicativo; a unidade fica salva para estudo offline. [Percurso, referências e créditos da 1.2](docs/UNIDADE_1_2.md).
+São **12 lições**, **60 questões de prática**, um **simulado novo de 20 casos**, **30 cartões**, **12 atividades** e oficina de redação comentada. As duas fotos, os seis esquemas e as quatro cenas interativas continuam em 16:9, agora com leitura orientada. O tempo sugerido é de aproximadamente **quatro horas**, em sessões ajustáveis.
+
+No APK 1.1.1, abra **Ajustes → Buscar novas unidades**. Depois, em **Unidades**, retome a **1.2 desde a primeira lição**. Não é necessário reinstalar; a unidade fica salva para estudo offline. Notas, redações e histórico são preservados; os problemas antigos passam à prática com o mesmo significado. [Percurso, referências e créditos da 1.2](docs/UNIDADE_1_2.md).
 
 ## Animações mais detalhadas — versão 1.1.1
 

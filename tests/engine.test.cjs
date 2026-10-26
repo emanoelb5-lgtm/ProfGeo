@@ -12,6 +12,28 @@ test('revisão didática mantém o significado das respostas e os registros da p
  assert.ok(u.questions.filter(q=>q.pool==='final').every(q=>!old.questions.some(x=>x.id===q.id)));
  for(let i=0;i<old.essay.rubric.length;i++)assert.equal(u.essay.rubric[i],old.essay.rubric[i]);
 });
+test('revisão 2 da 1.2 conserva os 60 problemas antigos e o caderno, com simulado próprio',()=>{
+ const current=JSON.parse(fs.readFileSync('content/units/1.2.json'));
+ const {execFileSync}=require('node:child_process');
+ const old=JSON.parse(execFileSync('python3',['-c','import zipfile;z=zipfile.ZipFile("content/packages/1.2-r1.zip");print(z.read("unit.json").decode())'],{encoding:'utf8'}));
+ E.validateUnit(current);assert.equal(current.revision,2);assert.equal(current.questions.length,80);assert.equal(current.flashcards.length,30);
+ const s=E.fresh();
+ for(const q of old.questions){
+  E.answer(s,old.id,q,q.answer,100000);
+  const found=current.questions.find(x=>x.id===q.id);assert.ok(found);
+  for(const field of ['lesson','stem','options','answer','feedback','tag','type'])assert.deepEqual(found[field],q[field]);
+  assert.equal(found.pool,'lesson');
+ }
+ for(const lesson of old.lessons)assert.ok(current.lessons.some(l=>l.id===lesson.id));
+ for(const card of old.flashcards)assert.equal(current.flashcards.find(c=>c.id===card.id).front,card.front);
+ s.notes['1.2:l05']='Anotação feita antes da revisão';s.completed['1.2:l05']={at:1};s.favorites=['1.2:l05'];s.essays['1.2']={lines:['Texto anterior da 1.2'],rubric:[0,5]};s.notes['1.1:l01']='Anotação da 1.1';
+ const restored=E.merge(JSON.parse(JSON.stringify(s)));
+ for(const q of old.questions){assert.equal(restored.answers['1.2:'+q.id].choice,q.answer);assert.equal(restored.answers['1.2:'+q.id].correct,true);}
+ assert.equal(restored.notes['1.2:l05'],s.notes['1.2:l05']);assert.equal(E.progress(restored,current).done,1);assert.deepEqual(restored.essays,s.essays);assert.deepEqual(restored.favorites,s.favorites);assert.equal(restored.notes['1.1:l01'],s.notes['1.1:l01']);
+ assert.deepEqual(current.essay.rubric.slice(0,old.essay.rubric.length),old.essay.rubric);
+ const exam=current.questions.filter(q=>q.pool==='final');assert.equal(exam.length,20);
+ assert.ok(exam.every(q=>!old.questions.some(x=>x.id===q.id)));
+});
 test('um erro permanece para revisar; um novo acerto reinicia a progressão',()=>{const s=E.fresh(),q=u.questions[0],now=100000;E.answer(s,u.id,q,(q.answer+1)%q.options.length,now);assert.equal(E.errors(s,u).length,1);assert.equal(E.due(s,u,now+86400001).length,1);E.answer(s,u.id,q,q.answer,now+1000);assert.equal(E.errors(s,u).length,0);assert.equal(s.review['1.1:'+q.id].stage,1);E.answer(s,u.id,q,q.answer,now+2000);assert.equal(s.review['1.1:'+q.id].stage,2);assert.equal(s.review['1.1:'+q.id].due,now+2000+3*86400000)});
 test('atualizar conteúdo conserva progresso por identificadores',()=>{const s=E.fresh();s.completed['1.1:l01']={at:1};s.notes['1.1:l01']='Exemplo de uma comunidade';s.essays['1.1']={lines:['Minha tese'],rubric:[0]};const restored=E.merge(JSON.parse(JSON.stringify(s)));assert.equal(E.progress(restored,u).done,1);assert.equal(restored.notes['1.1:l01'],s.notes['1.1:l01']);assert.deepEqual(restored.essays,s.essays)});
 test('dados e imagens não podem executar conteúdo do repositório',()=>{assert.equal(E.escape('<img onerror="run()">'),'&lt;img onerror=&quot;run()&quot;&gt;');assert.equal(E.safeMedia('media/../../evil.js'),false);assert.equal(E.safeMedia('https://other.example/image.jpg'),false);assert.equal(E.safeMedia('media/foto.jpg'),true);const broken=structuredClone(u);broken.questions[0].answer=99;assert.throws(()=>E.validateUnit(broken));broken.questions[0].answer=1;broken.lessons[0].blocks[0].type='script';assert.throws(()=>E.validateUnit(broken))});

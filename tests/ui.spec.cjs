@@ -1,7 +1,11 @@
 const {test,expect}=require('@playwright/test');
 test('unidade 1.2 abre todos os recursos, preserva a 1.1 e salva a produção',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const previous=require('../content/units/1.2.json').questions.find(q=>q.id==='q41');
+ await page.addInitScript(({choice})=>{if(!localStorage.getItem('profgeo.state'))localStorage.setItem('profgeo.state',JSON.stringify({schemaVersion:1,completed:{'1.2:l05':{at:1}},notes:{'1.2:l05':'Nota da revisão anterior'},favorites:['1.2:l05'],answers:{'1.2:q41':{choice,correct:true,attempts:2,lastAt:1}},essays:{'1.2':{lines:['Redação da revisão anterior'],rubric:[0,5]}}}));},{choice:previous.answer});
  await page.goto('/');await expect(page.getByRole('heading',{name:'Seu próximo passo.',exact:true})).toBeVisible();
+ const revised=await page.evaluate(()=>GeoApp.getUnit('1.2'));expect(revised.revision).toBe(2);expect(revised.questions).toHaveLength(80);
+ await page.evaluate(()=>GeoApp.action('essay:1.2'));await expect(page.locator('[data-essayline]').first()).toHaveValue('Redação da revisão anterior');await expect(page.locator('[data-rubric="5"]')).toBeChecked();
  await page.evaluate(()=>GeoApp.action('lesson:1.1:l01'));
  await page.locator('#lesson-note').fill('Anotação anterior da unidade 1.1.');
  await page.evaluate(()=>GeoApp.action('unit:1.2'));
@@ -30,7 +34,8 @@ test('unidade 1.2 abre todos os recursos, preserva a 1.1 e salva a produção',a
   }
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBeTruthy();
  }
- await page.evaluate(()=>GeoApp.action('lesson:1.2:l05'));await page.locator('#lesson-note').fill('Divulgar não substitui investigar a prática.');
+ const kept=await page.evaluate(()=>GeoApp.getState());expect(kept.completed['1.2:l05'].at).toBe(1);expect(kept.answers['1.2:q41'].choice).toBe(previous.answer);expect(kept.favorites).toContain('1.2:l05');
+ await page.evaluate(()=>GeoApp.action('lesson:1.2:l05'));await expect(page.locator('#lesson-note')).toHaveValue('Nota da revisão anterior');await page.locator('#lesson-note').fill('Divulgar não substitui investigar a prática.');
  await page.evaluate(()=>GeoApp.action('flash:1.2'));await page.getByRole('button',{name:/Toque para revelar/}).click();await expect(page.locator('.flash-card')).toContainText('Conceitos');
  await page.evaluate(()=>GeoApp.action('essay:1.2'));await page.locator('[data-essayline]').first().fill('Os saberes docentes se articulam em decisões de ensino.');
  await page.locator('[data-rubric]').first().check();
@@ -54,7 +59,7 @@ test('prática, revisão e simulado da 1.2 usam questões e comentários própri
  for(let i=0;i<20;i++){
   const stem=await page.locator('.question-card h2').textContent();
   const question=await page.evaluate(stem=>GeoApp.getUnit('1.2').then(u=>u.questions.find(q=>q.stem===stem)),stem);
-  expect(question.pool).toBe('final');await page.locator('.option').nth(question.answer).click();await page.getByRole('button',{name:'Confirmar resposta'}).click();
+  expect(question.pool).toBe('final');expect(question.id).toMatch(/^r2f/);await page.locator('.option').nth(question.answer).click();await page.getByRole('button',{name:'Confirmar resposta'}).click();
   await expect(page.locator('.feedback')).toContainText(question.feedback[question.answer]);
   await page.getByRole('button',{name:i===19?'Ver meu resultado':'Próxima questão',exact:true}).click();
  }

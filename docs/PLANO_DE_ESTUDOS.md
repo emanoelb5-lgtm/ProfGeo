@@ -5,7 +5,7 @@ Estrutura baseada exclusivamente nos títulos e na numeração do **Anexo III do
 | Unidade | Conteúdo programático | Percurso sugerido para sua produção |
 |---|---|---|
 | **1.1** | **Concepções teórico-metodológicas da Geografia e seu ensino** | **Revisão didática 2 disponível:** 12 lições encadeadas, exemplos resolvidos, 56 questões de prática, simulado novo de 20 casos, 24 cartões e 12 atividades. |
-| **1.2** | **Saberes disciplinares, curriculares, saberes da experiência e da ação pedagógica dos docentes** | **Disponível:** 12 lições, 60 questões, 24 cartões, 7 atividades, fotos, esquemas, animações e redação. |
+| **1.2** | **Saberes disciplinares, curriculares, saberes da experiência e da ação pedagógica dos docentes** | **Revisão didática 2 disponível:** aula acompanhada em 12 lições, 60 questões de prática, 20 casos novos no simulado, 30 cartões, 12 atividades e redação comentada. |
 | 1.3 | Conceitos, categorias e conteúdos de geografia no Ensino Fundamental e Médio | Trabalhar espaço, lugar, paisagem, território e região com escalas e exemplos escolares. |
 | 1.4 | Programas, documentos e regulamentações que disciplinam e orientam o ensino de Geografia | Ler documentos em suas versões vigentes; relacionar objetivos, currículo e ensino. |
 | 1.5 | Pesquisa e produção do conhecimento no campo da Geografia Escolar | Formular problemas de pesquisa, distinguir métodos, fontes e finalidades da pesquisa escolar. |

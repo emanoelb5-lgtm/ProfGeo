@@ -2,469 +2,631 @@
   "schemaVersion": 1,
   "id": "1.2",
   "moduleId": "1",
-  "revision": 1,
+  "revision": 2,
   "title": "Saberes disciplinares, curriculares, saberes da experiência e da ação pedagógica dos docentes",
-  "shortTitle": "Os saberes que sustentam o ensinar",
-  "subtitle": "Reconheça os conhecimentos do professor nas decisões de uma aula de Geografia.",
+  "shortTitle": "Aprender a decidir e ensinar Geografia",
+  "subtitle": "Uma aula acompanhada: conteúdo, currículo, experiência, mediação e evidências para a prova.",
   "editalItem": "1.2",
-  "estimatedMinutes": 145,
+  "estimatedMinutes": 242,
   "objectives": [
-    "Distinguir os saberes disciplinares, curriculares, da experiência e da ação pedagógica.",
-    "Comparar os focos de Tardif, Gauthier e Shulman sem igualar suas classificações.",
-    "Analisar decisões de planejamento, mediação e avaliação em aulas de Geografia.",
-    "Relacionar saberes docentes e saberes dos estudantes em situações de ensino.",
-    "Argumentar com exemplos e evidências sobre a construção do conhecimento profissional."
+    "Explicar os saberes docentes a partir das funções que desempenham em decisões de ensino.",
+    "Distinguir tema, objetivo, recurso, progressão e evidência de aprendizagem.",
+    "Comparar Tardif, Gauthier e Shulman sem confundir suas perguntas e classificações.",
+    "Analisar uma dificuldade e justificar representação, mediação, feedback e replanejamento.",
+    "Resolver casos e construir um argumento com conceito, decisão, evidência e limite."
   ],
   "lessons": [
     {
       "id": "l01",
       "title": "Ensinar exige mais de um saber",
-      "kicker": "Reconhecer as decisões do professor",
-      "minutes": 10,
+      "kicker": "Acompanhe uma professora tomando decisões",
+      "minutes": 17,
       "blocks": [
         {
           "type": "text",
-          "title": "Uma aula começa antes de entrar na sala",
-          "body": "Imagine uma professora preparando uma aula sobre o caminho até a escola. Ela precisa compreender circulação e acesso, consultar o que a turma deve aprender, considerar dificuldades que observou e escolher como acompanhar a aprendizagem. Conhecer o assunto participa desse trabalho, mas não resolve todas essas decisões.\nNesta unidade, saber significa conhecimento mobilizado para compreender uma situação e agir profissionalmente. Os quatro focos do item 1.2 ajudam a analisar a docência. Em uma aula real, eles se articulam; separá-los aqui é uma ferramenta de estudo."
+          "title": "Da unidade 1.1 para esta unidade",
+          "body": "Na 1.1, você estudou como diferentes concepções ajudam a explicar o espaço e orientar seu ensino. Agora vamos mudar a pergunta: que conhecimentos a professora mobiliza para transformar uma explicação geográfica em aprendizagem? O objetivo é analisar decisões docentes, em vez de decorar quatro nomes separados.\nVamos acompanhar Lia, uma professora fictícia de Geografia. Ela prepara uma aula sobre acesso à escola no período chuvoso. A turma sabe localizar a escola, mas afirma que o caminho mais curto é necessariamente o mais rápido. Esse é o problema de aprendizagem que vai ligar as lições. As falas, os dados e os episódios de Lia são inventados para estudo; não descrevem uma pesquisa realizada em uma escola."
         },
         {
-          "type": "photo",
-          "src": "media/u12-quatro-saberes.png",
-          "title": "Quatro perguntas para ler uma prática docente",
-          "caption": "O esquema organiza os quatro focos do edital. Uma mesma decisão pode envolver mais de um deles; procure o aspecto destacado em cada situação.",
-          "credit": "ProfGeo · ilustração didática autoral em 16:9"
+          "type": "text",
+          "title": "O que Lia precisa resolver?",
+          "body": "Primeiro, Lia verifica se distância, tempo de deslocamento e acesso significam a mesma coisa. Depois, pergunta o que pretende que a turma aprenda: localizar trajetos ou explicar diferenças entre eles? Lembra que, em outra aula, os estudantes olharam o desenho do mapa sem consultar a tabela. Precisa escolher uma intervenção e descobrir se ela ajudou.\nCada decisão exige conhecimento. Chamar esse conjunto de saberes docentes permite reconhecer que ensinar envolve compreender, interpretar, julgar e agir em condições concretas. Ter domínio da Geografia é necessário, mas não responde sozinho como organizar a aprendizagem de uma turma."
         },
         {
           "type": "table",
-          "title": "Reconheça o foco da decisão",
+          "title": "Dê nome depois de compreender a decisão",
           "headers": [
-            "Saber",
-            "Pergunta que ajuda a reconhecer"
+            "Decisão de Lia",
+            "Saber em destaque e por quê"
           ],
           "rows": [
             [
-              "Disciplinar",
-              "Que conceitos, explicações e formas de investigar sustentam o assunto?"
+              "Distinguir distância, tempo e condições de circulação.",
+              "Disciplinar: compreender conceitos e relações da Geografia."
             ],
             [
-              "Curricular",
-              "Por que, para quem e em que progressão ensinar esse conteúdo?"
+              "Situar a comparação de trajetos no percurso de aprendizagem.",
+              "Curricular: interpretar objetivos, conteúdos e sua organização escolar."
             ],
             [
-              "Da experiência",
-              "Que aprendizagens o professor construiu no exercício da profissão?"
+              "Rever a intervenção com base em uma dificuldade observada no trabalho.",
+              "Da experiência: aprendizagem profissional construída na docência."
             ],
             [
-              "Da ação pedagógica",
-              "Como uma prática se torna pública e é investigada, na acepção de Gauthier?"
+              "Examinar resultados de práticas explicitadas e testadas por pesquisas sobre o ensino.",
+              "Da ação pedagógica, na acepção de Gauthier: conhecimento da experiência submetido a exame público."
             ]
           ]
         },
         {
+          "type": "text",
+          "title": "Por que não são quatro gavetas?",
+          "body": "Ao escolher a comparação de dois trajetos, Lia mobiliza conteúdo, objetivo e experiência ao mesmo tempo. A classificação destaca uma dimensão da decisão; não divide a professora em quatro partes. Em uma questão, procure o aspecto que o enunciado pede para analisar e justifique essa predominância.\nObserve também a última linha da tabela: qualquer aula tem ações pedagógicas no sentido comum da expressão. O saber da ação pedagógica, em Gauthier, tem um sentido específico, que será explicado na lição 5. Não basta dar uma aula para demonstrar que esse conhecimento foi produzido."
+        },
+        {
+          "type": "photo",
+          "src": "media/u12-quatro-saberes.png",
+          "title": "Retome as quatro perguntas",
+          "caption": "Use o esquema depois do caso: o que compreender, o que selecionar, o que aprender no trabalho e o que submeter ao exame público? Os focos se articulam; a figura não esgota as classificações dos autores.",
+          "credit": "ProfGeo · ilustração didática autoral em 16:9"
+        },
+        {
           "type": "photo",
           "src": "media/u12-sala-aula.jpg",
-          "title": "Uma sala reúne escolhas de ensino",
-          "caption": "Sala da Escola Técnica de Paulínia, em São Paulo, fotografada em 2015. A lousa apresenta uma aula de História. A foto ajuda a observar recursos e organização do espaço; não comprova o método usado nem a aprendizagem da turma.",
+          "title": "O que uma fotografia permite concluir?",
+          "caption": "Esta é uma sala da Escola Técnica de Paulínia, em fotografia de 2015, com conteúdo de História na lousa. Ela situa uma cena escolar, mas não mostra o planejamento nem prova o que os estudantes aprenderam. Não é a turma fictícia de Lia.",
           "credit": "Alebasi24 · Wikimedia Commons · CC BY-SA 4.0 · imagem redimensionada"
         },
         {
+          "type": "compare",
+          "title": "Primeiro caso resolvido",
+          "left": {
+            "title": "Enunciado",
+            "body": "“Lia consulta a sequência de aprendizagens antes de decidir o que retomar.” O destaque é a relação entre sua decisão e o percurso escolar."
+          },
+          "right": {
+            "title": "Raciocínio da resposta",
+            "body": "O foco é curricular: a professora interpreta a organização da aprendizagem. Ela pode usar experiência e conhecimento geográfico nessa decisão; o destaque curricular não apaga os demais saberes."
+          }
+        },
+        {
           "type": "callout",
-          "title": "Como usar as categorias",
-          "body": "Quando uma questão pede o saber predominante, observe a ação enfatizada. Consultar a progressão do currículo destaca um foco diferente de interpretar a escala de um mapa. Isso não significa que os outros saberes estejam ausentes.",
-          "tone": "info"
+          "title": "Pare e explique",
+          "body": "Sem olhar a tabela, explique por que “saber Geografia” e “saber ensinar Geografia” se relacionam, mas não se resumem à mesma exigência. Uma resposta possível: o conteúdo precisa ser compreendido, selecionado, representado e avaliado para uma turma concreta.",
+          "tone": "tip"
         },
         {
           "type": "text",
-          "title": "Desafio mental",
-          "body": "A professora troca um mapa porque percebeu uma dificuldade recorrente da turma. Pense: o destaque está na aprendizagem profissional construída ao observar os alunos. Ao analisar o mapa e definir o objetivo da nova atividade, ela também mobiliza saberes disciplinares e curriculares."
+          "title": "Como seguir",
+          "body": "Nas lições 2 a 5, vamos acompanhar cada decisão de Lia com mais calma. A lição 6 compara autores. Da 7 à 11, construiremos explicação, planejamento, mediação, avaliação e investigação. A última lição mostrará como transformar essa análise em resposta de prova e argumento escrito."
         }
       ],
-      "summary": "Os saberes docentes se articulam. Para classificá-los, identifique a decisão e o aspecto enfatizado, sem reduzir uma aula a uma única fonte de conhecimento.",
+      "summary": "Os saberes docentes ajudam a explicar decisões profissionais. Uma aula articula conhecimentos de fontes diferentes; identificar o foco de uma decisão exige mostrar sua função no caso.",
       "practice": {
         "type": "match",
-        "title": "Associe o destaque ao saber",
+        "title": "Associe a decisão ao foco principal",
         "pairs": [
           [
-            "Explicar relações entre circulação e acesso",
-            "Disciplinar"
+            "Compreender a diferença entre distância e tempo de viagem.",
+            "Saber disciplinar"
           ],
           [
-            "Situar o conteúdo nos objetivos e na progressão da turma",
-            "Curricular"
+            "Situar a aprendizagem na sequência prevista para a turma.",
+            "Saber curricular"
           ],
           [
-            "Rever uma rotina após observar dificuldades recorrentes",
-            "Da experiência"
+            "Rever uma escolha a partir de dificuldades observadas no trabalho.",
+            "Saber da experiência"
           ],
           [
-            "Investigar uma prática explicitada para exame de outros professores",
-            "Da ação pedagógica"
+            "Examinar a experiência explicitada e testada por pesquisas sobre o ensino.",
+            "Saber da ação pedagógica em Gauthier"
           ]
         ]
       }
     },
     {
       "id": "l02",
-      "title": "Saber disciplinar: compreender a Geografia",
-      "kicker": "Conceitos, relações e fontes",
-      "minutes": 12,
+      "title": "Saber disciplinar: compreender para explicar",
+      "kicker": "O que a Geografia permite afirmar?",
+      "minutes": 19,
       "blocks": [
         {
           "type": "text",
-          "title": "Dominar a matéria tem conteúdo",
-          "body": "O saber disciplinar envolve conhecimentos produzidos no campo da Geografia: conceitos, explicações, modos de formular perguntas e de examinar fontes. Saber onde um rio fica é útil, mas uma aula pode exigir também compreender como ele se relaciona com circulação, ocupação e atividades econômicas.\nO professor precisa reconhecer o que uma evidência permite afirmar. Um mapa de localização mostra onde estão certos elementos; não demonstra sozinho as causas de uma desigualdade. Uma fotografia registra um recorte visível, não tudo o que acontece naquele lugar."
+          "title": "Antes de ensinar, Lia verifica a própria explicação",
+          "body": "Retome a frase da turma: “o mais perto é sempre o mais rápido”. Para enfrentá-la, Lia precisa compreender o conteúdo. Distância mede a extensão de um percurso; tempo indica sua duração. Acessibilidade diz respeito às condições de alcançar lugares, serviços e oportunidades. As três ideias podem se relacionar, mas não são intercambiáveis.\nEsse é um exemplo de saber disciplinar: conhecimentos produzidos nos campos científicos e incorporados à formação e ao trabalho docente. Em Geografia, não se limita a nomes de rios ou capitais. Inclui conceitos, explicações e critérios para investigar relações espaciais."
+        },
+        {
+          "type": "text",
+          "title": "Uma explicação que conserva as relações",
+          "body": "Uma escola a cinco quilômetros pode ser de acesso difícil se a via estiver interrompida ou faltar transporte. Outra, mais distante, pode ser alcançada em menos tempo por uma conexão regular. Os dados necessários dependem da pergunta: localizar exige informações diferentes de explicar condições de acesso.\nLia não pode concluir que uma estrada será sempre mais rápida que um rio. Modalidade, condições do percurso, espera, custo e momento da observação precisam ser considerados. O conhecimento disciplinar permite formular perguntas e reconhecer os limites de uma generalização."
         },
         {
           "type": "photo",
           "src": "media/u12-rio-guama.jpg",
-          "title": "Do olhar sobre o rio à pergunta geográfica",
-          "caption": "Rio Guamá visto do campus da UFPA, em Belém, em setembro de 2019. A foto pode iniciar perguntas sobre paisagem, circulação e uso das margens. Explicações sobre trabalho, renda ou transporte exigem outras fontes.",
+          "title": "Do rio observado ao problema de circulação",
+          "caption": "Rio Guamá visto do campus da UFPA, em setembro de 2019. A fotografia registra aspectos visíveis desse momento. Para analisar a circulação, Lia precisaria consultar trajetos, condições e outras fontes. A imagem não comprova tempos de viagem.",
           "credit": "Fronteira · Wikimedia Commons · CC BY-SA 4.0 · imagem redimensionada"
         },
         {
-          "type": "compare",
-          "title": "Duas respostas ao mesmo tema",
-          "left": {
-            "title": "Nomear",
-            "body": "“O rio está em Belém.” A localização é um ponto de apoio."
-          },
-          "right": {
-            "title": "Relacionar",
-            "body": "“Como as travessias e os acessos às margens participam da circulação?” A pergunta orienta a investigação de relações espaciais."
-          }
-        },
-        {
           "type": "table",
-          "title": "Cuidado com a fonte",
+          "title": "Resolva a pergunta antes de escolher a fonte",
           "headers": [
-            "Fonte",
-            "Pergunta de verificação"
+            "Pergunta",
+            "O que procurar",
+            "Limite a reconhecer"
           ],
           "rows": [
             [
-              "Fotografia",
-              "Qual lugar, data, enquadramento e limite do registro?"
+              "Onde estão a escola e as comunidades?",
+              "Mapa com localização, orientação, legenda e fonte.",
+              "Localizar os pontos não explica o tempo de viagem."
             ],
             [
-              "Mapa",
-              "Qual tema, legenda, escala e informação representada?"
+              "Qual percurso é mais demorado?",
+              "Registros de duração e condições das viagens.",
+              "Um registro não garante o mesmo resultado em todo período."
             ],
             [
-              "Relato",
-              "De quem é a experiência e com quais outras fontes posso dialogar?"
-            ],
-            [
-              "Tabela",
-              "Quais unidades, recorte e critérios de produção dos dados?"
+              "Por que os acessos são diferentes?",
+              "Relações entre trajetos, transportes, infraestrutura e organização social.",
+              "A causa não pode ser deduzida apenas da aparência de uma foto."
             ]
           ]
         },
         {
-          "type": "callout",
-          "title": "Exemplo de revisão conceitual",
-          "body": "No mapa, uma escala 1:10.000 é maior que 1:100.000, pois representa o terreno com menor redução. Se o professor domina essa relação, pode explicar o conceito e reconhecer uma interpretação equivocada. Como ensiná-lo à turma envolve ainda decisões pedagógicas.",
-          "tone": "info"
+          "type": "compare",
+          "title": "Exemplo resolvido: mapa de pontos",
+          "left": {
+            "title": "Resposta precipitada",
+            "body": "“Há duas escolas no mapa, portanto o acesso é igual.” A quantidade de pontos é uma informação de localização, insuficiente para essa conclusão."
+          },
+          "right": {
+            "title": "Resposta fundamentada",
+            "body": "“O mapa localiza escolas; precisamos comparar condições de deslocamento, distribuição dos serviços e informações sobre os usuários para discutir o acesso.” A fonte é usada dentro do seu alcance."
+          }
         },
         {
           "type": "text",
-          "title": "Escolha profissional",
-          "body": "Antes de usar uma imagem para explicar uma enchente, a professora confere o que sabe sobre chuva, ocupação e infraestrutura. Se a fotografia não traz informações sobre os fatores envolvidos, ela formula hipóteses e busca evidências adicionais. Esse cuidado mostra domínio da matéria e de seus critérios de análise."
+          "title": "E quando a dificuldade é cartográfica?",
+          "body": "Lia também precisa conservar a precisão quando ensina escala: 1:10.000 é uma escala maior que 1:100.000, porque reduz menos a realidade. Um centímetro corresponde, respectivamente, a 100 metros e a um quilômetro. Compare as frações antes de associar o maior denominador à maior escala.\nEntender essa relação é uma exigência de conteúdo. Escolher como explicá-la à turma envolve outro trabalho, que aprofundaremos com Shulman na lição 7. A clareza da linguagem não autoriza inverter o significado do conceito."
+        },
+        {
+          "type": "callout",
+          "title": "Do caso ao saber",
+          "body": "Por que o foco aqui é disciplinar? Porque examinamos a validade da explicação geográfica e das fontes. Se a pergunta fosse por que Lia escolheu essa aprendizagem para aquele momento escolar, o foco passaria à organização curricular.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Transfira antes da prática",
+          "body": "Pense em uma feira: localizar o ponto de venda explica sozinho quem consegue abastecê-la? Não. É necessário examinar conexões, trajetos e condições de circulação. Você aplicou a mesma distinção entre localizar e explicar em outro contexto. Na próxima lição, Lia vai selecionar quais dessas relações ensinar primeiro."
         }
       ],
-      "summary": "Saber disciplinar é compreender e investigar o conteúdo, relacionando conceitos e fontes. Acumular nomes ou confiar em uma única imagem não basta."
+      "summary": "Saber disciplinar permite compreender conceitos, formular perguntas e examinar o alcance das fontes. Uma explicação acessível precisa preservar a validade das relações geográficas.",
+      "practice": {
+        "type": "match",
+        "title": "Relacione pergunta e informação necessária",
+        "pairs": [
+          [
+            "Localizar a escola.",
+            "Posição representada e orientação no mapa."
+          ],
+          [
+            "Comparar a duração de dois trajetos.",
+            "Registros de tempo e condições de deslocamento."
+          ],
+          [
+            "Explicar diferenças de acesso.",
+            "Relações entre circulação, infraestrutura e organização espacial."
+          ],
+          [
+            "Comparar escalas cartográficas.",
+            "Relação de redução entre representação e realidade."
+          ]
+        ]
+      }
     },
     {
       "id": "l03",
-      "title": "Saber curricular: escolher o que ensinar",
-      "kicker": "Objetivos, seleção e progressão",
-      "minutes": 13,
+      "title": "Saber curricular: construir um percurso",
+      "kicker": "O que aprender, em que sequência e para quê?",
+      "minutes": 20,
       "blocks": [
         {
           "type": "text",
-          "title": "Entre o campo científico e a aprendizagem escolar",
-          "body": "A Geografia produz muitos conhecimentos. Uma turma não estuda tudo ao mesmo tempo. O saber curricular participa da leitura de objetivos, conteúdos e formas de organização do ensino: o que selecionar, em que momento e com que relações.\nNesta unidade, a BNCC aparece como referência para discutir aprendizagens essenciais e sua relação com os currículos. Ela não é um roteiro completo de aula. Redes e escolas organizam propostas curriculares, e o professor precisa interpretá-las em seu contexto. O estudo detalhado dos documentos fica para a unidade 1.4."
+          "title": "Lia domina o assunto; ainda precisa escolher",
+          "body": "A Geografia oferece muitas possibilidades para estudar os trajetos: rede, circulação, paisagem, lugar, desigualdade de acesso. Não cabe trabalhar tudo com a mesma profundidade em uma aula. Lia consulta as orientações e a proposta curricular da escola, considera o percurso da turma e seleciona uma aprendizagem.\nSaber curricular é o conhecimento mobilizado para interpretar e trabalhar a seleção e a organização escolar de objetivos, conteúdos e métodos. Não é apenas lembrar o nome de um documento. Envolve compreender o que a escola escolhe ensinar, com que finalidades e como as aprendizagens se encadeiam."
+        },
+        {
+          "type": "compare",
+          "title": "Separe três decisões",
+          "left": {
+            "title": "Tema e recurso",
+            "body": "“Trajetos até a escola” é o assunto. “Usar um mapa” é uma escolha de suporte. Nenhum dos dois informa, sozinho, o que o aluno deverá aprender."
+          },
+          "right": {
+            "title": "Objetivo de aprendizagem",
+            "body": "“Comparar dois trajetos e explicar por que a menor distância não garante o menor tempo.” Indica uma operação e uma relação que podem aparecer na produção do aluno."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Construa a progressão com a turma",
+          "body": "Para explicar diferenças, os alunos precisam identificar os percursos e ler suas informações. Lia começa verificando a leitura de legenda e a distinção entre quilômetros e minutos. Depois propõe a comparação e, por fim, a justificativa. Essa sequência é uma decisão do caso, não uma ordem universal para toda aula.\nProgressão é ampliar e reorganizar relações ao longo do percurso. Repetir o mesmo mapa com outro título não garante avanço. Também não basta passar a um assunto mais difícil se a turma ainda não dispõe dos conhecimentos necessários para enfrentá-lo."
         },
         {
           "type": "photo",
           "src": "media/u12-caminho-curricular.png",
-          "title": "Da orientação curricular à evidência de aprendizagem",
-          "caption": "Sequência didática autoral: compreender a orientação, explicitar um objetivo, organizar uma situação e examinar o que o aluno consegue fazer. Ela ilustra decisões profissionais; não é uma ordem obrigatória de um documento.",
+          "title": "Acompanhe a escolha até sua verificação",
+          "caption": "A orientação curricular ajuda a definir um objetivo, que orienta a situação de ensino e a busca de evidências. O esquema resume o raciocínio; as decisões também precisam considerar a turma e as condições de trabalho.",
           "credit": "ProfGeo · ilustração didática autoral em 16:9"
         },
         {
-          "type": "compare",
-          "title": "Tema e objetivo não são a mesma coisa",
-          "left": {
-            "title": "Tema",
-            "body": "“Transporte e circulação.” Diz sobre o que a aula trata."
-          },
-          "right": {
-            "title": "Objetivo",
-            "body": "“Comparar dois trajetos e explicar por que menor distância não garante menor tempo.” Diz o que o estudante deverá aprender a fazer."
-          }
-        },
-        {
-          "type": "text",
-          "title": "Progressão com sentido",
-          "body": "Em um percurso hipotético, a turma pode primeiro identificar trajetos e ler suas legendas; depois comparar distância e tempo; por fim explicar diferenças de acesso relacionando meios de transporte e condições da via. A progressão deve considerar conhecimentos prévios e objetivos da turma. Não basta trocar o nome do conteúdo no plano."
-        },
-        {
           "type": "table",
-          "title": "Alinhe três decisões",
+          "title": "Planejamento resolvido, em três partes",
           "headers": [
             "Decisão",
-            "Exemplo autoral"
+            "Exemplo de Lia",
+            "Por que se relacionam?"
           ],
           "rows": [
             [
               "Objetivo",
-              "Explicar diferenças de tempo entre dois trajetos."
+              "Explicar a diferença entre distância e tempo nos trajetos.",
+              "Define o que a turma deverá compreender."
             ],
             [
               "Atividade",
-              "Ler uma tabela e comparar os trajetos com apoio de um mapa."
+              "Comparar mapa e tabela, discutir hipóteses e justificar a escolha.",
+              "Dá oportunidade para construir a relação pretendida."
             ],
             [
               "Avaliação",
-              "Justificar a escolha de uma rota com dados e condições do percurso."
+              "Justificar a resposta em outro par de trajetos.",
+              "Examina se a relação foi usada além do exemplo inicial."
             ]
           ]
         },
         {
+          "type": "text",
+          "title": "O que mudaria se a avaliação cobrasse só nomes?",
+          "body": "Imagine que Lia ensine a comparar trajetos, mas avalie apenas o nome das vias. O resultado pode informar memória de nomes; não responde se a turma aprendeu a explicar a diferença. Alinhamento significa que objetivo, atividade e avaliação trabalham a mesma aprendizagem, mesmo com tarefas diferentes.\nUm objetivo pode exigir localização, e reconhecer um nome pode ser pertinente. O problema do exemplo é a distância entre a exigência de explicar e o que foi efetivamente verificado. Julgue a tarefa em relação à finalidade, não como boa ou ruim em qualquer situação."
+        },
+        {
+          "type": "text",
+          "title": "Uma referência não é um plano pronto",
+          "body": "A BNCC de 2018, aqui usada no recorte da introdução e da Geografia do Ensino Fundamental, é uma referência para aprendizagens; sua leitura não entrega automaticamente a aula de Lia. A proposta curricular, o contexto escolar e o planejamento dão forma concreta às escolhas. Documentos e normas serão aprofundados na unidade 1.4.\nSelecionar conteúdos também envolve finalidades e escolhas sociais. Trazer uma situação local pode ampliar a compreensão, desde que não reduza a aula a curiosidades do bairro nem elimine relações com outras escalas."
+        },
+        {
           "type": "callout",
-          "title": "Leitura do currículo",
-          "body": "Consultar uma orientação e justificadamente selecionar um conteúdo é diferente de copiar um código de habilidade no plano. Também é diferente de escolher uma atividade só porque ocupa o tempo da turma.",
-          "tone": "warning"
+          "title": "Agora é sua vez, com resolução",
+          "body": "“Vou apresentar dez mapas sobre transportes.” Como transformar isso em objetivo? Uma possibilidade: “comparar a distribuição das conexões e explicar uma diferença de acesso usando os mapas”. A mudança explicita a aprendizagem; a quantidade de mapas deixa de ser seu único critério.",
+          "tone": "tip"
         }
       ],
-      "summary": "O saber curricular orienta seleção, objetivos e progressão. O professor interpreta as orientações e articula atividade e avaliação à aprendizagem pretendida.",
+      "summary": "Saber curricular envolve interpretar a seleção e a organização escolar do conhecimento. Objetivo, sequência, atividade e avaliação precisam permitir construir e examinar a aprendizagem escolhida.",
       "practice": {
-        "type": "match",
-        "title": "Qual é a função de cada decisão?",
-        "pairs": [
-          [
-            "Transporte e circulação",
-            "Tema de estudo"
-          ],
-          [
-            "Explicar diferenças de tempo entre trajetos",
-            "Objetivo de aprendizagem"
-          ],
-          [
-            "Comparar mapa e tabela em duplas",
-            "Situação de aprendizagem"
-          ],
-          [
-            "Justificar a conclusão com dados do percurso",
-            "Evidência de aprendizagem"
-          ]
+        "type": "order",
+        "title": "Organize o planejamento do caso",
+        "items": [
+          "Interpretar o percurso curricular e verificar o que a turma já consegue fazer.",
+          "Definir a relação geográfica que se espera que os alunos expliquem.",
+          "Planejar uma comparação orientada com informações adequadas.",
+          "Examinar a aprendizagem em uma justificativa sobre outro caso."
         ]
       }
     },
     {
       "id": "l04",
       "title": "Saber da experiência: aprender no trabalho",
-      "kicker": "Observação, trajetória e revisão",
-      "minutes": 11,
+      "kicker": "Como uma dificuldade vira conhecimento profissional?",
+      "minutes": 19,
       "blocks": [
         {
           "type": "text",
-          "title": "Experiência é aprendizagem profissional",
-          "body": "Ao acompanhar turmas, o professor aprende a reconhecer dúvidas, administrar situações e rever escolhas. O saber da experiência se constrói no exercício da profissão e nas relações de trabalho. Ter muitos anos de serviço não garante, por si só, que uma interpretação seja adequada.\nUma professora nota que a turma lê as cores de um mapa, mas ignora a legenda. Ela passa a pedir uma justificativa para cada interpretação e acompanha as respostas. O destaque é o aprendizado que ela constrói ao observar a prática e ajustar sua intervenção."
+          "title": "A aula não segue exatamente como Lia esperava",
+          "body": "Lia mostra mapa e tabela. Vários alunos respondem olhando apenas o traçado: “esse é mais rápido porque parece menor”. Ela se lembra de uma dificuldade semelhante em outra turma e decide pedir que apontem primeiro a unidade de cada coluna. Depois acompanha se as justificativas mudam.\nO saber da experiência docente se constrói no trabalho, nas relações com os alunos, com colegas e com as condições escolares. A professora aprende a perceber dificuldades, interpretar situações e ajustar decisões. Não é uma coleção de lembranças sem relação com o que precisa fazer."
+        },
+        {
+          "type": "compare",
+          "title": "A lembrança e sua interpretação",
+          "left": {
+            "title": "Registro que pouco explica",
+            "body": "“A tabela não deu certo.” Não informa o objetivo, o obstáculo observado ou o que Lia fez para enfrentá-lo."
+          },
+          "right": {
+            "title": "Registro que ajuda a aprender",
+            "body": "“A turma escolheu pelo desenho sem distinguir km e min. Pedi a comparação das unidades e depois recolhi justificativas individuais.” Explicita dificuldade, intervenção e modo de acompanhar."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Por que tempo de serviço não é uma garantia?",
+          "body": "Os anos de trabalho oferecem experiências, mas seu valor depende também de como são interpretadas. Repetir uma decisão pode conservar um erro; discutir respostas e rever critérios pode ampliar o conhecimento profissional. Uma professora iniciante também constrói saberes no encontro entre formação, prática e colaboração.\nNa análise de Tardif, os saberes são constituídos ao longo de trajetórias e em situações de trabalho. Isso permite perguntar como Lia chegou a reconhecer aquele obstáculo, em vez de imaginar que o domínio profissional surgiu inteiro no diploma ou apenas da intuição."
         },
         {
           "type": "photo",
           "src": "media/u12-experiencia-reflexao.png",
-          "title": "Da dificuldade observada à decisão revista",
-          "caption": "Caso fictício sobre leitura de mapas. Os passos representam uma possibilidade de reflexão profissional, com observação das respostas antes de manter ou modificar a estratégia.",
+          "title": "Siga a passagem da observação à revisão",
+          "caption": "O esquema ajuda a retomar o episódio: observar uma dificuldade, interpretar, ajustar e acompanhar. Esse caminho explicita uma aprendizagem profissional; não garante por si só a validade de qualquer conclusão.",
           "credit": "ProfGeo · ilustração didática autoral em 16:9"
-        },
-        {
-          "type": "compare",
-          "title": "Duas formas de lembrar uma aula",
-          "left": {
-            "title": "Impressão isolada",
-            "body": "“Gostaram muito; então todos aprenderam.” A reação é relevante, mas não demonstra o domínio do conceito."
-          },
-          "right": {
-            "title": "Observação orientada",
-            "body": "“Gostaram da atividade; ao justificar, parte da turma ainda confundiu cor e valor. Vou trabalhar a legenda e verificar de novo.”"
-          }
-        },
-        {
-          "type": "list",
-          "title": "O que registrar em um diário de aula",
-          "items": [
-            "Qual dificuldade apareceu, com um exemplo de resposta.",
-            "Que intervenção foi feita e em quais condições.",
-            "O que mudou nas explicações dos estudantes.",
-            "Qual dúvida permanece e o que será revisto."
-          ]
-        },
-        {
-          "type": "callout",
-          "title": "Duas experiências diferentes",
-          "body": "Os estudantes também possuem conhecimentos construídos no cotidiano. O saber experiencial docente discutido aqui é a aprendizagem profissional do professor. As duas experiências podem dialogar, mas não devem ser tratadas como termos equivalentes.",
-          "tone": "info"
-        },
-        {
-          "type": "text",
-          "title": "Experiência em conversa com outras fontes",
-          "body": "Se uma rotina deixa de ajudar uma nova turma, o professor pode rever sua hipótese, conversar com colegas e buscar referências. Aprender no trabalho não dispensa formação e conhecimento disciplinar. Permite interrogar como esses conhecimentos participam de situações concretas."
-        }
-      ],
-      "summary": "O saber da experiência se desenvolve na prática profissional e pode ser revisto. Tempo de serviço e entusiasmo da turma não substituem análise da aprendizagem."
-    },
-    {
-      "id": "l05",
-      "title": "Saber da ação pedagógica em Gauthier",
-      "kicker": "Tornar público e investigar",
-      "minutes": 14,
-      "blocks": [
-        {
-          "type": "text",
-          "title": "Um sentido que merece atenção",
-          "body": "Na discussão de Gauthier e colaboradores, o saber da ação pedagógica se refere ao saber experiencial tornado público e testado por pesquisas sobre o ensino. Ele não é simplesmente qualquer ação do professor. A experiência deixa de ficar restrita a uma certeza individual e passa a poder ser examinada por outros.\nContar que uma dinâmica “funcionou” pode iniciar uma troca profissional. Para sustentar conhecimento sobre a prática, é preciso explicitar o que foi feito, com quem, em quais condições, que aprendizagem se procurou e quais evidências foram analisadas."
-        },
-        {
-          "type": "photo",
-          "src": "media/u12-acao-pedagogica.png",
-          "title": "Da experiência privada ao exame público da prática",
-          "caption": "Esquema de estudo inspirado na distinção de Gauthier. Divulgar é um passo; a investigação das evidências e das condições faz parte do sentido específico de saber da ação pedagógica.",
-          "credit": "ProfGeo · ilustração didática autoral em 16:9"
-        },
-        {
-          "type": "compare",
-          "title": "A postagem e a investigação",
-          "left": {
-            "title": "Relato de sucesso",
-            "body": "“Usei um jogo de mapas e a turma participou.” O relato informa a experiência, mas ainda não esclarece a aprendizagem conceitual."
-          },
-          "right": {
-            "title": "Prática examinável",
-            "body": "“Definimos o objetivo, registramos as intervenções e comparamos justificativas de leitura da legenda. Outros professores analisaram o procedimento, os resultados e seus limites.”"
-          }
         },
         {
           "type": "table",
-          "title": "Perguntas para tornar uma prática examinável",
+          "title": "Um pequeno diário de Lia",
           "headers": [
-            "Aspecto",
-            "Pergunta"
+            "Registro",
+            "Função no raciocínio"
           ],
           "rows": [
             [
-              "Objetivo",
-              "O que os alunos deveriam aprender?"
+              "Objetivo: explicar a diferença entre distância e tempo.",
+              "Permite avaliar se o obstáculo é relevante para a aprendizagem escolhida."
             ],
             [
-              "Procedimento",
-              "O que professor e estudantes fizeram?"
+              "Resposta observada: escolher pelo desenho sem ler a duração.",
+              "Localiza a dificuldade; não rotula a capacidade do estudante."
             ],
             [
-              "Evidências",
-              "Quais respostas permitem acompanhar a aprendizagem?"
+              "Intervenção: comparar unidades e confrontar os dois dados.",
+              "Torna a decisão docente compreensível."
             ],
             [
-              "Condições e limites",
-              "O que pode ter influenciado os resultados?"
+              "Depois: pedir explicação em um novo exemplo.",
+              "Ajuda a verificar o alcance da mudança."
             ]
           ]
         },
         {
+          "type": "text",
+          "title": "A experiência pode ser compartilhada",
+          "body": "Ao conversar com uma colega, Lia descobre outra maneira de organizar os dados. A aprendizagem experiencial pode se desenvolver individual e coletivamente. Ela não exige que o professor trabalhe isolado nem dispensa estudo e diálogo com outros conhecimentos.\nÉ importante distinguir duas coisas: o estudante que relata sua viagem traz conhecimentos do cotidiano; a professora que aprende a interpretar dificuldades constrói aprendizagem profissional. Elas podem se encontrar na aula, mas a experiência de vida do aluno não é automaticamente o saber experiencial docente."
+        },
+        {
           "type": "callout",
-          "title": "Não transforme resultado em receita",
-          "body": "Uma investigação pode ajudar outros docentes, mas seus resultados precisam ser interpretados. Turmas, conteúdos, recursos e condições variam. Uma melhora observada não prova automaticamente que uma única estratégia foi sua causa.",
-          "tone": "warning"
+          "title": "Caso resolvido",
+          "body": "“Aprendi que preciso trabalhar a legenda antes dessa comparação.” O que permite reconhecer saber da experiência? A relação entre uma situação vivida no trabalho e uma decisão profissional aprendida. A frase ainda precisa de evidências e condições para sustentar uma recomendação a outras turmas.",
+          "tone": "tip"
         },
         {
           "type": "text",
-          "title": "Aplicação autoral",
-          "body": "Um grupo compara formas de ensinar orientação cartográfica. Ele registra tarefas, critérios e produções, discute os erros e comunica o estudo. A intenção é produzir conhecimento profissional sobre a prática, e não apenas escolher a atividade que teve mais aplausos."
+          "title": "A pergunta que leva à lição 5",
+          "body": "Lia afirma: “Na minha turma, essa intervenção ajudou”. Outro professor pergunta: como foi aplicada, que mudança ocorreu e em que condições? Agora o problema é como submeter a experiência a um exame que outros possam discutir. Essa passagem ajuda a entender Gauthier."
         }
       ],
-      "summary": "Em Gauthier, ação pedagógica tem sentido específico: experiência tornada pública e investigada. A divulgação sozinha e uma receita universal não satisfazem esse sentido.",
+      "summary": "Saber da experiência é aprendizagem profissional construída no trabalho e em suas relações. Interpretar dificuldades e acompanhar decisões permite revisar a prática; repetir uma rotina não comprova sua adequação.",
+      "practice": {
+        "type": "match",
+        "title": "Relacione o episódio à sua função",
+        "pairs": [
+          [
+            "Um aluno descreve o caminho que percorre.",
+            "Conhecimento cotidiano do estudante."
+          ],
+          [
+            "Lia aprende a reconhecer a confusão entre quilômetros e minutos.",
+            "Aprendizagem profissional da professora."
+          ],
+          [
+            "Duas docentes analisam juntas as respostas da turma.",
+            "Reflexão profissional compartilhada."
+          ],
+          [
+            "A mesma atividade é repetida sem examinar seus resultados.",
+            "Rotina que ainda precisa ser interrogada."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l05",
+      "title": "Ação pedagógica: tornar a experiência examinável",
+      "kicker": "Por que divulgar não basta, em Gauthier?",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Retome a pergunta do colega de Lia",
+          "body": "Lia percebeu uma melhora e contou à equipe. Seu relato pode ser valioso para a troca profissional. Mas um colega que queira examinar a afirmação precisa conhecer o problema, a intervenção e as respostas analisadas. Uma conclusão que fica apenas no julgamento de quem viveu a aula é difícil de discutir.\nNa acepção de Gauthier e colaboradores, o saber da ação pedagógica é o saber experiencial tornado público e testado por pesquisas sobre o ensino. A expressão designa uma forma de constituir conhecimento profissional examinável, não simplesmente o fato de o professor agir em sala."
+        },
+        {
+          "type": "compare",
+          "title": "O que muda entre os dois registros?",
+          "left": {
+            "title": "Divulgação de uma atividade",
+            "body": "“Fiz uma comparação de trajetos e todos gostaram.” Informa uma percepção e pode iniciar o diálogo. Não mostra o que os alunos aprenderam nem como a conclusão foi construída."
+          },
+          "right": {
+            "title": "Experiência submetida à investigação",
+            "body": "Explicitar a pergunta, as condições, a sequência, as produções analisadas e os critérios permite que outras pessoas examinem o argumento. Os resultados e seus limites também são comunicados."
+          }
+        },
+        {
+          "type": "text",
+          "title": "A diferença está na possibilidade de examinar",
+          "body": "No caso fictício, Lia e a equipe decidem estudar como a comparação de mapa e tabela participa das explicações sobre acesso. Recolhem produções antes e depois, definem critérios e procuram também respostas que contrariem a expectativa. Depois, discutem o procedimento e a interpretação com outros docentes e pesquisadores.\nPublicar uma foto, receber elogios ou ter muitas visualizações não substitui esse exame. Uma publicação acadêmica também não dispensa olhar seus procedimentos e evidências: o nome do veículo não demonstra, sozinho, a força de uma conclusão."
+        },
+        {
+          "type": "photo",
+          "src": "media/u12-acao-pedagogica.png",
+          "title": "A experiência passa a poder ser interrogada",
+          "caption": "A figura resume a distinção estudada: experiência, explicitação, investigação e exame público. Ela não transforma a investigação em uma receita única nem estabelece que qualquer relato já foi validado.",
+          "credit": "ProfGeo · ilustração didática autoral em 16:9"
+        },
+        {
+          "type": "table",
+          "title": "O que outro professor precisa conseguir perguntar?",
+          "headers": [
+            "Dimensão",
+            "Pergunta aplicada ao caso"
+          ],
+          "rows": [
+            [
+              "Problema",
+              "Que dificuldade de explicar os trajetos foi investigada?"
+            ],
+            [
+              "Procedimento",
+              "O que foi proposto e em que condições de turma, tempo e recursos?"
+            ],
+            [
+              "Evidências e critérios",
+              "Quais respostas sustentam a interpretação e como foram analisadas?"
+            ],
+            [
+              "Discussão e limites",
+              "O que não mudou e que outras condições podem ter participado?"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Por que isso importa para a profissão?",
+          "body": "Se cada professor conservar suas melhores decisões apenas como certezas pessoais, parte desse conhecimento ficará pouco acessível aos colegas e à formação de novos docentes. Gauthier destaca a construção de um repertório de conhecimentos sobre ensinar que possa ser explicitado e discutido.\nIsso não torna a experiência cotidiana inútil. Ela oferece problemas e aprendizados importantes. A distinção indica que a justificativa pública exige mais do que “comigo funciona”. Também não exige transformar toda aula em pesquisa formal: aqui estamos compreendendo o estatuto de um saber, não impondo uma obrigação a cada atividade."
+        },
+        {
+          "type": "callout",
+          "title": "Resolva a afirmação",
+          "body": "“Como a atividade foi aplicada em três turmas, tornou-se uma técnica que funciona em qualquer escola.” O salto é indevido. A ampliação do estudo pode fortalecer a discussão, mas condições, critérios e limites continuam necessários. Testar uma prática não produz uma garantia universal.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Ponte para os autores",
+          "body": "A mesma aula permite investigar de onde Lia aprendeu suas decisões, como tornou um conceito compreensível e como a prática foi examinada. Essas perguntas se relacionam, mas destacam problemas diferentes. Na próxima lição, vamos situá-las em Tardif, Shulman e Gauthier."
+        }
+      ],
+      "summary": "Em Gauthier, o saber da ação pedagógica envolve experiência explicitada, tornada pública e testada por pesquisas sobre o ensino. Troca de relatos pode contribuir, mas divulgação e aprovação não substituem investigação.",
       "practice": {
         "type": "order",
-        "title": "Organize um percurso de investigação da prática",
+        "title": "Reconstrua a investigação do caso",
         "items": [
-          "Delimitar uma dificuldade e o objetivo de aprendizagem.",
-          "Explicitar a intervenção e as condições de realização.",
-          "Reunir e analisar evidências com critérios claros.",
-          "Comunicar procedimentos, resultados e limites para exame público."
+          "Delimitar uma dificuldade concreta de aprendizagem.",
+          "Explicitar condições, intervenção e critérios de análise.",
+          "Examinar produções e confrontar a interpretação com os resultados.",
+          "Comunicar procedimentos, evidências e limites para discussão pública."
         ]
       }
     },
     {
       "id": "l06",
-      "title": "Autores: aproximações sem confusão",
-      "kicker": "Tardif, Gauthier e Shulman",
-      "minutes": 11,
+      "title": "Tardif, Gauthier e Shulman: perguntas diferentes",
+      "kicker": "Compare os autores a partir da aula",
+      "minutes": 23,
       "blocks": [
         {
           "type": "text",
-          "title": "O título do edital não é uma lista atribuída a um autor",
-          "body": "O item 1.2 reúne focos para estudar os saberes docentes. Não informa que todos pertencem a uma única classificação teórica. Quando o enunciado nomeia um autor, é preciso respeitar o sentido dos seus termos.\nTardif destaca a pluralidade, a temporalidade e o caráter situado dos saberes profissionais. Gauthier e colaboradores discutem um repertório de saberes e o problema de sua validação. Shulman contribui com a discussão do conhecimento pedagógico do conteúdo: compreender modos de tornar uma matéria ensinável, considerando representações e dificuldades de aprendizagem."
+          "title": "Primeiro a pergunta, depois o nome",
+          "body": "Você já conhece três problemas. Como Lia construiu seus conhecimentos ao longo da trajetória? Como escolheu uma representação para enfrentar uma dificuldade específica? Como a experiência pode fundamentar conhecimento público sobre o ensino? Agora é possível aproximar os autores desses problemas sem decorar uma tabela vazia.\nO item 1.2 do edital não atribui sua lista a um único pesquisador. As referências desta unidade são leituras complementares selecionadas para explicar os saberes docentes. As classificações dialogam, mas seus termos não devem ser tratados como traduções automáticas."
+        },
+        {
+          "type": "text",
+          "title": "Tardif: fontes, trajetória e situação de trabalho",
+          "body": "Na leitura de Tardif, o saber docente é plural: a formação profissional, as disciplinas, os currículos e a experiência contribuem para sua constituição. Saber da formação profissional inclui contribuições das ciências da educação e das ideias pedagógicas estudadas na formação. Esse conjunto não se reduz ao conhecimento específico da Geografia.\nNo caso, Lia articula estudos da licenciatura, conceitos geográficos, orientações curriculares e aprendizagens no trabalho. A pergunta é como ela mobiliza essas fontes na situação concreta, e não qual delas elimina todas as outras."
         },
         {
           "type": "table",
-          "title": "Três entradas para analisar a docência",
+          "title": "Termos de Tardif com um exemplo",
           "headers": [
-            "Referência",
-            "Foco de estudo nesta unidade"
+            "Característica",
+            "Sentido no caso de Lia"
           ],
           "rows": [
             [
-              "Tardif",
-              "Diversas fontes e aprendizagens mobilizadas ao longo da trajetória profissional."
+              "Temporais",
+              "Os saberes se constituem ao longo da história escolar, da formação e da carreira; não vêm prontos em um único momento."
             ],
             [
-              "Gauthier e colaboradores",
-              "Experiência tornada pública e testada; conhecimento profissional examinável."
+              "Plurais e heterogêneos",
+              "Formação, conteúdo, currículo e experiência têm fontes e funções diferentes na decisão."
             ],
             [
-              "Shulman",
-              "Representações, explicações e dificuldades próprias do ensino de um conteúdo."
+              "Personalizados e situados",
+              "O conhecimento se mobiliza por uma professora concreta, com uma turma e condições de trabalho. Isso não torna qualquer opinião verdadeira."
+            ],
+            [
+              "Trabalho com seres humanos",
+              "As decisões envolvem estudantes com trajetórias e respostas diversas, não objetos idênticos a controlar."
             ]
           ]
         },
         {
           "type": "text",
-          "title": "Uma prática, perguntas diferentes",
-          "body": "Uma professora muda a forma de ensinar escala. Pela entrada da trajetória, podemos perguntar de onde veio o aprendizado que orienta a decisão. Pela entrada da investigação, perguntamos como a prática e seus resultados foram explicitados e examinados. Pela entrada do conteúdo ensinável, analisamos a representação escolhida para enfrentar uma dificuldade conceitual. Essas perguntas se aproximam, mas não são definições intercambiáveis."
+          "title": "Gauthier: um ofício sustentado por saberes",
+          "body": "Gauthier e colaboradores discutem um reservatório de saberes: disciplinares, curriculares, das ciências da educação, da tradição pedagógica, experienciais e da ação pedagógica. Portanto, os quatro focos do título desta unidade não esgotam sua proposta. Tradição pedagógica envolve maneiras de imaginar e organizar o ensino, inclusive concepções herdadas da própria vida escolar, que precisam ser interrogadas.\nA contribuição estudada aqui destaca a passagem de julgamentos experienciais para conhecimento público e testado sobre ensinar. Saber da ação pedagógica não equivale a todos os saberes pedagógicos, nem a toda estratégia usada pelo professor."
+        },
+        {
+          "type": "text",
+          "title": "Shulman: compreender o conteúdo para fazê-lo compreensível",
+          "body": "Na contribuição de Shulman, o conhecimento pedagógico do conteúdo inclui modos de representar e explicar assuntos e de lidar com dificuldades e concepções dos alunos. Ao escolher mapa e tabela para enfrentar a confusão entre distância e tempo, Lia precisa saber por que essa combinação pode ajudar.\nEsse foco não é idêntico ao de Gauthier. Uma professora pode elaborar uma explicação pertinente sem demonstrar, por esse fato, que a intervenção foi submetida a pesquisa pública. Conhecer para ensinar um conteúdo e investigar publicamente uma prática são questões relacionadas, com exigências diferentes."
+        },
+        {
+          "type": "table",
+          "title": "Uma aula, três entradas de análise",
+          "headers": [
+            "Pergunta do enunciado",
+            "Contribuição que ajuda a responder"
+          ],
+          "rows": [
+            [
+              "De onde vêm os saberes de Lia e como se transformam no trabalho?",
+              "Tardif: pluralidade de fontes, trajetória e caráter situado."
+            ],
+            [
+              "Como explicitar e testar a experiência para constituir conhecimento sobre ensinar?",
+              "Gauthier: repertório profissional e saber da ação pedagógica."
+            ],
+            [
+              "Como representar distância e tempo diante da dificuldade da turma?",
+              "Shulman: conhecimento pedagógico do conteúdo."
+            ]
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "Caso de prova resolvido",
+          "left": {
+            "title": "Destaque 1",
+            "body": "“Lia usa uma tabela porque conhece a dificuldade de confundir quilômetros e minutos.” O problema é como ensinar aquele conteúdo: o foco se aproxima de Shulman."
+          },
+          "right": {
+            "title": "Destaque 2",
+            "body": "“O grupo publica procedimentos e evidências de uma investigação dessa intervenção.” O problema é o exame público da experiência: o foco se aproxima de Gauthier."
+          }
         },
         {
           "type": "callout",
-          "title": "Cuidado de prova",
-          "body": "Conhecimento pedagógico do conteúdo, em Shulman, não é sinônimo automático de saber da ação pedagógica, em Gauthier. Os termos pertencem a discussões diferentes. Leia a definição e o foco do enunciado antes de decidir.",
-          "tone": "info"
+          "title": "Explique a aproximação sem apagar a diferença",
+          "body": "Os três autores contribuem para reconhecer a complexidade do conhecimento docente. Esse ponto de encontro não permite afirmar que usaram a mesma classificação. Em uma resposta, diga qual pergunta está sendo enfrentada e qual contribuição ajuda a analisá-la.",
+          "tone": "tip"
         },
         {
-          "type": "list",
-          "title": "Como estudar as referências",
-          "items": [
-            "Associe cada autor a uma questão de estudo, sem reduzir sua obra a uma palavra.",
-            "Construa um exemplo e explique a relação com o conceito.",
-            "Nas referências, diferencie o edital das leituras complementares selecionadas pelo app."
-          ]
+          "type": "text",
+          "title": "Retome o percurso",
+          "body": "Agora vamos voltar à aula de Lia. Nas próximas lições, você verá o conhecimento profissional em funcionamento: explicar, planejar, dialogar e avaliar. Use as referências para interpretar essas decisões, em vez de procurar o nome de um autor em cada objeto da sala."
         }
       ],
-      "summary": "Compare os autores pelo problema que discutem. Pluralidade dos saberes, validação da prática e ensino de um conteúdo são focos relacionados, mas não idênticos.",
+      "summary": "Tardif ajuda a analisar fontes e constituição situada dos saberes; Gauthier, o repertório profissional e o exame público da experiência; Shulman, as formas de tornar um conteúdo compreensível. Há diálogo, sem equivalência automática.",
       "practice": {
         "type": "match",
-        "title": "Associe o foco à referência",
+        "title": "Associe a pergunta à entrada de análise",
         "pairs": [
           [
-            "Saberes temporais, plurais e situados",
-            "Tardif"
+            "Como formação, currículo e experiência se combinam na trajetória?",
+            "Pluralidade e constituição dos saberes em Tardif."
           ],
           [
-            "Experiência pública e testada por pesquisas sobre o ensino",
-            "Gauthier e colaboradores"
+            "Como a experiência é explicitada e testada publicamente?",
+            "Saber da ação pedagógica em Gauthier."
           ],
           [
-            "Representações e dificuldades no ensino de uma matéria",
-            "Shulman"
+            "Como enfrentar uma dificuldade própria de um conteúdo?",
+            "Conhecimento pedagógico do conteúdo em Shulman."
+          ],
+          [
+            "Os três autores propõem a mesma lista de saberes?",
+            "As contribuições dialogam, mas não têm classificação idêntica."
           ]
         ]
       }
@@ -472,390 +634,573 @@
     {
       "id": "l07",
       "title": "Do conceito à explicação que ensina",
-      "kicker": "Conhecimento pedagógico do conteúdo",
-      "minutes": 13,
+      "kicker": "Mostre como o aluno pode reconstruir a relação",
+      "minutes": 21,
       "blocks": [
         {
           "type": "text",
-          "title": "Adaptar com precisão",
-          "body": "Uma explicação pode ser correta para o professor e continuar difícil para o aluno. Ensinar requer reconhecer como a turma pensa, escolher representações e verificar o que ela compreendeu. O conhecimento pedagógico do conteúdo ajuda a discutir essa relação entre a matéria e as maneiras de ensiná-la.\nUm professor sabe que distância e tempo de viagem são medidas diferentes. Para enfrentar a ideia de que “o caminho menor é sempre mais rápido”, ele prepara um exemplo com rotas, solicita uma previsão e pede justificativas depois da comparação. A representação foi escolhida para uma dificuldade conceitual específica."
+          "title": "O problema da turma fica visível",
+          "body": "Lia dispõe de dois trajetos hipotéticos: A tem oito quilômetros e duração de 45 minutos; B tem 15 quilômetros e duração de 25 minutos. Um estudante escolhe A como o mais rápido, porque oito é menor que 15. Ele comparou corretamente as distâncias, mas usou essa comparação para responder sobre o tempo.\nEsse diagnóstico é mais útil que dizer “ele não entendeu nada”. Mostra o que já consegue fazer e a relação que ainda precisa construir. Para ensinar o conteúdo, Lia precisa interpretar a resposta e escolher uma representação que exponha a diferença entre as grandezas."
+        },
+        {
+          "type": "callout",
+          "title": "Preveja antes da animação",
+          "body": "Qual trajeto você escolheria se a pergunta fosse menor distância? E se fosse menor duração? Formule as duas respostas antes de usar os controles. Não tente explicar a diferença de tempo apenas com os números: eles mostram o resultado, mas não identificam sozinhos sua causa.",
+          "tone": "tip"
         },
         {
           "type": "animation",
           "kind": "quantitative",
-          "title": "Antes de escolher a rota, explique seu critério",
-          "caption": "Compare as duas rotas hipotéticas. A: 8 km e 45 minutos; B: 15 km e 25 minutos. Observe como o professor pode usar a diferença entre distância e tempo para construir uma pergunta, e não só mostrar uma cena."
+          "title": "Distância e tempo precisam de critérios diferentes",
+          "caption": "Compare as rotas A e B pelos controles. A tem 8 km e 45 min; B tem 15 km e 25 min. São dados didáticos hipotéticos. Observe o resultado e depois explique por que responder “mais rápido” exige consultar a duração."
+        },
+        {
+          "type": "text",
+          "title": "Resolução passo a passo",
+          "body": "Primeiro, leia o que foi perguntado. Para menor distância, compare quilômetros: A é menor. Para menor duração, compare minutos: B é mais rápida nas condições informadas. Depois, relacione os resultados: neste caso, a menor distância não corresponde ao menor tempo.\nPor fim, delimite a conclusão. Os dados permitem comparar os percursos apresentados. Para explicar por que um é mais rápido, precisaríamos de informações sobre transporte, espera, condições e velocidade ao longo da viagem. Inventar essas causas como se estivessem na tabela enfraqueceria o argumento."
         },
         {
           "type": "table",
-          "title": "Uma intervenção com intenção",
+          "title": "A intervenção de Lia tem um motivo",
           "headers": [
-            "Momento",
-            "Decisão do professor"
+            "Dificuldade observada",
+            "Escolha para ensinar",
+            "O que procurar depois"
           ],
           "rows": [
             [
-              "Ideia inicial",
-              "Perguntar qual rota parece mais rápida e por quê."
+              "Comparar números sem observar as unidades.",
+              "Destacar km e min e pedir uma resposta para cada pergunta.",
+              "O aluno distingue distância e duração."
             ],
             [
-              "Representação",
-              "Oferecer distância e tempo das duas rotas."
+              "Supor que o menor percurso é necessariamente o mais rápido.",
+              "Confrontar os resultados e pedir que explique a diferença.",
+              "O aluno revê a relação automática entre as grandezas."
             ],
             [
-              "Mediação",
-              "Pedir que o aluno revise ou sustente sua previsão com os dados."
-            ],
-            [
-              "Nova situação",
-              "Apresentar outro trajeto para verificar se a distinção foi compreendida."
+              "Repetir a resposta B sem justificar.",
+              "Apresentar outro par de trajetos e pedir um argumento.",
+              "O aluno usa a relação em uma situação nova."
             ]
           ]
         },
         {
+          "type": "text",
+          "title": "Agora reconheça o conhecimento pedagógico do conteúdo",
+          "body": "Lia não escolheu a animação apenas porque se move. Relacionou uma dificuldade específica, uma forma de representar o assunto e uma pergunta que obriga a comparar critérios. Essa articulação ajuda a compreender o conhecimento pedagógico do conteúdo em Shulman.\nUma técnica geral, como organizar grupos, pode contribuir para a aula. Mas o foco aqui é por que determinada explicação ou representação ajuda a aprender este conteúdo. Outro professor poderia usar papel e lápis e mobilizar o mesmo cuidado, se mantivesse a comparação e a orientação."
+        },
+        {
           "type": "compare",
-          "title": "Recurso e conhecimento profissional",
+          "title": "Transferência resolvida",
           "left": {
-            "title": "Recurso",
-            "body": "Um mapa, uma animação ou uma tabela pode apoiar a atividade."
+            "title": "Novo par hipotético",
+            "body": "C tem 10 km e 20 min; D tem 6 km e 35 min. Um aluno diz: “D é mais curta, mas C tem menor duração”."
           },
           "right": {
-            "title": "Conhecimento para ensinar",
-            "body": "Saber por que usar a representação, qual dificuldade ela enfrenta e como verificar a compreensão."
+            "title": "O que essa resposta mostra?",
+            "body": "Ele distingue as duas grandezas em outro exemplo. Para avançar, Lia pode pedir que explique por que distância não basta para analisar acesso e que informações adicionais seriam necessárias."
           }
         },
         {
-          "type": "callout",
-          "title": "Clareza sem distorção",
-          "body": "Exemplos e analogias precisam conservar o sentido do conceito. Dizer que “escala maior é o maior denominador” facilita uma frase, mas ensina uma relação errada. Ao simplificar a linguagem, confira a precisão.",
-          "tone": "info"
-        },
-        {
           "type": "text",
-          "title": "Sua verificação",
-          "body": "No exemplo, a rota B tem menor tempo, embora tenha maior distância. Isso vale para os dados da cena, não para todas as estradas e rios. Uma resposta bem construída indica o critério, compara os valores e reconhece o limite do caso."
+          "title": "Simplificar sem distorcer",
+          "body": "Volte à escala cartográfica da lição 2. Lia pode usar a mesma área representada em duas escalas para tornar visível a redução. Precisa verificar se os alunos compreendem a relação, em vez de ensinar que “número maior significa escala maior”. Uma simplificação adequada preserva o conceito e oferece uma entrada compreensível.\nNa próxima lição, esse cuidado será integrado ao planejamento. A representação é escolhida em função de uma aprendizagem e de uma dificuldade, e não como etapa decorativa."
         }
       ],
-      "summary": "Ensinar um conteúdo exige selecionar representações e intervenções adequadas às dificuldades da turma, conservando a precisão conceitual."
+      "summary": "Ensinar um conteúdo envolve reconhecer dificuldades, escolher representações e orientar relações. O conhecimento pedagógico do conteúdo ajuda a justificar essas escolhas; a resposta em um novo caso permite examinar a aprendizagem.",
+      "practice": {
+        "type": "order",
+        "title": "Reconstrua a resolução do caso",
+        "items": [
+          "Ler se a pergunta pede menor distância ou menor duração.",
+          "Comparar a grandeza e a unidade correspondentes.",
+          "Relacionar os resultados sem inventar causas ausentes dos dados.",
+          "Aplicar a distinção em outro par de trajetos e justificar."
+        ]
+      }
     },
     {
       "id": "l08",
       "title": "Planejar articulando os saberes",
-      "kicker": "Da pergunta à avaliação",
-      "minutes": 12,
+      "kicker": "Da intenção à sequência de ensino",
+      "minutes": 20,
       "blocks": [
         {
           "type": "text",
-          "title": "Caso fictício: chegar à escola na chuva",
-          "body": "Uma professora propõe investigar por que certos trajetos até a escola ficam mais demorados no período de chuva. Seu objetivo é que os alunos expliquem diferenças de acesso relacionando circulação, infraestrutura e condições do percurso. Não se trata de diagnosticar uma comunidade real.\nO planejamento articula conhecimentos geográficos, objetivos curriculares, aprendizagens da experiência e referências de práticas investigadas. As decisões precisam se ajustar às condições da turma, sem perder a aprendizagem pretendida."
-        },
-        {
-          "type": "animation",
-          "kind": "mediation",
-          "title": "Acompanhe as decisões da mediação",
-          "caption": "Explore relato, pergunta, conceito e explicação. Depois identifique: que conceito a professora mobilizou? Que objetivo orientou a sequência? Que dificuldade ela poderia observar? Que evidência permitiria avaliar a aprendizagem?"
+          "title": "Agora Lia precisa organizar a aula inteira",
+          "body": "Já sabemos o conteúdo, a aprendizagem escolhida e uma dificuldade da turma. Lia planeja uma sequência sobre acesso à escola na chuva. Seu objetivo é que os estudantes expliquem diferenças de acesso relacionando trajetos, tempo e condições de circulação. Ela não pretende apenas trocar a ideia “sempre mais curto” pela memorização de “a resposta é B”.\nOs dados e o caso são fictícios. Em uma aula real, informações locais precisariam ser obtidas e verificadas, respeitando as condições de deslocamento e participação dos estudantes. A sequência abaixo é uma proposta analisada, não uma receita obrigatória."
         },
         {
           "type": "table",
-          "title": "Leia os saberes na proposta",
+          "title": "Observe o que cada momento faz pela aprendizagem",
           "headers": [
-            "Decisão em destaque",
-            "Saber mobilizado"
+            "Momento",
+            "Decisão de Lia",
+            "Função"
           ],
           "rows": [
             [
-              "Relacionar circulação, acesso e infraestrutura",
-              "Disciplinar."
+              "Ponto de partida",
+              "Pedir uma hipótese e uma justificativa sobre os trajetos.",
+              "Conhecer o raciocínio inicial, sem adivinhar a dificuldade."
             ],
             [
-              "Definir a explicação esperada e a progressão",
-              "Curricular."
+              "Comparação orientada",
+              "Oferecer mapa e tabela, distinguir unidades e confrontar respostas.",
+              "Dar condições para construir a relação pretendida."
             ],
             [
-              "Antecipar dificuldades observadas em turmas anteriores",
-              "Da experiência."
+              "Sistematização",
+              "Explicar circulação e acesso com base nas comparações.",
+              "Organizar o que foi aprendido em conceitos."
             ],
             [
-              "Analisar uma estratégia investigada, com seus limites",
-              "Da ação pedagógica, no sentido discutido."
+              "Nova situação",
+              "Propor outro caso e recolher explicações individuais.",
+              "Examinar o uso das relações além do exemplo inicial."
             ]
           ]
         },
         {
+          "type": "callout",
+          "title": "Antes de avançar na cena",
+          "body": "Em cada etapa, procure o que muda no trabalho intelectual do aluno: ele apresenta uma ideia, confronta informações, usa um conceito e constrói uma explicação? Use os controles de etapas para acompanhar essa passagem.",
+          "tone": "tip"
+        },
+        {
+          "type": "animation",
+          "kind": "mediation",
+          "title": "A atividade precisa produzir uma relação",
+          "caption": "Avance pelos quatro controles da cena. Ela é um apoio já existente no aplicativo para discutir mediação. Relacione a progressão representada à sequência de Lia: partir do vivido, comparar, mobilizar conceitos e explicar relações."
+        },
+        {
           "type": "text",
-          "title": "Planejamento e condições reais",
-          "body": "Se não há internet, o professor pode preparar um mapa impresso ou um croqui discutido com a turma. A ausência de um recurso não torna o conteúdo irrelevante. Ao mudar o suporte, ele confere se os estudantes ainda poderão comparar trajetos e justificar as conclusões. Na turma, as respostas orientam ajustes que o plano não podia prever em detalhe."
+          "title": "O planejamento articula fontes de conhecimento",
+          "body": "A distinção entre distância, duração e acesso depende do saber disciplinar. A seleção do objetivo e sua posição no percurso mobilizam saber curricular. A lembrança de dificuldades anteriores contribui como saber da experiência. A escolha de uma representação ligada ao obstáculo pode ser analisada com Shulman.\nCaso Lia consulte pesquisas que explicitaram e testaram práticas de ensino, estará dialogando com conhecimento público sobre a ação pedagógica. Isso é diferente de afirmar que seu plano, antes de ser realizado, já produziu evidências de aprendizagem."
+        },
+        {
+          "type": "compare",
+          "title": "Uma adaptação justificada",
+          "left": {
+            "title": "Condição do trabalho",
+            "body": "A sala não tem internet e alguns estudantes precisam de material com letras maiores. Lia prepara mapa e tabela impressos, legíveis para a turma."
+          },
+          "right": {
+            "title": "Critério da decisão",
+            "body": "A adaptação preserva a possibilidade de comparar informações e explicar relações. Sua adequação depende do objetivo e do acesso ao material, não do prestígio de usar tecnologia."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Planejar não é prever cada resposta",
+          "body": "A professora organiza uma intenção e condições de aprendizagem, mas acompanha o que acontece. Se a turma ainda confunde as unidades, retoma essa relação antes de exigir uma explicação mais ampla. Se a dificuldade for localizar os percursos, precisa orientar a leitura da representação.\nEsse ajuste não significa abandonar o currículo a cada resposta. Significa interpretar a distância entre o que se espera e o que a turma demonstra, escolhendo intervenções pertinentes. Para isso, é necessário tempo, recursos e trabalho coletivo; o planejamento não depende apenas de disposição individual."
         },
         {
           "type": "callout",
-          "title": "Uma atividade não vale pelo nome",
-          "body": "“Debate”, “mapa” e “jogo” não informam, sozinhos, a aprendizagem. Explique o que os estudantes farão com os conceitos e como o professor vai acompanhar esse trabalho.",
-          "tone": "info"
+          "title": "Verifique a justificativa",
+          "body": "“Farei um debate porque é uma metodologia ativa.” A frase explica a aprendizagem esperada? Ainda não. É preciso dizer o que será discutido, com quais informações e como o debate ajudará a construir a relação geográfica escolhida. O nome da atividade não resolve essas decisões.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Ponte para a lição 9",
+          "body": "No início da sequência, Lia ouviu os estudantes. Agora precisamos entender como essas falas entram na aprendizagem: não são apenas uma abertura simpática, nem substituem a elaboração conceitual. Elas podem orientar perguntas, comparações e revisão das explicações."
         }
       ],
-      "summary": "Um planejamento articula conceito, objetivo, situação de aprendizagem e avaliação. Os saberes docentes ajudam a justificar as decisões e os ajustes.",
+      "summary": "Planejar articula conteúdo, percurso curricular, experiência e escolhas para ensinar. A sequência deve oferecer condições de construir uma relação e permitir acompanhá-la, com adaptações pertinentes à turma.",
       "practice": {
         "type": "order",
-        "title": "Organize este planejamento possível",
+        "title": "Organize os momentos da sequência de Lia",
         "items": [
-          "Ler o objetivo curricular e levantar conhecimentos e dificuldades da turma.",
-          "Formular um problema e selecionar conceitos e fontes.",
-          "Organizar a atividade e as intervenções para comparar explicações.",
-          "Examinar as produções com critérios e decidir o replanejamento."
+          "Recolher hipóteses e justificativas iniciais sobre os trajetos.",
+          "Orientar a comparação das informações e confrontar explicações.",
+          "Sistematizar as relações com conceitos de circulação e acesso.",
+          "Examinar explicações individuais em uma nova situação."
         ]
       }
     },
     {
       "id": "l09",
-      "title": "Dialogar com os saberes dos estudantes",
-      "kicker": "Cotidiano e conhecimento geográfico",
-      "minutes": 12,
+      "title": "Saberes dos estudantes e mediação conceitual",
+      "kicker": "O vivido vira ponto de partida para explicar",
+      "minutes": 19,
       "blocks": [
         {
           "type": "text",
-          "title": "O cotidiano oferece perguntas",
-          "body": "Em uma turma do campo, os estudantes podem conhecer tempos de viagem, usos de estradas, épocas de comercialização e trajetos por rios. Esses conhecimentos são referências para o diálogo, não um retrato único de todas as pessoas que vivem no campo.\nA professora reúne relatos e pede que a turma compare trajetos em um croqui. Em seguida, mobiliza circulação, rede e escala para investigar relações que ultrapassam uma experiência individual. Na discussão de Cavalcanti, o diálogo entre conhecimentos cotidianos e científicos participa da formação de conceitos geográficos."
+          "title": "O relato traz uma questão, mas ainda precisa ser analisado",
+          "body": "Na turma fictícia, um estudante diz: “Minha casa é perto da escola, mas espero muito pelo transporte”. Outro conta que percorre uma distância maior, com menos espera. Essas falas mostram experiências diferentes de deslocamento. Podem desestabilizar a hipótese de que distância resolve tudo.\nLia pergunta como os percursos se conectam e quais condições participam dos tempos. Ao colocar relatos em relação com mapas, registros e conceitos, faz mediação pedagógica. Na contribuição discutida de Cavalcanti, o diálogo entre conhecimentos cotidianos e científicos ajuda a ampliar a compreensão geográfica do vivido."
+        },
+        {
+          "type": "text",
+          "title": "O que torna a passagem didática?",
+          "body": "Se Lia apenas recolher histórias e agradecer, terá ouvido experiências, mas ainda precisará construir a relação que pretende ensinar. Se ignorar as falas e pedir que repitam uma definição, pode perder uma possibilidade de reconhecer as explicações da turma.\nNo caso, ela organiza três perguntas: que diferença aparece nos relatos? Que informações podem ajudar a examiná-la? Como circulação e acesso ajudam a explicá-la? As perguntas ligam vivido, confronto de informações e elaboração conceitual. O conceito passa a servir para compreender uma situação."
+        },
+        {
+          "type": "callout",
+          "title": "Antecipe uma interpretação",
+          "body": "Uma praça tem o mesmo sentido para uma pessoa que trabalha ali, outra que atravessa o local e outra que o usa para encontrar amigos? Antes dos controles, pense em uma diferença possível e no que ela exigiria investigar.",
+          "tone": "tip"
         },
         {
           "type": "animation",
           "kind": "lived",
-          "title": "Um lugar pode ser vivido de maneiras diferentes",
-          "caption": "Ouça os três relatos fictícios da praça. Eles ilustram conhecimentos e sentidos dos personagens. O saber da experiência docente é outro foco: o que o professor aprende ao observar, mediar e avaliar situações de ensino."
+          "title": "Três vivências, um lugar",
+          "caption": "Use “Pessoa 1”, “Pessoa 2” e “Pessoa 3” para comparar as leituras da praça. São personagens hipotéticos. Observe como a mudança de experiência oferece perguntas sobre o lugar; ela não prova que toda pessoa de um grupo terá a mesma vivência."
+        },
+        {
+          "type": "text",
+          "title": "Leia o resultado sem transformar diferença em rótulo",
+          "body": "As personagens chamam atenção para usos e significados distintos. Lia pode pedir que comparem as interpretações e investiguem suas condições. Não deve concluir que moradores de uma área, estudantes do campo ou de comunidades ribeirinhas pensam todos do mesmo modo.\nConhecimentos cotidianos são relevantes e também podem ser discutidos. A afirmação “toda estrada é mais rápida que qualquer rio” precisa ser confrontada com condições e fontes. Valorizar quem fala não exige aceitar uma generalização sem exame."
         },
         {
           "type": "compare",
-          "title": "Duas escolhas de mediação",
+          "title": "Transferência: comercialização no campo",
           "left": {
-            "title": "Ficar só no relato",
-            "body": "A turma conta trajetos, mas não os compara nem constrói explicações. A escuta ocorreu; a ampliação conceitual ainda precisa ser trabalhada."
+            "title": "Fala de uma estudante",
+            "body": "“A produção passa por dois lugares antes de chegar à feira.” O relato informa uma experiência de circulação e pode revelar conexões que o mapa inicial não mostrava."
           },
           "right": {
-            "title": "Ampliar a leitura do vivido",
-            "body": "A turma compara trajetos, questiona diferenças e relaciona suas experiências a redes, infraestrutura e outras escalas."
+            "title": "Mediação possível",
+            "body": "Lia pede representar as etapas, comparar percursos e investigar transportes e intermediários. O conceito de rede ajuda a organizar relações; a aula não termina em uma lista de lugares."
           }
         },
         {
           "type": "text",
-          "title": "Valorizar sem generalizar",
-          "body": "Uma aluna que trabalha na agricultura não conhece necessariamente todos os cultivos, nem todos os alunos fazem a mesma atividade. O professor pergunta e acompanha as respostas. Os relatos também precisam ser confrontados com outras fontes quando a questão exigir uma explicação mais ampla."
+          "title": "O que Lia aprende ao ouvir?",
+          "body": "As falas também podem mudar o conhecimento profissional de Lia. Ela percebe, por exemplo, que sua tabela não incluía a espera e revê o que precisa representar. O estudante traz um conhecimento do cotidiano; a professora aprende sobre o ensino e sobre a situação ao examiná-lo.\nEssa distinção evita confundir experiência do aluno e saber da experiência docente. Mostra também que mediação não é uma transmissão em sentido único: a professora conserva a responsabilidade de orientar o estudo e pode rever suas próprias interpretações."
         },
         {
           "type": "callout",
-          "title": "Uma aprendizagem em duas direções",
-          "body": "Os alunos podem ampliar suas interpretações com conceitos geográficos. O professor pode aprender, pela observação da turma, quais perguntas e representações precisam ser revistas. Isso não transforma o relato do aluno em saber experiencial docente por simples mudança de nome.",
-          "tone": "info"
-        },
-        {
-          "type": "list",
-          "title": "Perguntas para a turma",
-          "items": [
-            "Quais trajetos aparecem e quais ainda não foram considerados?",
-            "O que varia entre as experiências?",
-            "Que conceito ajuda a explicar a diferença?",
-            "Que outra fonte precisamos consultar?"
-          ]
+          "title": "Resposta que indica aprendizagem",
+          "body": "“Meu trajeto é perto, mas depende de uma conexão com longa espera; por isso a distância não basta para explicar o acesso.” A fala relaciona o vivido a condições de circulação. Para verificar o alcance da compreensão, Lia pode propor outra situação, sem exigir exposição de experiências pessoais de todos.",
+          "tone": "tip"
         }
       ],
-      "summary": "Saberes dos estudantes e saberes docentes podem dialogar. A mediação valoriza as experiências e oferece conceitos para ampliar a compreensão."
-    },
-    {
-      "id": "l10",
-      "title": "Avaliar para aprender a ensinar melhor",
-      "kicker": "Critérios, evidências e feedback",
-      "minutes": 12,
-      "blocks": [
-        {
-          "type": "text",
-          "title": "Avaliação também orienta decisões",
-          "body": "A avaliação pode oferecer informação sobre a aprendizagem e sobre a intervenção do professor. Para isso, precisa estar relacionada ao objetivo. Se o objetivo é explicar diferenças de acesso, pedir apenas nomes de lugares verifica uma parte diferente do conhecimento.\nEm uma tarefa fictícia, os alunos comparam duas rotas e justificam qual tem menor tempo. O professor lê as respostas considerando três critérios: distinguir tempo e distância, usar os dados do caso e justificar sem transformar o exemplo em regra universal."
-        },
-        {
-          "type": "photo",
-          "src": "media/u12-evidencias.png",
-          "title": "Leia o que as respostas permitem observar",
-          "caption": "Respostas fictícias para uma tarefa sobre rotas. Os comentários indicam aspectos a trabalhar; não são notas oficiais nem uma classificação definitiva de alunos.",
-          "credit": "ProfGeo · ilustração didática autoral em 16:9"
-        },
-        {
-          "type": "table",
-          "title": "Resposta e próxima intervenção",
-          "headers": [
-            "Resposta fictícia",
-            "Feedback que orienta a aprendizagem"
-          ],
-          "rows": [
-            [
-              "“A menor distância é mais rápida.”",
-              "Compare os tempos e reveja a relação entre as duas medidas."
-            ],
-            [
-              "“B, porque 25 minutos é menos que 45.”",
-              "Você comparou o tempo; explique também o que ocorre com a distância."
-            ],
-            [
-              "“B tem menor tempo, apesar de maior distância.”",
-              "A distinção apareceu; agora justifique os limites da conclusão."
-            ]
-          ]
-        },
-        {
-          "type": "text",
-          "title": "Replanejar com evidências",
-          "body": "Se muitas justificativas ainda confundem tempo e distância, a professora pode usar outro exemplo, retomar as unidades ou pedir uma comparação orientada. Essas decisões alimentam sua aprendizagem profissional. Uma mudança de desempenho oferece uma pista; para explicar suas causas, é necessário examinar também condições e outras intervenções."
-        },
-        {
-          "type": "callout",
-          "title": "Evidência não é o mesmo que impressão",
-          "body": "Participação, satisfação e conclusão da atividade são informações úteis, mas não substituem a demonstração da aprendizagem conceitual. Uma turma pode estar animada e ainda precisar de mediação.",
-          "tone": "warning"
-        }
-      ],
-      "summary": "A avaliação oferece evidências quando tarefa e critérios correspondem ao objetivo. O feedback explica a dificuldade e indica um próximo passo."
-    },
-    {
-      "id": "l11",
-      "title": "Construir conhecimento com outros docentes",
-      "kicker": "Registro e investigação coletiva",
-      "minutes": 13,
-      "blocks": [
-        {
-          "type": "text",
-          "title": "Um problema de ensino pode ser investigado",
-          "body": "Uma equipe percebe que estudantes decoram tipos de mapas, mas têm dificuldade para usá-los em uma explicação. O grupo delimita a pergunta: “Que mudanças aparecem nas justificativas quando pedimos comparar legenda, fonte e informação representada?” O caso é autoral e hipotético.\nOs professores explicam a sequência aplicada, registram produções em momentos diferentes e constroem critérios de análise. Também observam dificuldades e resultados que não confirmam suas expectativas. Tornar a prática examinável exige esse esforço de descrição e interpretação."
-        },
-        {
-          "type": "photo",
-          "src": "media/u12-investigar-pratica.png",
-          "title": "Uma pergunta de ensino vira objeto de estudo",
-          "caption": "O esquema mostra decisões de uma investigação formativa: problema, intervenção, evidências e comunicação dos limites. Ele não representa uma prova automática de eficácia.",
-          "credit": "ProfGeo · ilustração didática autoral em 16:9"
-        },
-        {
-          "type": "table",
-          "title": "Um registro que permite discussão",
-          "headers": [
-            "Parte do registro",
-            "Exemplo de informação"
-          ],
-          "rows": [
-            [
-              "Problema",
-              "Dificuldade para justificar a leitura de um mapa."
-            ],
-            [
-              "Condições",
-              "Turma, conhecimentos prévios, recursos e tempo da sequência."
-            ],
-            [
-              "Intervenção",
-              "Comparação orientada de legenda, fonte e informação."
-            ],
-            [
-              "Evidências",
-              "Justificativas dos alunos e critérios usados na análise."
-            ],
-            [
-              "Limites",
-              "Outras intervenções, diferenças entre turmas e dúvidas restantes."
-            ]
-          ]
-        },
-        {
-          "type": "text",
-          "title": "Compartilhar com responsabilidade",
-          "body": "Um relatório pode apresentar exemplos de respostas sem expor os estudantes. O foco é a análise pedagógica, não a identificação pública de quem errou. Ao usar relatos e produções para pesquisa, a equipe deve observar os procedimentos éticos aplicáveis ao seu estudo e à instituição. Aqui treinamos a leitura da prática, sem solicitar dados reais de alunos."
-        },
-        {
-          "type": "callout",
-          "title": "Depois da comunicação",
-          "body": "Outros docentes podem discutir os critérios, propor novas interpretações e examinar a estratégia em outros contextos. Essa interlocução ajuda a superar a certeza privada de que uma atividade funciona para todos.",
-          "tone": "info"
-        }
-      ],
-      "summary": "A investigação coletiva explicita perguntas, procedimentos, evidências e limites. Compartilhar a prática permite discussão profissional, sem transformar um resultado em garantia universal.",
+      "summary": "A mediação relaciona conhecimentos cotidianos, fontes e conceitos para ampliar explicações. Ouvir não encerra o ensino; orientar comparações e justificativas permite elaborar o vivido sem apagar sua diversidade.",
       "practice": {
         "type": "match",
-        "title": "Associe a informação à parte do estudo",
+        "title": "Relacione a intervenção ao seu efeito",
         "pairs": [
           [
-            "Por que os alunos confundem a informação de dois mapas?",
-            "Problema de investigação"
+            "Ouvir diferentes relatos e explicações iniciais.",
+            "Reconhecer conhecimentos e perguntas da turma."
           ],
           [
-            "Comparar legendas e fontes com perguntas orientadoras",
-            "Intervenção de ensino"
+            "Confrontar uma afirmação geral com trajetos e condições.",
+            "Examinar o alcance de uma generalização."
           ],
           [
-            "Justificativas produzidas em dois momentos",
-            "Evidências para análise"
+            "Usar circulação e rede para interpretar os relatos.",
+            "Organizar relações com conceitos geográficos."
           ],
           [
-            "Diferenças entre turmas e outras intervenções",
-            "Condições e limites"
+            "Lia revê a tabela porque percebe a importância da espera.",
+            "Construir aprendizagem profissional no diálogo."
           ]
         ]
       }
     },
     {
-      "id": "l12",
-      "title": "Casos integrados e preparação para a prova",
-      "kicker": "Justificar, comparar e argumentar",
-      "minutes": 12,
+      "id": "l10",
+      "title": "Avaliar para compreender e replanejar",
+      "kicker": "O que a resposta realmente demonstra?",
+      "minutes": 20,
       "blocks": [
         {
           "type": "text",
-          "title": "Analise a decisão, não só uma palavra",
-          "body": "Em questões sobre os saberes docentes, pergunte primeiro o que o professor fez. Depois observe o destaque: conteúdo e investigação; objetivos e progressão; aprendizagem profissional na prática; ou experiência pública e investigada. O contexto pode mobilizar vários saberes, embora a questão peça um foco.\nSe o enunciado nomeia um autor, retome sua definição. Evite associar toda ação em sala a “ação pedagógica” no sentido específico de Gauthier. Nas questões integradas, justifique como as diferentes fontes de conhecimento participam da decisão."
+          "title": "Lia chega ao momento de verificar a aprendizagem",
+          "body": "Depois da comparação, a turma participa e responde rapidamente. Isso informa envolvimento, mas Lia quer saber se os estudantes aprenderam a explicar relações. Ela precisa olhar para o que o aluno faz com os dados e conceitos, em função do objetivo da aula.\nAvaliar aqui é interpretar evidências para orientar novas decisões. Uma resposta correta pode resultar de compreensão, memorização ou acaso. Pedir justificativa e propor uma situação diferente ajuda a examinar essas possibilidades, sem presumir o pensamento do aluno apenas pela alternativa marcada."
+        },
+        {
+          "type": "table",
+          "title": "Três respostas fictícias, três leituras",
+          "headers": [
+            "Resposta",
+            "O que já mostra",
+            "Próxima intervenção"
+          ],
+          "rows": [
+            [
+              "“A é mais rápida porque tem 8 km.”",
+              "Compara distâncias, mas responde sobre tempo com outra grandeza.",
+              "Distinguir km e min e comparar as duas perguntas."
+            ],
+            [
+              "“B é mais rápida: 25 minutos é menos que 45.”",
+              "Compara corretamente as durações.",
+              "Pedir relação com a distância e informações para explicar a diferença."
+            ],
+            [
+              "“B leva menos tempo; o menor percurso não foi o mais rápido neste caso.”",
+              "Relaciona os dois resultados e delimita a conclusão.",
+              "Propor outro caso e discutir condições de acesso."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Um feedback que faz o raciocínio avançar",
+          "body": "Para a segunda resposta, Lia pode escrever: “Você comparou corretamente os minutos. Agora confronte esse resultado com as distâncias: o que ele permite concluir sobre a ideia de que o mais curto é sempre o mais rápido?” O comentário reconhece o avanço e indica o trabalho seguinte.\n“Está certo, parabéns” pode incentivar, mas não orienta essa passagem. “Está incompleto” também não informa o que fazer. Feedback formativo relaciona o que foi demonstrado, a dificuldade ou ampliação necessária e um próximo passo possível."
+        },
+        {
+          "type": "photo",
+          "src": "media/u12-evidencias.png",
+          "title": "Leia produções para decidir o próximo passo",
+          "caption": "O esquema retoma a relação entre resposta, interpretação e intervenção. Use os exemplos da tabela para dar conteúdo às etapas; uma impressão de sucesso não substitui a análise do que o aluno demonstrou.",
+          "credit": "ProfGeo · ilustração didática autoral em 16:9"
+        },
+        {
+          "type": "text",
+          "title": "Transferência: acerto que merece outra pergunta",
+          "body": "No novo exemplo, C tem 10 km e 20 minutos; D tem seis quilômetros e 35 minutos. A resposta esperada é que D tem menor distância e C menor duração. Lia pede que justifiquem as duas afirmações. Isso reduz a possibilidade de apenas repetir “B”, a resposta do primeiro exemplo.\nMesmo assim, uma tarefa não resume toda aprendizagem. A professora pode retomar a relação em outro momento e com outras condições. Não se trata de desconfiar de qualquer acerto, mas de adequar a evidência à amplitude da conclusão."
+        },
+        {
+          "type": "compare",
+          "title": "Do resultado à decisão docente",
+          "left": {
+            "title": "Leitura genérica",
+            "body": "“A turma foi mal; vou repetir tudo.” Não identifica o obstáculo e pode repetir uma intervenção que não o enfrentou."
+          },
+          "right": {
+            "title": "Replanejamento orientado",
+            "body": "“A turma localiza os trajetos, mas troca distância por duração. Vou retomar unidades e comparar as justificativas antes de ampliar a análise do acesso.” A dificuldade orienta o ajuste."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Dois usos que não são idênticos",
+          "body": "Lia pode usar essas produções para replanejar a aula, construindo saber da experiência. Se decidir investigar e comunicar a prática, precisará explicitar problema, condições, critérios e limites. O simples ato de corrigir exercícios não demonstra que houve pesquisa pública no sentido de Gauthier.\nNa próxima lição, vamos acompanhar essa segunda possibilidade. O mesmo material pode contribuir para fins diferentes, mas a força da conclusão depende de como foi produzido e analisado."
+        },
+        {
+          "type": "callout",
+          "title": "Verifique sua leitura",
+          "body": "“Os estudantes acertaram dez nomes de vias; logo aprenderam a explicar o acesso.” Qual é o limite? A evidência informa reconhecimento de nomes. Para concluir sobre explicação, é preciso examinar relações em uma tarefa adequada a esse objetivo.",
+          "tone": "tip"
+        }
+      ],
+      "summary": "A avaliação interpreta o que as produções demonstram em relação ao objetivo. Feedback orienta um próximo passo; replanejar exige localizar a dificuldade e ajustar a intervenção com base em evidências.",
+      "practice": {
+        "type": "match",
+        "title": "Escolha a leitura coerente da evidência",
+        "pairs": [
+          [
+            "Acertar nomes de lugares.",
+            "Demonstra reconhecimento; não prova sozinho uma explicação."
+          ],
+          [
+            "Distinguir km e min em um novo par de trajetos.",
+            "Oferece evidência de uso da relação além do primeiro exemplo."
+          ],
+          [
+            "Elogiar sem indicar como avançar.",
+            "Pode incentivar, mas não explicita o próximo trabalho conceitual."
+          ],
+          [
+            "Retomar unidades após analisar um erro recorrente.",
+            "Replanejamento orientado pela dificuldade observada."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l11",
+      "title": "Investigar a prática com outros docentes",
+      "kicker": "Como sustentar e limitar uma conclusão?",
+      "minutes": 21,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Lia transforma a dificuldade em uma pergunta",
+          "body": "Lia e a equipe querem investigar o ensino da relação entre distância e tempo. “Os alunos têm dificuldade em Geografia” é amplo demais para orientar o estudo. Delimitam: “Que mudanças aparecem nas justificativas sobre trajetos após uma comparação orientada de mapa e tabela?”\nA pergunta identifica um objeto examinável: as justificativas. A equipe registra as condições, descreve a intervenção e define como ler as produções. O exemplo é fictício e formativo; não apresenta resultados de uma pesquisa realmente realizada."
+        },
+        {
+          "type": "table",
+          "title": "Torne o procedimento compreensível",
+          "headers": [
+            "Decisão",
+            "Exemplo do estudo fictício"
+          ],
+          "rows": [
+            [
+              "Registrar condições",
+              "Turma, tempo, materiais disponíveis e conhecimentos já trabalhados."
+            ],
+            [
+              "Explicitar intervenção",
+              "Hipótese inicial, confronto de dados, discussão e nova situação."
+            ],
+            [
+              "Definir critérios",
+              "Distingue grandezas? Relaciona os resultados? Justifica sem inventar causas?"
+            ],
+            [
+              "Conservar o que desafia a hipótese",
+              "Incluir respostas que não avançaram e explicações alternativas."
+            ],
+            [
+              "Comunicar limites",
+              "Indicar diferenças entre tarefas, outras intervenções e alcance do caso."
+            ]
+          ]
+        },
+        {
+          "type": "photo",
+          "src": "media/u12-investigar-pratica.png",
+          "title": "Problema, intervenção, evidências e discussão",
+          "caption": "O esquema organiza decisões da investigação. As setas ajudam a acompanhar o trabalho, mas não dispensam justificar os critérios, examinar contradições e voltar ao problema quando necessário.",
+          "credit": "ProfGeo · ilustração didática autoral em 16:9"
+        },
+        {
+          "type": "text",
+          "title": "Por que melhorar depois não prova uma causa exclusiva?",
+          "body": "Suponha que as justificativas finais fiquem mais completas. A comparação é um resultado relevante, mas a turma também pode ter recebido outra explicação, aprendido com colegas ou enfrentado uma tarefa diferente. A sequência estudada pode ter contribuído sem ser demonstrada como causa única.\nA equipe deve discutir essas possibilidades em vez de escondê-las. Não é necessário que todo estudo use um mesmo desenho de pesquisa; é necessário que os procedimentos e a interpretação sustentem o tipo de afirmação que se pretende fazer."
+        },
+        {
+          "type": "compare",
+          "title": "Duas conclusões, alcances diferentes",
+          "left": {
+            "title": "Conclusão que excede o estudo",
+            "body": "“Nossa técnica elimina a dificuldade de todos os estudantes.” A afirmação estende um resultado situado a qualquer contexto e apaga respostas divergentes."
+          },
+          "right": {
+            "title": "Conclusão compatível com o caso",
+            "body": "“Nas produções analisadas, apareceram mais distinções entre distância e tempo após a sequência; precisamos discutir outras intervenções e verificar como a proposta funciona em condições diferentes.”"
+          }
+        },
+        {
+          "type": "text",
+          "title": "O coletivo amplia o exame da interpretação",
+          "body": "Uma colega pode perceber que a resposta considerada “errada” distinguiu as grandezas, mas não conseguiu escrever a conclusão. Outra pode apontar que a segunda tarefa era mais simples. A discussão não serve apenas para confirmar Lia: ajuda a tornar critérios e interpretações mais consistentes.\nEsse exame público se relaciona à construção do saber da ação pedagógica em Gauthier. O valor profissional está em tornar o conhecimento discutível e utilizável com julgamento, sem impor a reprodução automática da atividade."
+        },
+        {
+          "type": "text",
+          "title": "Comunicar sem expor os estudantes",
+          "body": "O relatório pode trabalhar com exemplos de respostas sem divulgar identidades ou constranger quem errou. Uma investigação com dados reais deve observar os procedimentos éticos aplicáveis ao estudo e à instituição. A unidade não solicita dados pessoais de alunos.\nA análise deve permanecer no problema de ensino: o que as produções permitem interpretar, que intervenção foi realizada e quais limites continuam. Esse cuidado evita transformar a dificuldade do estudante em rótulo ou a prática docente em propaganda."
+        },
+        {
+          "type": "callout",
+          "title": "Transfira o modo de investigar",
+          "body": "Agora troque trajetos por leitura de legendas. “A turma não sabe mapas” ainda é amplo. Uma pergunta possível é: “Como os alunos justificam diferenças entre dois mapas após comparar suas legendas e fontes?” Você conserva a lógica de delimitar, intervir e examinar, com outro conteúdo.",
+          "tone": "tip"
+        }
+      ],
+      "summary": "Investigar a prática exige delimitar perguntas, explicitar procedimentos, analisar produções e discutir limites. O exame coletivo pode fortalecer o conhecimento profissional sem transformar resultados situados em garantia universal.",
+      "practice": {
+        "type": "order",
+        "title": "Construa uma conclusão sustentada",
+        "items": [
+          "Delimitar o que será investigado nas justificativas dos alunos.",
+          "Registrar condições, intervenção e critérios antes de interpretar os resultados.",
+          "Confrontar produções, respostas divergentes e explicações alternativas.",
+          "Comunicar o que as evidências sustentam e onde a conclusão encontra limites."
+        ]
+      }
+    },
+    {
+      "id": "l12",
+      "title": "Casos de prova e construção do argumento",
+      "kicker": "Explique decisões, em vez de listar categorias",
+      "minutes": 23,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Agora reúna o que foi aprendido",
+          "body": "Lia precisa compreender a Geografia, interpretar o percurso curricular, aprender no trabalho, representar o conteúdo e examinar respostas. A unidade não acrescentou nomes a uma aula pronta: mostrou como cada decisão pede conhecimento e justificativa. Esse é o raciocínio a levar para questões e redação.\nNos treinos autorais a seguir, primeiro identifique o problema do enunciado. Depois destaque o que a professora faz e a função dessa ação. Se o enunciado nomeia um autor, use sua acepção. Por fim, verifique se a alternativa descreve aquela função sem ampliar indevidamente a conclusão."
+        },
+        {
+          "type": "compare",
+          "title": "Questão resolvida 1: o foco da decisão",
+          "left": {
+            "title": "Situação",
+            "body": "“Uma professora escolhe o que retomar antes de comparar fluxos, considerando a sequência prevista para a turma.” Disciplinar ou curricular é o destaque?"
+          },
+          "right": {
+            "title": "Resolução",
+            "body": "A decisão se refere à posição da aprendizagem no percurso: curricular. O conteúdo geográfico participa, mas o enunciado não destaca a validade de uma explicação ou a escolha de uma fonte."
+          }
+        },
+        {
+          "type": "compare",
+          "title": "Questão resolvida 2: duas exigências distintas",
+          "left": {
+            "title": "Situação",
+            "body": "“O professor conhece uma confusão de escala e elabora uma comparação para enfrentá-la.” Isso demonstra conhecimento pedagógico do conteúdo ou já comprova saber da ação pedagógica em Gauthier?"
+          },
+          "right": {
+            "title": "Resolução",
+            "body": "O destaque se aproxima de Shulman: dificuldade específica e representação para ensinar. Para afirmar o exame público da experiência no sentido de Gauthier, faltam explicitação e teste por pesquisas sobre o ensino."
+          }
+        },
+        {
+          "type": "callout",
+          "title": "Observe para argumentar",
+          "body": "Na cena, compare “Acesso vulnerável” e “Infraestrutura melhorada”. Depois imagine a decisão de ensino: qual relação a turma precisa explicar e que tarefa permitiria verificar essa aprendizagem? A cena é hipotética; não oferece dados de uma escola real.",
+          "tone": "tip"
         },
         {
           "type": "animation",
           "kind": "inequality",
-          "title": "Use a cena para analisar a decisão de ensino",
-          "caption": "A chuva e as condições de acesso são hipotéticas. Imagine que o objetivo seja explicar relações entre infraestrutura e acesso. O saber disciplinar sustenta a análise; o curricular orienta o objetivo; observar dúvidas alimenta a experiência docente; investigar a intervenção permite seu exame público."
-        },
-        {
-          "type": "compare",
-          "title": "Duas respostas a um caso",
-          "left": {
-            "title": "Resposta genérica",
-            "body": "“A professora usa todos os saberes.” A frase nomeia a articulação, mas não demonstra onde ela aparece."
-          },
-          "right": {
-            "title": "Resposta justificada",
-            "body": "“Ao explicar circulação, mobiliza conhecimento disciplinar; ao situar o objetivo na progressão, usa o curricular; ao rever uma dificuldade recorrente, aprende com a experiência.”"
-          }
-        },
-        {
-          "type": "list",
-          "title": "Roteiro para uma resposta curta",
-          "items": [
-            "Apresente a ideia que responde ao tema.",
-            "Explique o sentido de um ou mais saberes.",
-            "Analise uma decisão concreta de ensino de Geografia.",
-            "Relacione a intervenção à aprendizagem e indique um limite."
-          ]
-        },
-        {
-          "type": "callout",
-          "title": "Treino autoral",
-          "body": "O simulado reúne 20 questões desta unidade. Os enunciados foram produzidos para estudo; não são questões oficiais nem previsão do que cairá na seleção. A oficina de redação oferece autoavaliação formativa.",
-          "tone": "info"
+          "title": "Uma situação geográfica, várias decisões docentes",
+          "caption": "Use os dois controles e distinga os planos da análise. Explicar chuva e condições de circulação mobiliza conteúdo; escolher o objetivo envolve currículo; rever uma intervenção com base nas respostas produz aprendizagem profissional."
         },
         {
           "type": "text",
-          "title": "Retome os pontos difíceis",
-          "body": "Antes de concluir, confira se consegue distinguir: assunto e objetivo; experiência do aluno e aprendizagem profissional do professor; divulgação da prática e sua investigação; recurso didático e conhecimento para ensinar um conteúdo. Faça os cartões e retorne às questões em que errou."
+          "title": "Do conceito à frase argumentativa",
+          "body": "Uma resposta fraca diz: “Lia usa todos os saberes, que são importantes”. Ela não mostra a função de nenhum. Uma resposta desenvolvida afirma: “Ao distinguir distância e duração, Lia mobiliza conhecimento disciplinar; ao organizar a comparação no percurso da turma, usa saber curricular. Essas escolhas precisam ser verificadas em explicações dos alunos”.\nA segunda formulação apresenta conceitos, decisões e uma consequência para a aprendizagem. O exemplo deixa de ser uma ilustração solta: passa a sustentar o argumento."
+        },
+        {
+          "type": "table",
+          "title": "Construa um parágrafo em quatro movimentos",
+          "headers": [
+            "Movimento",
+            "Aplicação ao tema"
+          ],
+          "rows": [
+            [
+              "Ideia central",
+              "Ensinar Geografia exige articular saberes para transformar conteúdo em aprendizagem."
+            ],
+            [
+              "Explicação conceitual",
+              "Distinguir saber disciplinar, curricular e aprendizagem na experiência."
+            ],
+            [
+              "Decisão analisada",
+              "Mostrar por que comparar trajetos e orientar a leitura de km e min."
+            ],
+            [
+              "Consequência e limite",
+              "Examinar justificativas em outro caso; não deduzir compreensão da participação."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Modelo comentado de raciocínio",
+          "body": "“O domínio dos conceitos é necessário, mas o professor precisa organizá-los em situações de aprendizagem. Em uma aula sobre trajetos, distinguir distância e duração mobiliza saber disciplinar; selecionar a comparação e sua progressão envolve saber curricular. Ao analisar justificativas, o docente pode rever a intervenção e aprender com a experiência. A compreensão deve aparecer no uso dessas relações em outra situação.”\nObserve a sequência: a primeira frase responde ao problema; as duas seguintes explicam os saberes em uma decisão; a última indica uma evidência de aprendizagem. A oficina de redação amplia esse argumento e acrescenta o exame público da prática."
+        },
+        {
+          "type": "callout",
+          "title": "Use a revisão de forma ativa",
+          "body": "Antes do simulado, explique sem consultar: por que divulgar não basta em Gauthier? Como Shulman ajuda a analisar uma representação? O que significa saber situado em Tardif? Se só consegue repetir a palavra, volte ao caso da lição correspondente. O simulado tem 20 casos novos comentados; são questões autorais, sem previsão de cobrança oficial.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Feche o percurso com uma transferência",
+          "body": "Troque trajetos por um problema de leitura de mapas, abastecimento ou uso de uma praça. Você consegue definir conteúdo, objetivo, dificuldade, intervenção e evidência? Se consegue justificar essas relações, já dispõe de um modo de analisar a docência além dos exemplos memorizados. Continue pelas questões, pelos cartões e pela escrita."
         }
       ],
-      "summary": "Uma boa resposta explica conceitos e decisões concretas. As categorias ajudam a analisar a prática; autores, contextos e limites precisam aparecer no argumento.",
+      "summary": "Na prova, identifique a função da decisão, use os conceitos na acepção correta e sustente o argumento com um caso analisado. Relacione intervenção e evidência de aprendizagem, reconhecendo o alcance da conclusão.",
       "practice": {
         "type": "order",
-        "title": "Construa uma resposta argumentativa",
+        "title": "Organize um argumento sobre os saberes docentes",
         "items": [
-          "Responder ao tema com uma ideia central.",
-          "Explicar os saberes ou conceitos necessários.",
-          "Analisar uma decisão de ensino com esses conceitos.",
-          "Concluir relacionando a prática à aprendizagem e aos seus limites."
+          "Responder ao problema com uma ideia central.",
+          "Explicar os saberes necessários sem confundir os autores.",
+          "Analisar uma decisão concreta de ensino de Geografia.",
+          "Relacionar a intervenção à aprendizagem e delimitar a conclusão."
         ]
       }
     }
@@ -1695,7 +2040,7 @@
         "A decisão analisa a relação entre pergunta geográfica e informação oferecida por uma fonte."
       ],
       "tag": "fontes geográficas",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1716,7 +2061,7 @@
         "Não foi descrita uma prática tornada pública e investigada."
       ],
       "tag": "seleção curricular",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1737,7 +2082,7 @@
         "A fala considera a turma atual, portanto não apresenta um procedimento indiferente ao contexto."
       ],
       "tag": "experiência docente",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1758,7 +2103,7 @@
         "A descrição ultrapassa o caráter privado e apresenta evidências para exame público."
       ],
       "tag": "ação pedagógica",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1779,7 +2124,7 @@
         "A análise pode destacar uma fonte de conhecimento sem transformar a prática em compartimentos isolados."
       ],
       "tag": "articulação",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1800,7 +2145,7 @@
         "Contar símbolos não demonstra a compreensão da diferença de acesso."
       ],
       "tag": "objetivo e avaliação",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1821,7 +2166,7 @@
         "O calendário enfatizaria organização curricular, mas não é o foco da comparação descrita."
       ],
       "tag": "conhecimento pedagógico do conteúdo",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1842,7 +2187,7 @@
         "São aspectos que podem aparecer em situações escolares, mas não definem os conceitos desses autores."
       ],
       "tag": "autores e conceitos",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1863,7 +2208,7 @@
         "A decisão dialoga com o cotidiano e amplia a interpretação com conceitos e evidências."
       ],
       "tag": "cotidiano e Geografia",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1884,7 +2229,7 @@
         "As produções e sua análise podem orientar a mediação e a aprendizagem geográfica."
       ],
       "tag": "docentes e estudantes",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1905,7 +2250,7 @@
         "Identificar nomes e explicar acesso são operações distintas, embora possam participar da mesma aula."
       ],
       "tag": "evidências e objetivo",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1926,7 +2271,7 @@
         "As condições variam; uma mudança observada não autoriza garantia universal."
       ],
       "tag": "investigação e limites",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -1943,7 +2288,7 @@
         "Tornar público é relevante, mas o sentido estudado inclui investigação e teste da experiência."
       ],
       "tag": "publicização",
-      "pool": "final",
+      "pool": "lesson",
       "type": "truefalse"
     },
     {
@@ -1960,7 +2305,7 @@
         "A afirmação relaciona fontes e trajetória; não reduz o saber a um material ou momento isolado."
       ],
       "tag": "pluralidade dos saberes",
-      "pool": "final",
+      "pool": "lesson",
       "type": "truefalse"
     },
     {
@@ -1981,7 +2326,7 @@
         "A justificativa conserva a relação entre recurso, atividade e objetivo, acompanhando sua adequação."
       ],
       "tag": "planejamento e condições",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -2002,7 +2347,7 @@
         "O tempo de A é maior nos dados apresentados; as duas medidas precisam ser diferenciadas."
       ],
       "tag": "critérios de comparação",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -2023,7 +2368,7 @@
         "Um exemplo não comprova uma regra sobre todas as estradas e rios."
       ],
       "tag": "feedback e inferência",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -2044,7 +2389,7 @@
         "A descrição é necessária para compreender e discutir a prática e os resultados."
       ],
       "tag": "registro responsável",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -2065,7 +2410,7 @@
         "O trecho explica a articulação em decisões de ensino e a conecta ao processo de aprendizagem."
       ],
       "tag": "argumentação integrada",
-      "pool": "final",
+      "pool": "lesson",
       "type": "single"
     },
     {
@@ -2086,6 +2431,426 @@
         "Participação e satisfação informam aspectos da atividade, mas não sustentam garantia universal."
       ],
       "tag": "síntese profissional",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "r2f01",
+      "lesson": "l02",
+      "stem": "Lia tem um mapa com a posição das escolas e uma tabela de tempos de viagem. Um colega conclui que o mapa, sozinho, comprova que todos têm acesso semelhante. Qual análise mobiliza melhor o saber disciplinar?",
+      "options": [
+        "A tabela deve substituir o mapa em toda a aula, porque durações dispensam a análise da distribuição espacial.",
+        "A conclusão será adequada se o número de escolas for igual nas áreas, pois essa igualdade é o critério decisivo de acesso.",
+        "O mapa situa as escolas; explicar acesso exige examinar conexões e condições que sua localização não informa sozinha.",
+        "O mapa é suficiente se tiver uma legenda completa, pois a legenda transforma localização em explicação do acesso."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Tempos ajudam a analisar deslocamentos, mas não tornam a distribuição e as conexões espaciais irrelevantes. As fontes podem ser articuladas.",
+        "Quantidades iguais podem coexistir com distribuições, capacidades e condições de circulação diferentes. O critério não sustenta sozinho a conclusão.",
+        "A resposta delimita o alcance da fonte e explicita o que falta investigar. Saber disciplinar inclui julgar a validade da explicação geográfica.",
+        "Legenda é importante para interpretar o mapa, mas não acrescenta automaticamente informações sobre transportes, trajetos e condições de acesso."
+      ],
+      "tag": "alcance das fontes",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f02",
+      "lesson": "l03",
+      "stem": "O objetivo de uma aula é explicar diferenças entre trajetos. A turma compara mapa e tabela, mas a avaliação pede apenas os nomes das vias. Qual revisão enfrenta diretamente o problema?",
+      "options": [
+        "Pedir uma justificativa sobre outro par de trajetos, usando dados e relações trabalhados na aula.",
+        "Aumentar a quantidade de nomes na avaliação, para que a amostra do conteúdo fique mais extensa.",
+        "Atribuir o mesmo peso à participação e aos nomes, presumindo que os dois resultados representam a explicação.",
+        "Repetir os dados do exemplo e pedir a letra da rota escolhida, sem solicitar o raciocínio."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A tarefa se alinha ao objetivo de explicar e permite examinar o uso das relações em outra situação.",
+        "Mais nomes ampliam a tarefa de reconhecimento, mas não passam a exigir uma explicação sobre as diferenças de acesso.",
+        "Participar e reconhecer nomes informam dimensões da atividade. A combinação não comprova a relação conceitual que o objetivo pede.",
+        "A repetição pode resultar em memorização da resposta. Outra situação e uma justificativa oferecem evidências mais adequadas ao objetivo."
+      ],
+      "tag": "alinhamento curricular",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f03",
+      "lesson": "l04",
+      "stem": "Após perceber que vários alunos escolhem rotas pelo desenho, Lia passa a pedir a leitura das unidades antes da comparação. Ela acompanha se a mudança ajuda a turma. O que caracteriza saber da experiência nesse episódio?",
+      "options": [
+        "O número de anos de serviço, que por si só confirma a adequação de qualquer ajuste feito na aula.",
+        "A proximidade pessoal com os estudantes, que transforma a impressão da professora em validação pública da estratégia.",
+        "A origem local do mapa, que converte automaticamente seu conteúdo em saber experiencial docente.",
+        "A aprendizagem de uma decisão profissional a partir da interpretação de uma dificuldade vivida no trabalho."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Tempo de serviço oferece experiências, mas não garante a validade de todas as decisões. O episódio destaca o exame de uma dificuldade.",
+        "A relação com os alunos é relevante para o trabalho, mas a impressão pessoal não equivale ao exame público de uma prática.",
+        "A origem do material não define esse saber. É o aprendizado profissional da professora que está em análise.",
+        "O destaque é a aprendizagem profissional na relação entre situação, interpretação e ajuste acompanhado. A experiência não é só passagem do tempo."
+      ],
+      "tag": "experiência e reflexão",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f04",
+      "lesson": "l05",
+      "stem": "Uma equipe publica a sequência de uma aula e recebe elogios de colegas. Quer afirmar que produziu saber da ação pedagógica na acepção de Gauthier. Qual informação ainda é decisiva para sustentar essa afirmação?",
+      "options": [
+        "Se o relato contém o plano completo, pois explicitar a intenção do professor já demonstra os resultados da intervenção.",
+        "Como a experiência foi testada por pesquisa sobre o ensino, com procedimentos, evidências e limites acessíveis ao exame.",
+        "Quantos professores aprovaram a sequência, pois o consenso substitui a análise das produções dos alunos.",
+        "Se a atividade empregou uma tecnologia recente, pois a inovação do recurso define a natureza pública do saber."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Um plano torna as intenções compreensíveis. Resultados precisam ser examinados; não podem ser deduzidos do que se pretendia fazer.",
+        "Tornar público e submeter a experiência ao teste por pesquisas é central nessa acepção. A divulgação e a investigação têm exigências distintas.",
+        "A aprovação pode favorecer a circulação da proposta, mas não substitui os critérios e as evidências que sustentam o conhecimento.",
+        "A idade da tecnologia não define o estatuto do saber. Uma intervenção impressa também pode ser investigada publicamente."
+      ],
+      "tag": "ação pedagógica em Gauthier",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f05",
+      "lesson": "l06",
+      "stem": "Ao estudar a trajetória de Lia, um pesquisador considera sua vida escolar, a licenciatura, o início da carreira e as relações com colegas. Na contribuição de Tardif, esse recorte ajuda principalmente a compreender:",
+      "options": [
+        "A existência de um saber pessoal que dispensa confrontar explicações com outros conhecimentos.",
+        "A transferência direta de conhecimentos universitários para a aula, independentemente da turma.",
+        "A constituição temporal e plural dos saberes mobilizados em situações de trabalho.",
+        "A substituição gradual da formação pelo tempo de serviço, como se aprender uma fonte anulasse as anteriores."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Personalização e situação de trabalho não tornam toda opinião válida. As decisões continuam abertas a exame e diálogo.",
+        "A análise da trajetória e do trabalho questiona a ideia de aplicação direta e indiferente às situações de ensino.",
+        "A trajetória permite examinar diferentes fontes e momentos de constituição dos saberes, considerando sua mobilização no trabalho concreto.",
+        "O caráter temporal não significa que a experiência apaga a formação. O problema é compreender a combinação e a transformação das fontes."
+      ],
+      "tag": "temporalidade e pluralidade",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f06",
+      "lesson": "l07",
+      "stem": "Lia percebe que a turma associa o maior denominador à maior escala. Compara representações da mesma área e pede que os alunos expliquem a redução. Pela entrada de Shulman, o aspecto central é:",
+      "options": [
+        "A relação entre uma dificuldade específica do conteúdo e a escolha de uma representação para torná-lo compreensível.",
+        "A seleção da etapa curricular, já que qualquer comparação entre imagens define a progressão escolar completa.",
+        "A existência de pesquisa pública, que fica comprovada quando a professora muda a representação de um conteúdo.",
+        "A adoção de uma técnica de participação que pode ser justificada sem referência ao significado de escala."
+      ],
+      "answer": 0,
+      "feedback": [
+        "O conhecimento pedagógico do conteúdo envolve representações, explicações e dificuldades próprias do assunto ensinado.",
+        "A seleção curricular pode participar da aula, mas o destaque do enunciado é como enfrentar uma confusão conceitual específica.",
+        "Alterar uma representação não comprova que a experiência foi testada por pesquisas e submetida a exame público.",
+        "A pertinência da intervenção depende da relação de redução que precisa ser aprendida, não apenas de promover participação."
+      ],
+      "tag": "conhecimento pedagógico do conteúdo",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f07",
+      "lesson": "l09",
+      "stem": "Uma aluna relata a espera pelo barco. Ao ouvi-la, Lia percebe que sua tabela não registra a espera e aprende a incluí-la em comparações futuras. Como distinguir os conhecimentos em jogo?",
+      "options": [
+        "O relato da aluna e a revisão de Lia são o mesmo saber experiencial docente, porque ambos se originam de algo vivido.",
+        "Apenas Lia produz conhecimento, pois um relato do cotidiano não pode contribuir para um problema geográfico.",
+        "A experiência da aluna elimina a necessidade de outros dados, tornando sua viagem um modelo suficiente para todos os percursos.",
+        "A aluna traz um conhecimento do cotidiano; Lia constrói aprendizagem profissional ao interpretar o relato para o ensino."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Ter origem no vivido não torna os dois conhecimentos idênticos. Saber experiencial docente se refere à aprendizagem no exercício profissional.",
+        "O relato pode levantar relações e informações importantes. A mediação o confronta e articula com outras fontes e conceitos.",
+        "Uma viagem pode iniciar uma investigação, mas não autoriza generalizar as condições de todos os trajetos.",
+        "As experiências dialogam, mas têm funções distintas no episódio. O aprendizado profissional de Lia não apaga o conhecimento trazido pela estudante."
+      ],
+      "tag": "experiência do estudante e do docente",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f08",
+      "lesson": "l10",
+      "stem": "Depois de um jogo com mapas, todos participaram e localizaram as escolas. Lia pretende concluir que aprenderam a explicar o acesso. Qual evidência seria mais adequada para ampliar essa conclusão?",
+      "options": [
+        "Uma fotografia dos mapas preenchidos, sem examinar o que os alunos conseguem explicar com eles.",
+        "Justificativas que relacionem trajetos e condições de circulação a uma diferença de acesso.",
+        "Uma votação indicando que a turma prefere o jogo à exposição oral, como medida suficiente da relação conceitual.",
+        "Um registro de participação ainda mais detalhado, mantendo a explicação das relações fora da tarefa."
+      ],
+      "answer": 1,
+      "feedback": [
+        "A foto registra um produto. É necessário analisar seu conteúdo e o que sustenta a conclusão sobre a aprendizagem.",
+        "Essa produção se aproxima da aprendizagem pretendida. Participação e localização são relevantes, mas não demonstram sozinhas uma explicação.",
+        "A preferência informa a percepção da atividade, não o uso das relações geográficas para explicar acesso.",
+        "Detalhar o envolvimento melhora esse registro, mas não muda a dimensão conceitual que ainda precisa ser examinada."
+      ],
+      "tag": "evidências e objetivo",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f09",
+      "lesson": "l10",
+      "stem": "Um aluno escreve: “B leva menos tempo porque 25 minutos é menos que 45”. Qual feedback o ajuda a avançar além dessa comparação correta?",
+      "options": [
+        "“Faltou escrever mais; acrescente os nomes das vias sem alterar o raciocínio.”",
+        "“A justificativa está incompleta; copie a definição de circulação e encerre a atividade.”",
+        "“Você comparou as durações. Agora relacione o resultado às distâncias e explique o que isso mostra sobre a hipótese inicial.”",
+        "“Resposta correta; memorize que B é a melhor rota para qualquer pergunta que envolva o exemplo.”"
+      ],
+      "answer": 2,
+      "feedback": [
+        "A extensão do texto e os nomes não resolvem, por si só, a relação que ainda pode ser construída.",
+        "Copiar um conceito não garante que o aluno consiga usá-lo. O feedback precisa orientar o raciocínio exigido no caso.",
+        "O comentário reconhece o avanço e orienta uma relação adicional pertinente ao objetivo da aula. Esse é um próximo passo formativo.",
+        "B tem menor duração no exemplo, mas não menor distância. A memorização da letra apaga a distinção entre critérios."
+      ],
+      "tag": "feedback formativo",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f10",
+      "lesson": "l08",
+      "stem": "Sem internet e com necessidade de ampliar letras, Lia troca o mapa digital por um croqui e uma tabela impressos. Qual justificativa analisa melhor a adaptação?",
+      "options": [
+        "A escolha deve preservar a comparação e a explicação pretendidas, com material legível e acessível à turma.",
+        "A adaptação se justifica por ser impressa, característica que garante compreensão mais profunda que qualquer suporte digital.",
+        "A troca mantém o objetivo automaticamente, pois recursos diferentes sempre produzem a mesma atividade intelectual.",
+        "A perda da internet exige reduzir a aula à cópia de nomes, pois explicar relações depende da plataforma original."
+      ],
+      "answer": 0,
+      "feedback": [
+        "O critério conecta condições de trabalho e possibilidade de aprendizagem. O recurso é julgado pelo que permite realizar com orientação.",
+        "O suporte impresso não garante compreensão por si só. É preciso examinar o conteúdo, a legibilidade e seu uso na sequência.",
+        "A função da tarefa pode mudar com a adaptação. Preservar o objetivo exige verificar o que o novo material permite comparar e explicar.",
+        "Comparar fontes e explicar relações pode ser feito com materiais impressos; a plataforma não determina sozinha a aprendizagem."
+      ],
+      "tag": "planejamento e condições",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f11",
+      "lesson": "l04",
+      "stem": "Duas professoras analisam respostas e trocam maneiras de trabalhar a legenda. Não há informação de que realizaram uma pesquisa pública. Qual interpretação é sustentada pelo episódio?",
+      "options": [
+        "A experiência deixa de ser experiencial quando compartilhada, passando necessariamente a conhecimento testado por pesquisa.",
+        "O saber da experiência é estritamente solitário; a conversa entre professoras não pode participar de sua construção.",
+        "O acordo entre as colegas permite recomendar a mesma intervenção para qualquer turma, sem precisar examinar as condições.",
+        "A troca pode participar da construção coletiva de saberes da experiência, sem comprovar por si só o saber da ação pedagógica em Gauthier."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Compartilhar é relevante, mas não demonstra automaticamente investigação com procedimentos e evidências examináveis.",
+        "Saberes experienciais podem se construir individual e coletivamente nas relações profissionais.",
+        "A troca não produz uma garantia universal. A pertinência da decisão continua dependendo do problema e das condições de ensino.",
+        "Aprender no trabalho pode incluir relações com colegas. Para afirmar pesquisa e exame público, são necessárias informações que o caso não fornece."
+      ],
+      "tag": "experiência coletiva",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f12",
+      "lesson": "l03",
+      "stem": "Uma turma já localiza pontos e lê a legenda. O próximo objetivo é explicar diferenças entre conexões. Qual proposta evidencia uma progressão coerente com esse ponto de partida?",
+      "options": [
+        "Abandonar a localização e a legenda em todas as tarefas, porque conhecimentos anteriores impedem avançar.",
+        "Comparar trajetos e dados, orientando a passagem da localização para uma justificativa sobre as conexões.",
+        "Repetir a cópia dos mesmos pontos com outro título, tomando a mudança de tema como prova de avanço.",
+        "Introduzir termos mais numerosos sem exigir relações, considerando a quantidade de palavras o critério de progressão."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Conhecimentos anteriores podem sustentar novas relações. Avançar não exige apagar o que já foi aprendido.",
+        "A proposta amplia operações e relações a partir do que a turma já demonstra, coerente com a aprendizagem escolhida.",
+        "Trocar o título sem alterar o trabalho intelectual não demonstra ampliação da aprendizagem.",
+        "Vocabulário pode ser necessário, mas a progressão pretendida envolve usar relações para explicar, não apenas aumentar a lista."
+      ],
+      "tag": "progressão curricular",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f13",
+      "lesson": "l06",
+      "stem": "Considere duas informações: I — Lia escolheu uma representação para enfrentar uma dificuldade de escala. II — Uma equipe explicitou e testou essa intervenção por pesquisa, comunicando evidências e limites. Qual associação conserva as diferenças estudadas?",
+      "options": [
+        "I demonstra exclusivamente saber curricular; II se refere apenas ao domínio dos conceitos da Geografia.",
+        "I dispensa compreender escala; II permite transformar o resultado em regra universal para o ensino.",
+        "I destaca o conhecimento pedagógico do conteúdo em Shulman; II permite discutir o saber da ação pedagógica em Gauthier.",
+        "I e II designam a mesma categoria em ambos os autores, pois toda representação didática já é pesquisa pública."
+      ],
+      "answer": 2,
+      "feedback": [
+        "O primeiro destaque é a relação entre dificuldade e representação; o segundo é a investigação do ensino, não apenas o conteúdo geográfico.",
+        "A representação precisa conservar o conceito, e resultados de pesquisa continuam exigindo interpretação de condições e limites.",
+        "As duas análises podem se articular, mas focalizam exigências distintas: ensinar um conteúdo e submeter a experiência ao exame público.",
+        "Uma representação pode ser pertinente sem ter sido testada por pesquisa. As classificações não são automaticamente equivalentes."
+      ],
+      "tag": "comparação entre autores",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f14",
+      "lesson": "l06",
+      "stem": "Lia argumenta: “Minha decisão foi adequada naquela turma, com aqueles conhecimentos e recursos; preciso examiná-la em outras condições”. Como essa afirmação pode dialogar com a ideia de saber situado em Tardif?",
+      "options": [
+        "Reconhece que os saberes se mobilizam em situações concretas, sem tornar a experiência incomunicável ou imune à crítica.",
+        "Demonstra que cada professora possui uma verdade própria, dispensando critérios para discutir as decisões.",
+        "Prova que apenas o conhecimento sobre o bairro pode ser ensinado, excluindo relações com outras escalas.",
+        "Indica que estudos da formação não podem contribuir para o trabalho, porque não nasceram naquela turma."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Situação de trabalho, pessoas e condições participam das decisões. Reconhecê-las não impede compartilhar e confrontar conhecimentos.",
+        "O caráter situado não equivale a considerar toda opinião válida. É preciso examinar justificativas e resultados.",
+        "Situado se refere à constituição e mobilização dos saberes no trabalho. Não restringe o conteúdo geográfico à escala local.",
+        "Conhecimentos de diferentes fontes podem ser mobilizados e reinterpretados na situação. A formação não é excluída."
+      ],
+      "tag": "saberes situados",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f15",
+      "lesson": "l06",
+      "stem": "Antes de começar a ensinar, Lia imaginava que uma boa aula deveria reproduzir o formato que viveu como estudante. Ao confrontar essa ideia com a aprendizagem da turma, passa a revê-la. No repertório discutido por Gauthier, o primeiro aspecto se aproxima de:",
+      "options": [
+        "Saberes da ação pedagógica: concepções já validadas por pesquisa pelo fato de serem conhecidas por gerações.",
+        "Saberes disciplinares: a estrutura conceitual da Geografia, independentemente das imagens que Lia tem da aula.",
+        "Saberes curriculares: a definição completa das aprendizagens oficiais, deduzida da lembrança da vida escolar.",
+        "Saberes da tradição pedagógica: representações herdadas sobre ensinar, que precisam ser interrogadas."
+      ],
+      "answer": 3,
+      "feedback": [
+        "A permanência de uma prática não comprova teste por pesquisas. Tradição e saber da ação pedagógica não são sinônimos.",
+        "O conteúdo geográfico pode participar da aula, mas o caso destaca uma representação de como ensinar.",
+        "Lembranças da escola podem influenciar decisões, mas não definem por si só os objetivos e a organização curricular atuais.",
+        "O episódio destaca concepções anteriores sobre o ensino, formadas também na vida escolar. Sua presença não dispensa exame crítico."
+      ],
+      "tag": "tradição pedagógica",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f16",
+      "lesson": "l11",
+      "stem": "Após uma sequência de comparação de mapas, as justificativas ficam mais completas. No mesmo período, a turma recebeu outra explicação e a tarefa final tinha dados diferentes. Qual conclusão é mais consistente?",
+      "options": [
+        "Para reforçar a conclusão, devem ser retiradas as respostas que não melhoraram, mantendo apenas os exemplos favoráveis.",
+        "Há um resultado a analisar, mas a contribuição da sequência deve ser discutida considerando outras intervenções e diferenças entre tarefas.",
+        "A melhora prova que a sequência é causa exclusiva, pois a ordem antes/depois dispensa outras informações.",
+        "A presença de outras condições torna todas as produções inúteis para qualquer análise da prática."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Excluir resultados divergentes enfraquece o exame da interpretação. Eles precisam participar da análise.",
+        "A conclusão reconhece a evidência sem afirmar uma causalidade exclusiva não demonstrada. Procedimentos e limites orientam seu alcance.",
+        "Uma mudança posterior pode envolver vários fatores. A ordem temporal não basta para provar a causa exclusiva.",
+        "As produções continuam informativas. O necessário é interpretar o que sustentam e os limites da comparação."
+      ],
+      "tag": "evidência e causalidade",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f17",
+      "lesson": "l12",
+      "stem": "Uma professora quer discutir como decisões sociais e infraestrutura participam das diferenças de acesso à escola. Qual análise distingue a concepção geográfica do saber docente mobilizado?",
+      "options": [
+        "Saber disciplinar é o nome exclusivo da Geografia crítica, enquanto outras concepções correspondem apenas a métodos de aula.",
+        "A escolha de um debate identifica por si só a concepção crítica, independentemente do problema e dos argumentos discutidos.",
+        "A perspectiva crítica orienta relações da explicação; compreender essas relações integra o saber disciplinar, que se articula a escolhas curriculares e de ensino.",
+        "A perspectiva crítica substitui os saberes docentes, tornando desnecessário organizar objetivo, intervenção e avaliação."
+      ],
+      "answer": 2,
+      "feedback": [
+        "O saber disciplinar inclui conhecimentos e formas de investigar o campo, não sendo um sinônimo de uma única corrente.",
+        "Debate é uma estratégia. A concepção precisa ser analisada nas relações e explicações que orientam o trabalho.",
+        "A análise conserva planos distintos e articulados: como compreender o espaço e que conhecimentos sustentam as decisões de ensinar.",
+        "Uma concepção não resolve sozinha como a turma vai aprender e como essa aprendizagem será acompanhada."
+      ],
+      "tag": "articulação com a unidade 1.1",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f18",
+      "lesson": "l07",
+      "stem": "No novo caso, C tem 10 km e 20 minutos; D tem 6 km e 35 minutos. O aluno responde: “D tem menor distância, C tem menor duração; os dados não explicam sozinhos a causa”. O que Lia pode concluir com mais fundamento?",
+      "options": [
+        "O aluno distingue as grandezas e delimita o alcance dos dados em outra situação, oferecendo evidência de compreensão da relação trabalhada.",
+        "O aluno demonstrou que a distância não participa de nenhum problema de acesso e deve ser excluída do estudo.",
+        "A resposta estabelece que C é a melhor opção em qualquer condição, inclusive de custo e disponibilidade de transporte.",
+        "A ausência de uma causa inventada mostra que o aluno ainda não consegue interpretar informações quantitativas."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A resposta aplica o raciocínio em outro exemplo e reconhece o que ainda exige investigação. Isso sustenta uma conclusão delimitada sobre aprendizagem.",
+        "Distinguir distância e tempo não torna a distância irrelevante. Ela participa da análise com outras condições.",
+        "Menor duração não resolve todos os critérios de acesso. Custo, disponibilidade e condições não estão informados.",
+        "Reconhecer limites da fonte é um cuidado de interpretação, não uma incapacidade. Inventar uma causa ausente não seria avanço."
+      ],
+      "tag": "transferência da aprendizagem",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f19",
+      "lesson": "l12",
+      "stem": "Qual trecho constrói melhor um argumento sobre os saberes docentes, usando o exemplo para explicar sua função?",
+      "options": [
+        "“Os saberes docentes são importantes e devem ser usados em conjunto. Isso mostra que todas as boas aulas são completas e fazem aprender.”",
+        "“Lia usou mapa, tabela e animação. A quantidade de recursos comprova a articulação entre os saberes e o domínio dos alunos.”",
+        "“Tardif, Gauthier e Shulman estudam professores. Assim, os conceitos de qualquer um deles podem substituir os dos demais no argumento.”",
+        "“O domínio de distância e duração sustenta a explicação geográfica; organizar sua comparação no percurso da turma mobiliza saber curricular. Justificativas em outro caso ajudam a examinar a aprendizagem.”"
+      ],
+      "answer": 3,
+      "feedback": [
+        "A importância é afirmada sem explicar a função dos saberes. A conclusão sobre aprendizagem não apresenta evidência.",
+        "Listar recursos não mostra como foram usados nem o que os alunos aprenderam. É preciso analisar decisões e produções.",
+        "Um campo de interesse compartilhado não torna as contribuições equivalentes. A precisão conceitual continua necessária.",
+        "O trecho relaciona conceitos a decisões concretas e indica uma evidência pertinente. O exemplo sustenta o argumento em vez de apenas ornamentá-lo."
+      ],
+      "tag": "argumentação",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "r2f20",
+      "lesson": "l11",
+      "stem": "Uma equipe investiga dificuldades de leitura de mapas. Qual recorte oferece melhores condições para examinar uma prática de ensino?",
+      "options": [
+        "Reunir apenas os relatos de sucesso e recomendar a intervenção antes de definir o que conta como aprendizagem.",
+        "Analisar como as justificativas sobre dois mapas mudam após comparar legendas e fontes, explicitando critérios, condições e limites.",
+        "Perguntar se a turma é boa em Geografia, sem delimitar quais aprendizagens ou produções serão observadas.",
+        "Comparar a popularidade de dois professores, tomando preferência pessoal como medida suficiente de compreensão cartográfica."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Selecionar só sucessos e concluir antes de definir critérios impede um exame consistente da prática e de seus limites.",
+        "O recorte identifica problema, intervenção e produções examináveis. A análise ainda precisa ser realizada, mas suas decisões estão mais claras.",
+        "A formulação é ampla e pode rotular estudantes. Não delimita o problema de ensino nem a evidência a analisar.",
+        "Preferência não equivale à aprendizagem cartográfica. O recorte precisa examinar produções relacionadas ao conteúdo."
+      ],
+      "tag": "investigação da prática",
       "pool": "final",
       "type": "single"
     }
@@ -2094,122 +2859,152 @@
     {
       "id": "c01",
       "front": "Saber disciplinar",
-      "back": "Conceitos, explicações e formas de investigar o conteúdo de uma área. Em Geografia, envolve ler relações espaciais e examinar fontes."
+      "back": "Conceitos, explicações e formas de investigar o conteúdo de uma área. Em Geografia, envolve ler relações espaciais e examinar fontes. No caso de Lia: distinguir distância, duração e condições de acesso."
     },
     {
       "id": "c02",
       "front": "Saber curricular",
-      "back": "Conhecimentos mobilizados para interpretar objetivos, selecionar e organizar conteúdos e sua progressão no ensino."
+      "back": "Conhecimentos mobilizados para interpretar objetivos, selecionar e organizar conteúdos e sua progressão no ensino. No caso de Lia: escolher a aprendizagem e a sequência que permite construí-la."
     },
     {
       "id": "c03",
       "front": "Saber da experiência docente",
-      "back": "Aprendizagem profissional construída no exercício da docência e em suas relações de trabalho. Pode ser revista e discutida."
+      "back": "Aprendizagem profissional construída no exercício da docência e em suas relações de trabalho. Pode ser revista e discutida. Exemplo: perceber uma dificuldade recorrente e aprender a orientar a leitura das unidades."
     },
     {
       "id": "c04",
       "front": "Saber da ação pedagógica em Gauthier",
-      "back": "Saber experiencial tornado público e testado por pesquisas sobre o ensino. Não equivale a qualquer ação em sala."
+      "back": "Saber experiencial tornado público e testado por pesquisas sobre o ensino. Não equivale a qualquer ação em sala. Pergunte como a prática foi explicitada, investigada e examinada por outras pessoas."
     },
     {
       "id": "c05",
       "front": "Divulgar uma prática é validá-la?",
-      "back": "Não automaticamente. A divulgação pode iniciar a troca; a análise de procedimentos, evidências e condições é necessária para seu exame."
+      "back": "Não automaticamente. A divulgação pode iniciar a troca; a análise de procedimentos, evidências e condições é necessária para seu exame. Uma postagem com elogios não demonstra o que os alunos aprenderam."
     },
     {
       "id": "c06",
       "front": "Tema e objetivo",
-      "back": "Tema nomeia o assunto. Objetivo explicita uma aprendizagem esperada, como comparar trajetos e explicar uma diferença."
+      "back": "Tema nomeia o assunto. Objetivo explicita uma aprendizagem esperada, como comparar trajetos e explicar uma diferença. “Trajetos” é tema; “explicar a diferença entre distância e duração” explicita aprendizagem."
     },
     {
       "id": "c07",
       "front": "Progressão curricular",
-      "back": "Organização de aprendizagens e relações ao longo do percurso. Não se resume a repetir a tarefa com outro título."
+      "back": "Organização de aprendizagens e relações ao longo do percurso. Não se resume a repetir a tarefa com outro título. Localizar pode sustentar comparar e explicar, conforme o problema e a turma."
     },
     {
       "id": "c08",
       "front": "Alinhamento no planejamento",
-      "back": "Objetivo, atividade e avaliação precisam trabalhar a mesma aprendizagem pretendida."
+      "back": "Objetivo, atividade e avaliação precisam trabalhar a mesma aprendizagem pretendida. Se o objetivo é explicar, a avaliação precisa examinar relações e justificativas."
     },
     {
       "id": "c09",
       "front": "Uma foto mostra causas?",
-      "back": "Pode iniciar perguntas e registrar aspectos visíveis. Explicar processos exige examinar seu alcance e dialogar com outras fontes."
+      "back": "Pode iniciar perguntas e registrar aspectos visíveis. Explicar processos exige examinar seu alcance e dialogar com outras fontes. A foto do rio Guamá não revela por si só os tempos de viagem."
     },
     {
       "id": "c10",
       "front": "Escala 1:10.000 e 1:100.000",
-      "back": "1:10.000 é maior: tem menor redução. Uma explicação acessível deve conservar essa relação."
+      "back": "1:10.000 é maior: tem menor redução. Uma explicação acessível deve conservar essa relação. Um centímetro corresponde a 100 m na primeira e a 1 km na segunda."
     },
     {
       "id": "c11",
       "front": "Recurso e saber para ensinar",
-      "back": "O recurso é o suporte. Saber para ensinar envolve por que escolhê-lo, como mediar e como verificar a aprendizagem."
+      "back": "O recurso é o suporte. Saber para ensinar envolve por que escolhê-lo, como mediar e como verificar a aprendizagem. Mapa e tabela precisam ter uma função na dificuldade que se pretende enfrentar."
     },
     {
       "id": "c12",
       "front": "Conhecimento pedagógico do conteúdo",
-      "back": "Em Shulman, ajuda a discutir representações, explicações e dificuldades próprias do ensino de uma matéria."
+      "back": "Em Shulman, ajuda a discutir representações, explicações e dificuldades próprias do ensino de uma matéria. Exemplo: representar km e min de modo que a turma confronte sua confusão entre as grandezas."
     },
     {
       "id": "c13",
       "front": "Tardif: uma entrada de estudo",
-      "back": "Pluralidade de fontes e desenvolvimento dos saberes ao longo da trajetória, em situações concretas de trabalho."
+      "back": "Pluralidade de fontes e desenvolvimento dos saberes ao longo da trajetória, em situações concretas de trabalho. Na aula, Lia mobiliza formação, Geografia, currículo e experiência de trabalho."
     },
     {
       "id": "c14",
       "front": "Gauthier: uma entrada de estudo",
-      "back": "Constituição de conhecimento profissional examinável sobre o ensino, para além da experiência privada."
+      "back": "Constituição de conhecimento profissional examinável sobre o ensino, para além da experiência privada. O exame público não transforma o resultado de uma prática em receita universal."
     },
     {
       "id": "c15",
       "front": "Shulman: uma entrada de estudo",
-      "back": "Relação entre o conhecimento da matéria e as formas de torná-la ensinável diante das dificuldades da turma."
+      "back": "Relação entre o conhecimento da matéria e as formas de torná-la ensinável diante das dificuldades da turma. Conhecer a matéria inclui pensar em explicações que ajudem outros a compreendê-la."
     },
     {
       "id": "c16",
       "front": "Cavalcanti: cotidiano e conceito",
-      "back": "A mediação dialoga com conhecimentos cotidianos e científicos para ampliar a compreensão geográfica do vivido."
+      "back": "A mediação dialoga com conhecimentos cotidianos e científicos para ampliar a compreensão geográfica do vivido. O relato de um trajeto pode ser confrontado com fontes e interpretado com circulação e rede."
     },
     {
       "id": "c17",
       "front": "Experiência do aluno e do professor",
-      "back": "O aluno traz conhecimentos do cotidiano. O professor constrói aprendizagem profissional ao observar, mediar e avaliar. Podem dialogar, sem serem sinônimos."
+      "back": "O aluno traz conhecimentos do cotidiano. O professor constrói aprendizagem profissional ao observar, mediar e avaliar. Podem dialogar, sem serem sinônimos. A estudante relata a espera; Lia aprende a incluir essa condição em sua intervenção."
     },
     {
       "id": "c18",
       "front": "Participação é evidência de domínio conceitual?",
-      "back": "Informa uma dimensão da atividade. A compreensão conceitual precisa aparecer em tarefas e explicações relacionadas ao objetivo."
+      "back": "Informa uma dimensão da atividade. A compreensão conceitual precisa aparecer em tarefas e explicações relacionadas ao objetivo. Para concluir sobre explicação, examine relações em uma produção adequada ao objetivo."
     },
     {
       "id": "c19",
       "front": "Feedback formativo",
-      "back": "Reconhece o que o aluno demonstrou, explica a dificuldade e indica um próximo passo para aprender."
+      "back": "Reconhece o que o aluno demonstrou, explica a dificuldade e indica um próximo passo para aprender. “Você comparou os minutos; agora relacione o resultado às distâncias” indica um próximo passo."
     },
     {
       "id": "c20",
       "front": "Replanejamento",
-      "back": "Revisão de escolhas de ensino a partir da análise de respostas, dificuldades e condições da turma."
+      "back": "Revisão de escolhas de ensino a partir da análise de respostas, dificuldades e condições da turma. Repetir toda a aula sem localizar o obstáculo pode manter a mesma dificuldade."
     },
     {
       "id": "c21",
       "front": "O que registrar sobre uma prática?",
-      "back": "Objetivo, condições, intervenção, produções dos estudantes, critérios de análise e limites da interpretação."
+      "back": "Objetivo, condições, intervenção, produções dos estudantes, critérios de análise e limites da interpretação. Registrar também respostas divergentes permite confrontar a interpretação inicial."
     },
     {
       "id": "c22",
       "front": "Resultado observado e causa",
-      "back": "Uma melhora não prova sozinha uma causa exclusiva. Outras intervenções e condições podem participar do resultado."
+      "back": "Uma melhora não prova sozinha uma causa exclusiva. Outras intervenções e condições podem participar do resultado. Diferenças entre tarefas, outras explicações e condições da turma precisam ser discutidas."
     },
     {
       "id": "c23",
       "front": "Um saber predominante elimina os demais?",
-      "back": "Não. Predominância destaca o foco do enunciado; uma decisão pode articular vários saberes."
+      "back": "Não. Predominância destaca o foco do enunciado; uma decisão pode articular vários saberes. O foco curricular de uma pergunta não exclui que a professora conheça a Geografia."
     },
     {
       "id": "c24",
       "front": "Resposta argumentativa sobre docência",
-      "back": "Explique os conceitos, analise uma decisão concreta e relacione a prática à aprendizagem, reconhecendo limites."
+      "back": "Explique os conceitos, analise uma decisão concreta e relacione a prática à aprendizagem, reconhecendo limites. O exemplo deve mostrar como o saber participa da decisão e do resultado esperado."
+    },
+    {
+      "id": "c25",
+      "front": "Saberes temporais em Tardif",
+      "back": "Constituem-se ao longo da história escolar, da formação e da carreira. Tempo de serviço não garante, sozinho, a adequação de toda decisão."
+    },
+    {
+      "id": "c26",
+      "front": "Saberes situados significam opinião sem critérios?",
+      "back": "Não. Pessoas e condições concretas participam da mobilização dos saberes, que continuam abertos à crítica, ao estudo e à discussão profissional."
+    },
+    {
+      "id": "c27",
+      "front": "Tradição pedagógica em Gauthier",
+      "back": "Representações e modos herdados de imaginar e organizar o ensino. A lembrança de como se estudou pode orientar a docência e precisa ser interrogada."
+    },
+    {
+      "id": "c28",
+      "front": "Experiência docente pode ser coletiva?",
+      "back": "Sim. A análise com colegas pode produzir aprendizagem profissional. Compartilhar não comprova, por si só, que houve pesquisa pública no sentido de Gauthier."
+    },
+    {
+      "id": "c29",
+      "front": "Resposta correta ou compreensão?",
+      "back": "Um acerto isolado pode ter origens diferentes. Justificativa e uso da relação em outro caso ajudam a examinar o que foi compreendido."
+    },
+    {
+      "id": "c30",
+      "front": "Os quatro focos do edital esgotam um autor?",
+      "back": "Não. Tardif, Gauthier e Shulman têm perguntas e classificações próprias. Compare suas contribuições sem transformar todos os termos em equivalentes."
     }
   ],
   "references": [
@@ -2245,7 +3040,7 @@
       "author": "Lee S. Shulman",
       "year": 1986,
       "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_2.md#shulman-1986",
-      "note": "Educational Researcher, 15(2), p. 4–14. Fonte primária complementar para conhecimento pedagógico do conteúdo. Esse conceito não é apresentado como equivalente à classificação de Gauthier. O link abre a ficha com acesso à fonte."
+      "note": "Educational Researcher, 15(2), p. 4–14. Fonte primária complementar para conhecimento pedagógico do conteúdo. Esse conceito não é apresentado como equivalente à classificação de Gauthier. O link abre a ficha com acesso à fonte. Texto primário de 1986 disponível pela Western Carolina University na ficha de leitura."
     },
     {
       "title": "Cotidiano, mediação pedagógica e formação de conceitos: uma contribuição de Vygotsky ao ensino de geografia",
@@ -2280,8 +3075,10 @@
       "Analisei uma decisão concreta de ensino de Geografia.",
       "Relacionei a intervenção à aprendizagem e às suas evidências.",
       "Se citei ação pedagógica em Gauthier, conservei o sentido de experiência pública e investigada.",
-      "Reconheci um limite da prática e escrevi com clareza em até 20 linhas."
+      "Reconheci um limite da prática e escrevi com clareza em até 20 linhas.",
+      "Meu exemplo mostra por que cada saber participa da decisão, sem limitar-se aos nomes.",
+      "Indiquei uma tarefa que permite verificar o uso do conceito além do exemplo inicial."
     ],
-    "model": "Ensinar Geografia exige articular conhecimentos de diferentes fontes. O domínio de conceitos é necessário, mas precisa dialogar com objetivos de aprendizagem, experiência profissional e exame das práticas de ensino.\nEm uma aula sobre trajetos até a escola, o saber disciplinar permite relacionar circulação e acesso. Uma perspectiva crítica examina como infraestrutura e decisões sociais participam dessas condições. O saber curricular orienta o objetivo: explicar diferenças entre percursos, em vez de apenas localizar lugares.\nAo observar que a turma confunde distância e tempo, a professora usa sua experiência para rever a intervenção. Ela propõe comparar mapas e dados e pede justificativas, procurando tornar os conceitos instrumentos de análise.\nAs respostas oferecem evidências para avaliar e replanejar. Quando a experiência é explicitada e investigada publicamente, aproxima-se do saber da ação pedagógica discutido por Gauthier. Isso não autoriza uma receita universal, pois outras condições participam dos resultados.\nAssim, a articulação dos saberes sustenta decisões justificadas, abertas à reflexão e voltadas à aprendizagem geográfica."
+    "model": "Ensinar Geografia exige articular saberes para transformar o conteúdo em aprendizagem. O domínio conceitual é necessário, mas precisa dialogar com a organização curricular e com a interpretação das situações de ensino.\nEm uma aula sobre trajetos, distinguir distância e duração mobiliza saber disciplinar. Definir que a turma deverá explicar diferenças de acesso e organizar uma comparação orientada envolve saber curricular. O exemplo mostra funções diferentes que participam da mesma decisão.\nAo observar que os alunos escolhem pelo desenho sem consultar as unidades, a professora pode rever sua intervenção e aprender com a experiência. Em vez de apenas corrigir a letra, orienta a comparação entre quilômetros e minutos e pede uma justificativa em outro caso.\nEssas produções oferecem evidências para avaliar e replanejar. Para constituir saber da ação pedagógica na acepção de Gauthier, a experiência precisa ser explicitada, tornada pública e testada por pesquisas sobre o ensino; a impressão de sucesso não basta.\nAssim, a articulação dos saberes sustenta escolhas justificadas e abertas ao exame. As condições da turma e os limites das evidências devem ser considerados antes de transformar um resultado situado em recomendação geral."
   }
 }

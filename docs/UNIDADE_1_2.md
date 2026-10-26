@@ -1,29 +1,35 @@
-# Unidade 1.2 — os saberes que sustentam o ensinar
+# Unidade 1.2 refeita — aprender a decidir e ensinar Geografia
 
 **Saberes disciplinares, curriculares, saberes da experiência e da ação pedagógica dos docentes**, conforme o item 1.2 do Anexo III do edital PROFGEO-UFPA n. 03/2026, ingresso 2027.
 
-Conteúdo disponível pelo mecanismo de unidades do aplicativo: **Ajustes → Buscar novas unidades → Unidades → 1.2**. O APK 1.1.1 já possui os recursos necessários. Depois de baixar, as lições e as imagens ficam salvas para estudo sem conexão; anotações e respostas da 1.1 são mantidas.
+**Revisão didática 2**, disponível pelo mecanismo de unidades do aplicativo: **Ajustes → Buscar novas unidades → Unidades → 1.2**. Retome a unidade desde a primeira lição. O APK 1.1.1 já possui os recursos necessários. Depois de baixar, as lições e as imagens ficam salvas para estudo sem conexão; o caderno e os registros anteriores das duas unidades são mantidos.
 
-São **12 lições**, **60 questões comentadas** (40 de prática e 20 no simulado), **24 cartões**, **7 atividades de associação ou ordenação**, **4 cenas interativas**, **6 esquemas** e **2 fotografias novas**. Todos os recursos visuais são apresentados em 16:9. O tempo sugerido é de 145 minutos, distribuído em sessões ajustáveis.
+São **12 lições reescritas**, **80 questões comentadas** (**60 de prática** e **20 casos novos no simulado**), **30 cartões**, **12 atividades de associação ou ordenação**, **4 cenas interativas**, **6 esquemas** e **2 fotografias**. Todos os recursos visuais são apresentados em 16:9. O tempo sugerido é de **242 minutos**, aproximadamente quatro horas, distribuído em sessões ajustáveis, com pausas para raciocinar, praticar e escrever.
+
+A professora fictícia **Lia** prepara uma aula sobre acesso à escola. A turma localiza os trajetos, mas confunde distância e duração. Esse problema liga as lições: compreender o conteúdo, selecionar uma aprendizagem, interpretar uma dificuldade, escolher uma representação, avaliar justificativas e investigar a prática. O caso e os dados são autorais e hipotéticos. Não se atribuem resultados a uma escola real.
+
+O percurso segue **situação → explicação → decisão analisada → resolução → transferência → prática**. Os termos são introduzidos depois de sua função aparecer no caso. Tabelas e esquemas retomam o raciocínio explicado no texto; as animações têm perguntas de antecipação, observação e leitura orientada. A unidade não se limita a associar um nome a cada recurso usado pela professora.
 
 ## Percurso de aprendizagem
 
 | Lição | Foco |
 |---|---|
-| 1. Ensinar exige mais de um saber | Reconhecer os focos e sua articulação. |
-| 2. Saber disciplinar | Conceitos, relações geográficas e alcance das fontes. |
-| 3. Saber curricular | Seleção, objetivos, progressão e avaliação. |
-| 4. Saber da experiência | Aprendizagem profissional e revisão da prática. |
-| 5. Ação pedagógica em Gauthier | Experiência pública e investigada. |
-| 6. Autores | Aproximações e diferenças entre Tardif, Gauthier e Shulman. |
-| 7. Do conceito à explicação | Representações, dificuldades e conhecimento pedagógico do conteúdo. |
-| 8. Planejamento | Um caso fictício sobre trajetos até a escola. |
-| 9. Saberes dos estudantes | Cotidiano, diferenças e mediação conceitual. |
-| 10. Avaliação | Evidências, feedback e replanejamento. |
-| 11. Investigação coletiva | Problema, intervenção, registro e limites. |
-| 12. Casos e prova | Argumentação e leitura de enunciados. |
+| 1. Ensinar exige mais de um saber | Acompanhar as decisões de Lia e reconhecer sua função. |
+| 2. Saber disciplinar: compreender para explicar | Distinguir distância, duração e acesso; julgar o alcance de mapa, foto e dados. |
+| 3. Saber curricular: construir um percurso | Passar de tema e recurso a objetivo; alinhar sequência e avaliação. |
+| 4. Saber da experiência: aprender no trabalho | Transformar uma dificuldade observada em aprendizagem profissional revisável. |
+| 5. Ação pedagógica: tornar a experiência examinável | Compreender por que relato, divulgação e investigação têm exigências distintas. |
+| 6. Tardif, Gauthier e Shulman | Entender fontes, trajetória e situação; repertório profissional; representação de conteúdos. |
+| 7. Do conceito à explicação que ensina | Resolver a confusão entre km e min e verificar seu uso em outro exemplo. |
+| 8. Planejar articulando os saberes | Construir hipótese inicial, comparação, sistematização e nova tarefa. |
+| 9. Saberes dos estudantes e mediação conceitual | Usar o vivido para investigar relações, sem generalizar experiências. |
+| 10. Avaliar para compreender e replanejar | Interpretar três respostas, elaborar feedback e localizar o próximo passo. |
+| 11. Investigar a prática com outros docentes | Delimitar pergunta, procedimento, critérios e alcance das conclusões. |
+| 12. Casos de prova e construção do argumento | Resolver enunciados e construir um parágrafo com conceito, decisão e evidência. |
 
-A oficina de redação propõe analisar pelo menos dois saberes em uma decisão de ensino de Geografia, relacionando a intervenção às evidências da aprendizagem. Possui 20 linhas de treino, seis critérios de autoavaliação e um exemplo argumentativo. Não atribui nota automática.
+A comparação dos autores mostra diferenças sem tratá-los como classificações equivalentes. Em Tardif, explica fontes e características dos saberes; em Gauthier, apresenta o reservatório e o sentido específico da ação pedagógica; em Shulman, relaciona representações e dificuldades próprias de um conteúdo. A experiência docente pode ser individual e coletiva; a troca cotidiana não comprova, por si só, teste por pesquisa pública.
+
+A oficina de redação mantém o tema e o limite de **20 linhas**. Possui **oito critérios**, um exemplo novo e uma preparação comentada na lição 12. Os seis critérios anteriores conservam texto e ordem, preservando as marcações. O exemplo analisa uma decisão de ensino e discute evidências e limites. A autoavaliação é formativa e não atribui nota automática.
 
 ## Referências selecionadas
 
@@ -53,6 +59,8 @@ SHULMAN, Lee S. **Those Who Understand: Knowledge Growth in Teaching**. Educatio
 
 [Acessar a referência pelo DOI](https://doi.org/10.3102/0013189X015002004). Fonte primária sobre conhecimento pedagógico do conteúdo. Seu foco não é apresentado como equivalente ao saber da ação pedagógica de Gauthier.
 
+[Ler o texto de 1986 na Western Carolina University](https://www.wcu.edu/webfiles/pdfs/shulman.pdf).
+
 ### Cavalcanti 2005
 
 CAVALCANTI, Lana de Souza. **Cotidiano, mediação pedagógica e formação de conceitos: uma contribuição de Vygotsky ao ensino de geografia**. Cadernos Cedes, v. 25, n. 66, p. 185–207, 2005.
@@ -79,6 +87,10 @@ As duas fotografias foram redimensionadas para 1280 × 720, mantendo sua propor�
 
 O pacote contém JSON, imagens e créditos, usando os blocos e as atividades já disponíveis no aplicativo. As quatro cenas são recursos existentes contextualizados para decisões docentes. Não há código executável novo no pacote.
 
-Os testes de interface percorrem todas as lições, verificam imagens, controles, associações e ordenações, respondem ao simulado, conferem feedback e persistência e verificam a leitura com fonte máxima em tela de 320 pixels. O teste Android instala uma revisão de teste da unidade real, verifica os oito arquivos de imagem e sua abertura local, preserva uma anotação após reinício e mantém o conteúdo após rejeitar um pacote inválido.
+O pacote inicial `content/packages/1.2-r1.zip` permanece como registro imutável. Os **60 problemas anteriores mantêm IDs, lições, enunciados, alternativas, respostas e comentários** e passam à prática das lições. O novo simulado usa `r2f01` a `r2f20`, sem reinterpretar o histórico como respostas a outras perguntas. As lições `l01` a `l12` e os cartões `c01` a `c24` conservam seus focos; os cartões receberam exemplos e seis novos itens. Notas, favoritos, conclusões, revisões e textos já escritos não são apagados.
+
+`python3 tools/author_unit_1_2.py` chama a autoria vigente em `tools/rewrite_unit_1_2.py`, que lê a base r1 e verifica a identidade dos problemas antigos antes de gerar a r2. O catálogo tem revisão 4 e a unidade 1.2 tem revisão 2, permitindo atualização pelo APK existente.
+
+Os testes comparam os 60 problemas com a base r1 e verificam a preservação do caderno e dos critérios da redação. A interface percorre todas as lições, imagens, controles e atividades, responde aos 20 novos casos, confere feedback e persistência e verifica leitura com fonte máxima em tela de 320 pixels. O teste Android instala uma revisão de teste superior à embarcada, verifica os oito arquivos de imagem e sua abertura local, preserva uma anotação após reinício e mantém o conteúdo após rejeitar um pacote inválido.
 
 A próxima unidade planejada é **1.3 — Conceitos, categorias e conteúdos de geografia no Ensino Fundamental e Médio**.

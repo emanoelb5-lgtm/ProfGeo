@@ -20,6 +20,8 @@ Use `content/units/1.1.json` e `content/units/1.2.json` como exemplos funcionais
 
 A 1.1 foi reescrita na revisão 2: use seu encadeamento entre problema, explicação, caso resolvido, ensino e prática como referência didática. O roteiro está em `docs/UNIDADE_1_1_REFEITA.md`. O pacote r1 da 1.1 é mantido como registro para preservar a identidade e o sentido das questões antigas.
 
+A 1.2 também está na revisão 2, com uma aula acompanhada e explicação dos saberes nas decisões de uma professora fictícia. O roteiro está em `docs/UNIDADE_1_2.md`. Seu pacote r1 preserva os 60 problemas anteriores, agora na prática; os 20 casos do novo simulado têm IDs próprios. As autorias vigentes de ambas as unidades leem suas bases r1. Não remova nem reconstrua esses registros históricos com os scripts atuais.
+
 | Campo | Contrato |
 |---|---|
 | `schemaVersion` | `1`; uma mudança de contrato exige versão nova do motor. |
