@@ -1,4 +1,24 @@
 const assert=require('node:assert/strict');const {test}=require('node:test');const fs=require('node:fs');const E=require('../app/src/main/assets/engine.js');const u=JSON.parse(fs.readFileSync('content/units/1.1.json'));
+test('unidade 1.5 integra o módulo completo e mantém independentes os registros das quatro anteriores',()=>{
+ const current=JSON.parse(fs.readFileSync('content/units/1.5.json'));E.validateUnit(current);
+ assert.equal(current.title,'Pesquisa e produção do conhecimento no campo da Geografia Escolar');
+ assert.equal(current.revision,1);assert.equal(current.lessons.length,14);assert.equal(current.flashcards.length,30);
+ assert.equal(current.questions.filter(q=>q.pool==='lesson').length,56);assert.equal(current.questions.filter(q=>q.pool==='final').length,20);
+ const state=E.fresh();
+ for(const id of ['1.1','1.2','1.3','1.4']){
+  const previous=JSON.parse(fs.readFileSync('content/units/'+id+'.json'));const q=previous.questions[0];E.answer(state,id,q,q.answer,100000);
+  state.notes[id+':l01']='Nota anterior '+id;state.essays[id]={lines:['Texto '+id],rubric:[0]};state.favorites.push(id+':l01');state.completed[id+':l01']={at:1};
+ }
+ const old=structuredClone(state);
+ for(const q of current.questions)E.answer(state,current.id,q,q.answer,100000);
+ const restored=E.merge(JSON.parse(JSON.stringify(state)));
+ for(const id of ['1.1','1.2','1.3','1.4']){
+  assert.equal(restored.notes[id+':l01'],old.notes[id+':l01']);assert.deepEqual(restored.essays[id],old.essays[id]);
+  for(const key of Object.keys(old.answers).filter(k=>k.startsWith(id+':')))assert.deepEqual(restored.answers[key],old.answers[key]);
+ }
+ assert.deepEqual(restored.favorites,old.favorites);assert.deepEqual(restored.completed,old.completed);
+ assert.equal(E.errors(restored,current).length,0);assert.equal(Object.keys(restored.answers).filter(k=>k.startsWith('1.5:')).length,76);
+});
 test('conteúdo publicado é completo e coerente',()=>{E.validateUnit(u);assert.equal(u.revision,2);assert.equal(u.lessons.length,12);assert.equal(u.questions.filter(q=>q.pool==='final').length,20);assert.equal(u.questions.length,76);assert.equal(u.flashcards.length,24)});
 test('revisão didática mantém o significado das respostas e os registros da primeira versão',()=>{
  const {execFileSync}=require('node:child_process');
@@ -42,7 +62,7 @@ test('unidade 1.3 acrescenta um percurso completo sem colidir com o caderno ante
  const catalog=JSON.parse(fs.readFileSync('content/catalog.json'));
  E.validateUnit(current);assert.equal(current.revision,1);assert.equal(current.lessons.length,14);assert.equal(current.flashcards.length,30);
  assert.equal(current.questions.filter(q=>q.pool==='lesson').length,56);assert.equal(current.questions.filter(q=>q.pool==='final').length,20);
- assert.equal(catalog.modules.flatMap(m=>m.units).length,15);assert.equal(catalog.modules.flatMap(m=>m.units).filter(e=>e.status==='published').length,4);
+ assert.equal(catalog.modules.flatMap(m=>m.units).length,15);assert.equal(catalog.modules.flatMap(m=>m.units).filter(e=>e.status==='published').length,5);
  const state=E.fresh();state.notes['1.1:l01']='Nota da 1.1';state.notes['1.2:l05']='Nota da 1.2';state.essays['1.2']={lines:['Redação anterior'],rubric:[0,5]};
  const previous=JSON.parse(fs.readFileSync('content/units/1.2.json'));const old=previous.questions[0];E.answer(state,'1.2',old,old.answer,100000);
  for(const q of current.questions)E.answer(state,'1.3',q,q.answer,100000);
@@ -53,7 +73,7 @@ test('unidade 1.3 acrescenta um percurso completo sem colidir com o caderno ante
 });
 test('novas fontes não alteram os pacotes publicados das unidades anteriores',()=>{
  const crypto=require('node:crypto');const catalog=JSON.parse(fs.readFileSync('content/catalog.json'));
- for(const [id,expected] of [['1.1','e70370e03ae34d053fce834c499a5ca1b346bf2ddc82c07ff9d9593f9147ba43'],['1.2','f8c80aaccaab1474a70e79e4887f57eec818d0e9c37c2a3105c692e99b624ac5'],['1.3','99859ba818f31e02f94b6ce66e313eb4c7a49cade5794e4a6b651703b93182c1']]){
+ for(const [id,expected] of [['1.1','e70370e03ae34d053fce834c499a5ca1b346bf2ddc82c07ff9d9593f9147ba43'],['1.2','f8c80aaccaab1474a70e79e4887f57eec818d0e9c37c2a3105c692e99b624ac5'],['1.3','99859ba818f31e02f94b6ce66e313eb4c7a49cade5794e4a6b651703b93182c1'],['1.4','4d81eccba2e3f9274eec4f172bef4d07ca8c132a98294818801fca275c722c5c']]){
   const entry=catalog.modules.flatMap(m=>m.units).find(e=>e.id===id);const bytes=fs.readFileSync('content/'+entry.package);
   assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),expected);assert.equal(entry.sha256,expected);
  }

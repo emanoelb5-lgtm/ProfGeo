@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "minAppVersion": 1,
-  "revision": 6,
+  "revision": 7,
   "updatedAt": "2026-10-26",
   "source": {
     "title": "Edital PROFGEO-UFPA n. 03/2026",
@@ -65,8 +65,11 @@
           "id": "1.5",
           "title": "Pesquisa e produção do conhecimento no campo da Geografia Escolar",
           "editalItem": "1.5",
-          "status": "planned",
-          "revision": 0
+          "status": "published",
+          "revision": 1,
+          "package": "packages/1.5-r1.zip",
+          "sha256": "277de324335a71839612535a9a622584dc0527c7c488186ccd81509413ec4bda",
+          "bytes": 986374
         }
       ]
     },

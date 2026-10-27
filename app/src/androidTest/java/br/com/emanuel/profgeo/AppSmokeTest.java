@@ -44,6 +44,9 @@ public class AppSmokeTest {
   @Test public void unit14DownloadsWithItsOwnLessonsImagesAndNotebook() throws Exception {
     verifyDownloadedUnit("1.4",1,76,9,"Qual documento responde à minha pergunta?");
   }
+  @Test public void unit15DownloadsWithItsOwnLessonsImagesAndNotebook() throws Exception {
+    verifyDownloadedUnit("1.5",1,76,9,"Quando uma dúvida da aula se torna pesquisa?");
+  }
   private void verifyDownloadedUnit(final String unitId,int expectedRevision,int expectedQuestions,int expectedMedia,String lessonTitle) throws Exception {
     android.content.Context ctx=androidx.test.platform.app.InstrumentationRegistry.getInstrumentation().getTargetContext();
     String unit=org.json.JSONObject.quote(unitId);

@@ -1,0 +1,875 @@
+"""Unidade 1.5: uma investigação acompanhada em Geografia Escolar; casos e dados autorais."""
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+TITLE='Pesquisa e produção do conhecimento no campo da Geografia Escolar'
+PAGE='https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_5.md'
+
+def text(title,body):return dict(type='text',title=title,body=body)
+def call(title,body,warning=False):return dict(type='callout',title=title,body=body,tone='warning' if warning else 'tip')
+def table(title,headers,rows):return dict(type='table',title=title,headers=headers,rows=rows)
+def compare(title,a,at,b,bt):return dict(type='compare',title=title,left=dict(title=a,body=at),right=dict(title=b,body=bt))
+def anim(kind,title,caption):return dict(type='animation',kind=kind,title=title,caption=caption)
+def match(title,pairs):return dict(type='match',title=title,pairs=pairs)
+def order(title,items):return dict(type='order',title=title,items=items)
+def picture(filename,title,caption):
+    source=next(s for s in json.loads((ROOT/'content/media-sources.json').read_text()) if s['filename']==filename)
+    return dict(type='photo',src='media/'+filename,title=title,caption=caption,
+                credit=f'{source["author"]} · {source["license"]} · origem e alterações nos créditos da unidade')
+
+lessons=[]
+def lesson(n,title,kicker,minutes,blocks,summary,practice):
+    lessons.append(dict(id=f'l{n:02d}',title=title,kicker=kicker,minutes=minutes,
+                        blocks=blocks,summary=summary,practice=practice))
+
+lesson(1,'Quando uma dúvida da aula se torna pesquisa?','Conhecer o espaço e investigar seu ensino',18,[
+ text('A dúvida que vai acompanhar você',"""Na Escola das Águas, a professora Lia pede que uma turma explique diferenças nos trajetos até a escola. Algumas produções apenas enumeram ruas; outras relacionam transporte, condições das vias e acesso. Ela se pergunta como essas explicações são construídas e o que sua mediação pode favorecer.
+Escola, professora, turma, falas, mapas e números deste percurso são fictícios. Não relatam uma pesquisa realizada. Vamos acompanhar decisões de investigação para compreender como se produz conhecimento sobre a Geografia Escolar."""),
+ text('Há duas perguntas relacionadas, mas distintas',"""“Por que os trajetos apresentam condições desiguais?” investiga uma relação espacial. “Como os estudantes mobilizam conceitos para explicar essas diferenças?” investiga o ensino e a aprendizagem dessa relação. Uma pesquisa em Geografia Escolar pode estudar também currículo, formação docente, materiais, linguagens e condições de trabalho.
+O campo não se limita a aplicar na escola um saber pronto da universidade. Professores, estudantes, práticas e contextos participam da produção e da reelaboração do conhecimento escolar. Reconhecer essa produção exige investigar como ela acontece, sem idealizar toda experiência como resultado científico."""),
+ picture('u15-problema.png','Da inquietação ao conhecimento discutível','O percurso é uma orientação para o caso, com retornos e revisões. Não é uma receita única para todas as pesquisas.'),
+ picture('u12-sala-aula.jpg','Uma sala real não é a turma da investigação','Escola Técnica de Paulínia em 2015, com conteúdo de História na lousa. A fotografia não representa a Escola das Águas nem comprova o que seus estudantes aprenderam.'),
+ compare('Caso resolvido: relato e investigação','Relato de experiência','“A aula foi interessante e todos gostaram.” É uma apreciação inicial; não informa quem participou, o que foi observado nem como a aprendizagem foi analisada.','Investigação','Lia delimita uma pergunta, explicita conceitos e critérios, registra produções e intervenções e confronta evidências. Outros leitores podem examinar a relação entre o que ela afirma e o material analisado.'),
+ text('Três usos da pesquisa',"""A pesquisa acadêmica busca produzir conhecimento comunicável e submetido à crítica. A pesquisa da própria prática pode investigar escolhas docentes com registros e análise sistemática. A pesquisa como princípio educativo organiza o aprender por perguntas, fontes e argumentos. Elas podem se articular, mas uma atividade de busca na internet não recebe automaticamente o estatuto de pesquisa acadêmica.
+Callai (2005) ajuda a pensar a leitura geográfica do mundo vivido; Lopes e Pontuschka (2009) discutem a investigação no estudo do meio. Aqui, essas referências apoiam o sentido educativo das perguntas. O desenho e os resultados fictícios do caso foram elaborados para este aplicativo."""),
+ call('Antes de avançar','Uma pesquisa não precisa confirmar a preferência de quem ensina. Precisa tornar sua pergunta, seus procedimentos e suas conclusões examináveis. Nas próximas lições, transformaremos a inquietação de Lia em um problema delimitado.')
+], 'Pesquisar em Geografia Escolar é construir e examinar problemas sobre o conhecimento geográfico e suas relações com a escola. Experiência pode iniciar uma investigação; sistematização, teoria, evidências e crítica sustentam suas conclusões.',match('Relacione a pergunta ao foco',[
+ ['Por que dois trajetos têm condições de acesso diferentes?','Relação espacial a investigar.'],
+ ['Como os estudantes explicam as diferenças de acesso?','Construção do conhecimento geográfico escolar.'],
+ ['Como acompanhar os efeitos de uma mediação docente?','Investigação da prática de ensino.'],
+ ['Como aprender a confrontar fontes em uma tarefa?','Pesquisa como princípio educativo.']]))
+
+lesson(2,'Do tema amplo ao problema investigável','Recorte, pergunta e objeto de estudo',21,[
+ text('O primeiro enunciado é grande demais',"""Lia escreve “transporte, desigualdade e educação no Brasil”. Isso delimita um interesse temático, mas ainda não informa exatamente o que será investigado. Ela não dispõe de condições para estudar todo esse conjunto em uma única pesquisa.
+É preciso escolher uma relação, participantes ou materiais, contexto e período. O objeto é o recorte construído teoricamente sobre o qual se busca conhecimento. No caso, são as explicações geográficas produzidas por estudantes e suas relações com uma sequência de mediação, não “tudo sobre transporte”."""),
+ table('A pergunta vai ganhando precisão',['Etapa da formulação','Exemplo do caso'],[
+ ['Tema.','Ensino de Geografia e trajetos até a escola.'],
+ ['Problema observado.','Parte das produções lista elementos, mas não relaciona condições de circulação e acesso.'],
+ ['Objeto construído.','Mobilização de conceitos nas explicações dos estudantes.'],
+ ['Pergunta delimitada.','Como uma turma de 7º ano da Escola das Águas mobiliza redes, circulação e acesso ao explicar trajetos, em uma sequência de quatro aulas?']]),
+ anim('mediation','Transforme o relato em pergunta','Percorra Relato, Pergunta, Conceito e Explicação. A cena ilustra uma mediação hipotética. Observe como perguntar por trajetos, grupos e infraestrutura muda o que pode ser investigado; a animação não demonstra um resultado empírico.'),
+ compare('Caso resolvido: pergunta que já traz o veredito','Formulação inicial','“Como provar que mapas sempre são superiores a qualquer texto?” A conclusão já está fixada e a comparação ignora tarefa, turma, linguagem e mediação.','Reformulação','“Que relações aparecem nas explicações desta turma ao comparar um mapa e dois relatos identificados?” A resposta permanece aberta às fontes, inclusive a resultados que contrariem a expectativa.'),
+ text('O recorte precisa caber nas evidências',"""Na pergunta de Lia, turma e escola são unidades situadas; quatro aulas definem o período de acompanhamento. Isso permite estudar processos de uma situação e não autoriza afirmar o comportamento de todos os estudantes brasileiros.
+O recorte geográfico não é apenas pôr o nome de uma cidade no título. Interessa perguntar por distribuição, conexões, diferenciações, escalas e relações entre sociedade e natureza. Essas relações serão usadas para interpretar as explicações dos estudantes."""),
+ call('Teste de coerência','Se Lia só recolhe uma opinião sobre gostar da aula, não responde diretamente como conceitos aparecem nas explicações. A pergunta já ajuda a reconhecer que tipo de fonte será necessário. Objetivos e instrumentos vêm a seguir.')
+], 'Tema indica um campo de interesse; problema apresenta uma questão aberta e delimitada; objeto é o recorte construído para investigá-la. Contexto e período limitam o alcance do que se poderá concluir.',order('Refine a inquietação sem antecipar a resposta',[
+ 'Identificar uma dificuldade ou relação que merece compreensão.',
+ 'Delimitar objeto, contexto e período com apoio teórico.',
+ 'Formular uma pergunta cuja resposta ainda precisa ser investigada.',
+ 'Examinar se fontes e condições permitem enfrentar a pergunta.']))
+
+lesson(3,'Objetivos, hipóteses e leitura do que já foi produzido','Construir uma direção sem inventar uma lacuna',20,[
+ text('Da pergunta à tarefa de conhecer',"""O objetivo geral de Lia é analisar como os estudantes mobilizam redes, circulação e acesso em suas explicações durante a sequência. Isso retoma o problema. Objetivos específicos desdobram operações: identificar explicações iniciais, examinar intervenções e comparar relações presentes em produções de momentos distintos.
+“Fazer três entrevistas” é um procedimento, não descreve sozinho o conhecimento pretendido. “Transformar toda a educação” promete mais do que o recorte pode sustentar. Um bom objetivo indica o que será compreendido e mantém relação com as fontes possíveis."""),
+ compare('Hipótese é uma possibilidade de resposta','Expectativa a examinar','Lia supõe que comparar fontes sobre trajetos pode favorecer explicações que relacionem infraestrutura e circulação. A expectativa orienta atenção, mas precisa enfrentar o material.','Resultado não é compromisso','Se certas produções mantiverem apenas listas, Lia deverá analisá-las. Não pode escondê-las para fazer a hipótese parecer verdadeira. Há pesquisas interpretativas que trabalham com questões orientadoras, sem exigir uma hipótese formal em todos os desenhos.'),
+ text('A revisão de literatura também é investigação',"""Antes de apresentar sua proposta como inédita, Lia procura trabalhos sobre raciocínio geográfico, cartografia escolar e mediação docente. Registra onde buscou, termos, período, critérios de seleção e motivos de exclusão. Lê problema, conceitos, método, resultados e limites.
+Um fichamento ajuda a reconstruir o argumento de cada trabalho; uma síntese compara aproximações e diferenças entre eles. Lista de títulos ou trechos copiados não mostra o que a área conhece. Não encontrar algo numa primeira busca tampouco prova que ninguém pesquisou o tema."""),
+ table('Matriz de leitura: um exemplo autoral',['Campo a registrar','Por que importa'],[
+ ['Referência, fonte e data de busca.','Permitir localizar a obra e compreender o levantamento.'],
+ ['Pergunta, contexto e participantes.','Reconhecer o alcance do estudo.'],
+ ['Conceitos, desenho e fontes.','Examinar como se construiu a interpretação.'],
+ ['Resultados, limites e relação com a nova pergunta.','Construir uma síntese, sem apenas acumular citações.']]),
+ text('Como justificar o estudo',"""A justificativa articula relevância do problema, diálogo com o conhecimento produzido e contribuição possível. No caso, compreender a passagem de uma enumeração para uma explicação pode ajudar a revisar intervenções de ensino. Não é necessário prometer uma fórmula universal.
+Uma ausência específica encontrada em um levantamento delimitado pode motivar pesquisa, mas deve ser apresentada com seus critérios. “Nos trabalhos selecionados por esta busca, faltou examinar tal relação” é uma afirmação examinável; “não existe pesquisa sobre isso” exige um alcance muito maior."""),
+ call('Ponte para as escolhas metodológicas','Agora Lia tem uma pergunta, objetivos e referências. O próximo passo é explicar por que seus conceitos e seus procedimentos fazem sentido juntos. Citar um autor no início não garante essa coerência.')
+], 'Objetivos descrevem o que se pretende conhecer; procedimentos indicam operações para isso. Hipóteses permanecem revisáveis. A revisão de literatura compara argumentos e métodos, documenta escolhas e evita proclamar ineditismo sem levantamento.',match('Distinga as funções no projeto',[
+ ['Analisar como conceitos aparecem nas explicações.','Objetivo geral coerente com o problema.'],
+ ['Realizar entrevistas com roteiro.','Procedimento de produção de informações.'],
+ ['Comparar fontes pode ampliar certas relações.','Hipótese ou expectativa a examinar.'],
+ ['Confrontar resultados e limites dos estudos selecionados.','Síntese de literatura.']]))
+
+lesson(4,'Teoria, método, metodologia e técnica','Escolhas que precisam conversar',21,[
+ text('O nome do instrumento não explica a pesquisa',"""Lia escreve “meu método é uma entrevista”. A frase informa uma técnica de produção de informações, mas deixa sem resposta como o problema será interpretado e por que ouvir essas pessoas contribui para enfrentá-lo.
+A teoria oferece relações e conceitos para construir perguntas e analisar materiais. Uma perspectiva histórico-dialética, por exemplo, pode orientar a atenção para processos, contradições e relações sociais. A entrevista não pertence exclusivamente a essa perspectiva, nem sua presença prova que ela foi desenvolvida."""),
+ picture('u15-desenho.png','Coerência entre pergunta, conceitos, fontes e análise','As escolhas se confrontam e podem ser revistas. O esquema não fixa uma terminologia única para todas as tradições metodológicas.'),
+ table('Uma distinção útil, sem transformar palavras em dogma',['Termo','Função no caso'],[
+ ['Teoria e conceitos.','Redes, circulação e acesso ajudam a examinar relações geográficas.'],
+ ['Método e orientação de investigação.','Forma fundamentada de construir e interpretar o problema. O termo também pode nomear procedimentos em certas tradições.'],
+ ['Metodologia.','Discussão e justificação das escolhas e de sua coerência com o objeto.'],
+ ['Técnicas e instrumentos.','Observação, entrevista, roteiro, registro e grade de análise.'],
+ ['Desenho da pesquisa.','Organização do caso, seleção, momentos, fontes e procedimentos de análise.']]),
+ compare('Caso resolvido: teoria decorativa','Plano frágil','O título cita território, mas a análise só conta ruas e não examina apropriação, controle ou relações de poder. A categoria não orienta a investigação.','Revisão possível','Lia define por que redes e acesso são pertinentes, identifica o que procurará nas explicações e admite rever suas categorias à luz do material. Se adotar território, deverá desenvolver as relações que justificam seu uso.'),
+ text('Raciocínio e evidência',"""Dedução trabalha consequências de proposições e relações teóricas; indução constrói generalizações a partir de observações. Pesquisas podem articular movimentos de ida e volta entre conceitos e materiais. Nenhum rótulo dispensa justificar uma inferência.
+Na Geografia Escolar, não basta constatar que a palavra “rede” apareceu numa redação. É preciso verificar como foi usada: enumerou linhas ou explicou conexões e diferenças de acesso? A definição do conceito orienta o critério, e a produção concreta pode revelar ambiguidades que exigem revisão."""),
+ call('Uma pergunta de prova','Se o enunciado apresenta questionário e pede o método de interpretação, essas informações podem ser insuficientes. Instrumento, orientação teórica e desenho não se deduzem automaticamente uns dos outros. A próxima lição aplica essa coerência às abordagens.')
+], 'Metodologia justifica escolhas articuladas ao problema. Teoria, orientação de investigação, desenho, técnicas e instrumentos têm funções relacionadas. A terminologia varia entre tradições; um questionário ou entrevista não determina sozinho a perspectiva do estudo.',match('Associe a decisão à função',[
+ ['Definir o que significa acesso na análise.','Construção conceitual.'],
+ ['Justificar por que comparar produções e observações.','Discussão metodológica.'],
+ ['Preparar perguntas abertas para uma conversa.','Instrumento de entrevista.'],
+ ['Delimitar uma turma e dois momentos de registro.','Desenho situado de pesquisa.']]))
+
+lesson(5,'Qualitativo, quantitativo e integração de evidências','A pergunta orienta o uso de palavras e números',22,[
+ text('O que cada evidência ajuda a responder?',"""Lia quer compreender como os estudantes explicam o acesso. Examina sentidos, relações, contextos e processos: há uma dimensão qualitativa. Ela também pode contar quantas produções atendem a critérios explicitados: há uma dimensão quantitativa. Ter falas no arquivo não torna a análise automaticamente qualitativa; ter números não garante objetividade.
+As abordagens possuem compromissos e formas de construir evidência. Uma entrevista estruturada pode gerar frequências; textos podem ser codificados de diferentes modos. O procedimento precisa ser adequado à pergunta, e suas decisões precisam ser explicadas."""),
+ anim('quantitative','Duas medidas, duas perguntas','Compare Rota pelo rio e Rota pela estrada: a cena apresenta 8 km em 45 minutos e 15 km em 25 minutos. Distância e tempo não são equivalentes. Os valores são hipotéticos e não compõem os resultados da turma de Lia.'),
+ table('Não troque uma pergunta por outra',['Pergunta','Evidência pertinente e limite'],[
+ ['Que relações o estudante construiu?','Analisar explicação e suas fontes; gostar da aula não responde sozinho.'],
+ ['Quantas produções atendem ao critério?','Definir critério e denominador; a contagem não explica todo o processo.'],
+ ['Como as duas evidências se relacionam?','Confrontar distribuição e conteúdo das produções; não basta colocar um gráfico ao lado de uma fala.']]),
+ compare('Caso resolvido: integrar é relacionar','Justaposição','“Há um gráfico e uma entrevista, então a pesquisa é mista.” A frase apenas lista materiais.','Integração','Lia usa a distribuição para localizar padrões e examina produções e registros para interpretar diferenças, inclusive casos que contradizem o padrão. Explica quando e como as evidências se encontram.'),
+ text('Ler percentuais com o denominador',"""No conjunto fictício de 20 participantes com registros nos dois momentos, 6 produções iniciais e 14 finais atendem ao critério de relacionar condições de acesso com fonte identificada. São 30% e 70%, diferença de 40 pontos percentuais. Não é uma medida direta da qualidade inteira da aprendizagem.
+A turma tem 24 matriculados. Se quatro não possuem os dois registros, o resultado descrito vale para o conjunto de 20 pares, não para 24 sem explicação. É preciso informar as perdas e discutir o que não se sabe sobre elas. Tampouco esses percentuais representam estudantes de outras escolas."""),
+ call('Ponte para o desenho','Palavras e números podem se complementar, mas isso não resolve como selecionar o caso, os participantes ou os momentos. Sem comparação adequada, uma mudança observada não prova, por si, a causa da mudança.')
+], 'Abordagens qualitativa e quantitativa se definem pelo modo de enfrentar a pergunta, e não apenas pelo formato do arquivo. Integrar evidências exige uma relação analítica. Percentuais dependem de critérios e denominadores; não demonstram causalidade por si.',match('Leia os resultados com cuidado',[
+ ['6 de 20 produções atendem ao critério.','30% no conjunto considerado.'],
+ ['14 de 20 produções atendem ao critério.','70% no conjunto considerado.'],
+ ['Passagem de 30% para 70%.','Diferença de 40 pontos percentuais.'],
+ ['Aumento após uma sequência, sem controle das demais explicações.','Mudança observada, sem prova causal isolada.']]))
+
+lesson(6,'Estudo de caso, pesquisa-ação e outros desenhos','O nome depende de como se investiga',22,[
+ text('Estudar uma turma não basta para nomear o desenho',"""Lia delimita uma turma, quatro aulas e suas relações com o contexto escolar. Para construir um estudo de caso, precisa justificar o interesse desse caso e investigá-lo em profundidade, articulando fontes e contexto. O fato de haver uma única escola não produz sozinho essa qualidade.
+André (2013) discute fundamentos e desenvolvimento do estudo de caso qualitativo em educação. A referência ajuda a distinguir investigação contextualizada de um exemplo breve. Um caso pode contribuir para discutir relações e conceitos; não oferece automaticamente representatividade estatística."""),
+ table('Desenhos e compromissos, em síntese',['Possibilidade','O que seria necessário justificar'],[
+ ['Estudo de caso.','Caso delimitado, interesse analítico, contexto e investigação aprofundada.'],
+ ['Pesquisa-ação.','Problema prático investigado sistematicamente com ação acompanhada, reflexão e revisão; explicitar participação.'],
+ ['Pesquisa de orientação etnográfica.','Compreensão de práticas e significados em contexto, presença e registros reflexivos; uma visita isolada é insuficiente.'],
+ ['Levantamento.','População, seleção, instrumentos e limites das distribuições descritas.'],
+ ['Investigação de uma intervenção.','Concepção, condições, acompanhamento e análise; intervenção não equivale sempre a experimento ou pesquisa-ação.']]),
+ text('Combinar nomes exige explicar a relação',"""Um estudo de caso pode acompanhar uma intervenção; uma pesquisa-ação pode usar entrevistas e registros de aula. Esses nomes não estão todos no mesmo nível, nem formam uma lista de caixas sempre excludentes. A escolha deve esclarecer o desenho, em vez de acumular rótulos.
+Tripp (2005) distingue investigação sistemática da simples tentativa de melhorar uma prática. Na pesquisa-ação, planejar, agir, acompanhar e refletir se articulam em ciclos de revisão. Não basta dar uma aula diferente e declarar sucesso; a participação dos envolvidos também precisa ser descrita, sem falar por eles."""),
+ compare('Caso resolvido: três aulas e um questionário','Afirmação apressada','“Como dei três aulas e depois perguntei se gostaram, realizei uma pesquisa-ação completa.” A descrição não demonstra acompanhamento sistemático, análise e revisão das decisões.','Formulação responsável','O professor informa exatamente o que realizou e os limites dos registros. Para sustentar pesquisa-ação, precisa desenvolver e documentar a investigação da ação, seus critérios, reflexões e alterações.'),
+ text('O que o caso de Lia permite',"""Podemos desenhar um estudo situado das explicações e, em uma proposta de pesquisa-ação, discutir coletivamente uma mediação, acompanhá-la e replanejá-la. Aqui, o percurso mostra possibilidades; não afirma que a turma fictícia recebeu aprovação ou produziu resultados reais.
+Antes de escolher um nome, pergunte: qual conhecimento se pretende produzir, por que esse caso foi escolhido e como as evidências serão construídas e analisadas? As técnicas da próxima lição deverão cumprir essas finalidades.""")
+], 'Desenho não é um rótulo obtido pela quantidade de participantes. Caso, levantamento, orientação etnográfica, intervenção e pesquisa-ação exigem compromissos diferentes, que podem se articular quando justificados. Melhoria de aula, sozinha, não comprova pesquisa-ação.',match('Relacione compromisso e desenho',[
+ ['Compreender em profundidade um caso em seu contexto.','Estudo de caso.'],
+ ['Investigar uma ação, acompanhá-la e revê-la sistematicamente.','Pesquisa-ação.'],
+ ['Investigar práticas e significados com presença e registros contextualizados.','Orientação etnográfica.'],
+ ['Descrever distribuições com população e seleção explicitadas.','Levantamento.']]))
+
+lesson(7,'Produzir fontes: observar, ouvir e ler documentos','O registro também é uma escolha',20,[
+ text('A aula não se transforma sozinha em dado de pesquisa',"""Lia escolhe registrar perguntas docentes, usos de conceitos e justificativas dos estudantes. Um protocolo ajuda a observar de modo coerente com o problema. Ela distingue o que ocorreu, sua interpretação inicial e as condições de observação.
+“O aluno apontou uma linha no mapa e disse ‘aqui passa o ônibus’” descreve uma ocorrência. “Ele domina todas as relações de rede” já é uma inferência muito mais ampla. O diário de campo pode guardar ambas, identificando sua natureza, a data e a situação."""),
+ table('Fonte, produção e limite',['Material','Como pode contribuir e o que não garante'],[
+ ['Observação e diário.','Registrar ações e contextos; não dão acesso direto a tudo que a pessoa pensa.'],
+ ['Entrevista.','Investigar interpretações e trajetórias; a fala é produzida na relação e não prova sozinha todos os fatos.'],
+ ['Questionário.','Organizar respostas a perguntas; redação, acesso e seleção afetam o resultado.'],
+ ['Documentos curriculares e planos.','Analisar o prescrito e o planejado; não mostram sozinhos a aula realizada.'],
+ ['Produções dos estudantes.','Examinar relações construídas em tarefas específicas; não esgotam tudo que sabem.']]),
+ anim('lived','Compare perspectivas sem escolher uma voz universal','Alterne Pessoa 1, 2 e 3. Cada relato fictício destaca relações distintas com a praça. Eles ajudam a pensar perguntas de entrevista, mas não substituem participantes reais nem representam estatisticamente uma população.'),
+ compare('Caso resolvido: uma pergunta que induz','Roteiro frágil','“Você concorda que nosso mapa excelente foi o que fez você aprender?” A pergunta impõe uma avaliação e sugere uma causa.','Roteiro revisado','“Como você usou as fontes para explicar esse trajeto? Pode mostrar uma parte da produção?” A pergunta favorece uma descrição de procedimentos; a resposta continua exigindo análise e confronto com outros registros.'),
+ text('Bibliográfico e documental: use a função da fonte',"""A pesquisa bibliográfica dialoga com conhecimento e argumentos já publicados. A documental examina materiais como objetos ou vestígios relacionados à questão: currículo, planos, atas, cadernos e imagens, por exemplo. A distinção não é simplesmente “livro impresso versus internet”.
+Um mesmo texto pode cumprir funções diferentes em estudos distintos. É necessário identificar autoria, finalidade, contexto de produção, versão e acesso. Comparar um currículo e um diário de aula pode revelar relações entre prescrição e realização, sem tomar um como espelho automático do outro."""),
+ call('Antes de usar produções de pessoas','Planejar observação, entrevista ou uso de cadernos também implica direitos, cuidados e procedimentos éticos. Na lição 9, trataremos disso antes de analisar o conjunto fictício. A próxima lição distingue campo geográfico, estudo do meio e pesquisa sobre aprendizagem.')
+], 'Informações são produzidas e selecionadas em situações específicas. Observação, entrevista, questionário, documento e produção escolar respondem a perguntas diferentes. Descrição e interpretação precisam ser distinguidas e depois relacionadas, com critérios e reflexividade.',match('Escolha a fonte pertinente ao problema',[
+ ['Examinar perguntas docentes durante a tarefa.','Observação com registro contextualizado.'],
+ ['Entender como a pessoa interpreta sua escolha de fontes.','Entrevista com perguntas não indutivas.'],
+ ['Analisar o que o currículo prescreve.','Documento curricular identificado.'],
+ ['Investigar relações presentes em uma explicação escrita.','Produção estudantil e critério explícito.']]))
+
+lesson(8,'Campo, estudo do meio e leitura geográfica','Sair da escola não dispensa uma pergunta',22,[
+ text('Duas investigações podem acontecer na mesma saída',"""Uma equipe pode estudar condições de circulação em um trecho e, ao mesmo tempo, investigar como estudantes representam e explicam essas condições. No primeiro foco, observa relações espaciais; no segundo, precisa também de evidências do processo de aprendizagem. Fotografar uma via não responde sozinho como um conceito foi construído.
+Lopes e Pontuschka (2009) apresentam o estudo do meio como uma investigação interdisciplinar orientada sobre uma realidade. Preparação, perguntas, contato com fontes, sistematização e comunicação dão sentido à atividade. No exemplo autoral de Lia, o campo alimentaria uma pergunta de Geografia e suas relações com o ensino."""),
+ picture('u15-fontes.png','Fontes diferentes se encontram na pergunta','Mapa, relato, registro e documento oferecem perspectivas parciais. Confrontá-las exige considerar quem as produziu, quando, com que finalidade e em que escala.'),
+ picture('u12-rio-guama.jpg','Uma fotografia identificada do Rio Guamá','Vista a partir da UFPA, Belém, em setembro de 2019. Ela pode motivar perguntas sobre circulação e paisagem; não demonstra as rotas da turma fictícia nem suas condições atuais.'),
+ anim('scale','Mudar o recorte amplia relações','Compare Comunidade, Município e Rede regional. Uma condição local pode se relacionar a serviços, fluxos e decisões em outras escalas. A cena é um modelo explicativo; não é levantamento empírico das redes de um município real.'),
+ table('Prepare, registre e reconstrua',['Momento','Decisão justificada'],[
+ ['Antes.','Definir problema, fontes, acessibilidade, autorizações e condições seguras; preparar alternativas de participação.'],
+ ['Durante.','Registrar com contexto e finalidade; distinguir observação e hipótese; respeitar pessoas e limites do plano.'],
+ ['Depois.','Sistematizar, comparar fontes, revisar interpretações e comunicar o alcance das conclusões.']]),
+ compare('Caso resolvido: a foto tomada como prova total','Salto','“Há um rio na imagem, então todos os estudantes usam barco e aprendem a mesma coisa.” A foto não informa essas relações.','Investigação','Identificar imagem e recorte, formular hipóteses e buscar fontes pertinentes. Para estudar aprendizagem, examinar também explicações, mediações e produções; não deduzi-las da paisagem.'),
+ call('O campo não é obrigação de exposição','O estudo não exige colocar alguém em risco ou divulgar sua residência. Fontes acessíveis na escola, registros identificados e outras estratégias podem cumprir objetivos pertinentes. A escolha deve ser justificada pelo problema e pelas condições concretas.')
+], 'Campo e estudo do meio exigem preparação, registro e análise. Uma investigação do espaço e uma investigação da aprendizagem têm objetos relacionados, mas fontes específicas. Escalas e origens das fontes ajudam a interpretar o que elas permitem afirmar.',order('Organize uma investigação orientada do meio',[
+ 'Delimitar problema, fontes e condições de participação.',
+ 'Preparar registros e procedimentos pertinentes e autorizados.',
+ 'Observar e registrar com contexto, distinguindo inferências.',
+ 'Confrontar fontes, rever interpretações e comunicar conclusões delimitadas.']))
+
+lesson(9,'Ética: participantes, consentimento e proteção','Direitos fazem parte do desenho',21,[
+ text('A relação docente exige atenção ao poder',"""Lia ensina, avalia e pode pesquisar a própria turma. Um estudante pode recear que recusar o uso de sua produção prejudique sua nota. Por isso, participação em pesquisa não deve ser obtida por pressão, recompensa na avaliação ou ameaça de perda de oportunidades.
+Planejar esclarecimento acessível, liberdade de participação, proteção e tratamento de recusas faz parte da metodologia. A autorização da direção abre uma relação institucional; não substitui os direitos e os procedimentos relativos aos participantes."""),
+ text('Atividade de ensino e uso em pesquisa precisam ser distinguidos',"""Ensinar e avaliar são responsabilidades da escola. Usar produções, falas ou registros identificáveis para uma pesquisa implica outra finalidade e exige examinar as normas e os procedimentos pertinentes. Uma pesquisa sobre ensino não fica automaticamente dispensada de análise ética só porque acontece durante aulas.
+O planejamento deve verificar o enquadramento com a instituição e o Comitê de Ética em Pesquisa responsável, antes dos procedimentos de pesquisa que dependam de aprovação. Também não é correto exigir a mesma tramitação de toda atividade escolar sem examinar finalidade e enquadramento. A unidade não concede dispensa nem afirma aprovação para o caso fictício."""),
+ table('Situação e cuidado',['Situação','Decisão a planejar'],[
+ ['Professor também pesquisa a turma.','Separar avaliação escolar e decisão de participação; enfrentar constrangimentos.'],
+ ['Participantes crianças ou adolescentes.','Consentimento do responsável e assentimento do participante, conforme capacidade e normas aplicáveis; respeitar a recusa.'],
+ ['Mapas de trajetos, imagem e voz.','Evitar exposição e reidentificação; definir finalidade, acesso, guarda e divulgação.'],
+ ['Apresentação de resultados.','Comunicar de forma acessível e proteger pessoas e coletividades, inclusive em grupos pequenos.']]),
+ compare('Caso resolvido: trocar o nome não resolve tudo','Proposta insuficiente','O relatório substitui nomes por códigos, mas publica endereço, foto da casa e trajeto exato de cada estudante. As combinações podem revelar identidades.','Revisão','Coletar somente o necessário, restringir acesso e divulgar apenas o nível de detalhe justificado e autorizado. Pseudônimo não equivale a anonimização; contexto e cruzamento de informações importam.'),
+ text('Normas em seu tempo: recorte de 26/10/2026',"""A Resolução CNS 510/2016 trata das especificidades de pesquisas em Ciências Humanas e Sociais. Ela precisa ser lida com a Lei 14.874/2024, o Decreto 12.651/2025 e atos aplicáveis. O art. 39 do decreto conserva normas do CNS que não contrariem lei e decreto, até regulamentação própria. Não se deve usar um resumo antigo como dispensa automática.
+Proteção de dados também exige considerar a LGPD e as regras pertinentes a crianças e adolescentes. Consentimento e assentimento são processos de esclarecimento e liberdade, não uma assinatura que elimina qualquer risco ou autoriza qualquer reutilização. Os fluxos específicos devem ser conferidos no protocolo e nas orientações vigentes da instituição e do sistema de ética."""),
+ call('Nosso material de estudo','Todos os exemplos, códigos e números dos estudantes nesta unidade são inventados para aprendizagem. Nenhum procedimento com participantes é realizado pelo percurso. Na próxima lição, vamos entender como selecionar e apresentar um conjunto de análise.')
+], 'Ética participa da formulação, produção, análise, guarda e comunicação. Autorização institucional, consentimento, assentimento e análise ética têm funções diferentes. Relações de poder, reidentificação e finalidade dos dados precisam ser consideradas com as normas aplicáveis.',match('Distinga as funções e os limites',[
+ ['Direção permite a realização do estudo na escola.','Autorização institucional, sem substituir direitos dos participantes.'],
+ ['Participante recebe informações compreensíveis e decide livremente.','Processo de consentimento ou assentimento pertinente.'],
+ ['Nome é trocado, mas endereço exato permanece.','Risco de reidentificação ainda presente.'],
+ ['Atividade passa a produzir dados para investigação acadêmica.','Finalidade e enquadramento ético devem ser examinados.']]))
+
+lesson(10,'Caso, participantes, corpus e limites da seleção','Quem está presente no resultado?',20,[
+ text('Quatro termos que impedem conclusões exageradas',"""População é o conjunto ao qual uma pergunta ou descrição se refere. Amostra é um subconjunto selecionado, quando esse desenho é pertinente. Participantes são as pessoas envolvidas. Corpus é o conjunto de materiais delimitado para análise: por exemplo, produções, transcrições e documentos.
+No caso, o corpus principal contém explicações produzidas em dois momentos de quatro aulas de uma turma fictícia. A decisão de escolher essa turma precisa ser descrita, assim como acesso, critérios de inclusão e limites. O número pequeno não torna o estudo inválido nem o transforma em retrato estatístico do país."""),
+ table('Reconstrua o conjunto fictício',['Conjunto','Informação necessária'],[
+ ['Turma.','24 matriculados no caso hipotético.'],
+ ['Comparação em dois momentos.','20 participantes possuem ambas as produções; são 20 pares.'],
+ ['Quatro sem par completo.','Informar a ausência de registros e o tratamento dado; não inventar seus resultados.'],
+ ['Outras fontes.','Registros de mediação e produções selecionadas por critérios explícitos.']]),
+ text('Critérios distintos servem a perguntas distintas',"""Uma seleção intencional pode buscar diversidade de explicações ou situações contrastantes, justificando sua pertinência analítica. Não pretende, por esse único fato, oferecer probabilidades conhecidas de seleção. A seleção por conveniência facilita acesso, mas suas limitações precisam ser discutidas.
+Em desenhos destinados à inferência estatística, população, plano amostral, tamanho, cobertura e não resposta importam. Escolher muitos respondentes voluntários na internet não garante representatividade. Na pesquisa qualitativa, a suficiência do material é justificada em relação ao problema e à análise, não por um número mágico universal."""),
+ compare('Caso resolvido: os ausentes já receberam um resultado','Conclusão indevida','“Quatro não entregaram as duas atividades, portanto não aprenderam.” A ausência da fonte não informa sozinha o motivo nem o conhecimento dessas pessoas.','Relato adequado','Descrever quais registros compõem a comparação e quais faltam, investigar razões quando pertinente e possível e delimitar as conclusões. Não substituir uma informação desconhecida por um julgamento.'),
+ call('Generalizar tem mais de um sentido','Um caso pode contribuir para discutir conceitos e relações que outros estudos examinem em novos contextos. Isso exige descrição e argumentação. Não equivale a estimar frequências nacionais nem a garantir transferência automática de uma solução.')
+], 'Seleção e corpus precisam ser explícitos e coerentes com o problema. Quantidade não assegura representatividade. Ausência de registro não é ausência de aprendizagem; limites e perdas devem acompanhar a apresentação do resultado.',match('Relacione termo e função',[
+ ['Conjunto de pessoas ou unidades a que a pergunta se refere.','População delimitada.'],
+ ['Materiais efetivamente escolhidos para analisar.','Corpus.'],
+ ['Escolha por contraste de explicações, com justificativa.','Seleção intencional de interesse analítico.'],
+ ['Quatro estudantes sem duas produções disponíveis.','Limite de cobertura da comparação, sem resultado inventado.']]))
+
+lesson(11,'Da produção do aluno à evidência interpretada','Categorias, critérios e casos que desafiam o padrão',23,[
+ text('Uma frase não chega com sua classificação pronta',"""Lia lê “a estrada é maior, mas pode ser mais rápida por causa do transporte”. A frase relaciona medidas e circulação, mas ela ainda precisa examinar a fonte, a coerência da justificativa e o contexto da tarefa. Marcar a palavra “transporte” não demonstra toda essa relação.
+Analisar envolve preparar materiais, reconstruir unidades de sentido, explicitar categorias e confrontar interpretações com registros e teoria. Categorias podem partir de conceitos e perguntas, surgir do exame do material ou ser revistas nessa relação. O pesquisador deve tornar esse caminho compreensível."""),
+ table('Grade autoral deste exemplo: não é uma escala universal',['Categoria exclusiva no exemplo','Critério de leitura da produção'],[
+ ['R0 — enumera.','Lista elementos, sem desenvolver localização e relação de acesso.'],
+ ['R1 — descreve e localiza.','Apresenta posições ou condições, mas não sustenta a relação de acesso com uma fonte.'],
+ ['R2 — relaciona com fonte.','Desenvolve relação geográfica coerente entre condições de circulação e acesso, apoiando-a em fonte identificada.']]),
+ picture('u15-analise.png','Uma distribuição deve vir com seus critérios','Dados didáticos fictícios: mesmos 20 pares, categorias exclusivas aplicadas aos dois momentos. Os totais não mostram, sozinhos, a trajetória individual de cada estudante nem a causa das mudanças.'),
+ text('Resolução de dois fragmentos inventados',"""“Tem rio, ônibus e rua” apenas enumera: nesse recorte, R0. “No mapa fornecido, o ponto de embarque fica distante da comunidade; somando espera e percurso, o acesso pode demorar mesmo com menor distância” articula relação e fonte, desde que coerente com o mapa: R2. A segunda formulação não vale pela quantidade de palavras.
+Se uma produção mistura afirmações contraditórias ou deixa a fonte ambígua, Lia precisa registrar a dúvida, reler o contexto e aplicar a regra de classificação explicitada. Pode discutir casos com outro analista, documentar divergências e rever o código, mantendo rastreabilidade. Duas pessoas concordarem não tornam qualquer interpretação verdadeira."""),
+ text('Triangular não é procurar somente concordância',"""A fala indica como o estudante descreve sua estratégia; a produção mostra uma resposta a determinada tarefa; o registro da aula situa intervenções e apoios. O confronto pode fortalecer uma interpretação ou revelar tensão entre o que a pessoa diz e o que realiza.
+Lia deve procurar também casos que não se ajustam ao padrão e explicações alternativas. Selecionar apenas os melhores trechos apaga o problema. Contagem de palavras, uma fala marcante ou um gráfico não substituem o trabalho de interpretar relações e limites."""),
+ call('Para a próxima lição','No conjunto fictício, R0 passa de 8 para 2, R1 de 6 para 4 e R2 de 6 para 14; cada momento totaliza 20. Podemos descrever essa distribuição. Para afirmar causa, permanência ou efeito em qualquer turma, precisamos de outras condições de evidência.')
+], 'Análise transforma registros em evidências por meio de critérios explicitados e interpretação. Categorias não se reduzem a palavras presentes. Triangulação confronta fontes e pode revelar divergências; casos discrepantes e decisões analíticas devem permanecer visíveis.',order('Reconstrua uma análise examinável',[
+ 'Organizar materiais identificados e contexto de produção.',
+ 'Definir unidades e critérios em diálogo com pergunta e teoria.',
+ 'Aplicar e revisar categorias, documentando dúvidas e decisões.',
+ 'Confrontar fontes, padrões e casos divergentes.',
+ 'Sustentar uma interpretação com evidências e limites.']))
+
+lesson(12,'Investigar uma intervenção e rever a prática','Mudança observada não é causa demonstrada',22,[
+ text('O que Lia pode afirmar após as quatro aulas?',"""Os 20 pares fictícios apresentam mais produções R2 no momento final: 14, contra 6 no inicial. É uma mudança na distribuição, segundo a grade do exemplo. A sequência, porém, reuniu mapa, relatos, perguntas docentes, interação entre colegas e duas tarefas. Não isolou o efeito exclusivo de um recurso.
+Familiaridade com a tarefa, diferenças nos apoios e outros processos também podem participar da mudança. Sem desenho adequado para confrontar essas explicações, “o mapa causou todo o avanço” é uma conclusão mais forte que as evidências. Tampouco uma produção final prova retenção duradoura."""),
+ picture('u15-ciclo.png','A investigação da ação pode retornar ao planejamento','O esquema representa um ciclo didático de revisão, inspirado no debate sobre pesquisa-ação. A investigação precisa documentar ação, evidências, participação e reflexão; não é apenas uma sequência de verbos.'),
+ compare('Caso resolvido: observação e inferência causal','Conclusão excessiva','“Como a proporção aumentou após as aulas, está provado que esta técnica funciona em qualquer escola.” A frase confunde temporalidade, causa isolada e generalização.','Conclusão delimitada','No conjunto e nas condições descritas, aumentou a proporção de explicações que atenderam ao critério. As fontes permitem discutir possíveis contribuições da mediação e dificuldades persistentes, sem isolar todo o efeito nem universalizar o resultado.'),
+ anim('inequality','Um modelo ajuda a perguntar; não mede aprendizagem','Alterne Acesso vulnerável e Infraestrutura melhorada. A simulação explicita uma relação hipotética entre condições de circulação e acesso. Assistir à mudança na cena não demonstra que estudantes aprenderam nem mede o efeito real de uma obra.'),
+ text('O resultado que importa também pode ser uma dificuldade',"""Duas produções finais continuam em R0 e quatro em R1. Lia pode examinar essas dificuldades, os apoios oferecidos e os caminhos individuais, sem definir pessoas por uma categoria fixa. A grade classifica uma produção situada, não a inteligência ou o futuro do estudante.
+A equipe pode propor nova mediação e outra situação para verificar o uso das relações. Em um desenho de pesquisa-ação, essa análise alimenta decisões compartilhadas e novo acompanhamento. Documentar o que falhou ou permaneceu incerto produz conhecimento; não torna a pesquisa inútil."""),
+ call('Avaliar o produto em contexto','Uma sequência didática ou um roteiro é uma produção possível. Sua existência, boa aparência ou satisfação dos usuários não comprova por si aprendizagem ou eficácia. Examine critérios, usos, condições, dificuldades e evidências pertinentes ao objetivo.')
+], 'Depois de uma intervenção, é preciso separar descrição de mudança, interpretação e inferência causal. A investigação da ação documenta resultados, dificuldades e revisão. Categorias descrevem produções situadas, e um produto educacional precisa ser analisado em uso.',match('Associe afirmação e alcance',[
+ ['R2 passou de 6 para 14 entre os mesmos 20 pares.','Mudança observada no critério do exemplo.'],
+ ['Somente o mapa produziu toda a mudança.','Causa exclusiva não demonstrada pelo desenho descrito.'],
+ ['A equipe examina dificuldades e reorganiza a mediação.','Reflexão fundamentada para nova ação.'],
+ ['O roteiro ficou pronto, portanto a aprendizagem está provada.','Produto confundido com evidência de aprendizagem.']]))
+
+lesson(13,'Escrever, compartilhar e devolver o conhecimento','Argumento, autoria e alcance',20,[
+ text('A conclusão precisa responder à pergunta',"""Lia organiza o texto para que o leitor reconheça problema, conceitos, escolhas, materiais, análise e contribuição. O caminho não precisa ter sempre títulos idênticos, mas deve permitir examinar como a interpretação foi construída.
+Resultados apresentam o que foi encontrado segundo os critérios; discussão desenvolve relações com problema, teoria e outras interpretações. É possível articular ambas na escrita. A conclusão retoma a questão, delimita a contribuição e apresenta limites; não deve introduzir um dado inventado para fechar o argumento."""),
+ picture('u15-evidencia.png','Do registro à afirmação sustentada','Um exemplo de argumento combina afirmação, evidência, raciocínio e alcance. A explicação não se completa com um número ou uma citação isolada.'),
+ compare('Caso resolvido: um parágrafo examinado','Versão frágil','“A pesquisa foi ótima. Segundo vários autores, mapas são importantes. Todos aprenderam.” Faltam fontes localizáveis, evidências, critérios e recorte.','Versão sustentada','“Entre os 20 pares fictícios, as produções que atenderam a R2 passaram de 6 para 14. Os registros permitem discutir relações entre mediação e explicações, sem isolar um recurso ou representar outras turmas.” O recorte acompanha a afirmação.'),
+ text('Autoria não se resolve trocando algumas palavras',"""Ao usar ideias de outra pessoa, é necessário atribuir a fonte, inclusive na paráfrase. Citação literal deve ser distinguida do texto próprio e localizada segundo a forma de referência adotada. Ler um resumo não autoriza inventar páginas ou afirmar que se analisou a obra completa.
+A integridade envolve não fabricar dados, não alterar ou ocultar resultados para mudar seu sentido e não apresentar ideias alheias como próprias. A FAPESP discute esses compromissos em seu código, no âmbito de suas atividades. Aqui eles ajudam a examinar a escrita do caso. Dados didáticos inventados, identificados como tais, não podem ser apresentados como pesquisa empírica realizada."""),
+ text('Conhecimento também precisa retornar às pessoas',"""Uma devolutiva pode reconstruir resultados em linguagem acessível, ouvir comentários e apresentar possibilidades e limites. Não se resume a expor participantes em um painel. Divulgação e compartilhamento devem considerar direitos, acordos, proteção e contexto.
+Um produto educacional, como uma sequência, mapa comentado ou protocolo, pode contribuir para o ensino quando dialoga com o problema e suas evidências. Para uso em outro contexto, explicite condições e adaptações a investigar, em vez de oferecer uma receita garantida."""),
+ call('Prepare sua resposta de prova','Quando um enunciado pedir uma análise, apresente uma ideia central, explique a relação, use um caso ou evidência e delimite a conclusão. Nome de autor ou método pode ajudar, mas não substitui esse argumento.')
+], 'Comunicar pesquisa exige um caminho examinável entre problema, evidências e conclusão. Referências também são necessárias na paráfrase. Produto, relato e devolutiva têm funções próprias; integridade e proteção acompanham o compartilhamento.',match('Relacione a situação ao compromisso',[
+ ['Uma ideia alheia é reescrita com palavras próprias.','Atribuir a fonte também na paráfrase.'],
+ ['Um resultado desfavorável é omitido para alterar a conclusão.','Problema de integridade na apresentação.'],
+ ['Resultados são discutidos com os envolvidos em linguagem acessível.','Devolutiva responsável.'],
+ ['Uma sequência é oferecida a outra escola.','Explicitar condições de uso, evidências e limites.']]))
+
+lesson(14,'Resolver casos e construir um argumento de pesquisa','Fechamento do módulo 1',22,[
+ text('Da definição à decisão justificada',"""Você acompanhou uma pergunta, seus conceitos, o desenho, as fontes e o alcance das conclusões. Para a prova, o passo decisivo é reconhecer uma relação metodológica dentro de uma situação, não apenas associar palavras a autores.
+Comece identificando o que o enunciado quer conhecer. Depois, examine se objetivos, fontes e análise permitem responder. Por fim, teste a força da conclusão: há generalização, causalidade ou afirmação sobre aprendizagem que as informações não sustentam?"""),
+ table('Caso resolvido: um plano precisa ser revisto',['Parte do plano inicial','Análise e encaminhamento'],[
+ ['Pergunta: como estudantes explicam redes de abastecimento?','Objeto de conhecimento escolar; requer examinar explicações e sua construção.'],
+ ['Fonte única: resposta sobre gostar da aula.','Mostra apreciação, não responde sozinha ao uso do conceito. Acrescentar produções e registros pertinentes.'],
+ ['Resultado prometido: a técnica sempre funciona.','Deve permanecer aberto à análise e ser delimitado ao desenho.'],
+ ['Divulgação: nomes e percursos individuais.','Rever finalidade, proteção e procedimentos aplicáveis antes de produzir e divulgar dados.']]),
+ picture('belem-feira.jpg','Transfira o raciocínio para outra situação','Fotografia real do Ver-o-Peso, em Belém, de Cayambe. O novo caso de abastecimento é hipotético; a foto não comprova trajetos, falas ou aprendizagem de estudantes.'),
+ text('Transferência: uma feira, outra pergunta',"""Se a nova pergunta é como estudantes relacionam a feira a redes de abastecimento, não basta registrar quantas barracas existem. Esse levantamento pode oferecer uma fonte sobre o espaço; a investigação do conhecimento escolar precisa analisar relações construídas pelos estudantes, mediações e contexto.
+Um projeto coerente pode comparar explicações, mapas e relatos identificados, com critérios e direitos observados. A contribuição será discutir como essas relações aparecem e que dificuldades exigem retomada. Não será decretar uma metodologia única para todas as escolas."""),
+ compare('Uma resposta curta, resolvida','Problema identificado','“O projeto pergunta sobre explicação geográfica, mas coleta apenas satisfação. Há desajuste entre objeto e evidência.”','Argumento desenvolvido','“É necessário analisar produções em que o estudante relacione fluxos, origens e escalas, situando fontes e mediação. Satisfação pode ser outra informação, sem substituir a evidência conceitual. A conclusão precisa respeitar seleção, critérios e contexto.”'),
+ text('Como as cinco unidades se encontram',"""A 1.1 discutiu concepções e modos de interpretar; a 1.2, saberes docentes; a 1.3, conceitos e conteúdos; a 1.4, referências e normas. A 1.5 pergunta como investigar essas relações e produzir conhecimento sobre elas. Não são compartimentos isolados.
+Na oficina de escrita, explique uma contribuição da pesquisa em Geografia Escolar, formule uma pergunta, justifique fontes e análise e indique direitos e limites. O próximo módulo aprofundará a formação docente, começando pelas teorias pedagógicas. O simulado desta unidade traz situações novas para você decidir com autonomia."""),
+ call('Treine a leitura antes de escolher','Reconheça a pergunta; identifique o que foi produzido como evidência; verifique o raciocínio e o alcance. Se uma alternativa usa um termo correto para justificar um salto indevido, examine o salto. Todas as questões e resoluções desta unidade são autorais.')
+], 'Resolver um caso exige verificar coerência entre pergunta, conceitos, desenho, evidência, direitos e conclusão. A pesquisa em Geografia Escolar produz conhecimento sobre relações situadas e pode fundamentar decisões de ensino, sem transformar um recorte em fórmula universal.',order('Construa um argumento para o caso de prova',[
+ 'Identificar a pergunta e o objeto de conhecimento.',
+ 'Examinar conceitos, fontes e critérios de análise.',
+ 'Verificar direitos, contexto e condições da investigação.',
+ 'Relacionar evidências à interpretação e discutir alternativas.',
+ 'Concluir dentro do alcance e indicar contribuição e limites.']))
+
+questions=[]
+def question(n,stem,correct,why,distractors,tag,pool='lesson'):
+    assert len(distractors)==3
+    count=sum(q['pool']==pool for q in questions)+1
+    questions.append(dict(id=('f' if pool=='final' else 'q')+f'{count:02d}',lesson=f'l{n:02d}',
+                          stem=stem,options=[correct]+[a for a,_ in distractors],answer=0,
+                          feedback=[why]+[f for _,f in distractors],tag=tag,pool=pool,type='single'))
+
+question(1,'Uma equipe descreve a rede de transporte e outra analisa como estudantes a explicam em aula. Qual relação entre os estudos é mais adequada?',
+ 'Os objetos se relacionam, mas a investigação da aprendizagem exige fontes sobre as explicações e sua construção.',
+ 'Conhecer condições espaciais pode apoiar o ensino; compreender sua aprendizagem requer evidências específicas do processo escolar.',[
+ ('Ambas respondem à mesma pergunta se usarem um mapa da rede.','O mesmo material pode servir a perguntas diferentes; a presença do mapa não torna os objetos equivalentes.'),
+ ('A descrição da rede permite deduzir as dificuldades conceituais da turma.','As características da rede não revelam, sozinhas, como estudantes pensam ou aprendem.'),
+ ('O estudo da aprendizagem deve dispensar os conceitos geográficos para não repetir o outro.','A especificidade escolar exige analisar a construção desses conceitos, não retirá-los do problema.')],'objetos de pesquisa')
+question(1,'Lia afirma que uma aula foi muito boa porque houve entusiasmo. O que falta para sustentar uma investigação sobre aprendizagem?',
+ 'Definir pergunta e critérios e analisar registros pertinentes às relações que os estudantes construíram.',
+ 'Entusiasmo pode ser uma informação, mas não substitui evidências da aprendizagem que se pretende compreender.',[
+ ('Aplicar uma escala de satisfação, suficiente para verificar domínio conceitual.','A escala pode descrever apreciação, mas não mostra diretamente a relação conceitual desenvolvida.'),
+ ('Reunir fotografias da turma para demonstrar que todos aprenderam.','Presença em imagens não é medida suficiente de aprendizagem, e seu uso exige cuidados com direitos.'),
+ ('Trocar a expressão “aula boa” por “pesquisa qualitativa” no relatório.','Um rótulo não cria pergunta, análise nem justificativa metodológica.')],'experiência e investigação')
+question(1,'Uma atividade propõe aos alunos formular perguntas, comparar fontes e justificar explicações sobre a feira. Ela desenvolve principalmente:',
+ 'A pesquisa como princípio educativo, que pode se articular a outras formas de investigação.',
+ 'O foco descrito é aprender pela investigação orientada. Isso não confere, sozinho, o estatuto de pesquisa acadêmica ao conjunto.',[
+ ('Uma pesquisa acadêmica concluída, pois houve busca de informações.','Buscar informações pode integrar diferentes atividades; não demonstra todo o percurso de produção e crítica de conhecimento.'),
+ ('Um levantamento estatístico, pois há mais de uma fonte.','Número de fontes não define levantamento nem suas condições de seleção e análise.'),
+ ('Uma transmissão sem investigação, porque existe orientação docente.','A mediação pode organizar perguntas e confrontos; não elimina a participação investigativa dos estudantes.')],'princípio educativo')
+question(1,'Qual contribuição a pesquisa da própria prática pode oferecer à Geografia Escolar?',
+ 'Tornar decisões e dificuldades examináveis, articulando registros, conceitos e reflexão.',
+ 'A experiência docente pode ser investigada sistematicamente e contribuir para discutir o conhecimento escolar.',[
+ ('Validar a preferência do professor por meio das falas que a confirmam.','Selecionar apenas concordâncias impede examinar o problema e as evidências contrárias.'),
+ ('Dispensar teoria, porque o professor já conhece a turma.','Conhecimento da turma não substitui explicitação de conceitos e critérios de interpretação.'),
+ ('Transformar o relato pessoal em regra de ensino para a rede.','Um relato situado não fundamenta automaticamente uma regra para diferentes contextos.')],'professor pesquisador')
+
+question(2,'“Desigualdade e transporte na educação brasileira” aparece como tema de um projeto. Qual formulação o aproxima de um problema investigável de Geografia Escolar?',
+ 'Como estudantes desta turma relacionam circulação e acesso em suas explicações ao longo de quatro aulas?',
+ 'A pergunta delimita objeto, participantes e período e permanece aberta à investigação.',[
+ ('Por que o ensino de Geografia fracassa em todas as escolas do país?','Além de muito amplo, o enunciado antecipa um diagnóstico universal que precisa ser problematizado.'),
+ ('Como comprovar que nosso recurso é o melhor para qualquer turma?','A formulação já fixa o veredito e exige uma comparação universal sem desenho correspondente.'),
+ ('Quais atividades serão impressas antes da próxima aula?','É uma decisão operacional; não apresenta por si um problema de produção de conhecimento.')],'delimitação do problema')
+question(2,'No projeto de Lia, qual alternativa identifica melhor o objeto de estudo?',
+ 'As relações conceituais mobilizadas pelos estudantes nas explicações sobre os trajetos, em contexto delimitado.',
+ 'O objeto é construído pelo recorte da pergunta e da teoria; não equivale a todo o assunto mencionado no título.',[
+ ('A escola inteira, incluindo qualquer acontecimento, sem seleção analítica.','O local da pesquisa não define sozinho um objeto; é necessário construir o recorte de relações.'),
+ ('O formulário usado para guardar respostas.','O formulário é instrumento ou suporte, não o objeto de conhecimento descrito.'),
+ ('A lista de autores que compõe as referências.','Referências participam do diálogo teórico; não equivalem ao objeto investigado neste caso.')],'objeto de estudo')
+question(2,'Lia quer investigar construção de explicações, mas registra somente quantos alunos gostaram da aula. Como avaliar a coerência?',
+ 'A evidência de satisfação não responde sozinha ao problema; é preciso examinar explicações e seu contexto de produção.',
+ 'Há desajuste entre o que se pretende conhecer e o que a fonte permite analisar.',[
+ ('O problema está resolvido se a maioria gostar, porque interesse equivale a explicação conceitual.','Interesse e elaboração conceitual são dimensões relacionadas, mas não equivalentes.'),
+ ('É necessário apenas aumentar o número de respostas de satisfação.','Aumentar a quantidade da mesma informação não corrige sua insuficiência em relação à pergunta.'),
+ ('A pesquisa se torna documental por usar respostas escritas.','O formato escrito não resolve a adequação da fonte ao objeto nem define sozinho o desenho.')],'pergunta e evidência')
+question(2,'Qual escolha dá sentido geográfico ao recorte de uma pesquisa sobre ensino?',
+ 'Examinar como os estudantes relacionam distribuição, conexões e diferenças de acesso em determinado contexto.',
+ 'O recorte mobiliza relações espaciais e sua construção como conhecimento escolar.',[
+ ('Acrescentar o nome do município ao título, mantendo uma análise sem relações espaciais.','Um nome de lugar localiza o estudo, mas não substitui sua problematização geográfica.'),
+ ('Usar o maior número possível de mapas, sem discutir a pergunta.','Quantidade de mapas não define a relação investigada nem sua contribuição para a análise.'),
+ ('Eliminar referências a outras escalas para preservar o caráter local.','Condições locais podem depender de redes e decisões em outras escalas; o recorte não exige isolá-las.')],'problematização geográfica')
+
+question(3,'O objetivo “aplicar um questionário e fazer duas entrevistas” precisa de qual revisão?',
+ 'Explicitar o que se pretende conhecer, mantendo esses procedimentos como meios justificados.',
+ 'O enunciado lista operações de produção de informações, mas não formula por si a finalidade analítica.',[
+ ('Acrescentar mais entrevistas para transformar a lista em objetivo geral.','Mais operações não esclarecem o conhecimento pretendido.'),
+ ('Retirar qualquer procedimento, pois objetivos não podem se relacionar a fontes.','Objetivos e fontes precisam ser coerentes; a revisão distingue suas funções, sem romper a relação.'),
+ ('Substituir “entrevista” por “método qualitativo” e conservar a ausência de pergunta.','A troca de nome não produz uma finalidade investigativa.')],'objetivos e procedimentos')
+question(3,'Lia espera que comparar fontes amplie certas relações nas explicações. Na análise, algumas produções não mudam. Qual atitude é coerente?',
+ 'Examinar também essas produções e rever a expectativa ou delimitar sua interpretação.',
+ 'Hipóteses e expectativas são confrontadas com as evidências; resultados discrepantes fazem parte do problema.',[
+ ('Excluir as produções sem mudança para manter a coerência da hipótese.','Essa exclusão altera o sentido do resultado para proteger uma expectativa.'),
+ ('Considerar inválidas as fontes porque não confirmam a proposição inicial.','Uma fonte pode ser inadequada por critérios justificados, mas discordar da hipótese não basta para invalidá-la.'),
+ ('Abandonar toda análise teórica, porque a hipótese foi questionada.','A teoria pode ser revista e confrontada com o material; divergência não exige ausência de interpretação.')],'hipótese revisável')
+question(3,'Após uma busca inicial sem resultados, um candidato escreve “ninguém pesquisou cartografia escolar”. O que é mais adequado?',
+ 'Rever termos, bases e critérios e delimitar o que o levantamento efetivamente permite afirmar.',
+ 'Ausência em uma busca não comprova ausência em todo o campo; o alcance do levantamento precisa acompanhar a conclusão.',[
+ ('Manter a afirmação se a busca foi rápida, pois isso comprova uma lacuna relevante.','Rapidez não garante cobertura nem sustenta uma afirmação sobre toda a produção.'),
+ ('Considerar todos os títulos encontrados como analisados, sem ler seus argumentos.','Localizar títulos não equivale a examinar problema, método e contribuição.'),
+ ('Usar apenas um trabalho semelhante e declarar encerrado o estado do conhecimento.','Um trabalho pode ser pertinente, mas não define sozinho a abrangência de um levantamento do campo.')],'revisão de literatura')
+question(3,'Qual registro contribui mais para uma síntese de literatura?',
+ 'Comparar problema, conceitos, desenho, resultados e limites das obras selecionadas, com critérios de busca explícitos.',
+ 'A síntese constrói relações entre trabalhos e torna o levantamento compreensível.',[
+ ('Ordenar as referências por tamanho do título e copiar suas conclusões.','A ordenação não substitui análise, e cópia exige atribuição e distinção do texto próprio.'),
+ ('Somar o número de citações como medida suficiente do que cada trabalho demonstra.','Frequência de citação não informa, sozinha, o argumento e a qualidade da evidência.'),
+ ('Reunir frases favoráveis à proposta e omitir estudos que a questionam.','A seleção confirmatória empobrece o diálogo e oculta interpretações relevantes.')],'síntese bibliográfica')
+
+question(4,'Um projeto informa que usará entrevistas. Essa informação permite identificar, por si, sua perspectiva teórica?',
+ 'Não; a técnica pode integrar diferentes perspectivas e precisa ser justificada em relação ao problema.',
+ 'Instrumento e orientação de interpretação têm funções diferentes, embora relacionadas.',[
+ ('Sim; entrevistar torna a pesquisa necessariamente histórico-dialética.','A técnica não desenvolve automaticamente uma orientação histórico-dialética.'),
+ ('Sim; toda entrevista exclui qualquer tratamento quantitativo.','Respostas de entrevistas podem receber tratamentos distintos conforme desenho e critérios.'),
+ ('Não; por isso a entrevista não precisa ter relação com a teoria.','Não determinar a perspectiva não significa independência: técnica e teoria devem ser articuladas.')],'técnica e orientação')
+question(4,'Lia usa “território” no título, mas examina apenas nomes de ruas. Qual revisão enfrenta o problema?',
+ 'Explicitar a relação investigada e escolher conceitos e critérios que realmente orientem a análise.',
+ 'A presença de uma categoria no título não demonstra seu desenvolvimento no material.',[
+ ('Acrescentar a palavra “poder” a todas as tabelas sem alterar a interpretação.','Inserir palavras não constrói a relação conceitual que precisa ser analisada.'),
+ ('Trocar a entrevista por um questionário, mantendo o mesmo vazio conceitual.','A mudança de instrumento não resolve, sozinha, o uso decorativo da categoria.'),
+ ('Excluir qualquer conceito para deixar os nomes de ruas falarem por si.','Os registros não oferecem uma interpretação pronta sem decisões analíticas.')],'teoria na análise')
+question(4,'Qual trecho explicita uma decisão metodológica?',
+ 'Compararemos produções e registros de mediação porque a pergunta exige relacionar explicações e seu processo de construção.',
+ 'A decisão justifica fontes e análise pela relação que se pretende compreender.',[
+ ('O arquivo terá vinte páginas e será impresso em cores.','São escolhas de apresentação e suporte; não justificam o percurso de investigação.'),
+ ('A pesquisa será excelente porque utiliza palavras científicas.','Qualificações e vocabulário não demonstram coerência entre problema e procedimentos.'),
+ ('A entrevista foi escolhida apenas porque já havia um formulário pronto.','Disponibilidade pode afetar viabilidade, mas não basta como justificativa de adequação ao problema.')],'coerência metodológica')
+question(4,'Ao reler produções, Lia percebe que suas categorias iniciais não explicam certas relações. O que fazer?',
+ 'Confrontar conceitos e material, registrar a dificuldade e justificar uma possível revisão dos critérios.',
+ 'O diálogo entre teoria e evidência admite revisão examinável, sem ocultar o caminho da análise.',[
+ ('Forçar todas as produções às categorias, pois teoria impede revisão.','A teoria orienta a análise, mas não autoriza distorcer o material.'),
+ ('Trocar as categorias sem documentar a alteração, para parecer que sempre foram as mesmas.','Ocultar a mudança impede avaliar como se construiu a interpretação.'),
+ ('Eliminar as produções diferentes, porque categorias iniciais definem quais resultados podem existir.','O procedimento apaga evidências que podem questionar ou ampliar a interpretação.')],'reflexividade e categorias')
+
+question(5,'Há entrevistas, percentuais e mapas num relatório. O que permite sustentar que houve integração entre evidências?',
+ 'Explicar como os conjuntos se relacionaram para responder à pergunta e como divergências foram analisadas.',
+ 'Integração é uma decisão analítica; não resulta apenas da coexistência de formatos.',[
+ ('Apresentar todos os gráficos primeiro e todas as falas depois, sem relação entre eles.','A ordem da exposição não demonstra integração analítica.'),
+ ('Dar o mesmo número de páginas a cada tipo de material.','Equilíbrio de páginas não indica como as evidências enfrentam o problema.'),
+ ('Converter todas as falas em números para eliminar interpretações.','Codificação também envolve critérios e interpretação; números não eliminam essas decisões.')],'integração de evidências')
+question(5,'Num conjunto de 20 pares, a proporção de produções R2 passou de 6/20 para 14/20. Qual leitura numérica é correta?',
+ 'Passou de 30% para 70%, diferença de 40 pontos percentuais.',
+ 'Os percentuais usam denominador 20 em ambos os momentos; a diferença entre eles é expressa em pontos percentuais.',[
+ ('Passou de 6% para 14%, diferença de oito pontos percentuais.','Os números 6 e 14 são contagens; é necessário dividi-los pelo total de 20.'),
+ ('Aumentou 40%, valor idêntico a 40 pontos percentuais.','Variação relativa e diferença em pontos percentuais não são a mesma operação.'),
+ ('Passou de 25% para aproximadamente 58%, mantendo o denominador de 20.','Esses valores usam 24 como denominador; não descrevem o conjunto de 20 pares informado.')],'percentuais e denominador')
+question(5,'Uma pesquisa usa somente números, mas omite critérios de classificação e seleção. Qual avaliação é adequada?',
+ 'A forma numérica não resolve a falta de critérios e de informação sobre o alcance da análise.',
+ 'Medidas também dependem de definições, seleção, contexto e procedimentos examináveis.',[
+ ('Números tornam esses critérios dispensáveis por serem objetivos.','O cálculo pode estar correto e ainda apoiar uma interpretação inadequada de categorias ou conjuntos.'),
+ ('A solução é trocar os números por uma fala sem explicitar sua seleção.','Substituir o formato não corrige a ausência de critérios.'),
+ ('O relatório deve ser chamado qualitativo porque apresenta limitações.','Limitações não definem a abordagem; todas as pesquisas precisam discuti-las.')],'abordagens e rigor')
+question(5,'A cena apresenta 8 km em 45 minutos e 15 km em 25 minutos. Qual conclusão é sustentada por esses valores hipotéticos?',
+ 'Menor distância não implica menor tempo nesse modelo.',
+ 'Tempo e distância medem aspectos distintos; os valores do modelo não validam rotas reais nem explicam sozinhos suas causas.',[
+ ('O transporte fluvial é mais lento em qualquer localidade.','Duas rotas hipotéticas não permitem universalizar uma propriedade do transporte.'),
+ ('Todos os estudantes da escola percorrem a rota de 15 km.','O modelo não é levantamento dos trajetos dos estudantes.'),
+ ('A estrada foi a causa da aprendizagem observada no conjunto de produções.','Os valores da cena não medem aprendizagem nem pertencem ao conjunto de resultados fictícios da turma.')],'medidas e modelos')
+
+question(6,'Uma pesquisadora acompanha profundamente uma escola, articula documentos, registros e entrevistas e justifica seu interesse no caso. Qual desenho está mais diretamente descrito?',
+ 'Estudo de caso contextualizado.',
+ 'A delimitação, o aprofundamento e a articulação de fontes e contexto sustentam essa caracterização.',[
+ ('Amostragem nacional representativa.','O interesse analítico no caso não demonstra seleção probabilística ou representatividade nacional.'),
+ ('Experimento com controle de todas as variáveis.','O enunciado não descreve intervenção controlada ou condições para essa inferência.'),
+ ('Etnografia concluída apenas por haver uma escola.','Orientação etnográfica não decorre do local; exige compromissos próprios de presença, significados e análise.')],'estudo de caso')
+question(6,'Um professor muda uma atividade e recebe comentários positivos. Qual informação adicional é central para discutir pesquisa-ação?',
+ 'Como a ação foi investigada, acompanhada e revista com critérios, reflexão e participação explicitados.',
+ 'Melhoria e apreciação não mostram sozinhas uma investigação sistemática da ação.',[
+ ('Se o material recebeu um título mais atraente.','O título não evidencia acompanhamento, análise ou revisão da prática.'),
+ ('Se todos os comentários negativos foram retirados do relato.','Retirar resultados para proteger a proposta compromete a análise.'),
+ ('Se a atividade ocorreu fora da sala de aula.','O espaço físico da atividade não define pesquisa-ação.')],'pesquisa-ação')
+question(6,'Um projeto se declara etnográfico porque fez uma visita de quarenta minutos. Como analisar a afirmação?',
+ 'O tempo e a descrição apresentados não sustentam, sozinhos, a compreensão contextual de práticas e significados exigida por essa orientação.',
+ 'Uma visita pode produzir informações, mas o rótulo precisa ser justificado por compromissos metodológicos, presença e registros reflexivos.',[
+ ('A observação breve é proibida em qualquer pesquisa educacional.','Observações breves podem ser pertinentes a certas perguntas; o problema é o alcance e a caracterização do desenho.'),
+ ('Basta entrevistar uma pessoa para converter a visita em etnografia completa.','Uma técnica adicional não desenvolve automaticamente os compromissos da orientação etnográfica.'),
+ ('A escola não pode ser estudada etnograficamente porque possui currículo.','A existência de currículo não impede investigar práticas, relações e significados em contexto.')],'orientação etnográfica')
+question(6,'É possível um estudo de caso acompanhar uma intervenção?',
+ 'Sim, se a relação entre caso, intervenção, fontes e análise for justificada.',
+ 'Os termos podem nomear dimensões articuladas do desenho; não são sempre caixas mutuamente excludentes.',[
+ ('Não, porque cada pesquisa pode ter apenas um nome metodológico.','Nomes podem se articular quando esclarecem compromissos e procedimentos, sem acumulação decorativa.'),
+ ('Sim, e isso comprova automaticamente uma causa exclusiva da mudança.','Acompanhamento de intervenção não garante, por si, condições de inferência causal exclusiva.'),
+ ('Sim, desde que sejam dispensadas fontes sobre o contexto.','Em um estudo de caso, o contexto participa da compreensão; intervenção não elimina essa necessidade.')],'articulação de desenhos')
+
+question(7,'O diário registra: “A estudante apontou o ponto de embarque” e, em seguida, “ela domina todas as redes regionais”. Como tratar esses trechos?',
+ 'Distinguir a ocorrência observada da inferência ampla e buscar evidências para examiná-la.',
+ 'O gesto descrito não sustenta sozinho domínio de todas as relações regionais.',[
+ ('Classificar ambos como descrição direta, pois foram escritos no mesmo diário.','O suporte do registro não elimina a diferença entre ocorrência e interpretação.'),
+ ('Excluir todo registro descritivo porque só a interpretação importa.','A descrição contextualizada permite examinar a base das inferências.'),
+ ('Tomar o segundo como prova porque usa um conceito geográfico.','Vocabulário conceitual não demonstra que a inferência está sustentada.')],'observação e inferência')
+question(7,'Qual pergunta de entrevista favorece uma investigação das estratégias de explicação?',
+ 'Como você usou estas fontes para explicar o trajeto? Pode mostrar um exemplo na sua produção?',
+ 'A pergunta solicita reconstrução do procedimento e pode ser confrontada com a produção, sem impor uma avaliação prévia.',[
+ ('Você concorda que minha excelente aula foi a única causa do seu avanço?','A formulação induz avaliação e causa, além de reforçar a autoridade docente.'),
+ ('Qual nota você daria ao professor para comprovar o domínio do conceito?','Nota de apreciação do docente não comprova diretamente domínio conceitual.'),
+ ('Você já sabe redes? Responda apenas sim ou não.','A resposta isolada informa autodeclaração, mas não mostra como a relação é construída.')],'entrevista não indutiva')
+question(7,'Lia compara um currículo prescrito com registros de aulas. O que deve considerar?',
+ 'Natureza e contexto de cada fonte, examinando aproximações e tensões entre prescrição e realização.',
+ 'Documento curricular e registro da prática têm funções distintas; um não é espelho automático do outro.',[
+ ('Que a existência de uma habilidade no currículo comprova sua aprendizagem.','Prescrição não demonstra realização ou aprendizagem.'),
+ ('Que qualquer diferença prova descumprimento intencional do professor.','A diferença precisa ser contextualizada; não informa sozinha intenção ou causa.'),
+ ('Que a fonte mais recente deve apagar todas as demais sem análise.','Data importa, mas pertinência e função das fontes precisam ser examinadas em relação à pergunta.')],'análise documental')
+question(7,'Um artigo é usado para discutir argumentos da área; em outro projeto, o mesmo artigo é objeto de análise das representações de ensino. O que muda?',
+ 'A função da fonte em relação à pergunta, não apenas seu suporte digital ou impresso.',
+ 'Usos bibliográfico e documental são definidos pelo problema e pelo trabalho analítico desenvolvido.',[
+ ('O primeiro uso só é bibliográfico se o artigo estiver impresso.','Suporte impresso não define a função bibliográfica.'),
+ ('O segundo uso dispensa identificar autoria porque o texto é documento.','Autoria, finalidade e contexto continuam relevantes para analisar documentos.'),
+ ('Os dois projetos devem obter conclusões idênticas por usarem o mesmo artigo.','Perguntas e funções analíticas diferentes podem construir interpretações distintas e justificadas.')],'bibliográfico e documental')
+
+question(8,'Uma saída de campo produziu fotos de vias. O projeto pretende explicar como estudantes construíram o conceito de rede. Qual complementação é pertinente?',
+ 'Analisar produções e registros de mediação relacionados ao uso do conceito, articulados às fontes sobre o espaço.',
+ 'Fotos das vias informam aspectos do espaço observado, mas não mostram sozinhas a construção do conhecimento escolar.',[
+ ('Aumentar o número de fotos, mantendo ausentes as explicações dos estudantes.','Mais fotos do espaço não resolvem necessariamente a falta de evidência sobre a aprendizagem.'),
+ ('Contar somente o tempo gasto no ônibus para medir domínio de rede.','Tempo de deslocamento não equivale a uma medida do uso do conceito.'),
+ ('Concluir que todos aprenderam porque a observação foi presencial.','Presença em campo não comprova aprendizagem de todas as pessoas.')],'campo e aprendizagem')
+question(8,'Qual organização é coerente com uma investigação orientada do meio?',
+ 'Preparar problema e registros, investigar com condições de participação e sistematizar e confrontar fontes depois.',
+ 'O conhecimento se constrói na relação entre preparação, produção de informações, análise e comunicação, com possibilidade de revisão.',[
+ ('Definir a conclusão antes da saída e procurar apenas imagens que a ilustrem.','A seleção confirmatória impede que as evidências questionem a interpretação inicial.'),
+ ('Deixar toda pergunta para o relatório, porque planejar elimina a espontaneidade.','Abertura ao imprevisto pode coexistir com problema, preparação e critérios de registro.'),
+ ('Encerrar o estudo na visita, considerando a observação uma interpretação pronta.','Observar não substitui sistematização, confronto de fontes e desenvolvimento da explicação.')],'estudo do meio')
+question(8,'Uma foto identificada de Belém mostra o Rio Guamá em 2019. Qual uso respeita seu alcance?',
+ 'Formular perguntas sobre paisagem e circulação e buscar outras fontes para relações e períodos não mostrados.',
+ 'A fotografia é um registro situado; sua identificação ajuda a distinguir observação, hipótese e investigação adicional.',[
+ ('Deduzir o transporte usado hoje por cada estudante de uma escola fictícia.','A foto não informa trajetos individuais atuais nem corresponde à turma do caso.'),
+ ('Tratá-la como retrato completo das redes regionais de abastecimento.','Um enquadramento não revela toda a rede de fluxos, decisões e conexões.'),
+ ('Descartá-la de qualquer pesquisa por ser anterior ao ano corrente.','Fontes históricas podem ser pertinentes; o problema é interpretar seu tempo e alcance.')],'fontes visuais')
+question(8,'Lia estuda um trajeto local e encontra relações com serviços e decisões regionais. Qual procedimento é mais coerente?',
+ 'Investigar essas conexões, explicitando recortes e fontes em diferentes escalas.',
+ 'O recorte local pode participar de relações mais amplas; mudar a escala analítica ajuda a enfrentar certas perguntas.',[
+ ('Excluir relações regionais porque um estudo local deve permanecer isolado.','Localização do caso não significa ausência de conexões com outras escalas.'),
+ ('Substituir toda observação local por uma média nacional.','A média nacional não recupera automaticamente processos e diferenças do contexto.'),
+ ('Considerar que a escala do mapa determina sozinha todas as escalas da análise.','Escala de representação e recorte analítico se relacionam, mas não são equivalentes.')],'escalas da investigação')
+
+question(9,'A direção autorizou uma pesquisa com registros identificáveis de estudantes. Isso resolve todos os procedimentos éticos?',
+ 'Não; é necessário examinar direitos dos participantes, consentimento e assentimento pertinentes, proteção e análise ética aplicável.',
+ 'Autorização institucional e procedimentos relativos aos participantes têm funções distintas.',[
+ ('Sim, pois a direção pode consentir individualmente por todos os estudantes.','A autorização da escola não substitui automaticamente os direitos e procedimentos de participação.'),
+ ('Sim, desde que o professor atribua pontos extras a quem aceitar.','Vincular participação em pesquisa à avaliação pode criar constrangimento e comprometer liberdade.'),
+ ('Não, porque toda atividade escolar exige exatamente o mesmo protocolo de pesquisa.','Também é preciso distinguir finalidade e enquadramento; não se deve equiparar qualquer atividade de ensino a pesquisa.')],'autorização e direitos')
+question(9,'Um relatório troca nomes por códigos, mas mantém fotos de casas e trajetos individuais exatos. Qual problema persiste?',
+ 'As combinações de informações podem permitir reidentificação.',
+ 'Pseudonimização não elimina automaticamente riscos; finalidade, detalhamento, acesso e divulgação precisam ser planejados.',[
+ ('Nenhum, porque ausência do nome torna qualquer conjunto anônimo.','Outros atributos podem identificar uma pessoa direta ou indiretamente.'),
+ ('Apenas um problema de estética do mapa.','O problema descrito diz respeito a privacidade e proteção de participantes, não apenas ao desenho.'),
+ ('A necessidade de publicar também os nomes para deixar a fonte completa.','Completude científica não exige exposição pública de identidades e dados desnecessários.')],'proteção e reidentificação')
+question(9,'Lia oferece aumento de nota a quem permitir o uso de sua entrevista na pesquisa. Qual revisão é necessária?',
+ 'Separar decisão de participação e avaliação escolar, garantindo esclarecimento e enfrentando a pressão da relação docente.',
+ 'A liberdade de participação pode ser comprometida por vantagens ou receio de prejuízo na avaliação.',[
+ ('Manter a vantagem desde que ela seja anunciada publicamente.','Publicidade da condição não elimina o constrangimento ou a desigualdade criada.'),
+ ('Pedir apenas uma assinatura para tornar irrelevante a relação de poder.','Assinatura não substitui processo de esclarecimento, liberdade e proteção.'),
+ ('Retirar a entrevista e publicar cadernos identificados sem discutir a nova finalidade.','Trocar a fonte não resolve os direitos associados ao uso dos materiais em pesquisa.')],'consentimento e poder')
+question(9,'Um resumo antigo afirma que toda pesquisa feita em aula está dispensada de análise ética. Como proceder no recorte atual?',
+ 'Verificar finalidade, enquadramento, normas e orientações institucionais pertinentes antes dos procedimentos de pesquisa.',
+ 'Ocorre uma generalização indevida. A Resolução 510/2016 deve ser lida com a Lei 14.874/2024, o Decreto 12.651/2025 e atos aplicáveis.',[
+ ('Aplicar a frase a qualquer uso de dados porque o local é escolar.','Local de realização não determina, sozinho, a finalidade e o enquadramento.'),
+ ('Considerar a Resolução 510/2016 isolada como autorização para qualquer divulgação.','A resolução não elimina direitos nem substitui leitura das normas posteriores e do caso.'),
+ ('Coletar primeiro e buscar uma aprovação que retroativamente resolva qualquer problema.','O planejamento deve anteceder os procedimentos que dependam de análise e aprovação; não se pode presumir regularização retroativa.')],'enquadramento ético')
+
+question(10,'A turma fictícia tem 24 matriculados, mas somente 20 possuem produções dos dois momentos. O que precisa acompanhar a comparação?',
+ 'Identificação dos 20 pares analisados e informação sobre os quatro sem par completo e os limites disso.',
+ 'O conjunto efetivamente comparado e suas lacunas precisam ser apresentados; não é possível inventar o resultado ausente.',[
+ ('Atribuição de R0 aos quatro, para completar o denominador.','Ausência de fonte não equivale a classificação da aprendizagem.'),
+ ('Uso de 24 como denominador sem informar o que ocorreu com os registros.','Isso encobre a diferença entre matriculados e materiais disponíveis para a comparação.'),
+ ('Exclusão da informação sobre perdas para deixar os números mais claros.','Ocultar perdas impede avaliar a cobertura e o alcance do resultado.')],'corpus e perdas')
+question(10,'Uma pesquisadora seleciona produções contrastantes para examinar relações e dificuldades. Como justificar a escolha?',
+ 'Explicitar critérios e interesse analítico dos contrastes, sem apresentar essa seleção como amostra probabilística nacional.',
+ 'A seleção intencional pode ser pertinente à pergunta, mas não oferece representatividade estatística por si.',[
+ ('Declarar representatividade porque as produções foram escolhidas com cuidado.','Cuidado na seleção não equivale a um plano probabilístico ou cobertura da população.'),
+ ('Evitar qualquer critério para manter a análise aberta.','Abertura à interpretação não dispensa explicar quais materiais foram analisados e por quê.'),
+ ('Considerar inválido todo estudo que não pretende estimar percentuais nacionais.','Investigações situadas podem produzir contribuições analíticas com outros objetivos.')],'seleção intencional')
+question(10,'Qual alternativa define o corpus do estudo de Lia?',
+ 'O conjunto delimitado de produções e registros efetivamente selecionados para análise.',
+ 'Corpus se refere aos materiais analisados segundo critérios, não a todas as informações possíveis sobre a escola.',[
+ ('Todos os habitantes do município, mesmo sem relação com a pergunta.','Esse conjunto não corresponde ao corpus descrito; também exigiria uma população justificada.'),
+ ('A quantidade de verbas recebidas pela escola, em qualquer pesquisa.','Recursos podem ser objeto de outro problema, mas não definem universalmente corpus.'),
+ ('Somente a bibliografia citada, independentemente do objeto.','Referências podem compor materiais em certos estudos, mas não esgotam o corpus deste caso.')],'corpus de análise')
+question(10,'Um formulário recebeu milhares de respostas voluntárias na internet. O que se pode afirmar sobre representatividade?',
+ 'A quantidade não basta; é necessário examinar população, cobertura, seleção e não resposta.',
+ 'Um conjunto grande pode manter vieses de acesso e participação. O alcance depende do desenho.',[
+ ('Está garantida, porque um número alto elimina qualquer viés de seleção.','Tamanho não corrige automaticamente quem teve acesso ou decidiu responder.'),
+ ('É impossível produzir qualquer descrição útil com essas respostas.','É possível descrever o conjunto observado e discutir limites, sem extrapolação indevida.'),
+ ('Depende somente de apresentar os resultados com duas casas decimais.','Precisão de apresentação não demonstra representatividade ou validade da inferência.')],'representatividade')
+
+question(11,'A produção “tem rio, ônibus e rua” foi classificada como relação geográfica complexa apenas por conter três palavras do tema. Como revisar?',
+ 'Examinar o que a produção efetivamente relaciona, aplicando critérios explícitos, em vez de contar palavras como prova suficiente.',
+ 'No exemplo, a enumeração isolada corresponde a R0; vocabulário presente não demonstra explicação de acesso.',[
+ ('Considerar complexa qualquer frase com três substantivos.','Número de palavras não equivale à qualidade da relação construída.'),
+ ('Atribuir R2 porque a palavra “rio” está na lista de conceitos da unidade.','Mencionar um elemento não mostra uma relação geográfica sustentada por fonte.'),
+ ('Eliminar a produção por ser curta, sem analisar seu conteúdo.','Extensão não define sozinha a categoria; o conteúdo precisa ser examinado pelos critérios.')],'critérios de análise')
+question(11,'Uma estudante relata compreender redes, mas sua produção não estabelece as relações solicitadas. O que a triangulação deve fazer?',
+ 'Examinar a tensão entre fala, produção e contexto, sem escolher automaticamente a fonte mais favorável.',
+ 'Confrontar fontes pode revelar divergências que ajudam a refinar a pergunta e a interpretação.',[
+ ('Descartar a produção para conservar a concordância com a fala.','A seleção apenas confirmatória apaga uma evidência pertinente ao problema.'),
+ ('Contar as fontes e seguir a maioria, sem examinar suas funções.','Triangulação não é votação; cada fonte responde parcialmente à pergunta e precisa ser interpretada.'),
+ ('Declarar inválida qualquer pesquisa em que duas fontes não concordem.','A divergência pode ser analiticamente produtiva quando contextualizada e discutida.')],'triangulação')
+question(11,'Dois analistas discordam sobre uma produção ambígua. Qual procedimento fortalece a análise?',
+ 'Reexaminar contexto e critérios, discutir razões e registrar a decisão e eventuais revisões.',
+ 'Rastreabilidade e crítica tornam a interpretação examinável; concordância não deve ser fabricada ou confundida com verdade automática.',[
+ ('Apagar a discordância do registro para transmitir segurança.','Ocultar a decisão impede compreender o caminho analítico.'),
+ ('Adotar a classificação de quem tem maior autoridade, sem discutir a evidência.','Autoridade não substitui explicitação e confronto dos critérios.'),
+ ('Criar uma categoria nova apenas para confirmar a hipótese, sem explicar a mudança.','Revisões exigem justificativa; proteger a hipótese não é critério suficiente.')],'rastreabilidade')
+question(11,'As contagens R0, R1 e R2 são 8, 6 e 6 no início e 2, 4 e 14 no final. O que esses totais mostram diretamente?',
+ 'A distribuição das categorias em cada momento, não o percurso individual de cada participante.',
+ 'Os totais somam 20 em ambos os momentos. Para reconstruir trajetórias individuais, é necessário examinar os pares correspondentes.',[
+ ('Que exatamente oito estudantes específicos passaram de R0 para R2.','Margens de distribuição não identificam essas transições individuais.'),
+ ('Que todos avançaram pelo menos uma categoria.','Algumas trajetórias podem ser diferentes; os totais agregados não demonstram avanço de cada pessoa.'),
+ ('Que a intervenção foi a única causa das diferenças.','A distribuição não isola outras explicações nem oferece, sozinha, inferência causal exclusiva.')],'distribuição e trajetória')
+
+question(12,'R2 passou de 6 para 14 após uma sequência com mapas, relatos, perguntas e interação. Qual conclusão respeita o desenho descrito?',
+ 'Aumentou a proporção de produções que atendem ao critério, sem isolar o efeito exclusivo de um recurso.',
+ 'O conjunto permite descrever mudança e discutir processos; não separa sozinho a contribuição causal de cada elemento.',[
+ ('O mapa foi a única causa porque apareceu antes da produção final.','Anterioridade não basta para demonstrar causa exclusiva.'),
+ ('O aumento prova que a mesma sequência terá o mesmo efeito em toda escola.','O contexto e a seleção não sustentam universalização desse resultado.'),
+ ('O resultado demonstra retenção permanente, mesmo sem acompanhamento posterior.','Uma produção final situada não mostra, sozinha, a permanência da aprendizagem.')],'limites causais')
+question(12,'Uma produção final permanece em R0. Qual encaminhamento evita transformar a categoria em rótulo da pessoa?',
+ 'Investigar dificuldades e condições da tarefa e planejar mediações e novas evidências.',
+ 'A categoria descreve uma produção situada segundo critérios, não a capacidade fixa ou o futuro do estudante.',[
+ ('Concluir que o estudante é incapaz de raciocínio geográfico em qualquer situação.','A inferência ultrapassa a fonte e transforma resultado situado em atributo permanente.'),
+ ('Retirar o registro para não prejudicar a avaliação da sequência.','Omitir dificuldade altera o sentido do resultado e impede replanejamento fundamentado.'),
+ ('Manter a mesma tarefa indefinidamente, pois replanejar tornaria a pesquisa incoerente.','A revisão pode ser fundamentada e documentada; coerência não exige repetir decisões ineficazes.')],'resultado e replanejamento')
+question(12,'A equipe produziu um roteiro muito elogiado. Isso comprova sua eficácia sobre a aprendizagem?',
+ 'Não; é preciso examinar critérios, uso, contexto e evidências de aprendizagem pertinentes ao objetivo.',
+ 'Produto e satisfação podem ser informações relevantes, mas não substituem a análise do conhecimento construído.',[
+ ('Sim, porque qualidade visual é equivalente a domínio conceitual.','Apresentação e aprendizagem têm relações possíveis, mas não são medidas equivalentes.'),
+ ('Sim, desde que o arquivo tenha sido distribuído a muitas escolas.','Distribuição não demonstra o que ocorreu em uso ou como foi avaliado.'),
+ ('Não; por isso produtos educacionais nunca podem ser pesquisados.','Produtos podem ser investigados em suas condições, usos e efeitos; o limite é a prova insuficiente apresentada.')],'produto educacional')
+question(12,'Que decisão aproxima o replanejamento de uma investigação da ação?',
+ 'Relacionar dificuldades registradas a uma revisão justificada e acompanhar o novo ciclo.',
+ 'A reflexão se apoia em evidências e conduz a decisões que também podem ser examinadas.',[
+ ('Substituir a atividade por preferência pessoal, sem registrar razões.','A mudança pode ocorrer na prática, mas não demonstra investigação sistemática.'),
+ ('Repetir apenas os trechos com resultados positivos e encerrar a discussão.','Isso restringe a análise e evita enfrentar as dificuldades.'),
+ ('Declarar sucesso antes de analisar as produções do novo ciclo.','A conclusão precisa permanecer aberta às evidências produzidas.')],'ciclo de pesquisa-ação')
+
+question(13,'Um candidato reescreve a ideia de um autor com palavras próprias. Qual cuidado de autoria permanece?',
+ 'Atribuir a fonte da ideia também na paráfrase.',
+ 'Reformulação de palavras não transforma automaticamente uma ideia alheia em produção sem referência.',[
+ ('Omitir a fonte, porque não há transcrição literal.','A obrigação de atribuição não se restringe a cópia literal.'),
+ ('Inventar uma página que pareça plausível para completar a referência.','Localização bibliográfica não pode ser fabricada; deve corresponder à fonte consultada e à forma usada.'),
+ ('Citar apenas uma obra diferente que tenha título semelhante.','A referência precisa identificar a fonte efetivamente utilizada e pertinente à afirmação.')],'autoria e paráfrase')
+question(13,'Lia seleciona somente trechos favoráveis e omite resultados para fazer a sequência parecer infalível. Qual problema ocorre?',
+ 'A apresentação distorce o sentido das evidências e compromete a integridade.',
+ 'A seleção analítica exige critérios; ocultar resultados para alterar a conclusão não é uma simplificação neutra.',[
+ ('Apenas uma redução editorial sem efeito sobre o argumento.','O enunciado informa que a omissão altera a interpretação do resultado.'),
+ ('Uma triangulação, pois mais de um trecho positivo foi escolhido.','Triangulação confronta fontes e interpretações, incluindo tensões; não equivale a somar confirmações.'),
+ ('Uma hipótese, pois o pesquisador pode decidir qual resultado deve existir.','Hipótese é examinada; não autoriza produzir ou selecionar um resultado para garanti-la.')],'integridade da comunicação')
+question(13,'Qual devolutiva é mais coerente com uma pesquisa educacional responsável?',
+ 'Apresentar resultados e limites em linguagem acessível, ouvir os envolvidos e respeitar os acordos de proteção.',
+ 'O retorno pode promover discussão e compreensão sem expor identidades ou tratar participantes apenas como fontes.',[
+ ('Publicar todos os dados individuais para que qualquer pessoa identifique quem errou.','Transparência analítica não exige exposição de participantes e de detalhes desnecessários.'),
+ ('Enviar apenas um título técnico, sem explicar os resultados à comunidade.','Um título isolado não desenvolve uma devolutiva compreensível.'),
+ ('Apresentar somente sucesso para evitar perguntas sobre o que não funcionou.','O retorno deve permitir discutir dificuldades e limites, não ocultá-los.')],'devolutiva')
+question(13,'Como apresentar em outro contexto uma sequência decorrente de pesquisa situada?',
+ 'Explicitar problema, condições, usos, evidências e limites e discutir adaptações a investigar.',
+ 'A contribuição pode orientar novas decisões, mas sua transferência não é uma garantia automática de efeito.',[
+ ('Como receita que dispensa diagnóstico e mediação porque já foi utilizada.','Uso prévio não elimina diferenças de contexto e condições.'),
+ ('Como resultado sem autoria ou referências para facilitar a reprodução.','Atribuição e identificação das fontes continuam necessárias.'),
+ ('Como confirmação de que o mesmo recurso resolve qualquer dificuldade escolar.','A conclusão excede o problema e o alcance de uma investigação situada.')],'comunicação e transferência')
+
+question(14,'Um projeto pergunta como estudantes explicam redes de abastecimento e usa apenas contagem de barracas. Qual diagnóstico é mais preciso?',
+ 'A fonte pode informar o espaço, mas não responde sozinha à construção das explicações dos estudantes.',
+ 'É necessário articular evidências do objeto escolar, como produções e mediações, às fontes sobre a feira.',[
+ ('A contagem é inútil para qualquer investigação geográfica.','Ela pode responder a certas perguntas; o problema é sua suficiência para este objeto.'),
+ ('A pergunta foi respondida porque toda contagem constitui raciocínio de rede.','Quantidade de barracas não mostra automaticamente conexões e explicações conceituais.'),
+ ('Basta mudar o nome do projeto para pesquisa-ação, mantendo a mesma evidência.','O rótulo não corrige a coerência entre problema e fonte.')],'coerência em casos de prova')
+question(14,'Qual sequência ajuda a avaliar uma conclusão de pesquisa num enunciado?',
+ 'Identificar pergunta, evidências e inferência e conferir o alcance do que se afirma.',
+ 'A leitura relaciona o conhecimento pretendido, sua base e a força da conclusão.',[
+ ('Escolher a alternativa com mais nomes de autores antes de ler o caso.','Citações não substituem análise das relações metodológicas descritas.'),
+ ('Aceitar qualquer afirmação com porcentagem e rejeitar as que têm falas.','Formato de dado não determina sozinho sua pertinência ou a validade da inferência.'),
+ ('Verificar apenas o título do método, independentemente dos procedimentos.','A caracterização precisa ser confrontada com o que efetivamente foi feito e analisado.')],'leitura metodológica')
+question(14,'Como as unidades do módulo 1 se articulam com a pesquisa em Geografia Escolar?',
+ 'Concepções, saberes, conceitos e referências podem ser investigados em suas relações com ensino, contexto e aprendizagem.',
+ 'A pesquisa pode construir conhecimento sobre essas relações, em vez de tratá-las como compartimentos isolados.',[
+ ('A pesquisa substitui os conceitos geográficos por procedimentos sem conteúdo.','O objeto escolar exige analisar o conhecimento geográfico e sua construção.'),
+ ('Normas curriculares já comprovam como todos os estudantes aprendem.','Prescrição curricular e evidência de aprendizagem têm funções diferentes.'),
+ ('Experiência docente dispensa sistematização quando o professor pesquisa sua turma.','Experiência pode orientar perguntas, mas não substitui critérios, registros e crítica.')],'síntese do módulo')
+question(14,'Qual trecho desenvolve melhor um argumento sobre pesquisa e ensino?',
+ 'A pergunta exige analisar explicações; por isso seleciono produções e registros pertinentes, com critérios e conclusões situadas.',
+ 'O trecho liga problema, fontes, análise e alcance, oferecendo uma razão para a escolha.',[
+ ('Pesquisar é importante porque pesquisa é uma coisa muito importante para a escola.','A repetição não explica contribuição, procedimento ou relação com o conhecimento.'),
+ ('Entrevista, mapa, estudo de caso, currículo, pesquisa-ação.','A lista não desenvolve como os elementos se relacionam ao problema.'),
+ ('Meu recurso será eficaz porque a conclusão foi definida antes da análise.','Antecipar o veredito impede que as evidências questionem a expectativa.')],'argumento escrito')
+
+def final(n,stem,correct,why,distractors,tag):
+    question(n,stem,correct,why,distractors,tag,pool='final')
+
+final(1,'Uma professora levanta pontos de alagamento do bairro e conclui que sua turma compreendeu a relação sociedade–natureza. O relatório contém apenas coordenadas dos pontos. Qual revisão é necessária?',
+ 'Distinguir o levantamento espacial da investigação da aprendizagem e analisar evidências das explicações dos estudantes.',
+ 'Coordenadas podem ajudar a conhecer a distribuição de pontos. Não mostram, sozinhas, como a turma construiu uma relação conceitual.',[
+ ('Aumentar a precisão das coordenadas, pois isso completa a evidência de aprendizagem.','Precisão espacial pode qualificar o levantamento, mas não substitui produções e registros sobre o objeto escolar.'),
+ ('Retirar sociedade e natureza do problema para que o levantamento tenha caráter escolar.','O objeto escolar exige investigar a construção dessas relações, não eliminar o conteúdo.'),
+ ('Usar o termo pesquisa qualitativa para permitir a conclusão sem outras fontes.','Uma abordagem não autoriza inferências sem evidência pertinente.')],'objeto e evidência')
+final(2,'Um projeto pergunta “por que estudantes do campo são incapazes de compreender mapas?” e planeja observar uma única tarefa. Qual crítica metodológica é mais consistente?',
+ 'A pergunta pressupõe um déficit e uma conclusão sobre um grupo; deve ser reformulada como questão aberta e situada.',
+ 'A investigação precisa examinar condições, relações e explicações sem converter uma hipótese em atributo fixo das pessoas.',[
+ ('A pergunta está resolvida se a tarefa tiver baixo índice de acerto.','Um resultado situado não demonstra incapacidade de um grupo, nem explica suas condições.'),
+ ('O problema é apenas o uso da palavra “mapa”, que deve ser substituída por “cartografia”.','A troca vocabular não elimina o pressuposto e a generalização.'),
+ ('A solução é excluir estudantes que contrariem a conclusão inicial.','Essa seleção protege o veredito e distorce a análise do problema.')],'formulação não preconcebida')
+final(3,'Uma candidata leu dois resumos e anuncia que sua proposta é inédita em todo o país. Qual encaminhamento melhora a justificativa?',
+ 'Delimitar e documentar o levantamento, ampliar buscas pertinentes e distinguir obras localizadas, lidas e analisadas.',
+ 'A afirmação de lacuna precisa corresponder ao alcance e aos critérios da revisão; dois resumos não demonstram ausência nacional de estudos.',[
+ ('Manter o anúncio e acrescentar referências não consultadas para dar volume.','Referências não analisadas não sustentam uma conclusão de ineditismo nem devem simular leitura realizada.'),
+ ('Considerar desnecessária a literatura porque o contexto local é novo para a pesquisadora.','A novidade pessoal do contexto não substitui o diálogo com conhecimento produzido.'),
+ ('Copiar a conclusão do resumo mais próximo para garantir que a lacuna existe.','Uma conclusão alheia exige interpretação e atribuição; não comprova sozinha o alcance de uma nova revisão.')],'revisão e lacuna')
+final(4,'Um relatório declara “método histórico-dialético” e usa entrevistas, mas sua análise não examina processos, relações ou contradições. Qual avaliação é sustentada?',
+ 'O rótulo e a técnica não demonstram o desenvolvimento da orientação; é preciso examinar sua presença no problema e na análise.',
+ 'A coerência metodológica aparece nas decisões de interpretação, não apenas no título escolhido.',[
+ ('Toda entrevista já comprova essa orientação, independentemente da análise.','Uma técnica pode integrar diferentes perspectivas e não desenvolve sozinha seus compromissos.'),
+ ('A orientação só seria possível com questionários fechados.','Não existe essa exclusividade do instrumento; a relação teórico-metodológica precisa ser justificada.'),
+ ('Basta acrescentar uma citação ao final para corrigir qualquer desarticulação.','Citação decorativa não altera o problema, os critérios ou a interpretação efetivamente desenvolvidos.')],'teoria e metodologia')
+final(5,'Uma pesquisa mostra que menos produções finais relacionam escalas, mas apresenta entrevistas de satisfação positiva. Como integrar os conjuntos?',
+ 'Examinar a divergência e suas condições, distinguindo apreciação da tarefa e uso das relações conceituais.',
+ 'Os conjuntos podem responder a dimensões diferentes. Integração pede análise da tensão, sem escolher apenas a evidência favorável.',[
+ ('Usar a satisfação para anular o resultado das produções.','Apreciação positiva não substitui a evidência conceitual solicitada.'),
+ ('Somar os dois tipos de resposta numa única porcentagem sem definir unidade ou critério.','Misturar unidades e medidas sem justificativa impede interpretar o resultado.'),
+ ('Apagar as entrevistas porque pesquisas com números não podem conter falas.','Abordagens e fontes podem ser articuladas; o problema é como isso é feito.')],'integração e divergência')
+final(6,'Uma dissertação examina um projeto escolar delimitado, sua história, documentos, práticas e interpretações, com fontes articuladas. Sua contribuição pretendida é discutir relações conceituais do caso. Qual afirmação é adequada?',
+ 'Um estudo de caso pode sustentar contribuição analítica, desde que contexto, evidências e limites estejam explícitos.',
+ 'O aprofundamento de um caso pode contribuir ao conhecimento sem estimar frequências para toda uma população.',[
+ ('Uma única escola impede qualquer produção de conhecimento.','Quantidade de escolas não define sozinha a qualidade ou a contribuição analítica.'),
+ ('O caso representa estatisticamente todas as escolas por ter muitas fontes.','Diversidade de fontes não equivale a um plano amostral representativo.'),
+ ('A contribuição dispensa descrever o contexto para que o resultado pareça universal.','Ocultar o contexto enfraquece a compreensão das relações e de seu alcance.')],'contribuição do caso')
+final(6,'Uma equipe registra dificuldades, discute decisões com os envolvidos, planeja uma ação, acompanha produções e revê sua proposta. O que fortalece a caracterização como pesquisa-ação?',
+ 'A articulação documentada entre investigação, ação, participação e reflexão que orienta novos ciclos.',
+ 'A caracterização se apoia no percurso sistemático e nas relações de participação, não apenas na existência de uma intervenção.',[
+ ('A presença de uma atividade nova, mesmo sem o acompanhamento descrito.','Novidade isolada não demonstra investigação da ação.'),
+ ('O compromisso de que todos os resultados devem ser positivos.','A pesquisa precisa analisar dificuldades e evidências contrárias à expectativa.'),
+ ('A ausência de qualquer conceito para que os envolvidos não influenciem a interpretação.','A análise requer referenciais e reflexividade; participação não equivale a ausência de teoria.')],'investigação da ação')
+final(7,'Um currículo prevê comparação de paisagens. Um pesquisador usa esse texto para afirmar que todas as aulas desenvolveram essa operação. Qual limite foi ignorado?',
+ 'Uma fonte prescritiva não comprova, sozinha, a realização e a aprendizagem.',
+ 'Para estudar o realizado, é necessário confrontar fontes pertinentes, considerando a natureza de cada registro.',[
+ ('Documento curricular não pode ser analisado em pesquisa.','Ele pode ser fonte ou objeto relevante; o problema é a inferência construída.'),
+ ('A data do documento torna dispensáveis quaisquer registros de aula.','Atualidade não muda a função prescritiva em prova suficiente da prática.'),
+ ('A presença de um código de habilidade já é uma medida do domínio dos estudantes.','Código identifica referência curricular, não resultado de aprendizagem.')],'prescrito e realizado')
+final(9,'Uma investigação prevê entrevistas com adolescentes. A direção concordou, mas o pesquisador pretende divulgar as falas sem examinar assentimento, consentimento ou enquadramento. Qual análise é mais pertinente?',
+ 'A anuência da escola não substitui os direitos dos participantes nem os procedimentos éticos aplicáveis à pesquisa.',
+ 'Esclarecimento, liberdade, proteção e enquadramento devem ser planejados antes dos procedimentos pertinentes, conforme as normas e o protocolo.',[
+ ('A autorização da direção transfere ao pesquisador todos os direitos de imagem e voz.','Autorização institucional não equivale a autorização irrestrita de uso e divulgação individual.'),
+ ('Uma entrevista sem intervenção corporal não pode causar qualquer dano.','Exposição, constrangimento e estigma também podem ocorrer em pesquisas de Ciências Humanas e Sociais.'),
+ ('A assinatura de qualquer adulto da escola elimina todas as demais exigências.','Uma assinatura genérica não substitui os processos e responsabilidades pertinentes.')],'participantes e ética')
+final(9,'Um artigo usa nomes fictícios, mas um mapa permite reconhecer a única família de certa comunidade com determinado trajeto. Qual revisão é justificada?',
+ 'Reavaliar detalhamento, combinações de informações e divulgação para enfrentar o risco de reidentificação.',
+ 'Em grupos pequenos, atributos indiretos podem identificar participantes mesmo sem nome verdadeiro.',[
+ ('Publicar o nome real, pois a possibilidade de identificação torna a proteção inútil.','Um risco exige medidas de proteção, não exposição adicional desnecessária.'),
+ ('Manter o mapa porque pseudônimo é equivalente a anonimização completa.','Trocar o nome não elimina o potencial identificador de outras informações.'),
+ ('Resolver o problema apenas mudando a cor do traçado.','Alteração estética não enfrenta o detalhe e as combinações que permitem reconhecer pessoas.')],'reidentificação')
+final(8,'Num estudo do meio, o grupo registrou uma praça e conversou com moradores. A pergunta é como estudantes relacionam usos e pertencimento. Qual análise é necessária após o campo?',
+ 'Articular fontes contextualizadas às produções e mediações escolares, examinando como as relações foram construídas.',
+ 'O contato com o espaço pode alimentar a investigação, mas precisa ser sistematizado e relacionado ao objeto de conhecimento escolar.',[
+ ('Usar uma fala marcante de morador como prova de que todos os estudantes aprenderam.','A fala tem função e contexto próprios; não demonstra a aprendizagem da turma.'),
+ ('Concluir o relatório com um álbum, dispensando perguntas e critérios.','Um álbum pode compor o registro, mas não desenvolve sozinho a análise solicitada.'),
+ ('Restringir o estudo ao que cabe na foto, pois outras escalas descaracterizam a praça.','Relações de usos e pertencimento podem envolver histórias e conexões que ultrapassam o enquadramento.')],'campo e sistematização')
+final(10,'Outro projeto possui 30 matriculados e 24 pares completos de produções. Em 12 desses pares, a produção final atende ao critério definido. Qual apresentação respeita o conjunto analisado?',
+ '12 de 24 produções finais dos pares completos, ou 50%, informando também os seis sem par.',
+ 'O denominador deve corresponder ao conjunto descrito. As perdas devem ser apresentadas, sem supor os resultados ausentes.',[
+ ('12 de 30, sem mencionar registros ausentes, como proporção dos pares completos.','Esse cálculo usa a matrícula, não os 24 pares informados, e oculta a cobertura da comparação.'),
+ ('18 de 30, atribuindo o mesmo resultado aos seis sem par.','Não há evidência para completar o resultado com casos ausentes.'),
+ ('12%, porque o número de produções positivas já é uma porcentagem.','Contagem e percentual são diferentes; é necessário usar o denominador pertinente.')],'denominador e cobertura')
+final(10,'Um pesquisador escolhe três produções com explicações contrastantes, justifica os critérios e não pretende estimar uma frequência nacional. Qual julgamento é mais apropriado?',
+ 'A seleção pode ser pertinente ao interesse analítico, desde que seu alcance e seus limites sejam discutidos.',
+ 'Seleção intencional por contraste pode apoiar compreensão de relações; não deve ser confundida com representatividade estatística.',[
+ ('Três produções são suficientes para qualquer pergunta de pesquisa.','A suficiência depende do problema e da análise; não existe garantia por um número universal.'),
+ ('A escolha intencional comprova a proporção dessas explicações em todo o país.','O desenho descrito não oferece base para essa estimativa.'),
+ ('O estudo não pode desenvolver conceitos porque não tem milhares de participantes.','Contribuição conceitual não depende exclusivamente de grande quantidade de participantes.')],'seleção e contribuição')
+final(11,'Ao codificar textos, o pesquisador marca como “rede” toda menção a ônibus, mesmo quando o estudante não explica qualquer conexão. Qual revisão é mais consistente?',
+ 'Distinguir presença de palavra e desenvolvimento da relação conceitual, explicitando critérios e reexaminando o material.',
+ 'Uma palavra pode ser indício a explorar, mas não prova suficiente de uso do conceito segundo a pergunta.',[
+ ('Manter a codificação porque rapidez é o único critério de análise.','Eficiência não substitui pertinência conceitual e rastreabilidade.'),
+ ('Eliminar qualquer contagem, pois categorias nunca podem ser quantificadas.','Categorias podem ser contadas quando definidas e pertinentes; o problema é como foram construídas.'),
+ ('Considerar toda frase longa conceitual, mesmo sem examinar seu conteúdo.','Extensão não demonstra a relação que precisa ser analisada.')],'codificação e conceito')
+final(11,'Uma turma declara em entrevista que consulta a legenda, mas vários mapas produzidos não a utilizam coerentemente. O relatório deve:',
+ 'Investigar a tensão entre autodescrição, produção e condições da tarefa, discutindo interpretações alternativas.',
+ 'Fontes diferentes podem revelar aspectos e discrepâncias que refinam a compreensão do processo.',[
+ ('Descartar os mapas porque entrevistas são sempre mais verdadeiras.','Não há superioridade automática de uma fonte; sua função e contexto precisam ser examinados.'),
+ ('Contar quantas fontes apoiam cada versão e encerrar a análise pela maioria.','Triangulação não é votação sem interpretação das evidências.'),
+ ('Apresentar apenas a fala que melhor corresponde à hipótese inicial.','A seleção confirmatória oculta evidências pertinentes e enfraquece a análise.')],'triangulação crítica')
+final(12,'Depois de uma sequência, aumentam os acertos. O pesquisador não comparou condições de aplicação nem acompanhou retenção. Qual afirmação ultrapassa o desenho?',
+ 'O recurso isolado causou uma aprendizagem duradoura em qualquer contexto.',
+ 'A afirmação reúne causa exclusiva, permanência e universalização sem as evidências necessárias.',[
+ ('Houve aumento dos acertos no conjunto e nos momentos descritos.','Essa é uma descrição possível se os registros e critérios sustentam a contagem.'),
+ ('É preciso examinar mudanças na tarefa e nas condições de resposta.','Essa análise enfrenta explicações alternativas pertinentes ao resultado.'),
+ ('As conclusões devem discutir o alcance da comparação realizada.','Delimitar alcance é necessário para não exceder o desenho.')],'força da inferência')
+final(10,'Cinco participantes não entregaram a atividade final. O relatório lhes atribui “ausência de aprendizagem”. Qual correção é necessária?',
+ 'Distinguir ausência da fonte e avaliação da aprendizagem, descrevendo perdas e o que permanece desconhecido.',
+ 'A não entrega pode ter razões diferentes e não mostra, sozinha, o conhecimento construído.',[
+ ('Atribuir o resultado mais frequente da turma, pois isso recompõe a evidência.','Imputar um resultado sem procedimento e justificativa adequados não recupera o que não foi observado.'),
+ ('Excluir do relatório qualquer referência às cinco pessoas para simplificar o texto.','Ocultar perdas impede compreender cobertura e limites.'),
+ ('Considerar que toda não resposta comprova recusa ao conteúdo de Geografia.','A inferência sobre motivo e aprendizagem não é sustentada pela ausência isolada.')],'ausência e conclusão')
+final(13,'Um autor criou respostas simuladas para explicar categorias, mas o relatório as apresenta como entrevistas realmente realizadas. Como avaliar?',
+ 'Há fabricação de evidência empírica; exemplos simulados precisam permanecer identificados como didáticos.',
+ 'Inventar um exemplo para ensinar é diferente de afirmar que um registro inexistente foi obtido com participantes reais.',[
+ ('É uma paráfrase permitida, pois as falas não foram copiadas.','Paráfrase trata de reformulação de uma ideia atribuída; não autoriza simular coleta como fato.'),
+ ('É aceitável desde que os números pareçam coerentes com a hipótese.','Plausibilidade não transforma dados inventados em evidência obtida.'),
+ ('O problema se resolve acrescentando um nome de método ao título.','Rótulo metodológico não corrige a falsa afirmação de coleta e resultado.')],'dados fictícios e integridade')
+final(12,'Um produto educacional recebeu avaliações positivas de aparência. O projeto pretende demonstrar construção de raciocínio geográfico. Qual passo é mais pertinente?',
+ 'Analisar usos e produções com critérios relacionados ao raciocínio pretendido, discutindo condições e limites.',
+ 'Apreciação visual pode compor uma avaliação de uso, mas não responde sozinha ao objetivo conceitual.',[
+ ('Converter o número de elogios em nota de aprendizagem sem outro critério.','Elogio e construção conceitual não são medidas equivalentes.'),
+ ('Distribuir o produto e tomar o total de downloads como prova de domínio de conceitos.','Alcance da distribuição não mostra o que foi aprendido em uso.'),
+ ('Excluir dificuldades do registro para preservar a aceitação do material.','Dificuldades são evidências importantes para avaliação e revisão do produto.')],'produto e evidência')
+final(14,'Qual parágrafo apresenta uma contribuição da pesquisa em Geografia Escolar com raciocínio metodológico?',
+ 'Investigar como alunos explicam fluxos exige relacionar conceitos, produções e mediação. Critérios explícitos permitem discutir dificuldades e replanejar, dentro dos limites do caso.',
+ 'O argumento liga objeto, evidências, análise, contribuição e alcance.',[
+ ('A pesquisa é científica porque possui muitas referências e, por isso, seu resultado dispensa análise das produções.','Quantidade de referências não substitui a base empírica e o trabalho analítico exigido pela pergunta.'),
+ ('Como a proposta foi bem recebida, todas as escolas devem adotar os mesmos materiais para garantir aprendizagem idêntica.','Aceitação e um contexto não sustentam regra universal nem efeito idêntico.'),
+ ('Para evitar subjetividade, basta registrar o cotidiano sem escolher categorias ou explicitar a posição do pesquisador.','Registros envolvem escolhas; reflexividade e critérios ajudam a torná-las examináveis.')],'síntese argumentativa')
+
+flashcards=[dict(id=f'c{i:02d}',front=a,back=b) for i,(a,b) in enumerate([
+ ('O que se pesquisa em Geografia Escolar?','Relações entre conhecimento geográfico, currículo, ensino, aprendizagem, formação, práticas e contextos. O objeto precisa ser delimitado.'),
+ ('Pesquisar o trajeto e pesquisar sua aprendizagem são a mesma pergunta?','São focos relacionados. Condições de circulação pedem fontes espaciais; construção de explicações pede também produções e registros do processo escolar.'),
+ ('O que distingue experiência e investigação sistemática?','Pergunta, conceitos, registros, critérios e análise examináveis. Uma apreciação pode iniciar a pesquisa, mas não equivale à conclusão.'),
+ ('O que significa pesquisa como princípio educativo?','Aprender com perguntas, confronto de fontes e argumentos, com mediação. Não é sinônimo automático de pesquisa acadêmica concluída.'),
+ ('Como passar do tema ao problema?','Delimitar relação, contexto, participantes ou materiais e período; formular uma pergunta aberta e examinar fontes possíveis.'),
+ ('O que é objeto de estudo?','Recorte construído teoricamente para produzir conhecimento. No caso, explicações geográficas em contexto, e não todo assunto sobre transporte.'),
+ ('Objetivo ou procedimento?','Objetivo indica o que se pretende conhecer; entrevista, registro e formulário são meios a justificar para isso.'),
+ ('Hipótese precisa ser confirmada?','Não. É uma possibilidade de resposta confrontada com evidências. Alguns desenhos trabalham com questões orientadoras, sem hipótese formal obrigatória.'),
+ ('Como reconhecer uma revisão de literatura analítica?','Ela documenta seleção e compara problemas, conceitos, métodos, resultados e limites. Uma lista de obras não é a síntese.'),
+ ('Uma busca sem resultado prova ineditismo?','Não. Verifique termos, bases, cobertura e critérios e delimite o alcance da afirmação.'),
+ ('Entrevista define a perspectiva teórica?','Não. É uma técnica que pode integrar perspectivas distintas; precisa ser relacionada ao problema e à interpretação.'),
+ ('O que a metodologia deve explicar?','Por que conceitos, desenho, seleção, fontes e análise são coerentes com o conhecimento pretendido.'),
+ ('Qualitativo significa ausência de números?','Não. O compromisso está no modo de investigar sentidos, processos e contextos. Formato isolado não define abordagem nem rigor.'),
+ ('O que caracteriza integração de evidências?','Explicitar como os conjuntos se relacionam para responder à pergunta, inclusive diante de divergências. Não basta justapor gráfico e fala.'),
+ ('30% para 70%: qual diferença?','40 pontos percentuais. Variação relativa é outra operação; o denominador e o critério precisam estar explícitos.'),
+ ('Uma escola torna qualquer estudo um estudo de caso?','Não. É necessário delimitação, interesse analítico, contexto e investigação aprofundada.'),
+ ('Toda intervenção é pesquisa-ação?','Não. Investigação sistemática, ação acompanhada, reflexão, revisão e participação precisam ser desenvolvidas e documentadas.'),
+ ('Uma visita basta para afirmar etnografia?','Não por si. Essa orientação envolve compreender práticas e significados em contexto, com presença e registros reflexivos.'),
+ ('Observação e interpretação são iguais?','Não. Uma ocorrência registrada e uma inferência têm alcances diferentes; devem ser distinguidas e depois relacionadas com evidências.'),
+ ('Documento curricular prova a aula realizada?','Não. O prescrito é uma fonte com função própria; prática e aprendizagem pedem registros pertinentes.'),
+ ('Qual é o papel do campo no estudo do meio?','Produzir contato e registros orientados pela pergunta, articulados à preparação, sistematização, confronto de fontes e comunicação.'),
+ ('Autorização da direção substitui participação livre?','Não. Direitos dos participantes e procedimentos de consentimento, assentimento, proteção e análise ética têm funções próprias.'),
+ ('Pseudônimo garante anonimato?','Não. Endereços, imagens, trajetos e combinações podem reidentificar; é preciso planejar finalidade, acesso e divulgação.'),
+ ('O que é corpus?','Conjunto delimitado de materiais efetivamente selecionados para análise, com critérios explícitos.'),
+ ('Seleção intencional é representativa por definição?','Não. Pode servir ao interesse analítico, mas não equivale a seleção probabilística nem oferece estimativa nacional por si.'),
+ ('Não entregar uma atividade significa não aprender?','A ausência da fonte não demonstra sozinha motivo ou aprendizagem. Informe perdas e limites, sem inventar resultados.'),
+ ('Mencionar um conceito prova que ele foi usado?','Não. Analise a relação construída e sua coerência, não só a presença da palavra.'),
+ ('Triangulação elimina divergências?','Não. Confronta perspectivas e pode revelar tensões e casos que exigem revisão da interpretação.'),
+ ('Mudança após a aula prova causa exclusiva?','Não. Condições, outras explicações, seleção e acompanhamento importam. Não extrapole permanência ou efeitos universais.'),
+ ('Paráfrase dispensa fonte?','Não. Ideias alheias devem ser atribuídas. Dados simulados precisam ser identificados; produto e satisfação não substituem evidência de aprendizagem.')
+],1)]
+
+def ref(title,author,year,anchor,note):
+    return dict(title=title,author=author,year=year,url=PAGE+'#'+anchor,note=note)
+
+references=[
+ ref('Edital PROFGEO-UFPA n. 03/2026 — Anexo III, item 1.5','UFPA / PROFGEO',2026,'edital','Fonte do programa, em PDF fornecido pelo estudante. As leituras selecionadas não são apresentadas como bibliografia obrigatória do edital.'),
+ ref('Aprendendo a ler o mundo: a geografia nos anos iniciais do ensino fundamental','Helena Copetti Callai',2005,'callai','Cadernos CEDES, 25(66). Leitura geográfica do mundo vivido e construção de conhecimento; não é fonte dos dados fictícios do caso.'),
+ ref('Estudo do meio: teoria e prática','Claudivan Sanches Lopes e Nídia Nacib Pontuschka',2009,'estudo-do-meio','Geografia (Londrina), 18(2), 173–191. Investigação orientada, interdisciplinaridade e relações entre realidade e currículo.'),
+ ref('O que é um Estudo de Caso Qualitativo em Educação?','Marli André',2013,'estudo-de-caso','Revista da FAEEBA, 22(40). Referência do debate sobre fundamentos e desenvolvimento do estudo de caso qualitativo; não equivale a representatividade estatística.'),
+ ref('Pesquisa-ação: uma introdução metodológica','David Tripp',2005,'tripp','Educação e Pesquisa, 31(3), 443–466. Discussão da investigação da ação, reflexão, participação e ciclos de melhoria; não torna toda intervenção pesquisa-ação.'),
+ ref('Código de boas práticas científicas — página institucional','FAPESP',2026,'integridade','Consulta em 26/10/2026; o ano indica a consulta, não a criação do código. Referência de integridade no âmbito das atividades da Fundação, usada no estudo de autoria, fabricação e falsificação.'),
+ ref('Resolução CNS 510, de 7 de abril de 2016','Conselho Nacional de Saúde',2016,'marcos-normativos','Pesquisa em Ciências Humanas e Sociais: direitos, consentimento, assentimento, proteção e análise ética. Leitura articulada à Lei 14.874/2024, ao Decreto 12.651/2025 e aos atos aplicáveis.'),
+ ref('Lei 14.874, de 28 de maio de 2024','Brasil',2024,'marcos-normativos','Pesquisa com seres humanos e Sistema Nacional de Ética em Pesquisa; não se presume que todo estudo escolar esteja dispensado de análise.'),
+ ref('Decreto 12.651, de 7 de outubro de 2025','Brasil',2025,'marcos-normativos','Regulamenta a Lei 14.874/2024. O art. 39 trata da continuidade das normas do CNS que não contrariem lei e decreto até regulamentação própria. Conferir atos e fluxos aplicáveis.'),
+ ref('Lei 13.709/2018 — LGPD, texto consolidado','Brasil',2018,'lgpd','Recorte de finalidade, necessidade, proteção, anonimização e dados de crianças e adolescentes. O consentimento não é apresentado como única base jurídica possível para qualquer tratamento.'),
+ ref('Créditos, modelos e dados didáticos da unidade 1.5','ProfGeo / Wikimedia Commons',2026,'recursos-visuais','Seis esquemas autorais, três fotos identificadas e cinco cenas existentes contextualizadas. Casos, categorias R0/R1/R2 e números dos estudantes são fictícios, não resultados empíricos.')
+]
+
+essay=dict(
+ title='Oficina de redação · investigar para compreender e replanejar',
+ prompt='Analise como a pesquisa pode produzir conhecimento no campo da Geografia Escolar e fundamentar decisões de ensino. Formule uma pergunta delimitada sobre a construção de uma relação geográfica, justifique fontes e critérios de análise e discuta cuidados éticos e limites da conclusão. Use um caso para desenvolver o argumento, sem apresentar exemplos inventados como resultados empíricos.',
+ maxLines=20,
+ note='Proposta autoral de até 20 linhas digitadas, com autoavaliação formativa. Não é questão oficial, previsão da prova nem correção automática do conteúdo.',
+ rubric=[
+  'Apresentei uma ideia central sobre a contribuição da pesquisa em Geografia Escolar.',
+  'Distingui investigar uma relação espacial e investigar sua construção como conhecimento escolar.',
+  'Formulei uma pergunta delimitada e aberta à investigação.',
+  'Justifiquei fontes e critérios coerentes com o objeto, além de listar instrumentos.',
+  'Desenvolvi um caso e relacionei evidências à interpretação.',
+  'Considerei direitos, procedimentos éticos e proteção dos participantes.',
+  'Delimitei a conclusão, atribuí ideias quando necessário e escrevi com clareza em até 20 linhas.'
+ ],
+ model=(
+  'A pesquisa em Geografia Escolar pode produzir conhecimento sobre como relações geográficas são ensinadas e reconstruídas pelos estudantes. Para isso, experiência e interesse precisam ser transformados em problema, registros e análise examináveis.\n'
+  'Num caso fictício, uma professora pergunta como uma turma mobiliza redes e acesso ao explicar trajetos durante quatro aulas. A questão é diferente de apenas localizar vias: investiga a construção das explicações em contexto.\n'
+  'Comparar produções e registros de mediação permite relacionar conceitos, fontes e intervenções. Os critérios devem distinguir enumeração, descrição e relações sustentadas, sem tomar a presença de uma palavra como prova suficiente. Falas, documentos e produções podem revelar também divergências.\n'
+  'A pesquisa exige planejar participação livre, procedimentos éticos pertinentes e proteção dos dados. A posição docente pede atenção ao constrangimento; autorização da escola não substitui os direitos dos participantes.\n'
+  'Uma mudança observada pode fundamentar discussão e replanejamento, mas não isola necessariamente uma causa nem representa todas as escolas. A contribuição se fortalece quando o texto explicita critérios, contexto, dificuldades e limites, permitindo crítica e novas investigações.'
+ ))
+
+def save():
+    path=ROOT/'content/catalog.json';catalog=json.loads(path.read_text())
+    entry=next(e for m in catalog['modules'] for e in m['units'] if e['id']=='1.5')
+    assert entry['revision']<=1,'Não sobrescreva uma revisão posterior.'
+    for pool in ['lesson','final']:
+        for i,q in enumerate(q for q in questions if q['pool']==pool):
+            target=[2,0,3,1][i%4];shift=(target-q['answer'])%4;pairs=list(zip(q['options'],q['feedback']))
+            if shift:pairs=pairs[-shift:]+pairs[:-shift]
+            q['options']=[a for a,_ in pairs];q['feedback']=[f for _,f in pairs];q['answer']=target
+    assert len(lessons)==14 and len(questions)==76 and len(flashcards)==30
+    assert len({q['stem'] for q in questions})==76
+    assert sum(q['pool']=='final' for q in questions)==20
+    assert all(sum(q['lesson']==l['id'] and q['pool']=='lesson' for q in questions)==4 for l in lessons)
+    unit=dict(schemaVersion=1,id='1.5',moduleId='1',revision=1,title=TITLE,
+              shortTitle='Da pergunta à evidência em Geografia Escolar',
+              subtitle='Uma investigação acompanhada, com casos resolvidos, critérios e conclusões delimitadas.',
+              editalItem='1.5',sourcesCheckedAt='2026-10-26',estimatedMinutes=sum(l['minutes'] for l in lessons),
+              objectives=[
+               'Distinguir pesquisa sobre o espaço, construção do conhecimento escolar e investigação da prática.',
+               'Formular problema, objeto e objetivos delimitados, em diálogo com a literatura.',
+               'Justificar conceitos, abordagem, desenho, seleção, técnicas e fontes coerentes.',
+               'Analisar produções com critérios, integrar evidências e examinar divergências e perdas.',
+               'Considerar direitos, consentimento, assentimento, proteção e procedimentos éticos aplicáveis.',
+               'Delimitar generalizações, causalidade e comunicação e fundamentar replanejamento e escrita.'
+              ],lessons=lessons,questions=questions,flashcards=flashcards,references=references,essay=essay)
+    (ROOT/'content/units/1.5.json').write_text(json.dumps(unit,ensure_ascii=False,indent=2)+'\n')
+    entry.update(status='published',revision=1)
+    catalog['revision']=max(7,catalog['revision']);catalog['updatedAt']='2026-10-26'
+    path.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')
+    print(f'Unidade 1.5: 14 lições, 56 questões de prática, 20 casos no simulado, 30 cartões, {unit["estimatedMinutes"]} minutos sugeridos.')
+
+if __name__=='__main__':save()
+
