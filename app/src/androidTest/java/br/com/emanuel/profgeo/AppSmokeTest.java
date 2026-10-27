@@ -15,6 +15,15 @@ public class AppSmokeTest {
     scenario.onActivity(a->{android.view.ViewGroup root=a.findViewById(android.R.id.content);WebView w=(WebView)((android.view.ViewGroup)root.getChildAt(0)).getChildAt(0);w.evaluateJavascript(script,s->{value.set(s);ready.countDown();});});
     assertTrue(ready.await(8,TimeUnit.SECONDS));return value.get();
   }
+  private void awaitJs(ActivityScenario<MainActivity> scenario,String predicate,String message) throws Exception {
+    String actual="null";
+    for(int i=0;i<60;i++) {
+      actual=js(scenario,"(()=>{try{return !!("+predicate+");}catch(e){return false;}})()");
+      if("true".equals(actual))return;
+      Thread.sleep(200);
+    }
+    assertEquals(message,"true",actual);
+  }
   @Test public void nativeBundleLessonsAndStateSurviveRestart() throws Exception {
     try(ActivityScenario<MainActivity> scenario=ActivityScenario.launch(MainActivity.class)) {
       String ready="null";
@@ -77,14 +86,15 @@ public class AppSmokeTest {
     java.io.ByteArrayOutputStream attack=new java.io.ByteArrayOutputStream();
     try(java.util.zip.ZipOutputStream z=new java.util.zip.ZipOutputStream(attack)) {z.putNextEntry(new java.util.zip.ZipEntry("../../outside.json"));z.write("{}".getBytes());z.closeEntry();}
     try(ActivityScenario<MainActivity> scenario=ActivityScenario.launch(MainActivity.class)) {
+      awaitJs(scenario,"typeof GeoApp!=='undefined' && !!GeoApp.getState() && document.querySelector('h1') && document.querySelector('h1').textContent.includes('Seu próximo passo')","A tela inicial deve terminar de carregar antes da instalação da unidade "+unitId);
       java.util.concurrent.atomic.AtomicReference<Exception> failure=new java.util.concurrent.atomic.AtomicReference<>();
       scenario.onActivity(a->{try{java.lang.reflect.Method install=MainActivity.class.getDeclaredMethod("install",String.class,int.class,byte[].class);install.setAccessible(true);install.invoke(a,unitId,installedRevision,bytes.toByteArray());}catch(Exception e){failure.set(e);}});
       assertNull(failure.get());
-      Thread.sleep(1000);
       assertEquals(String.valueOf(expectedQuestions),js(scenario,"JSON.parse(ProfGeoAndroid.getUnit("+unit+")).questions.length"));
       assertEquals("true",js(scenario,"JSON.parse(ProfGeoAndroid.getUnit("+unit+"))._base.includes('/content/units/"+unitId+"/')"));
       for(String path:media)assertTrue(new java.io.File(ctx.getFilesDir(),"content/units/"+unitId+"/"+path).isFile());
-      js(scenario,"GeoApp.action('lesson:"+unitId+":l01')");Thread.sleep(700);
+      js(scenario,"GeoApp.action('lesson:"+unitId+":l01')");
+      awaitJs(scenario,"document.querySelector('h1') && document.querySelector('h1').textContent==="+org.json.JSONObject.quote(lessonTitle),"A primeira lição da unidade "+unitId+" deve terminar de abrir");
       assertEquals("true",js(scenario,"document.querySelector('h1').textContent==="+org.json.JSONObject.quote(lessonTitle)));
       js(scenario,"document.querySelectorAll('figure img').forEach(i=>i.loading='eager')");
       String loaded="false";
@@ -95,7 +105,8 @@ public class AppSmokeTest {
       assertNotNull(failure.get());
       assertEquals(String.valueOf(installedRevision),js(scenario,"JSON.parse(ProfGeoAndroid.getUnit("+unit+")).revision"));
       assertFalse(new java.io.File(ctx.getFilesDir(),"outside.json").exists());
-      scenario.recreate();Thread.sleep(1000);
+      scenario.recreate();
+      awaitJs(scenario,"typeof GeoApp!=='undefined' && !!GeoApp.getState() && GeoApp.getState().notes['"+unitId+":l01']==='Nota da unidade baixada'","A nota da unidade "+unitId+" deve ser restaurada depois de reabrir");
       assertEquals("true",js(scenario,"JSON.parse(ProfGeoAndroid.getUnit("+unit+")).title==="+org.json.JSONObject.quote(fixture.getString("title"))));
       assertEquals("true",js(scenario,"GeoApp.getState().notes['"+unitId+":l01']==='Nota da unidade baixada'"));
       assertEquals("true",js(scenario,"GeoApp.getState().notes['1.1:l02']==='Nota anterior preservada'"));
