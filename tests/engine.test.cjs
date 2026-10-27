@@ -42,7 +42,7 @@ test('unidade 1.3 acrescenta um percurso completo sem colidir com o caderno ante
  const catalog=JSON.parse(fs.readFileSync('content/catalog.json'));
  E.validateUnit(current);assert.equal(current.revision,1);assert.equal(current.lessons.length,14);assert.equal(current.flashcards.length,30);
  assert.equal(current.questions.filter(q=>q.pool==='lesson').length,56);assert.equal(current.questions.filter(q=>q.pool==='final').length,20);
- assert.equal(catalog.modules.flatMap(m=>m.units).length,15);assert.equal(catalog.modules.flatMap(m=>m.units).filter(e=>e.status==='published').length,3);
+ assert.equal(catalog.modules.flatMap(m=>m.units).length,15);assert.equal(catalog.modules.flatMap(m=>m.units).filter(e=>e.status==='published').length,4);
  const state=E.fresh();state.notes['1.1:l01']='Nota da 1.1';state.notes['1.2:l05']='Nota da 1.2';state.essays['1.2']={lines:['Redação anterior'],rubric:[0,5]};
  const previous=JSON.parse(fs.readFileSync('content/units/1.2.json'));const old=previous.questions[0];E.answer(state,'1.2',old,old.answer,100000);
  for(const q of current.questions)E.answer(state,'1.3',q,q.answer,100000);
@@ -53,7 +53,7 @@ test('unidade 1.3 acrescenta um percurso completo sem colidir com o caderno ante
 });
 test('novas fontes não alteram os pacotes publicados das unidades anteriores',()=>{
  const crypto=require('node:crypto');const catalog=JSON.parse(fs.readFileSync('content/catalog.json'));
- for(const [id,expected] of [['1.1','e70370e03ae34d053fce834c499a5ca1b346bf2ddc82c07ff9d9593f9147ba43'],['1.2','f8c80aaccaab1474a70e79e4887f57eec818d0e9c37c2a3105c692e99b624ac5']]){
+ for(const [id,expected] of [['1.1','e70370e03ae34d053fce834c499a5ca1b346bf2ddc82c07ff9d9593f9147ba43'],['1.2','f8c80aaccaab1474a70e79e4887f57eec818d0e9c37c2a3105c692e99b624ac5'],['1.3','99859ba818f31e02f94b6ce66e313eb4c7a49cade5794e4a6b651703b93182c1']]){
   const entry=catalog.modules.flatMap(m=>m.units).find(e=>e.id===id);const bytes=fs.readFileSync('content/'+entry.package);
   assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),expected);assert.equal(entry.sha256,expected);
  }
@@ -61,4 +61,17 @@ test('novas fontes não alteram os pacotes publicados das unidades anteriores',(
  const credits=JSON.parse(execFileSync('python3',['-c','import zipfile;z=zipfile.ZipFile("content/packages/1.3-r1.zip");print(z.read("media/CREDITS.txt").decode())'],{encoding:'utf8'}));
  const current=JSON.parse(fs.readFileSync('content/units/1.3.json'));const used=[...new Set(current.lessons.flatMap(l=>l.blocks.filter(b=>b.type==='photo').map(b=>b.src.split('/').at(-1))))].sort();
  assert.deepEqual(credits.map(c=>c.filename).sort(),used);
+});
+test('unidade 1.4 acrescenta conteúdo compatível e conserva o estudo das três anteriores',()=>{
+ const current=JSON.parse(fs.readFileSync('content/units/1.4.json'));E.validateUnit(current);
+ assert.equal(current.revision,1);assert.equal(current.lessons.length,14);assert.equal(current.questions.length,76);assert.equal(current.flashcards.length,30);assert.equal(current.questions.filter(q=>q.pool==='final').length,20);
+ const state=E.fresh();
+ for(const id of ['1.1','1.2','1.3']){
+  const old=JSON.parse(fs.readFileSync('content/units/'+id+'.json'));const q=old.questions[0];E.answer(state,id,q,q.answer,100000);
+  state.notes[id+':l01']='Nota da '+id;state.essays[id]={lines:['Texto anterior '+id],rubric:[0]};
+ }
+ const before=JSON.parse(JSON.stringify(state));for(const q of current.questions)E.answer(state,current.id,q,q.answer,100000);
+ const restored=E.merge(JSON.parse(JSON.stringify(state)));assert.deepEqual(restored.notes,before.notes);assert.deepEqual(restored.essays,before.essays);
+ for(const key of Object.keys(before.answers))assert.deepEqual(restored.answers[key],before.answers[key]);
+ assert.equal(E.errors(restored,current).length,0);assert.equal(Object.keys(restored.answers).filter(k=>k.startsWith('1.4:')).length,76);
 });

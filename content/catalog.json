@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "minAppVersion": 1,
-  "revision": 5,
+  "revision": 6,
   "updatedAt": "2026-10-26",
   "source": {
     "title": "Edital PROFGEO-UFPA n. 03/2026",
@@ -55,8 +55,11 @@
           "id": "1.4",
           "title": "Programas, documentos e regulamentações que disciplinam e orientam o ensino de Geografia",
           "editalItem": "1.4",
-          "status": "planned",
-          "revision": 0
+          "status": "published",
+          "revision": 1,
+          "package": "packages/1.4-r1.zip",
+          "sha256": "4d81eccba2e3f9274eec4f172bef4d07ca8c132a98294818801fca275c722c5c",
+          "bytes": 931568
         },
         {
           "id": "1.5",

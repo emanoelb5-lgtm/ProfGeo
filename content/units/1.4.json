@@ -1,0 +1,3265 @@
+{
+  "schemaVersion": 1,
+  "id": "1.4",
+  "moduleId": "1",
+  "revision": 1,
+  "title": "Programas, documentos e regulamentações que disciplinam e orientam o ensino de Geografia",
+  "shortTitle": "Das normas às decisões de ensinar",
+  "subtitle": "Documentos, direitos e currículo com casos resolvidos; fontes conferidas em 26/10/2026.",
+  "editalItem": "1.4",
+  "legalAsOf": "2026-10-26",
+  "estimatedMinutes": 289,
+  "objectives": [
+    "Distinguir funções de leis, diretrizes, bases, currículos, propostas, materiais e avaliações.",
+    "Interpretar identidade, competência, alcance, redação e tempo de aplicação dos atos.",
+    "Articular BNCC, contexto, currículo, PPP e planejamento de Geografia.",
+    "Reconhecer mudanças do Ensino Médio e o PNE de 2026 sem generalizar regras de oferta.",
+    "Relacionar direitos, diversidade, acessibilidade e condições do campo às decisões curriculares.",
+    "Resolver casos e argumentar com fontes, mediação e evidências de aprendizagem."
+  ],
+  "lessons": [
+    {
+      "id": "l01",
+      "title": "Qual documento responde à minha pergunta?",
+      "kicker": "Comece por uma decisão da escola",
+      "minutes": 18,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "O problema que vai conectar a unidade",
+          "body": "A professora Lia quer transformar o estudo da Feira da Ponte em uma sequência de Geografia. A equipe da Escola das Águas pergunta o que é obrigatório aprender, como considerar o contexto local, que regras organizam a etapa e como avaliar. Escola, feira, falas e decisões do caso são fictícias.\nNa 1.3, você usou conceitos para interpretar o espaço. Agora vai aprender a relacionar essas escolhas aos documentos que orientam e regulam o ensino. O objetivo é saber consultar, interpretar e justificar uma decisão, além de reconhecer siglas."
+        },
+        {
+          "type": "text",
+          "title": "A pergunta vem antes da lista de documentos",
+          "body": "Se a dúvida é sobre o direito à educação e seus princípios, Lia consulta a Constituição e a legislação pertinente. Se quer localizar aprendizagens essenciais, examina a BNCC. Para compreender a organização da etapa, precisa também das Diretrizes Curriculares Nacionais e das normas do sistema. O currículo da rede e a proposta da escola participam da organização concreta do trabalho.\nNenhum desses instrumentos equivale automaticamente ao plano de uma aula. A professora ainda precisa definir problema, conceitos, fontes, mediação e evidências da aprendizagem. A existência de referências comuns não transforma todos os contextos em uma única situação escolar."
+        },
+        {
+          "type": "photo",
+          "src": "media/u14-instrumentos.png",
+          "title": "Relacione a função ao instrumento",
+          "caption": "O esquema organiza funções. Não representa uma fila na qual todo documento posterior revoga o anterior. É necessário considerar natureza do ato, competência, alcance e compatibilidade entre as decisões.",
+          "credit": "ProfGeo · Ilustração didática autoral · origem e alterações nos créditos da unidade"
+        },
+        {
+          "type": "photo",
+          "src": "media/u12-sala-aula.jpg",
+          "title": "Uma sala real, um caso de estudo fictício",
+          "caption": "Foto da Escola Técnica de Paulínia em 2015, com conteúdo de História na lousa. A imagem não representa a Escola das Águas e não comprova seu currículo, planejamento ou aprendizagem.",
+          "credit": "Alebasi24 · CC BY-SA 4.0 · origem e alterações nos créditos da unidade"
+        },
+        {
+          "type": "table",
+          "title": "Leia a dúvida e escolha por onde começar",
+          "headers": [
+            "Dúvida do caso",
+            "Referências pertinentes"
+          ],
+          "rows": [
+            [
+              "Que direitos e princípios devem ser respeitados?",
+              "Constituição, LDB e demais normas aplicáveis."
+            ],
+            [
+              "Que aprendizagem essencial será trabalhada?",
+              "BNCC, em articulação com currículo e etapa."
+            ],
+            [
+              "Como o percurso se organiza nesta rede?",
+              "Normas e currículo do sistema ou da rede, para a oferta e o período."
+            ],
+            [
+              "Como a escola assume esses compromissos?",
+              "Proposta pedagógica, PPP e regimento, em suas funções."
+            ],
+            [
+              "Como ensinar e verificar uma relação nesta turma?",
+              "Plano de trabalho e de aula fundamentado nas referências."
+            ]
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "Primeiro caso resolvido",
+          "left": {
+            "title": "Frase inicial",
+            "body": "“O livro traz esse capítulo, então ele é a lei que define toda a aula.” A frase confunde um material didático com a função de uma norma."
+          },
+          "right": {
+            "title": "Raciocínio",
+            "body": "O livro pode apoiar o trabalho. A decisão precisa ser relacionada às aprendizagens e aos instrumentos pertinentes; a ordem dos capítulos não substitui essa interpretação."
+          }
+        },
+        {
+          "type": "callout",
+          "title": "Data de referência do estudo",
+          "body": "Fontes oficiais conferidas em 26/10/2026. A unidade considera o novo PNE da Lei 15.388/2026 e as mudanças do Ensino Médio da Lei 14.945/2024, com DCNEM de 2024 e parâmetros de aprofundamento de 2025. Em questões históricas, respeite o período informado no enunciado.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Seu percurso",
+          "body": "Vamos estudar direitos, organização da educação, documentos curriculares e decisões da rede e da escola. Depois, analisaremos inclusão, planejamento de políticas, materiais e avaliações. Nas últimas lições, você terá casos resolvidos, um roteiro para ler atos e preparação para a escrita."
+        }
+      ],
+      "summary": "Uma decisão de ensino exige identificar a pergunta e a função de cada instrumento. Lei, diretriz, base curricular, currículo, proposta escolar, plano e material didático se articulam sem serem equivalentes.",
+      "practice": {
+        "type": "match",
+        "title": "Associe pergunta e função",
+        "pairs": [
+          [
+            "Quais direitos e princípios precisam ser respeitados?",
+            "Fundamentos constitucionais e legais."
+          ],
+          [
+            "Quais aprendizagens essenciais estão em foco?",
+            "Referência curricular da BNCC."
+          ],
+          [
+            "Como a escola organiza seus compromissos coletivos?",
+            "Proposta pedagógica e PPP."
+          ],
+          [
+            "Que tarefa ajudará esta turma a aprender?",
+            "Planejamento do trabalho docente."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l02",
+      "title": "Constituição: o direito orienta as escolhas",
+      "kicker": "A norma não é apenas uma formalidade do plano",
+      "minutes": 19,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Quem consegue participar da investigação?",
+          "body": "Lia propõe comparar paisagens, mas parte da turma não consegue acessar o único material escolhido. A pergunta não é apenas qual atividade parece interessante: é como assegurar condições de aprender e participar. A Constituição Federal de 1988 oferece fundamentos para examinar essa decisão.\nO art. 205 relaciona a educação ao desenvolvimento da pessoa, à cidadania e ao trabalho, atribuindo responsabilidades ao Estado e à família, com colaboração da sociedade. O art. 206 estabelece princípios como igualdade de condições de acesso e permanência, liberdade de aprender e ensinar e pluralismo de ideias e concepções pedagógicas."
+        },
+        {
+          "type": "text",
+          "title": "Do princípio à análise do caso",
+          "body": "Igualdade de condições não significa oferecer um suporte que alguns não conseguem usar e considerar resolvido o direito. Lia precisa examinar barreiras, recursos e mediações. Os apoios concretos dependem das necessidades e das normas pertinentes, mas a pergunta sobre participação já muda o planejamento.\nLiberdade de ensinar e pluralismo também não equivalem a dispensar fontes, direitos ou responsabilidades profissionais. Uma discussão sobre território pode comparar posições e critérios, sem transformar a concordância com o professor em evidência de aprendizagem."
+        },
+        {
+          "type": "compare",
+          "title": "Caso resolvido: nota por concordância",
+          "left": {
+            "title": "Decisão proposta",
+            "body": "“Quem defender a alternativa de uso da praça escolhida por Lia receberá a maior nota.” O critério exige adesão a uma preferência."
+          },
+          "right": {
+            "title": "Decisão fundamentada",
+            "body": "Avaliar precisão conceitual, interpretação das fontes e coerência do argumento. O aluno pode sustentar outra posição, desde que examine informações e respeite os direitos envolvidos."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Base comum e diversidade não surgem do nada",
+          "body": "O art. 210 prevê conteúdos mínimos para o Ensino Fundamental, com formação básica comum e respeito a valores culturais e artísticos nacionais e regionais. A LDB desenvolve a organização curricular, que será estudada a seguir. É importante não atribuir à Constituição a redação detalhada de cada habilidade da BNCC.\nO art. 211 trata da organização dos sistemas em regime de colaboração. Por isso, a educação envolve responsabilidades de diferentes entes e órgãos. Uma norma local deve ser compreendida na competência de quem a produz e em relação aos fundamentos superiores; não basta decidir pelo tamanho geográfico de seu título."
+        },
+        {
+          "type": "animation",
+          "kind": "lived",
+          "title": "Experiências diferentes pedem análise",
+          "caption": "Compare “Pessoa 1”, “Pessoa 2” e “Pessoa 3”. Os relatos fictícios ajudam a discutir perspectivas diferentes. Relacione a observação aos critérios de avaliação: examine o argumento e suas fontes, sem tomar uma vivência como padrão de todas as pessoas."
+        },
+        {
+          "type": "table",
+          "title": "Conecte fundamento e decisão",
+          "headers": [
+            "Fundamento",
+            "Pergunta de planejamento"
+          ],
+          "rows": [
+            [
+              "Acesso e permanência.",
+              "Que condições permitem participação e continuidade dos estudos?"
+            ],
+            [
+              "Liberdade e pluralismo.",
+              "Como confrontar interpretações sem cobrar adesão pessoal?"
+            ],
+            [
+              "Formação comum e respeito à diversidade.",
+              "Como articular aprendizagens e contextos culturais?"
+            ],
+            [
+              "Colaboração entre sistemas.",
+              "Quais normas e responsabilidades se aplicam a esta oferta?"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Pare e justifique",
+          "body": "“O professor tem autonomia, logo pode ignorar qualquer referência curricular.” O salto não é sustentado. Autonomia profissional envolve decisões justificadas dentro de direitos, normas e compromissos de aprendizagem.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Ponte para a LDB",
+          "body": "Os princípios ajudam a julgar o sentido da decisão, mas Lia também precisa conhecer as responsabilidades da escola e do professor e a articulação entre base comum e parte diversificada. Esse é o passo da próxima lição."
+        }
+      ],
+      "summary": "A Constituição fundamenta o direito à educação e os princípios do ensino. Liberdade, pluralismo, acesso e colaboração precisam orientar decisões concretas, sem substituir a leitura da legislação e das normas pertinentes.",
+      "practice": {
+        "type": "match",
+        "title": "Relacione a situação ao fundamento",
+        "pairs": [
+          [
+            "Examinar barreiras ao uso das fontes.",
+            "Condições de participação e aprendizagem."
+          ],
+          [
+            "Avaliar argumentos em vez de concordância pessoal.",
+            "Liberdade de aprender e pluralismo."
+          ],
+          [
+            "Articular formação comum e valores regionais.",
+            "Base comum com respeito à diversidade."
+          ],
+          [
+            "Identificar responsabilidades entre entes e sistemas.",
+            "Regime de colaboração."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l03",
+      "title": "LDB: organizar currículo, responsabilidades e avaliação",
+      "kicker": "A base comum se articula ao contexto",
+      "minutes": 21,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "A dúvida de Lia ganha uma regra de organização",
+          "body": "Uma colega afirma que estudar o contexto da feira seria abandonar o currículo nacional. Outra propõe trabalhar somente informações locais e retirar as aprendizagens comuns. O art. 26 da Lei 9.394/1996, a LDB, ajuda a enfrentar as duas reduções.\nOs currículos da Educação Infantil, do Ensino Fundamental e do Ensino Médio devem ter base nacional comum, complementada pela parte diversificada relacionada às características regionais e locais da sociedade, da cultura, da economia e dos estudantes. As dimensões precisam se articular na formação."
+        },
+        {
+          "type": "compare",
+          "title": "O caso da feira, resolvido",
+          "left": {
+            "title": "Redução 1",
+            "body": "“Só posso usar exemplos nacionais idênticos em todas as escolas.” A existência de uma base comum não determina uma única situação didática."
+          },
+          "right": {
+            "title": "Redução 2",
+            "body": "“Como a feira é local, posso excluir o direito às aprendizagens comuns.” Contextualizar não significa substituir toda a formação por curiosidades locais."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Responsabilidades que se encontram",
+          "body": "O art. 12 atribui à escola elaborar e executar sua proposta pedagógica, respeitando normas comuns e as do sistema. O art. 13 prevê participação docente nessa elaboração e um plano de trabalho relacionado à proposta. A aula não nasce isolada dos compromissos coletivos.\nLia pode selecionar fontes e intervenções, mas precisa justificar como contribuem para o percurso. Também participa de planejamento, avaliação e estratégias de recuperação. Essas responsabilidades não se resumem a preencher um formulário com códigos."
+        },
+        {
+          "type": "table",
+          "title": "LDB e função da decisão",
+          "headers": [
+            "Referência",
+            "Aplicação ao caso"
+          ],
+          "rows": [
+            [
+              "Art. 26: base comum e parte diversificada.",
+              "Comparar transformações de paisagem a partir de um contexto significativo."
+            ],
+            [
+              "Arts. 12 e 13: proposta e plano de trabalho.",
+              "Articular a sequência de Lia aos compromissos da escola."
+            ],
+            [
+              "Art. 24, V: avaliação e recuperação.",
+              "Examinar produções ao longo do percurso e planejar retomadas."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Avaliar ao longo do processo",
+          "body": "Para o Ensino Fundamental e o Médio, o art. 24, V, prevê avaliação contínua e cumulativa, valorizando aspectos qualitativos sobre quantitativos e resultados ao longo do período sobre provas finais eventuais. Isso não proíbe usar notas ou provas; impede tratar uma medida isolada como se esgotasse o percurso.\nNo caso, Lia pode comparar hipóteses iniciais, justificativas durante a sequência e uma nova situação. O resultado permite identificar o que precisa retomar. A recuperação também exige organização, conforme normas e regimento, em vez de ser entendida apenas como outra prova no fim."
+        },
+        {
+          "type": "callout",
+          "title": "Fonte consolidada, não fotografia de uma lei antiga",
+          "body": "A LDB recebeu várias alterações. Para afirmar o que vale no recorte atual, leia a redação vigente do dispositivo e suas mudanças. O fato de a lei ter sido criada em 1996 não significa que todos os parágrafos permanecem com o texto original.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Ponte para os documentos curriculares",
+          "body": "A LDB estabelece organização e responsabilidades, mas não é uma coleção de planos de aula. Na próxima lição, vamos situar referências pedagógicas históricas e distinguir suas funções das bases e diretrizes normativas."
+        }
+      ],
+      "summary": "A LDB articula base comum e parte diversificada, proposta escolar e plano docente. Avaliação contínua e cumulativa exige acompanhar relações e dificuldades, com recuperação organizada; não significa abolir todo instrumento quantitativo.",
+      "practice": {
+        "type": "order",
+        "title": "Fundamente a sequência de Lia",
+        "items": [
+          "Reconhecer a aprendizagem comum e o contexto a investigar.",
+          "Relacionar a proposta ao currículo e aos compromissos da escola.",
+          "Planejar intervenções e acompanhar produções ao longo da sequência.",
+          "Analisar dificuldades e organizar retomadas e recuperação."
+        ]
+      }
+    },
+    {
+      "id": "l04",
+      "title": "PCN, orientações, DCN e BNCC: funções diferentes",
+      "kicker": "Entenda o documento no seu tempo",
+      "minutes": 19,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Uma estante com publicações de épocas distintas",
+          "body": "Na escola fictícia, Lia encontra os Parâmetros Curriculares Nacionais de Geografia, de 1998, e materiais atuais da BNCC. Uma colega usa o título “nacional” para afirmar que os dois têm a mesma função jurídica. A identidade de uma palavra não resolve o problema.\nOs PCN são referências pedagógicas de um contexto histórico de construção curricular. Podem contribuir para estudar concepções e propostas de ensino. Não devem ser tratados como uma lei que fixa a mesma aula para todas as escolas nem como substitutos das referências normativas atuais."
+        },
+        {
+          "type": "text",
+          "title": "Orientar e regulamentar não são funções idênticas",
+          "body": "As Orientações Curriculares para o Ensino Médio, publicadas pelo MEC em 2006, também participam da história do debate pedagógico. Uma reflexão de ensino pode ser discutida, mas regras atuais de organização exigem consultar os atos aplicáveis e sua redação. Um livro antigo não se torna regra atual porque foi produzido por um órgão público.\nDiretrizes Curriculares Nacionais fixadas por resolução do CNE têm função normativa no seu alcance. A BNCC é um documento normativo que define aprendizagens essenciais. Currículos das redes e propostas escolares concretizam decisões, considerando referências e competências dos respectivos sistemas."
+        },
+        {
+          "type": "table",
+          "title": "Use uma pergunta para distinguir",
+          "headers": [
+            "Instrumento",
+            "Função no estudo"
+          ],
+          "rows": [
+            [
+              "PCN e orientações pedagógicas.",
+              "Compreender propostas, concepções e debates em seu contexto histórico."
+            ],
+            [
+              "DCN.",
+              "Examinar princípios e normas de organização da educação e das etapas."
+            ],
+            [
+              "BNCC.",
+              "Identificar aprendizagens essenciais e sua organização."
+            ],
+            [
+              "Currículo, PPP e planos.",
+              "Organizar e desenvolver o trabalho em redes, escolas e turmas."
+            ]
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "Questão histórica, resolvida",
+          "left": {
+            "title": "Enunciado sobre 1998",
+            "body": "Se a pergunta analisa os PCN naquele contexto, a resposta deve considerar o documento e o período informado."
+          },
+          "right": {
+            "title": "Enunciado sobre 2026",
+            "body": "Se pede uma decisão atual, é necessário articular normas e referências atuais. Não se deve importar automaticamente uma organização de outra época."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Uma ideia antiga pode ser discutida sem ganhar vigência nova",
+          "body": "Lia pode confrontar uma proposta dos PCN com a formação de conceitos estudada na 1.3. O valor analítico da leitura não equivale a provar que todas as regras de uma etapa continuam iguais. A distinção permite estudar a história do ensino sem confundir passado e presente.\nDo mesmo modo, a data mais recente não torna qualquer publicação superior a uma lei. Antes de aplicar uma frase, identifique o tipo do instrumento, a competência do órgão, o assunto e os efeitos que pode produzir."
+        },
+        {
+          "type": "callout",
+          "title": "Evite a fila simplificada",
+          "body": "Constituição, lei, resolução, base curricular e plano escolar não são nomes intercambiáveis. Entre currículos, PPP e planos há articulação de decisões; isso não significa uma cadeia em que cada texto posterior revoga o anterior.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Ponte para a BNCC",
+          "body": "Agora vamos examinar como a BNCC participa de uma decisão concreta: transformar uma habilidade sobre paisagens em uma aprendizagem que o aluno consegue demonstrar."
+        }
+      ],
+      "summary": "PCN e orientações são referências pedagógicas situadas historicamente; DCN e BNCC têm funções normativas distintas. Para aplicar um documento, confira natureza, contexto, alcance e relação com os demais instrumentos.",
+      "practice": {
+        "type": "match",
+        "title": "Associe o uso à referência",
+        "pairs": [
+          [
+            "Investigar propostas pedagógicas de 1998.",
+            "PCN em seu contexto histórico."
+          ],
+          [
+            "Examinar normas de organização de uma etapa.",
+            "Diretrizes Curriculares Nacionais aplicáveis."
+          ],
+          [
+            "Localizar aprendizagens essenciais.",
+            "BNCC."
+          ],
+          [
+            "Organizar decisões na rede e na escola.",
+            "Currículo e proposta pedagógica contextualizados."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l05",
+      "title": "BNCC de Geografia: da habilidade à tarefa",
+      "kicker": "O código ajuda a localizar; a mediação ajuda a aprender",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "A referência não entrega a aula pronta",
+          "body": "Lia localiza a habilidade EF06GE01 na BNCC: comparar mudanças de paisagens e usos dos lugares de vivência em tempos distintos. A formulação exige uma relação de comparação, mas não escolhe automaticamente as fotos, o tempo da atividade ou a intervenção adequada à turma.\nNo código, EF indica Ensino Fundamental; 06, o ano; GE, Geografia; 01 identifica a habilidade naquele conjunto. A numeração não é um cronograma obrigatório de semanas nem uma escala automática de dificuldade. Ler o texto e suas relações é mais importante que reconhecer a sigla isoladamente."
+        },
+        {
+          "type": "photo",
+          "src": "media/u14-habilidade-aula.png",
+          "title": "A habilidade precisa aparecer no trabalho do estudante",
+          "caption": "O exemplo é uma aplicação autoral relacionada à EF06GE01. Comparar registros datados e justificar permanências e mudanças é mais pertinente que apenas copiar o código no caderno.",
+          "credit": "ProfGeo · Ilustração didática autoral · origem e alterações nos créditos da unidade"
+        },
+        {
+          "type": "text",
+          "title": "Competências, habilidades e objetos não são listas soltas",
+          "body": "A BNCC articula competências gerais e específicas, unidades temáticas, objetos de conhecimento e habilidades. Uma competência envolve mobilizar conhecimentos, habilidades, atitudes e valores para enfrentar demandas. A habilidade explicita aprendizagens de modo mais delimitado no percurso.\nO objeto de conhecimento ajuda a situar o que será estudado; a unidade temática organiza relações do componente. Esses elementos precisam ser lidos em conjunto, sem transformar uma palavra em tarefa suficiente ou reduzir o documento a uma sequência de assuntos."
+        },
+        {
+          "type": "table",
+          "title": "Cinco unidades temáticas, uma investigação possível",
+          "headers": [
+            "Unidade de Geografia no Fundamental",
+            "Pergunta autoral sobre a feira"
+          ],
+          "rows": [
+            [
+              "O sujeito e seu lugar no mundo.",
+              "Como experiências e identidades se relacionam aos usos?"
+            ],
+            [
+              "Conexões e escalas.",
+              "Como a feira se articula a outros lugares?"
+            ],
+            [
+              "Mundo do trabalho.",
+              "Como produção e circulação são organizadas?"
+            ],
+            [
+              "Formas de representação e pensamento espacial.",
+              "Como mapas e registros ajudam a comparar relações?"
+            ],
+            [
+              "Natureza, ambientes e qualidade de vida.",
+              "Como condições naturais e usos participam do problema?"
+            ]
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "Uma escolha resolvida",
+          "left": {
+            "title": "Tarefa insuficiente para este objetivo",
+            "body": "Mostrar duas fotos sem identificação e pedir a mais bonita. A atividade não exige comparar transformações com evidências temporais."
+          },
+          "right": {
+            "title": "Tarefa alinhada",
+            "body": "Confrontar registros identificados, localizar uma mudança e uma permanência e justificar com as fontes. A interpretação ainda deve respeitar o alcance dos registros."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Avalie o que foi escolhido como aprendizagem",
+          "body": "Lia pode propor outra situação de mudança da paisagem e pedir uma justificativa. Isso ajuda a verificar o uso da relação além da repetição do exemplo. A avaliação não se resume à presença de “EF06GE01” no plano.\nA BNCC e o currículo se relacionam, mas não são sinônimos. Organizar progressão, contextualizar problemas e definir mediações exige trabalho curricular e docente. O exemplo da feira é uma possibilidade, não uma prescrição nacional para todas as turmas."
+        },
+        {
+          "type": "callout",
+          "title": "Pergunta para a prova",
+          "body": "“Como a BNCC é comum, todos devem ensinar o mesmo exemplo pelo mesmo método.” A conclusão não decorre da referência comum. É preciso assegurar aprendizagens e justificar escolhas dentro das normas e dos contextos.",
+          "tone": "tip"
+        }
+      ],
+      "summary": "Na BNCC, códigos localizam habilidades; sua leitura precisa ser articulada a competências, objetos e unidades temáticas. A aprendizagem exige tarefa e mediação pertinentes, com avaliação das relações construídas.",
+      "practice": {
+        "type": "order",
+        "title": "Transforme uma habilidade em proposta de aula",
+        "items": [
+          "Ler a aprendizagem e suas relações no componente e no currículo.",
+          "Selecionar problema, fontes e apoios adequados à turma.",
+          "Orientar uma tarefa que exija a relação pretendida.",
+          "Examinar a justificativa em outra situação e replanejar."
+        ]
+      }
+    },
+    {
+      "id": "l06",
+      "title": "Diretrizes e atos do CNE: ler natureza e alcance",
+      "kicker": "Parecer e resolução precisam ser identificados por inteiro",
+      "minutes": 19,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Por que uma habilidade não resolve a organização da etapa?",
+          "body": "Lia encontrou uma aprendizagem da BNCC, mas ainda precisa conhecer princípios de organização da oferta e normas do sistema. As Diretrizes Curriculares Nacionais participam desse plano de decisão. Elas não se resumem à lista de habilidades do componente.\nEntre as referências estão a Resolução CNE/CEB 4/2010, de diretrizes gerais para a Educação Básica, e a CNE/CEB 7/2010, para o Ensino Fundamental de nove anos. Para o Ensino Médio, a unidade considera a CNE/CEB 2/2024, no quadro da reforma legal de 2024. A etapa e o assunto precisam ser identificados antes de aplicar uma regra."
+        },
+        {
+          "type": "table",
+          "title": "Identificações que não podem ser trocadas",
+          "headers": [
+            "Ato",
+            "Assunto de referência"
+          ],
+          "rows": [
+            [
+              "CNE/CP 2/2017.",
+              "Instituição e implantação da BNCC para Educação Infantil e Ensino Fundamental."
+            ],
+            [
+              "CNE/CP 4/2018.",
+              "BNCC na etapa do Ensino Médio."
+            ],
+            [
+              "CNE/CEB 2/2024.",
+              "Diretrizes Curriculares Nacionais para o Ensino Médio."
+            ],
+            [
+              "CNE/CEB 4/2025.",
+              "Parâmetros para a oferta dos Itinerários Formativos de Aprofundamento."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "O que muda entre parecer e resolução?",
+          "body": "Um parecer analisa uma matéria e fundamenta uma posição do conselho. Uma resolução estabelece disposições normativas no âmbito da competência do órgão. Certos pareceres homologados também têm efeitos que precisam ser examinados em seu contexto. Por isso, não é adequado chamar todos os pareceres de lei nem descartá-los como textos sem qualquer relevância.\nLia deve verificar identificação, homologação quando pertinente, publicação, assunto e relação com os atos que concretizam as disposições. Uma notícia sobre uma proposta ou uma minuta não comprova, sozinha, que a regra já entrou em vigor."
+        },
+        {
+          "type": "compare",
+          "title": "Caso resolvido: “Resolução 4”",
+          "left": {
+            "title": "Problema da citação",
+            "body": "Uma apostila apresenta apenas “Resolução 4”, sem órgão, ano ou assunto. O número se repete em diferentes contextos."
+          },
+          "right": {
+            "title": "Raciocínio",
+            "body": "Recuperar a identificação completa e ler o ato pertinente. Não se deve aplicar uma regra de itinerários ao Ensino Fundamental apenas porque os números coincidem."
+          }
+        },
+        {
+          "type": "text",
+          "title": "A competência também importa",
+          "body": "Conselhos e órgãos de diferentes sistemas podem produzir normas complementares dentro de suas atribuições. Uma regra da rede não deve contrariar os fundamentos aplicáveis; ao mesmo tempo, uma orientação nacional genérica pode depender de decisões de organização do sistema.\nNão basta escolher sempre o documento com a data mais nova nem criar uma regra nacional a partir de uma matriz de outro estado. A leitura precisa ligar norma, competência e situação de aplicação."
+        },
+        {
+          "type": "callout",
+          "title": "Confira a função no caso",
+          "body": "Para definir a aprendizagem sobre paisagem, Lia consulta a BNCC e o currículo. Para examinar organização e condições de oferta, precisa também das diretrizes e normas pertinentes. Uma função não torna a outra dispensável.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Ponte para o Ensino Médio",
+          "body": "O exemplo mais sensível a mudanças recentes é o Ensino Médio. Vamos separar referência de aprendizagem, organização curricular e horas, sem transformar um material anterior à reforma em regra atual automática."
+        }
+      ],
+      "summary": "Diretrizes organizam princípios e normas em seu alcance. Identifique órgão, espécie, número, ano, assunto e efeitos dos atos; parecer, resolução, notícia e minuta não são documentos intercambiáveis.",
+      "practice": {
+        "type": "match",
+        "title": "Relacione instrumento e cuidado de leitura",
+        "pairs": [
+          [
+            "Parecer.",
+            "Examinar análise, fundamentação e efeitos no contexto pertinente."
+          ],
+          [
+            "Resolução.",
+            "Ler disposições normativas e competência do órgão."
+          ],
+          [
+            "Minuta ou anúncio de proposta.",
+            "Não presumir vigência pela circulação da notícia."
+          ],
+          [
+            "Citação “Resolução 4”.",
+            "Recuperar órgão, ano e assunto para identificar o ato."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l07",
+      "title": "Ensino Médio: o que mudou e como ler a regra",
+      "kicker": "Geografia, formação geral e aprofundamento",
+      "minutes": 23,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Uma apostila antiga reaparece no planejamento",
+          "body": "Um material anterior à reforma de 2024 apresenta sua organização de horas como regra universal atual. Lia precisa conferir a LDB consolidada e a Lei 14.945/2024 antes de aplicá-lo. A data do exemplo e o tipo de oferta também importam.\nA LDB, no art. 35-B, organiza o currículo do Ensino Médio em formação geral básica e itinerários formativos. O art. 35-D inclui Geografia na área de Ciências Humanas e Sociais Aplicadas, junto com Filosofia, História e Sociologia. Trabalhar por área não significa que o conhecimento geográfico deixou de integrar a formação."
+        },
+        {
+          "type": "photo",
+          "src": "media/u14-ensino-medio.png",
+          "title": "A regra precisa ser relacionada à oferta",
+          "caption": "A regra geral prevê formação geral básica mínima de 2.400 horas e itinerários de, no mínimo, 600 horas. A formação técnica e profissional tem especificidades; os totais não definem sozinhos a grade semanal de Geografia.",
+          "credit": "ProfGeo · Ilustração didática autoral · origem e alterações nos créditos da unidade"
+        },
+        {
+          "type": "text",
+          "title": "Leia as exceções junto com a regra",
+          "body": "O art. 35-C prevê 2.400 horas mínimas de formação geral básica. No caso de formação técnica e profissional, seu parágrafo único prevê mínimo de 2.100 horas e admite até 300 horas da formação geral básica para aprofundar conteúdos da BNCC diretamente relacionados à formação técnica oferecida. O art. 36 também ressalva especificidades dessa oferta ao tratar dos itinerários.\nPara estudar, a primeira pergunta é: qual oferta o enunciado descreve? Não se deve transformar o número da regra geral em afirmação idêntica para qualquer modalidade ou composição, nem chamar o total da formação geral de carga exclusiva de Geografia."
+        },
+        {
+          "type": "text",
+          "title": "Diretrizes e implementação completam a leitura",
+          "body": "A Resolução CNE/CEB 2/2024 estabelece as DCNEM no quadro das alterações legais. A CNE/CEB 4/2025 trata dos parâmetros de oferta dos Itinerários Formativos de Aprofundamento. A Lei 14.945/2024 previu iniciar a implementação curricular em 2025.\nAplicar a organização a uma turma exige verificar o percurso de implementação e as normas pertinentes do sistema, da rede e da oferta. A unidade não atribui uma grade semanal única a todas as escolas nem presume que um exemplo de outro estado valha para a turma de Lia."
+        },
+        {
+          "type": "compare",
+          "title": "Caso resolvido: o que o dado permite concluir?",
+          "left": {
+            "title": "Afirmação",
+            "body": "“Há 2.400 horas de formação geral; portanto Geografia deve ter o mesmo número de aulas semanais em toda escola.”"
+          },
+          "right": {
+            "title": "Análise",
+            "body": "O total se refere à formação geral básica. Para conhecer distribuição e organização concretas, é necessário examinar a matriz e as normas da oferta. A conclusão extrapola o dado apresentado."
+          }
+        },
+        {
+          "type": "table",
+          "title": "Perguntas para interpretar o caso",
+          "headers": [
+            "Pergunta",
+            "Por que importa"
+          ],
+          "rows": [
+            [
+              "Qual período está sendo analisado?",
+              "Distinguir uma regra histórica da referência atual."
+            ],
+            [
+              "Qual é a oferta e há formação técnica?",
+              "Ler especificidades e não generalizar a regra."
+            ],
+            [
+              "Qual matriz e regra de implementação se aplicam?",
+              "Conhecer a organização concreta da turma."
+            ],
+            [
+              "O que a regra informa sobre Geografia?",
+              "Distinguir sua presença na formação da distribuição semanal local."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Integração com identidade conceitual",
+          "body": "Um projeto de Ciências Humanas pode articular Geografia e outros componentes. A justificativa deve mostrar que relações geográficas serão aprendidas, com fontes, conceitos e critérios; a palavra interdisciplinar não substitui essa análise.",
+          "tone": "tip"
+        }
+      ],
+      "summary": "A reforma de 2024 exige ler a LDB atualizada, as DCNEM e a oferta concreta. Geografia integra Ciências Humanas e Sociais Aplicadas; totais de formação não equivalem a uma grade semanal nacional única, e a oferta técnica tem especificidades.",
+      "practice": {
+        "type": "order",
+        "title": "Leia uma regra do Ensino Médio antes de aplicá-la",
+        "items": [
+          "Identificar período, turma e tipo de oferta.",
+          "Consultar redação legal, diretrizes e especificidades pertinentes.",
+          "Conferir implementação e matriz do sistema ou da rede.",
+          "Justificar a decisão curricular sem extrapolar o alcance do dado."
+        ]
+      }
+    },
+    {
+      "id": "l08",
+      "title": "Currículos das redes: contextualizar com critérios",
+      "kicker": "Uma referência nacional encontra territórios e percursos",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Uma aprendizagem comum, situações de estudo diferentes",
+          "body": "Lia quer comparar paisagens a partir da feira. Outra escola pode partir de uma área agrícola ou de um bairro. Os exemplos podem ser diferentes e trabalhar relações comuns, desde que as escolhas sejam justificadas no currículo e no percurso dos estudantes.\nO currículo da rede organiza seleções, articulações e progressões em seu contexto. Ele precisa ser lido em relação às normas e à BNCC, e não como um conjunto de curiosidades que se acrescentam sem conexão ao restante da formação."
+        },
+        {
+          "type": "photo",
+          "src": "media/belem-feira.jpg",
+          "title": "O contexto pode participar da pergunta de ensino",
+          "caption": "Ver-o-Peso, em Belém, fotografado por Cayambe. O registro é uma fonte para questões sobre paisagem, circulação ou trabalho. Não representa a feira inventada nem define, sozinho, o currículo de uma rede.",
+          "credit": "Cayambe · CC BY-SA 3.0 · origem e alterações nos créditos da unidade"
+        },
+        {
+          "type": "text",
+          "title": "Um documento do Pará, com recorte identificado",
+          "body": "O Documento Curricular do Estado do Pará para Educação Infantil e Ensino Fundamental, edição de 2019, é um exemplo de referência produzida em contexto estadual. Ao estudá-lo, identifique a etapa e a edição; não transfira seu título para afirmar que ele apresenta a matriz atual do Ensino Médio.\nPara uma decisão concreta, é preciso conferir atos de adoção, documentos e alterações pertinentes ao sistema e à rede. O fato de uma escola estar em um estado não dispensa identificar a organização aplicável àquela oferta, inclusive relações entre sistemas e municípios."
+        },
+        {
+          "type": "compare",
+          "title": "Contextualização resolvida",
+          "left": {
+            "title": "Uma escolha inicial",
+            "body": "“A turma conhece a feira, então basta listar produtos locais.” O reconhecimento do contexto não explicita ainda a aprendizagem geográfica."
+          },
+          "right": {
+            "title": "Uma escolha desenvolvida",
+            "body": "Usar registros da circulação para comparar conexões e justificar uma transformação da paisagem. O contexto oferece um problema e fontes para elaborar relações, em diálogo com o percurso curricular."
+          }
+        },
+        {
+          "type": "text",
+          "title": "A parte diversificada não tem valor menor",
+          "body": "Na LDB, base comum e parte diversificada se articulam. Não são duas formações independentes, uma importante e outra decorativa. Questões regionais podem ajudar a compreender relações amplas, e o que é próximo não precisa ser tratado como simples ou homogêneo.\nLia deve evitar presumir que todos os estudantes conhecem a mesma feira ou vivem as mesmas experiências. Materiais e perguntas precisam permitir participação e ampliar o estudo além do relato de quem já conhece o local."
+        },
+        {
+          "type": "animation",
+          "kind": "scale",
+          "title": "Contextualizar também é construir conexões",
+          "caption": "Compare “Comunidade”, “Município” e “Rede regional”. A cena trabalha acessos e circulação; use-a para perguntar que relações uma proposta curricular pode construir entre o vivido e outros recortes. Os três controles não são níveis de autoridade normativa."
+        },
+        {
+          "type": "table",
+          "title": "Leia o currículo antes de aplicar",
+          "headers": [
+            "Conferência",
+            "Efeito sobre a decisão"
+          ],
+          "rows": [
+            [
+              "Etapa, rede e edição.",
+              "Evitar aplicar a referência de outra oferta como se fosse a mesma."
+            ],
+            [
+              "Normas e atos pertinentes.",
+              "Compreender adoção, organização e atualizações."
+            ],
+            [
+              "Relação entre aprendizagens e contexto.",
+              "Selecionar um caso que ajude a construir o objetivo."
+            ],
+            [
+              "Progressão e conhecimentos da turma.",
+              "Planejar apoios e relações que serão ampliadas."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Transfira o raciocínio",
+          "body": "Uma matriz publicada por outro estado pode ser objeto de comparação, mas não demonstra a grade da turma de Lia. Compare competências dos órgãos, etapa, período e oferta antes de transformar o exemplo em regra local.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Ponte para a escola",
+          "body": "A rede organiza referências, mas a escola também assume compromissos e define sua proposta. Vamos distinguir PPP, regimento e plano docente para compreender essa passagem."
+        }
+      ],
+      "summary": "Contextualizar é relacionar aprendizagens, problemas e fontes ao território e ao percurso da turma. Currículos devem ser lidos por etapa, rede, edição e atos pertinentes; um documento local não é automaticamente a regra de qualquer oferta.",
+      "practice": {
+        "type": "match",
+        "title": "Associe a leitura ao cuidado",
+        "pairs": [
+          [
+            "Documento do Pará de 2019 para Infantil e Fundamental.",
+            "Respeitar a etapa e a edição indicadas."
+          ],
+          [
+            "Matriz de outro estado.",
+            "Usar para comparação sem presumir aplicação à rede de Lia."
+          ],
+          [
+            "Escolha de um caso conhecido pela turma.",
+            "Relacionar contexto e aprendizagem, sem encerrar na lista local."
+          ],
+          [
+            "Base comum e parte diversificada.",
+            "Articular a formação e o contexto."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l09",
+      "title": "PPP, regimento e plano: decidir na escola",
+      "kicker": "Autonomia envolve compromissos e participação",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "A equipe precisa conversar sobre seu projeto",
+          "body": "Lia preparou a sequência, mas a escola já assumiu compromissos sobre participação, leitura de fontes e acompanhamento da aprendizagem. Como seu plano dialoga com eles? A proposta pedagógica e o projeto político-pedagógico, o PPP, participam dessa organização coletiva.\nO PPP expressa finalidades, contexto e compromissos do trabalho educativo. Deve orientar decisões e ser construído e acompanhado com participação, no âmbito das normas aplicáveis. Os arts. 12 a 14 da LDB ajudam a compreender responsabilidades da escola, do docente e da gestão democrática do ensino público."
+        },
+        {
+          "type": "photo",
+          "src": "media/u14-curriculo-ppp-plano.png",
+          "title": "Uma decisão ganha forma em diferentes instrumentos",
+          "caption": "Currículo, PPP e plano têm funções que se articulam. Copiar o texto de um documento no outro não demonstra que a sequência foi planejada para a turma.",
+          "credit": "ProfGeo · Ilustração didática autoral · origem e alterações nos créditos da unidade"
+        },
+        {
+          "type": "table",
+          "title": "Diferencie as funções no caso",
+          "headers": [
+            "Instrumento",
+            "Pergunta que ajuda a responder"
+          ],
+          "rows": [
+            [
+              "PPP ou proposta pedagógica.",
+              "Que finalidades e compromissos coletivos orientam o trabalho da escola?"
+            ],
+            [
+              "Regimento escolar.",
+              "Como se organizam regras, procedimentos e responsabilidades, conforme as normas?"
+            ],
+            [
+              "Plano de trabalho ou de ensino.",
+              "Como o docente organiza objetivos, percurso e avaliação em relação à proposta?"
+            ],
+            [
+              "Plano de aula.",
+              "Que intervenções e materiais serão usados nesta situação de aprendizagem?"
+            ]
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "Uma regra escolar precisa de fundamento",
+          "left": {
+            "title": "Decisão precipitada",
+            "body": "“O PPP decidiu, então podemos deixar de oferecer uma aprendizagem assegurada por norma.” A decisão coletiva foi tomada como autorização para contrariar direitos e referências aplicáveis."
+          },
+          "right": {
+            "title": "Decisão fundamentada",
+            "body": "Reexaminar a proposta, identificar as normas e construir uma organização compatível. A participação sustenta decisões, mas não transforma o PPP em poder de revogar uma lei."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Autonomia não é ausência de vínculo",
+          "body": "Lia pode ajustar fontes, linguagem e sequência, acompanhando as respostas. Precisa mostrar por que o ajuste contribui para a aprendizagem e como se relaciona aos compromissos escolares. A responsabilidade profissional não se resolve nem em obedecer mecanicamente a um formulário nem em escolher sem justificativa.\nO regimento também precisa ser lido em sua função. Uma regra de avaliação local deve ser confrontada com a LDB e as normas do sistema. O nome do documento não comprova que qualquer conteúdo nele escrito está correto ou atualizado."
+        },
+        {
+          "type": "text",
+          "title": "A avaliação devolve perguntas ao projeto",
+          "body": "Se a turma participa, mas não compara fontes, Lia pode analisar a diferença entre os compromissos e as condições efetivas de aprendizagem. Isso pode levar ao replanejamento e a uma discussão coletiva sobre materiais, apoios e tempo.\nO PPP não se esgota na redação inicial. Acompanhá-lo envolve examinar se os compromissos orientam o trabalho e quais condições precisam ser construídas para realizá-los."
+        },
+        {
+          "type": "callout",
+          "title": "Exemplo para a prova",
+          "body": "“Como a proposta é coletiva, o professor não precisa elaborar plano de trabalho.” A conclusão apaga uma responsabilidade docente prevista na LDB. A articulação dos instrumentos exige decisões em diferentes planos.",
+          "tone": "tip"
+        }
+      ],
+      "summary": "PPP, regimento e planos organizam funções diferentes do trabalho escolar. Participação e autonomia se articulam a direitos, normas e responsabilidades; documentos coletivos precisam orientar e ser acompanhados na prática.",
+      "practice": {
+        "type": "match",
+        "title": "Associe instrumento e função",
+        "pairs": [
+          [
+            "PPP.",
+            "Finalidades e compromissos coletivos da escola."
+          ],
+          [
+            "Regimento.",
+            "Organização de regras e procedimentos escolares."
+          ],
+          [
+            "Plano de trabalho.",
+            "Percurso docente articulado à proposta pedagógica."
+          ],
+          [
+            "Plano de aula.",
+            "Intervenções e tarefas da situação de aprendizagem."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l10",
+      "title": "Diversidade, ambiente e campo: direitos no currículo",
+      "kicker": "Contextualizar também exige reconhecer sujeitos e barreiras",
+      "minutes": 23,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "O estudo geográfico envolve sujeitos e direitos",
+          "body": "Lia quer investigar território e circulação. Precisa escolher fontes que reconheçam a diversidade e evitem representar grupos como se tivessem uma única história. A escolha curricular envolve direitos que não são opcionais apenas porque o tema parece distante do capítulo do livro.\nO art. 26-A da LDB, com a redação da Lei 11.645/2008, torna obrigatório o estudo da história e cultura afro-brasileira e indígena no Ensino Fundamental e no Médio, públicos e privados. A Lei 10.639/2003 integra a trajetória dessa inclusão. O estudo ocorre no âmbito do currículo, com destaque legal a certas áreas, sem restringi-lo somente a elas."
+        },
+        {
+          "type": "text",
+          "title": "A Geografia participa de uma abordagem contínua",
+          "body": "Territórios, trabalho, produção do espaço e representações podem ser investigados com fontes e perspectivas diversas. Isso exige cuidado conceitual e histórico, evitando transformar povos e comunidades em ilustrações fixas de um passado sem presença contemporânea.\nA obrigação não se cumpre apenas por incluir um nome em uma data comemorativa. No caso, Lia pode confrontar mapas e narrativas sobre território e circulação, justificando a aprendizagem e reconhecendo limites e autoria das fontes."
+        },
+        {
+          "type": "text",
+          "title": "Educação ambiental como relação permanente",
+          "body": "A Lei 9.795/1999 prevê educação ambiental integrada, contínua e permanente. Na Educação Básica, um projeto de Geografia deve construir relações ao longo do trabalho, em vez de depender apenas de uma atividade isolada. As alterações da Lei 14.926/2024 incluem temas como clima, biodiversidade e riscos e emergências socioambientais nos projetos institucionais e pedagógicos, segundo as diretrizes pertinentes.\nEstudar condições de acesso em períodos chuvosos pode relacionar natureza, ocupação e infraestrutura. A escolha exige fontes e objetivos; a presença de uma foto de rio não comprova por si só a abordagem ambiental."
+        },
+        {
+          "type": "photo",
+          "src": "media/u12-rio-guama.jpg",
+          "title": "O contexto ajuda a formular uma questão",
+          "caption": "Rio Guamá visto do campus da UFPA em 2019. A fotografia é uma fonte identificada, não um diagnóstico sobre comunidades nem prova de como uma escola organiza o currículo.",
+          "credit": "Fronteira · CC BY-SA 4.0 · origem e alterações nos créditos da unidade"
+        },
+        {
+          "type": "text",
+          "title": "Educação do campo e inclusão pedem condições concretas",
+          "body": "O art. 28 da LDB prevê adequações às peculiaridades da vida rural e de cada região, incluindo conteúdos e metodologias, organização escolar e calendário em relação a ciclos agrícolas e condições climáticas. A adequação precisa ser organizada pelos sistemas, respeitando as exigências aplicáveis; não é uma licença individual para cancelar direitos ou reduzir a formação.\nA Lei Brasileira de Inclusão, 13.146/2015, também exige considerar acesso, participação e aprendizagem, com eliminação de barreiras e apoios pertinentes. Adaptar um mapa ou oferecer outra forma de acesso ao material pode preservar a relação conceitual que se pretende ensinar."
+        },
+        {
+          "type": "animation",
+          "kind": "inequality",
+          "title": "Um tema ambiental pode virar problema de estudo",
+          "caption": "Compare as condições de acesso com os dois controles. Pergunte que fontes e relações a turma precisaria investigar. A cena é hipotética e não calcula risco; sua presença no plano não demonstra, sozinha, uma abordagem ambiental contínua."
+        },
+        {
+          "type": "table",
+          "title": "Direito e tarefa precisam se encontrar",
+          "headers": [
+            "Problema",
+            "Decisão a justificar"
+          ],
+          "rows": [
+            [
+              "Uma única narrativa apaga diferenças.",
+              "Confrontar fontes e sujeitos sem generalizar identidades."
+            ],
+            [
+              "Uma atividade ambiental fica isolada.",
+              "Articular relações e acompanhamento ao longo do projeto."
+            ],
+            [
+              "O material não pode ser usado por parte da turma.",
+              "Examinar barreiras e organizar apoios para a aprendizagem."
+            ],
+            [
+              "A oferta do campo tem condições específicas.",
+              "Consultar normas e organizar adequações com responsabilidade."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Regra específica exige fonte específica",
+          "body": "Etapas e modalidades podem ter diretrizes próprias. Para uma decisão sobre EJA, educação escolar indígena, quilombola ou outras ofertas, confira também a norma pertinente, sem transpor automaticamente uma matriz da oferta regular.",
+          "tone": "tip"
+        }
+      ],
+      "summary": "Direitos, diversidade e condições de acesso participam da organização curricular. A Geografia contribui para relações étnico-raciais e ambientais e deve considerar sujeitos, modalidades e apoios, com fontes e normas pertinentes.",
+      "practice": {
+        "type": "match",
+        "title": "Relacione referência e foco",
+        "pairs": [
+          [
+            "LDB, art. 26-A.",
+            "História e cultura afro-brasileira e indígena no currículo."
+          ],
+          [
+            "Lei 9.795/1999 e alterações.",
+            "Educação ambiental integrada, contínua e permanente."
+          ],
+          [
+            "LDB, art. 28.",
+            "Adequações da oferta para a população rural."
+          ],
+          [
+            "Lei 13.146/2015.",
+            "Direitos da pessoa com deficiência e eliminação de barreiras."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l11",
+      "title": "PNE: objetivos, metas e estratégias de política",
+      "kicker": "O plano nacional não é a sequência da aula",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Uma meta de política chega à conversa da escola",
+          "body": "A equipe deseja melhorar condições de permanência e aprendizagem. Um colega pergunta se o PNE é o documento que determina os conteúdos de cada aula de Geografia. Para responder, precisamos distinguir o plano de política educacional do planejamento de ensino.\nA Lei 15.388, de 14 de abril de 2026, aprovou o novo Plano Nacional de Educação, com duração de dez anos a contar de sua publicação, em cumprimento ao art. 214 da Constituição. Ele organiza diretrizes, objetivos, metas e estratégias para políticas educacionais."
+        },
+        {
+          "type": "photo",
+          "src": "media/u14-pne.png",
+          "title": "Dê sentido às funções do plano",
+          "caption": "O esquema retoma as funções descritas na lei de 2026. As perguntas são uma síntese autoral, não uma lista de metas oficiais ou uma prescrição de aula.",
+          "credit": "ProfGeo · Ilustração didática autoral · origem e alterações nos créditos da unidade"
+        },
+        {
+          "type": "text",
+          "title": "Três termos que agora podem ser distinguidos",
+          "body": "Objetivos indicam mudanças esperadas em relação a problemas educacionais. Metas oferecem referências qualitativas e quantitativas para verificar seu alcance em determinado intervalo. Estratégias são ações propostas aos governos para atingir objetivos e metas.\nEm um exemplo didático, melhorar condições de acesso seria uma mudança buscada; estabelecer referências para acompanhá-la no tempo teria função de meta; organizar ações de infraestrutura e apoio teria função de estratégia. Este exemplo explica funções e não reproduz uma meta específica do PNE."
+        },
+        {
+          "type": "compare",
+          "title": "Caso resolvido: meta e habilidade",
+          "left": {
+            "title": "Afirmação",
+            "body": "“Uma meta do PNE substitui a habilidade da BNCC e define a tarefa da turma.” O raciocínio mistura decisões de política e de aprendizagem."
+          },
+          "right": {
+            "title": "Análise",
+            "body": "As políticas podem criar condições e compromissos para o ensino. A aula exige articular currículo, objetivos, mediação e avaliação; o plano nacional não entrega essa sequência pronta."
+          }
+        },
+        {
+          "type": "text",
+          "title": "A data evita um erro frequente",
+          "body": "O PNE aprovado pela Lei 13.005/2014 teve sua vigência prorrogada até 31/12/2025 pela Lei 14.934/2024. No recorte atual desta unidade, não é correto apresentá-lo como se fosse o novo plano vigente de 2026. Para uma questão situada em 2018, o documento do período continua sendo uma referência histórica pertinente.\nDistinguir tempo de publicação, duração e período do problema é essencial para interpretar políticas. Uma apostila reeditada não demonstra, por si só, que seus dispositivos foram atualizados."
+        },
+        {
+          "type": "table",
+          "title": "Do plano à leitura crítica",
+          "headers": [
+            "Pergunta",
+            "O que examinar"
+          ],
+          "rows": [
+            [
+              "Qual problema de política está em foco?",
+              "Objetivos e diretrizes pertinentes."
+            ],
+            [
+              "Como acompanhar a mudança?",
+              "Referências, prazos, indicadores e condições de análise."
+            ],
+            [
+              "Que ações e responsabilidades participam?",
+              "Estratégias e organização de implementação."
+            ],
+            [
+              "Como isso se relaciona à escola?",
+              "Condições e compromissos, em diálogo com currículo e proposta pedagógica."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Cuidado de interpretação",
+          "body": "Uma meta pode envolver mais que uma porcentagem. O acompanhamento exige ler seu conteúdo, as referências e o período. Também não se deve confundir uma melhora observada em uma turma com o cumprimento de uma meta nacional.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Ponte para materiais e avaliações",
+          "body": "O plano de política pode se articular a programas e acompanhamento de resultados. Agora vamos distinguir o papel de materiais didáticos e matrizes de avaliação, que também não equivalem ao currículo completo."
+        }
+      ],
+      "summary": "O PNE de 2026 organiza políticas por diretrizes, objetivos, metas e estratégias, com duração legal definida. Não substitui currículo ou plano de aula. A leitura precisa distinguir o documento vigente e o contexto histórico da questão.",
+      "practice": {
+        "type": "match",
+        "title": "Associe a função ao termo",
+        "pairs": [
+          [
+            "Mudança esperada em um problema educacional.",
+            "Objetivo de política."
+          ],
+          [
+            "Referências para verificar o alcance em um intervalo.",
+            "Meta."
+          ],
+          [
+            "Ações propostas para atingir objetivos e metas.",
+            "Estratégias."
+          ],
+          [
+            "Tarefas e mediação para uma turma.",
+            "Planejamento de ensino."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l12",
+      "title": "PNLD e avaliações: apoio e recorte",
+      "kicker": "Livro e matriz não esgotam o currículo",
+      "minutes": 20,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "O material é um instrumento de trabalho",
+          "body": "Lia encontra um capítulo que pode ajudar a investigar paisagens. Antes de seguir sua ordem, examina fontes, atividades, linguagem e relação com a aprendizagem escolhida. Um material didático pode apoiar o ensino e também precisa ser usado com julgamento profissional.\nO Programa Nacional do Livro e do Material Didático, PNLD, é disciplinado pelo Decreto 9.099/2017 e suas alterações, entre elas o Decreto 12.021/2024. Avaliar e disponibilizar materiais de apoio faz parte de sua função. A escolha e o uso precisam considerar regras e informações do ciclo pertinente."
+        },
+        {
+          "type": "compare",
+          "title": "Caso resolvido: o capítulo e o objetivo",
+          "left": {
+            "title": "Decisão automática",
+            "body": "“O capítulo vem primeiro; portanto ele define sozinho a sequência da turma.” A ordem editorial foi tomada como uma norma curricular completa."
+          },
+          "right": {
+            "title": "Decisão justificada",
+            "body": "Lia examina o material em relação ao currículo, ao PPP e ao que os alunos precisam aprender. Pode organizar seu uso e complementações, respeitando as referências e os direitos envolvidos."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Uma matriz de avaliação seleciona o que será observado",
+          "body": "Sistemas e exames, como o Saeb e o Enem, têm finalidades e matrizes próprias. Uma matriz organiza um recorte para construir e interpretar instrumentos de avaliação. Esse recorte não representa, automaticamente, todos os conhecimentos, práticas e finalidades do currículo escolar.\nA leitura de resultados pode contribuir para investigar dificuldades. Não deve produzir a conclusão de que o conteúdo ausente de um teste perdeu seu valor curricular ou de que toda aula deve ser reduzida ao treinamento do formato de uma prova."
+        },
+        {
+          "type": "table",
+          "title": "Três funções que se relacionam",
+          "headers": [
+            "Instrumento",
+            "Contribuição",
+            "Limite a reconhecer"
+          ],
+          "rows": [
+            [
+              "Currículo.",
+              "Organiza uma proposta de formação e aprendizagens.",
+              "Não entrega, sozinho, cada intervenção da aula."
+            ],
+            [
+              "Livro e material de apoio.",
+              "Oferecem fontes, explicações e atividades.",
+              "Não substituem todas as decisões e referências curriculares."
+            ],
+            [
+              "Matriz de avaliação.",
+              "Delimita dimensões observadas por um instrumento.",
+              "Não esgota a formação escolar."
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "A evidência precisa ser relacionada ao objetivo",
+          "body": "Se o teste informa que a turma localiza pontos, Lia pode usar o dado para planejar. Ainda precisa verificar se os estudantes conseguem explicar conexões, quando essa é a aprendizagem pretendida. Um resultado não permite concluir sobre todas as relações geográficas sem tarefas pertinentes.\nTambém é necessário conferir edição, etapa e finalidade da matriz. Não se pode aplicar uma referência de um exame como se fosse a mesma em todos os anos, sistemas e ofertas."
+        },
+        {
+          "type": "callout",
+          "title": "Transfira para seu estudo para a seleção",
+          "body": "As questões deste app ajudam a praticar interpretações do programa do edital. Seu resultado nesta unidade é uma evidência de treino, não uma previsão da nota ou substituição do estudo dos demais itens.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Ponte para a leitura dos atos",
+          "body": "Você já distinguiu documentos de política, referências curriculares, propostas da escola, materiais e avaliações. Vamos reunir um modo de conferir a norma e resolver casos de aplicação."
+        }
+      ],
+      "summary": "O PNLD disponibiliza apoio didático dentro de regras e ciclos; livros precisam de uso fundamentado. Matrizes de avaliação recortam dimensões do ensino e não substituem o currículo completo nem toda a evidência de aprendizagem.",
+      "practice": {
+        "type": "match",
+        "title": "Associe instrumento e contribuição",
+        "pairs": [
+          [
+            "PNLD.",
+            "Avaliação e disponibilização de materiais de apoio, conforme regras do programa."
+          ],
+          [
+            "Livro didático.",
+            "Fontes, explicações e atividades a usar com julgamento."
+          ],
+          [
+            "Matriz de avaliação.",
+            "Recorte para construir e interpretar um instrumento."
+          ],
+          [
+            "Currículo.",
+            "Organização de uma proposta de formação e aprendizagem."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "l13",
+      "title": "Ler uma norma antes de aplicá-la",
+      "kicker": "Identificação, alcance, tempo e consequência",
+      "minutes": 22,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Uma frase copiada precisa ser devolvida ao contexto",
+          "body": "Um grupo apresenta uma frase retirada de uma apostila e diz que ela obriga toda escola a organizar a mesma grade. Lia precisa reconstruir a origem da afirmação antes de usá-la. Ser apresentada como norma não basta para demonstrar sua identidade ou seu alcance.\nO primeiro passo é recuperar espécie, órgão, número, ano e assunto. Depois, localizar o texto oficial e examinar a redação do dispositivo, as alterações e a vigência. Também é necessário identificar etapa, modalidade, território e competência relacionados à decisão."
+        },
+        {
+          "type": "photo",
+          "src": "media/u14-ler-norma.png",
+          "title": "Quatro perguntas organizam a conferência",
+          "caption": "O esquema é um roteiro de estudo, não uma norma adicional. Cada resposta deve ser relacionada ao caso e sustentada pelo instrumento pertinente.",
+          "credit": "ProfGeo · Ilustração didática autoral · origem e alterações nos créditos da unidade"
+        },
+        {
+          "type": "table",
+          "title": "Reconstrua a aplicação",
+          "headers": [
+            "Conferência",
+            "Exemplo de erro que ajuda a evitar"
+          ],
+          "rows": [
+            [
+              "Identificação completa.",
+              "Aplicar outra resolução com o mesmo número."
+            ],
+            [
+              "Etapa, modalidade e rede.",
+              "Tomar uma matriz de outra oferta como regra da turma."
+            ],
+            [
+              "Redação, vigência e transição.",
+              "Usar um dispositivo alterado como se estivesse intacto."
+            ],
+            [
+              "Efeito que o texto realmente produz.",
+              "Deduzir uma grade semanal de um total geral de horas."
+            ]
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "Caso resolvido: novo título, texto antigo",
+          "left": {
+            "title": "Situação",
+            "body": "Uma apostila de 2026 repete uma organização do Ensino Médio anterior à Lei 14.945/2024 e não explica o período de aplicação."
+          },
+          "right": {
+            "title": "Raciocínio",
+            "body": "A data da capa não comprova atualização do conteúdo. É preciso confrontar o dispositivo e a situação de oferta com fontes oficiais e regras pertinentes, sem transferir o texto automaticamente para a turma."
+          }
+        },
+        {
+          "type": "text",
+          "title": "Vigência, implementação e situação concreta",
+          "body": "Uma lei pode fixar quando entra em vigor e também estabelecer implementação ou transição. Essas funções precisam ser distinguidas. A aplicação de uma organização curricular a certa turma exige ler o dispositivo e as normas pertinentes ao percurso, em vez de presumir mudança instantânea e idêntica em qualquer escola.\nTambém não é adequado aplicar uma norma futura apenas porque ela foi anunciada. Notícias, projetos e minutas podem informar o debate; a obrigação precisa ser relacionada ao ato e aos efeitos juridicamente pertinentes."
+        },
+        {
+          "type": "text",
+          "title": "Responda apenas o que as informações permitem",
+          "body": "Suponha que o caso informe a carga total da formação geral, mas não a matriz da rede. Você pode reconhecer a função do total e indicar que falta fonte para afirmar horas semanais de Geografia. Essa delimitação demonstra leitura, não falta de conhecimento.\nO mesmo vale para uma norma local: conhecer seu texto não prova, sozinho, que o órgão tinha competência para criar qualquer regra. A análise precisa considerar os fundamentos e o conjunto normativo aplicável."
+        },
+        {
+          "type": "callout",
+          "title": "Registre a referência junto com a interpretação",
+          "body": "Ao estudar, anote identificação, dispositivo, função e uma consequência para o ensino. Isso ajuda mais que guardar somente o número da lei, e facilita retomar a fonte quando houver alteração.",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Ponte para a prova",
+          "body": "Na última lição, você vai resolver um caso integrado e organizar um argumento sobre documentos e ensino de Geografia. Use o roteiro para sustentar as relações e evitar listas de siglas sem função."
+        }
+      ],
+      "summary": "Aplicar uma norma exige identificação completa, leitura oficial, alcance, redação e tempo de aplicação. A conclusão deve respeitar o que o dispositivo informa e o que depende de outras decisões e fontes.",
+      "practice": {
+        "type": "order",
+        "title": "Confira a afirmação normativa",
+        "items": [
+          "Recuperar identificação, órgão e assunto do instrumento.",
+          "Ler texto oficial, alterações e regras temporais pertinentes.",
+          "Relacionar etapa, oferta, rede e competência ao caso.",
+          "Justificar a consequência e indicar informações que ainda faltam."
+        ]
+      }
+    },
+    {
+      "id": "l14",
+      "title": "Casos de prova e argumento escrito",
+      "kicker": "A sigla só ajuda quando sua função fica clara",
+      "minutes": 23,
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Retome a decisão de Lia com o percurso completo",
+          "body": "Lia quer que a turma explique mudanças na paisagem a partir de registros da feira. Precisa assegurar participação, articular aprendizagem e contexto, planejar tarefas e avaliar justificativas. Cada documento contribui para uma dimensão dessa decisão.\nConstituição e LDB fundamentam direitos e organização. DCN e BNCC têm funções normativas próprias. Currículo, PPP e planos organizam o trabalho. Programas, materiais e avaliações contribuem sem substituir toda a formação. A análise precisa mostrar essas funções, respeitando tempo e alcance."
+        },
+        {
+          "type": "compare",
+          "title": "Questão resolvida 1: base comum e aula",
+          "left": {
+            "title": "Enunciado",
+            "body": "“Como a BNCC é comum, basta copiar EF06GE01 para que todas as turmas aprendam pela mesma sequência.”"
+          },
+          "right": {
+            "title": "Resolução",
+            "body": "A base comum não comprova uma única mediação. É preciso interpretar a aprendizagem, escolher fontes, organizar comparação e analisar produções. O código identifica a habilidade, não executa o ensino."
+          }
+        },
+        {
+          "type": "compare",
+          "title": "Questão resolvida 2: norma e consequência",
+          "left": {
+            "title": "Enunciado",
+            "body": "“O total da formação geral básica determina sozinho quantas aulas semanais de Geografia uma turma terá.”"
+          },
+          "right": {
+            "title": "Resolução",
+            "body": "Identifique o alcance do dado. A carga total se refere à formação; distribuição semanal exige consultar matriz e normas da oferta. Não se deve inventar a informação ausente."
+          }
+        },
+        {
+          "type": "callout",
+          "title": "Use a cena para pensar o planejamento",
+          "body": "Avance por relato, pergunta, conceito e explicação. Depois relacione a progressão a uma aprendizagem e aos instrumentos que participam do plano. A cena é didática e não representa a execução automática de uma habilidade da BNCC.",
+          "tone": "tip"
+        },
+        {
+          "type": "animation",
+          "kind": "mediation",
+          "title": "Uma referência se realiza em decisões de mediação",
+          "caption": "Os quatro controles mostram uma passagem do relato sobre acesso à escola à explicação com relações geográficas. O exemplo pode ser analisado no planejamento, com atenção às aprendizagens, aos apoios e às evidências."
+        },
+        {
+          "type": "text",
+          "title": "Construa uma tese e desenvolva sua função",
+          "body": "Uma ideia central possível é: “Referências curriculares e normas orientam direitos e aprendizagens, mas sua realização exige interpretação e planejamento no contexto escolar”. Depois explique como essa relação aparece em uma decisão de Geografia.\nPor exemplo: “Ao comparar paisagens, Lia mobiliza uma aprendizagem da BNCC e a articula ao currículo e à proposta da escola. Seleciona fontes datadas, orienta justificativas e examina outra situação. As produções permitem avaliar se os alunos usam a relação, enquanto apoios e retomadas procuram assegurar participação e aprendizagem”. O exemplo sustenta a tese."
+        },
+        {
+          "type": "table",
+          "title": "Quatro movimentos para escrever",
+          "headers": [
+            "Movimento",
+            "O que desenvolver"
+          ],
+          "rows": [
+            [
+              "Responder ao problema.",
+              "Apresentar a relação entre documento, direito e ensino."
+            ],
+            [
+              "Distinguir instrumentos.",
+              "Explicar funções pertinentes, sem trocar lei, base, currículo e plano."
+            ],
+            [
+              "Analisar uma decisão.",
+              "Mostrar aprendizagem, fontes, mediação e condições de participação."
+            ],
+            [
+              "Avaliar e delimitar.",
+              "Indicar evidência e respeitar o alcance e a data das informações."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "Revisão ativa",
+          "body": "Explique sem consultar: por que PCN e BNCC não são instrumentos equivalentes? Como LDB articula base comum e parte diversificada? O que a regra geral do Ensino Médio não permite concluir sozinha? Qual é o PNE do recorte de 2026? Como livro e matriz se relacionam ao currículo?",
+          "tone": "tip"
+        },
+        {
+          "type": "text",
+          "title": "Da unidade ao treino",
+          "body": "O simulado contém vinte casos autorais com comentários para todas as alternativas. A oficina propõe uma redação de até vinte linhas com autoavaliação e um modelo. Os exercícios treinam o raciocínio, sem se apresentar como questões oficiais ou previsão da seleção.\nSe a resposta ficou em uma lista de siglas, retome a função de cada instrumento no caso. O avanço está em explicar a relação entre referências, decisões e aprendizagem com precisão e fontes."
+        }
+      ],
+      "summary": "Uma resposta consistente relaciona instrumentos, direitos e decisões de ensino. Explique funções, use um caso analisado e indique evidência de aprendizagem, respeitando período, competência e alcance das fontes.",
+      "practice": {
+        "type": "order",
+        "title": "Organize um argumento fundamentado",
+        "items": [
+          "Responder ao tema com uma ideia central.",
+          "Explicar as funções dos instrumentos pertinentes.",
+          "Analisar uma decisão de ensino com fontes e mediação.",
+          "Indicar evidência de aprendizagem e delimitar a conclusão."
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "lesson": "l01",
+      "stem": "Lia quer identificar uma aprendizagem essencial de Geografia. Por onde deve começar, articulando depois o planejamento?",
+      "options": [
+        "Por uma meta nacional, considerada uma habilidade pronta.",
+        "Pelo número de uma resolução sem ano ou assunto.",
+        "Pela BNCC e pelo currículo pertinente à etapa e à rede.",
+        "Pela ordem dos capítulos do livro, tomada como lei."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Meta de política e habilidade curricular têm funções diferentes.",
+        "A identificação incompleta impede conhecer o instrumento e sua aplicação.",
+        "A referência de aprendizagem precisa ser interpretada no percurso curricular e convertida em tarefa e mediação.",
+        "A organização editorial não equivale a uma norma curricular completa."
+      ],
+      "tag": "funções dos documentos",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q02",
+      "lesson": "l01",
+      "stem": "O que distingue um plano de aula de uma referência curricular?",
+      "options": [
+        "O plano organiza intervenções e tarefas para realizar uma aprendizagem em uma situação concreta.",
+        "O plano pode revogar qualquer norma porque é mais próximo da turma.",
+        "O plano é apenas a transcrição de códigos sem decisões de ensino.",
+        "A referência já determina um único exemplo para todas as turmas."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A referência orienta a aprendizagem, mas não escolhe automaticamente todos os materiais e apoios.",
+        "A autonomia do planejamento não autoriza contrariar direitos e normas aplicáveis.",
+        "Planejar exige organizar tarefas, mediações e critérios de acompanhamento.",
+        "Uma aprendizagem comum pode ser trabalhada em contextos e propostas diferentes."
+      ],
+      "tag": "referência e planejamento",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q03",
+      "lesson": "l01",
+      "stem": "Uma colega diz que o livro define sozinho o que é obrigatório ensinar. Qual análise é adequada?",
+      "options": [
+        "A aprovação do material elimina qualquer decisão docente.",
+        "O livro não pode contribuir para nenhuma aprendizagem.",
+        "Qualquer livro recente substitui a LDB consolidada.",
+        "O livro é apoio; seu uso deve ser relacionado a currículo, normas e aprendizagem."
+      ],
+      "answer": 3,
+      "feedback": [
+        "O professor precisa interpretar fontes e tarefas em relação à turma e ao objetivo.",
+        "Materiais podem apoiar o ensino quando usados com critérios e mediação.",
+        "Data editorial e função de uma lei não são equivalentes.",
+        "A existência de um capítulo não o transforma em toda a referência normativa e curricular."
+      ],
+      "tag": "material e norma",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q04",
+      "lesson": "l01",
+      "stem": "Antes de aplicar uma frase apresentada como norma, é necessário:",
+      "options": [
+        "Usar apenas a data da capa para decidir que tudo está atualizado.",
+        "Identificar ato, órgão, período, assunto e alcance pertinente ao caso.",
+        "Escolher o documento mais colorido como fonte definitiva.",
+        "Presumir que todo texto nacional é uma lei."
+      ],
+      "answer": 1,
+      "feedback": [
+        "O conteúdo precisa ser confrontado com a fonte e suas alterações.",
+        "A aplicação depende da natureza do instrumento e da situação que regula.",
+        "A apresentação visual não comprova identidade nem vigência normativa.",
+        "Há documentos nacionais de naturezas e efeitos diferentes."
+      ],
+      "tag": "leitura inicial de atos",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q05",
+      "lesson": "l02",
+      "stem": "Um material único não pode ser usado por parte da turma. A igualdade de condições exige que Lia:",
+      "options": [
+        "Abandone a aprendizagem para evitar qualquer adaptação.",
+        "Avalie somente quem já consegue usar o suporte original.",
+        "Examine barreiras e organize recursos e mediações pertinentes à participação e à aprendizagem.",
+        "Considere o acesso resolvido porque o arquivo foi disponibilizado."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Apoios podem ampliar o acesso ao conhecimento, em vez de suprimi-lo.",
+        "A decisão não enfrenta as condições de participação dos demais estudantes.",
+        "Oferecer um suporte idêntico não demonstra que todos possuem condições efetivas de usá-lo.",
+        "Disponibilidade nominal não elimina barreiras de uso e participação."
+      ],
+      "tag": "direito e participação",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q06",
+      "lesson": "l02",
+      "stem": "Qual critério respeita melhor liberdade e pluralismo em um debate de Geografia?",
+      "options": [
+        "Precisão conceitual, fontes e coerência dos argumentos, sem nota por concordância pessoal.",
+        "Maior nota para a posição escolhida por Lia.",
+        "Aceitar qualquer afirmação como verdadeira por ser opinião.",
+        "Impedir todas as perguntas que apresentem perspectivas diferentes."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A aprendizagem pode ser examinada sem exigir adesão à preferência do professor.",
+        "A adesão pessoal não comprova a qualidade da interpretação.",
+        "Pluralismo não dispensa o exame das fontes e da consistência das explicações.",
+        "Confrontar interpretações pode participar do trabalho com conhecimentos e direitos."
+      ],
+      "tag": "pluralismo e avaliação",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q07",
+      "lesson": "l02",
+      "stem": "No art. 205 da Constituição, o direito à educação relaciona-se a:",
+      "options": [
+        "Preparação exclusiva para uma prova padronizada.",
+        "Escolha individual que elimina responsabilidades do Estado.",
+        "Um método único que deve ser repetido em qualquer aula.",
+        "Desenvolvimento da pessoa, cidadania e trabalho, com responsabilidades e colaboração social."
+      ],
+      "answer": 3,
+      "feedback": [
+        "A formação prevista não se esgota no desempenho em um instrumento.",
+        "O dispositivo atribui deveres e não transforma a educação em responsabilidade apenas individual.",
+        "A finalidade constitucional não entrega uma metodologia idêntica para todos os contextos.",
+        "A finalidade educativa é ampla e não se reduz a uma única dimensão de treinamento."
+      ],
+      "tag": "fundamentos constitucionais",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q08",
+      "lesson": "l02",
+      "stem": "A autonomia docente, em uma leitura fundamentada, envolve:",
+      "options": [
+        "Obrigação de avaliar estudantes pela posição do professor.",
+        "Decisões profissionais justificadas em relação a direitos, normas e aprendizagens.",
+        "Poder de excluir qualquer aprendizagem assegurada por norma.",
+        "Ausência de toda escolha, pois cada aula já vem pronta."
+      ],
+      "answer": 1,
+      "feedback": [
+        "O critério precisa ser relacionado à aprendizagem e à qualidade do argumento.",
+        "Autonomia se articula a responsabilidade e julgamento, sem equivaler à ausência de referências.",
+        "A decisão individual não autoriza cancelar direitos e referências aplicáveis.",
+        "As referências não substituem todas as decisões de mediação e planejamento."
+      ],
+      "tag": "autonomia e direitos",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q09",
+      "lesson": "l03",
+      "stem": "A articulação prevista no art. 26 da LDB permite analisar o estudo da feira como:",
+      "options": [
+        "Um tema proibido porque não seria igual em todas as escolas.",
+        "Uma atividade complementar sem relação com qualquer objetivo.",
+        "Uma contextualização que deve dialogar com a base comum e o percurso curricular.",
+        "Um tema local que dispensa toda aprendizagem comum."
+      ],
+      "answer": 2,
+      "feedback": [
+        "A base comum não impõe uma única situação de estudo.",
+        "A pertinência exige mostrar a aprendizagem que o contexto ajuda a construir.",
+        "Base comum e parte diversificada se articulam, sem reduzir a formação a exemplos idênticos ou curiosidades isoladas.",
+        "Contextualizar não significa excluir direitos e relações da formação comum."
+      ],
+      "tag": "base comum e contexto",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q10",
+      "lesson": "l03",
+      "stem": "Segundo as responsabilidades discutidas nos arts. 12 e 13 da LDB, a relação entre proposta e plano é:",
+      "options": [
+        "A escola elabora e executa sua proposta, com participação docente; o plano de trabalho se articula a ela.",
+        "O professor fica dispensado de planejar quando existe proposta coletiva.",
+        "A escola não pode ter proposta porque cada aula é independente.",
+        "O plano docente pode contrariar qualquer compromisso ou norma."
+      ],
+      "answer": 0,
+      "feedback": [
+        "As responsabilidades se encontram na organização do trabalho e não se substituem mutuamente.",
+        "A proposta não elimina a elaboração e o cumprimento do plano de trabalho docente.",
+        "A legislação atribui responsabilidades à instituição e aos profissionais.",
+        "As escolhas precisam ser justificadas no conjunto das referências aplicáveis."
+      ],
+      "tag": "responsabilidades de planejamento",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q11",
+      "lesson": "l03",
+      "stem": "Avaliação contínua e cumulativa, no recorte do art. 24, V, da LDB, significa:",
+      "options": [
+        "Proibir qualquer instrumento quantitativo em toda situação.",
+        "Considerar uma única nota final suficiente para todo o percurso.",
+        "Registrar apenas presença sem examinar a aprendizagem.",
+        "Acompanhar o desempenho e valorizar aspectos qualitativos e resultados do percurso."
+      ],
+      "answer": 3,
+      "feedback": [
+        "A prevalência qualitativa não é uma proibição genérica de notas ou medidas.",
+        "A regra destaca continuidade, cumulação e resultados ao longo do período.",
+        "Frequência e evidência de aprendizagem não são a mesma dimensão.",
+        "O dispositivo não reduz a avaliação a uma prova final e também não proíbe todo uso de notas e provas."
+      ],
+      "tag": "avaliação na LDB",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q12",
+      "lesson": "l03",
+      "stem": "Para afirmar o que a LDB dispõe no recorte atual, Lia deve:",
+      "options": [
+        "Considerar qualquer resumo mais recente superior à lei.",
+        "Consultar a redação consolidada e as alterações pertinentes ao dispositivo.",
+        "Usar sempre o primeiro texto publicado em 1996.",
+        "Confiar apenas na data de impressão de uma apostila."
+      ],
+      "answer": 1,
+      "feedback": [
+        "A síntese pode ajudar, mas não substitui a conferência da fonte e de seu alcance.",
+        "A lei recebeu mudanças, e seu ano de origem não comprova que cada artigo conserva a redação inicial.",
+        "Uma redação histórica pode não ser a que se aplica à situação atual.",
+        "A capa não demonstra atualização normativa do conteúdo."
+      ],
+      "tag": "redação consolidada",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q13",
+      "lesson": "l04",
+      "stem": "Qual leitura distingue PCN e BNCC?",
+      "options": [
+        "A BNCC determina cada aula e elimina o currículo da rede.",
+        "Os PCN não podem ser objeto de estudo porque são antigos.",
+        "Os PCN são referências pedagógicas históricas; a BNCC define aprendizagens essenciais em função normativa.",
+        "Ambos são leis com as mesmas funções e efeitos."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Ela não entrega uma única metodologia nem substitui todas as decisões curriculares.",
+        "Referências históricas podem contribuir para analisar concepções e propostas de ensino.",
+        "A comparação preserva natureza e contexto, sem tornar os instrumentos equivalentes pelo caráter nacional.",
+        "A palavra nacional não torna idêntica a natureza dos documentos."
+      ],
+      "tag": "PCN e BNCC",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q14",
+      "lesson": "l04",
+      "stem": "Uma questão analisa os PCN de Geografia em 1998. O candidato deve:",
+      "options": [
+        "Interpretar o documento e o problema no contexto temporal indicado.",
+        "Responder como se a pergunta fosse sobre a matriz de 2026.",
+        "Ignorar o documento porque toda fonte anterior perdeu valor de análise.",
+        "Transformar qualquer proposta do texto em obrigação atual universal."
+      ],
+      "answer": 0,
+      "feedback": [
+        "O recorte histórico da questão não deve ser substituído automaticamente por uma regra posterior.",
+        "Isso pode produzir anacronismo e não enfrentar o problema proposto.",
+        "Antiguidade não elimina a possibilidade de estudo histórico e pedagógico.",
+        "Valor de estudo e vigência normativa não são equivalentes."
+      ],
+      "tag": "contexto histórico",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q15",
+      "lesson": "l04",
+      "stem": "A leitura das orientações pedagógicas de 2006 pode contribuir para:",
+      "options": [
+        "Fixar, sozinha, a grade atual de qualquer escola.",
+        "Dispensar a identificação da etapa e do assunto.",
+        "Demonstrar que toda publicação oficial tem força idêntica a uma lei.",
+        "Discutir propostas e concepções, confrontando sua aplicação com normas e contexto pertinentes."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Organização curricular atual exige consultar atos e matrizes aplicáveis.",
+        "O alcance da leitura depende também desses elementos.",
+        "Órgãos públicos produzem instrumentos de naturezas e efeitos diversos.",
+        "Uma referência histórica pode participar da reflexão sem comprovar que toda organização permanece atual."
+      ],
+      "tag": "orientações e vigência",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q16",
+      "lesson": "l04",
+      "stem": "Qual pergunta distingue melhor DCN de plano de aula?",
+      "options": [
+        "Por que toda diretriz já escolhe o material que Lia usará amanhã?",
+        "Que princípios e normas organizam a etapa e como o plano se fundamenta neles?",
+        "Qual dos dois é mais novo e por isso revoga automaticamente o outro?",
+        "Qual deles pode ser ignorado porque as funções são diferentes?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "A norma de organização não entrega automaticamente cada intervenção e recurso.",
+        "As diretrizes têm função normativa; a aula exige decisões de aprendizagem em situação concreta.",
+        "Data não resolve, sozinha, natureza, competência e efeitos.",
+        "Funções distintas podem ser complementares na decisão."
+      ],
+      "tag": "diretriz e aula",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q17",
+      "lesson": "l05",
+      "stem": "No código EF06GE01, o número 01:",
+      "options": [
+        "Define uma nota mínima de aprovação.",
+        "Substitui a necessidade de compreender o texto da habilidade.",
+        "Identifica a habilidade naquele conjunto, sem impor sozinho a semana ou a ordem de dificuldade.",
+        "Determina que a habilidade só pode ser ensinada na primeira semana."
+      ],
+      "answer": 2,
+      "feedback": [
+        "A identificação curricular não expressa um critério numérico de avaliação.",
+        "Reconhecer uma sigla não demonstra interpretar a aprendizagem.",
+        "É preciso ler a formulação e suas relações; a numeração não substitui o planejamento.",
+        "O código não é esse cronograma obrigatório."
+      ],
+      "tag": "código da habilidade",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q18",
+      "lesson": "l05",
+      "stem": "Qual tarefa se relaciona melhor ao exemplo da EF06GE01?",
+      "options": [
+        "Comparar registros identificados e justificar mudanças e permanências de paisagens e usos no tempo.",
+        "Escolher a foto mais bonita, sem examinar datas e usos.",
+        "Copiar o código e encerrar a sequência.",
+        "Usar qualquer par de imagens como antes e depois sem identificação."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A tarefa exige a relação de comparação, respeitando as condições e o alcance das fontes.",
+        "A preferência estética não realiza a comparação temporal pretendida.",
+        "A cópia não demonstra o uso da relação na interpretação.",
+        "A leitura temporal exige conferir registros e condições de comparação."
+      ],
+      "tag": "habilidade e tarefa",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q19",
+      "lesson": "l05",
+      "stem": "As unidades temáticas de Geografia no Fundamental devem ser lidas:",
+      "options": [
+        "Como cinco temas que nunca podem aparecer na mesma investigação.",
+        "Como a ordem obrigatória de todos os capítulos do livro.",
+        "Como substitutas de qualquer habilidade específica.",
+        "Em articulação com objetos, habilidades e competências, com função nas perguntas de estudo."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Um problema pode articular relações de diferentes unidades, com planejamento coerente.",
+        "A estrutura curricular não se confunde automaticamente com a organização editorial.",
+        "Os elementos cumprem funções relacionadas, não intercambiáveis.",
+        "A organização ajuda a construir relações e não se resume a uma lista de nomes independentes."
+      ],
+      "tag": "organização da BNCC",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q20",
+      "lesson": "l05",
+      "stem": "Registrar uma habilidade no plano comprova que a turma aprendeu?",
+      "options": [
+        "Não há como verificar aprendizagem de conceitos com tarefas.",
+        "É necessário examinar tarefas e produções que demonstrem a relação pretendida.",
+        "Sim, porque o código realiza a mediação automaticamente.",
+        "Sim, se a turma copiou a mesma frase."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Produções e justificativas pertinentes podem oferecer evidências delimitadas.",
+        "A referência registrada precisa se realizar em mediação e evidências de aprendizagem.",
+        "O código não orienta sozinho a interpretação e o trabalho do aluno.",
+        "Repetir uma formulação não comprova seu uso em outra situação."
+      ],
+      "tag": "BNCC e evidência",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q21",
+      "lesson": "l06",
+      "stem": "Uma citação diz apenas “Resolução 4”. Qual procedimento é adequado?",
+      "options": [
+        "Assumir que todas as resoluções de mesmo número têm efeitos idênticos.",
+        "Considerar que o título abreviado já informa a etapa.",
+        "Recuperar órgão, ano, assunto e texto oficial antes de aplicar a regra.",
+        "Aplicar a primeira resolução encontrada em qualquer busca."
+      ],
+      "answer": 2,
+      "feedback": [
+        "A identidade numérica não define conteúdo nem competência.",
+        "O fragmento não permite essa conclusão sobre o alcance.",
+        "O número pode se repetir; a identificação precisa ser suficiente para localizar o instrumento.",
+        "Pode ser outro ato, de outro órgão, período ou assunto."
+      ],
+      "tag": "identificação dos atos",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q22",
+      "lesson": "l06",
+      "stem": "Qual distinção entre parecer e resolução é mais adequada?",
+      "options": [
+        "Parecer analisa e fundamenta; resolução dispõe normativamente, devendo-se conferir os efeitos e o contexto dos atos.",
+        "Todo parecer é sempre uma lei que revoga a LDB.",
+        "Nenhum parecer pode ter qualquer efeito relevante.",
+        "A resolução dispensa identificar a competência do órgão."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A distinção evita chamá-los de lei ou ignorar efeitos de pareceres homologados pertinentes.",
+        "A natureza do instrumento e a competência do órgão não permitem essa generalização.",
+        "É preciso examinar homologação, contexto e efeitos juridicamente pertinentes.",
+        "A função normativa continua relacionada ao alcance das atribuições."
+      ],
+      "tag": "parecer e resolução",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q23",
+      "lesson": "l06",
+      "stem": "Uma notícia anuncia que uma proposta foi discutida. Isso comprova, sozinho, uma obrigação vigente?",
+      "options": [
+        "Sim, porque qualquer notícia é uma publicação normativa.",
+        "Sim, desde que o título use a palavra obrigatório.",
+        "Não se deve consultar fonte oficial porque a notícia é mais recente.",
+        "É necessário localizar o ato e verificar publicação, efeitos e condições de vigência."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Divulgar um debate não produz por si só o efeito de um ato normativo.",
+        "A força da afirmação depende da fonte e do ato, não apenas do vocabulário.",
+        "A conferência do instrumento e de seus efeitos continua necessária.",
+        "Anúncio, debate e minuta não equivalem automaticamente a uma norma aplicável."
+      ],
+      "tag": "publicação e efeitos",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q24",
+      "lesson": "l06",
+      "stem": "A Resolução CNE/CEB 2/2024 e a CNE/CEB 4/2025 tratam, no recorte estudado, de:",
+      "options": [
+        "Revogação de toda aprendizagem da BNCC por um livro didático.",
+        "DCNEM e parâmetros de oferta dos Itinerários Formativos de Aprofundamento, respectivamente.",
+        "PCN de 1998 e plano de aula da escola.",
+        "Duas matrizes semanais idênticas para todo o Ensino Fundamental."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Os atos não equivalem a uma decisão editorial ou à afirmação apresentada.",
+        "A identificação conserva assunto, órgão e ano dos dois instrumentos do Ensino Médio.",
+        "Os títulos e as funções desses instrumentos não correspondem às resoluções citadas.",
+        "Os atos referidos têm outro alcance e não demonstram uma grade idêntica de Fundamental."
+      ],
+      "tag": "atos do Ensino Médio",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q25",
+      "lesson": "l07",
+      "stem": "No art. 35-D da LDB, Geografia integra:",
+      "options": [
+        "Uma área exclusiva com carga semanal nacional deduzida do nome.",
+        "O PNLD, que é o único instrumento que pode oferecer Geografia.",
+        "Ciências Humanas e Sociais Aplicadas, com Filosofia, História e Sociologia.",
+        "Apenas uma atividade opcional sem relação com a formação geral."
+      ],
+      "answer": 2,
+      "feedback": [
+        "A denominação não define sozinha uma distribuição semanal.",
+        "Programa de materiais e organização das áreas têm funções diferentes.",
+        "A organização por área não significa ausência do conhecimento geográfico na formação.",
+        "O dispositivo inclui Geografia na composição da área."
+      ],
+      "tag": "Geografia no Ensino Médio",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q26",
+      "lesson": "l07",
+      "stem": "Na regra geral estudada após a Lei 14.945/2024, a formação geral básica tem mínimo de:",
+      "options": [
+        "2.400 horas, articulando BNCC e parte diversificada.",
+        "2.400 horas exclusivas de Geografia.",
+        "600 horas como regra geral da formação completa.",
+        "Um total definido somente pela ordem de capítulos do livro."
+      ],
+      "answer": 0,
+      "feedback": [
+        "O art. 35-C fixa essa regra e apresenta especificidade para a formação técnica e profissional.",
+        "O total se refere à formação geral básica, não a um único componente.",
+        "600 horas se relacionam ao mínimo dos itinerários, com ressalvas da oferta técnica.",
+        "A organização legal não é determinada pela estrutura editorial."
+      ],
+      "tag": "formação geral básica",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q27",
+      "lesson": "l07",
+      "stem": "A regra geral do total de horas permite afirmar uma grade semanal única de Geografia?",
+      "options": [
+        "Sim, porque o número total se divide igualmente por qualquer disciplina.",
+        "Sim, porque todas as redes usam o mesmo exemplo de aula.",
+        "Não existe qualquer referência legal à Geografia.",
+        "É necessário consultar matriz e normas da oferta para conhecer a distribuição concreta."
+      ],
+      "answer": 3,
+      "feedback": [
+        "A distribuição igual não decorre automaticamente da norma citada.",
+        "Aprendizagens comuns não comprovam metodologia ou grade idêntica.",
+        "O art. 35-D inclui o componente na área de Ciências Humanas e Sociais Aplicadas.",
+        "O total da formação não fornece sozinho a organização semanal do componente."
+      ],
+      "tag": "carga horária e matriz",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q28",
+      "lesson": "l07",
+      "stem": "Como tratar a oferta técnica e profissional ao ler o art. 35-C?",
+      "options": [
+        "Deduzir que a formação técnica elimina toda a BNCC.",
+        "Ler a especificidade de 2.100 horas mínimas e as condições previstas no parágrafo único.",
+        "Aplicar 2.400 horas de modo idêntico sem ler a oferta.",
+        "Considerar obrigatórias exatamente 300 horas adicionais em qualquer caso."
+      ],
+      "answer": 1,
+      "feedback": [
+        "A especificidade não equivale a apagar as aprendizagens e exigências pertinentes.",
+        "A lei prevê situação própria, inclusive possibilidade de até 300 horas para aprofundamento relacionado à formação técnica.",
+        "A generalização ignora a especificidade expressa do dispositivo.",
+        "O texto prevê possibilidade de destinação de até 300 horas dentro das condições descritas, não essa regra universal."
+      ],
+      "tag": "regra e especificidade",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q29",
+      "lesson": "l08",
+      "stem": "O Documento Curricular do Pará de 2019 citado na unidade corresponde a:",
+      "options": [
+        "Uma lei federal que dispensa a leitura da BNCC.",
+        "Uma matriz aplicável automaticamente a qualquer rede do país.",
+        "Educação Infantil e Ensino Fundamental, no recorte da edição identificada.",
+        "Uma comprovação da grade atual de qualquer turma do Ensino Médio."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Documento curricular e legislação federal não são equivalentes.",
+        "Aplicação exige conhecer oferta, sistema, rede e atos pertinentes.",
+        "É necessário respeitar etapa e edição antes de atribuir ao texto outra função.",
+        "O título e o recorte não sustentam essa extrapolação."
+      ],
+      "tag": "documento do Pará",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q30",
+      "lesson": "l08",
+      "stem": "Qual proposta realiza contextualização curricular com mais fundamento?",
+      "options": [
+        "Usar a feira para construir uma comparação pertinente ao objetivo e ao percurso da turma.",
+        "Listar produtos conhecidos sem relacioná-los a nenhuma pergunta.",
+        "Excluir a base comum porque a feira é local.",
+        "Presumir que todos os estudantes possuem a mesma experiência."
+      ],
+      "answer": 0,
+      "feedback": [
+        "O contexto contribui para uma aprendizagem, em vez de encerrar a aula no reconhecimento local.",
+        "A familiaridade não demonstra a construção das relações pretendidas.",
+        "Parte diversificada e base comum precisam se articular.",
+        "A diversidade de trajetórias deve participar da escolha de materiais e apoios."
+      ],
+      "tag": "contextualização",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q31",
+      "lesson": "l08",
+      "stem": "Uma matriz de outro estado pode ser usada para:",
+      "options": [
+        "Fixar automaticamente a grade da rede de Lia.",
+        "Dispensar a leitura das normas locais pertinentes.",
+        "Provar que todas as redes têm decisões idênticas.",
+        "Comparar organizações, sem presumir que ela define a oferta da turma de Lia."
+      ],
+      "answer": 3,
+      "feedback": [
+        "A matriz de outro contexto não demonstra essa aplicação.",
+        "É necessário conhecer os instrumentos da oferta em questão.",
+        "Referências comuns não tornam todos os percursos e organizações equivalentes.",
+        "O estudo comparado precisa distinguir competência, rede, período e etapa."
+      ],
+      "tag": "alcance de matrizes",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q32",
+      "lesson": "l08",
+      "stem": "Na articulação entre base comum e parte diversificada, é adequado:",
+      "options": [
+        "Proibir qualquer conexão do local com processos amplos.",
+        "Relacionar formação e contexto sem tratar a parte diversificada como decorativa.",
+        "Criar duas formações independentes, uma sem relação com a outra.",
+        "Considerar todo tema próximo simples e homogêneo."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Contextualização pode construir relações entre lugares e escalas.",
+        "As dimensões contribuem para a formação e devem ser interpretadas em conjunto.",
+        "A separação rígida não corresponde à articulação discutida.",
+        "O vivido pode conter diversidade e relações complexas."
+      ],
+      "tag": "base e diversidade",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q33",
+      "lesson": "l09",
+      "stem": "O PPP ajuda a responder principalmente:",
+      "options": [
+        "Qual é o único recurso permitido em toda aula?",
+        "Como dispensar qualquer acompanhamento da proposta?",
+        "Que finalidades e compromissos coletivos orientam o trabalho da escola?",
+        "Qual lei federal a escola pode revogar?"
+      ],
+      "answer": 2,
+      "feedback": [
+        "O projeto não equivale a um material obrigatório universal.",
+        "Compromissos precisam ser examinados e acompanhados na prática.",
+        "O projeto se relaciona ao contexto, à participação e à orientação do trabalho educativo.",
+        "O PPP não tem essa competência normativa."
+      ],
+      "tag": "função do PPP",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q34",
+      "lesson": "l09",
+      "stem": "Qual distinção entre regimento e plano de aula é adequada?",
+      "options": [
+        "Regimento organiza regras e procedimentos; plano de aula organiza intervenções da situação de aprendizagem.",
+        "Regimento é uma lista de habilidades da BNCC.",
+        "Plano de aula substitui todas as normas da escola.",
+        "Os dois dispensam verificar a aprendizagem."
+      ],
+      "answer": 0,
+      "feedback": [
+        "As funções se articulam sem transformar os instrumentos em cópias equivalentes.",
+        "A função de organização escolar não se reduz à identificação de habilidades.",
+        "O planejamento deve ser relacionado aos instrumentos e direitos pertinentes.",
+        "A organização do trabalho e suas decisões precisam favorecer e acompanhar o aprender."
+      ],
+      "tag": "regimento e plano",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q35",
+      "lesson": "l09",
+      "stem": "Uma decisão coletiva do PPP pode contrariar uma aprendizagem assegurada por norma?",
+      "options": [
+        "Sim, porque qualquer decisão coletiva tem força superior à legislação.",
+        "Sim, se a decisão estiver em um documento com muitas assinaturas.",
+        "O PPP deve ser abandonado em vez de articulado às referências.",
+        "A proposta deve ser reexaminada e organizada de modo compatível com os direitos e normas aplicáveis."
+      ],
+      "answer": 3,
+      "feedback": [
+        "O processo de participação não produz essa competência jurídica.",
+        "Assinaturas não substituem a análise de validade e alcance.",
+        "A proposta pode e deve orientar o trabalho, com fundamento e revisão pertinente.",
+        "Participação não transforma o documento escolar em autorização para revogar uma lei."
+      ],
+      "tag": "participação e normas",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q36",
+      "lesson": "l09",
+      "stem": "As respostas dos alunos mostram que um compromisso do PPP não está se realizando. Qual encaminhamento é pertinente?",
+      "options": [
+        "Dispensar o plano docente porque o problema é coletivo.",
+        "Analisar condições e intervenções, replanejando e discutindo necessidades coletivas.",
+        "Considerar o texto cumprido apenas porque foi escrito.",
+        "Excluir a dificuldade da discussão para conservar a aparência de sucesso."
+      ],
+      "answer": 1,
+      "feedback": [
+        "A responsabilidade coletiva não elimina decisões e responsabilidades de planejamento.",
+        "Acompanhamento permite relacionar o projeto ao trabalho efetivo e às condições de aprendizagem.",
+        "A existência do registro não demonstra realização do compromisso.",
+        "O resultado precisa ser interpretado para orientar novas decisões."
+      ],
+      "tag": "acompanhamento do projeto",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q37",
+      "lesson": "l10",
+      "stem": "A história e cultura afro-brasileira e indígena, no art. 26-A da LDB, devem ser estudadas:",
+      "options": [
+        "Apenas quando o livro da turma incluir uma imagem de povos indígenas.",
+        "Como histórias uniformes de grupos sem presença no presente.",
+        "No âmbito do currículo do Fundamental e do Médio, sem restrição apenas às áreas destacadas no texto legal.",
+        "Somente em uma data comemorativa, como cumprimento suficiente."
+      ],
+      "answer": 2,
+      "feedback": [
+        "A obrigação não depende da presença de uma ilustração específica.",
+        "A abordagem deve reconhecer diversidade histórica e contemporânea, com fontes e sujeitos.",
+        "O destaque a certas áreas não elimina a contribuição de Geografia e de outros componentes.",
+        "A abordagem curricular não se esgota em uma atividade isolada."
+      ],
+      "tag": "relações étnico-raciais",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q38",
+      "lesson": "l10",
+      "stem": "A educação ambiental discutida na Lei 9.795/1999 pede, na Educação Básica:",
+      "options": [
+        "Uma prática integrada, contínua e permanente, articulada ao trabalho educativo.",
+        "Uma foto de rio como prova suficiente de toda a abordagem.",
+        "A exclusão de temas como clima e biodiversidade dos projetos.",
+        "Uma única atividade sem conexão com a aprendizagem da turma."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Projetos precisam construir relações e acompanhamento, e não depender apenas de um evento isolado.",
+        "A presença da imagem não demonstra objetivos, relações e continuidade.",
+        "A legislação e suas alterações incluem essas relações e temas no trabalho pertinente.",
+        "Isolamento não corresponde à integração e permanência discutidas."
+      ],
+      "tag": "educação ambiental",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q39",
+      "lesson": "l10",
+      "stem": "No art. 28 da LDB, adequações à vida rural e à região devem ser entendidas como:",
+      "options": [
+        "Licença para qualquer professor suprimir o calendário sem regra.",
+        "Proibição de usar conhecimentos comuns em escolas do campo.",
+        "Presunção de que todos os estudantes do campo vivem da mesma forma.",
+        "Organização de conteúdos, metodologias e condições da oferta pelos sistemas, respeitando exigências aplicáveis."
+      ],
+      "answer": 3,
+      "feedback": [
+        "A adequação exige organização e responsabilidade no âmbito pertinente.",
+        "Contexto e formação se articulam, sem essa exclusão genérica.",
+        "As condições e trajetórias precisam ser investigadas em sua diversidade.",
+        "Reconhecer peculiaridades não autoriza cancelar direitos ou reduzir a formação por escolha individual."
+      ],
+      "tag": "educação do campo",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q40",
+      "lesson": "l10",
+      "stem": "Adaptar uma fonte que parte da turma não consegue usar deve procurar:",
+      "options": [
+        "Considerar a deficiência uma explicação suficiente de qualquer resultado.",
+        "Eliminar barreiras e assegurar participação e aprendizagem, com apoios pertinentes.",
+        "Abandonar toda relação geográfica para evitar apoio específico.",
+        "Avaliar apenas quem usa o suporte original sem dificuldade."
+      ],
+      "answer": 1,
+      "feedback": [
+        "É necessário examinar condições, mediações e evidências, sem reduzir a pessoa a um rótulo.",
+        "A acessibilidade pode preservar a exigência conceitual e ampliar condições de participação.",
+        "Adaptar o acesso não equivale a renunciar à aprendizagem.",
+        "A escolha não enfrenta as barreiras dos demais participantes."
+      ],
+      "tag": "inclusão e barreiras",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q41",
+      "lesson": "l11",
+      "stem": "No recorte de 26/10/2026 desta unidade, o novo PNE foi aprovado pela:",
+      "options": [
+        "Resolução CNE/CEB 4/2025, que é o plano nacional de metas.",
+        "Ordem de capítulos escolhida pelo PNLD.",
+        "Lei 15.388/2026, com duração de dez anos a contar da publicação.",
+        "Lei 13.005/2014, automaticamente prorrogada por mais dez anos sem outro ato."
+      ],
+      "answer": 2,
+      "feedback": [
+        "O ato trata dos parâmetros dos itinerários de aprofundamento, não da aprovação do PNE.",
+        "Material de apoio não é a lei que aprova o plano de política educacional.",
+        "A identificação distingue o novo plano da lei de 2014 e de sua prorrogação.",
+        "A prorrogação de 2024 foi até 31/12/2025; o novo plano foi aprovado em 2026."
+      ],
+      "tag": "PNE de 2026",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q42",
+      "lesson": "l11",
+      "stem": "Objetivos, metas e estratégias, no PNE, permitem distinguir:",
+      "options": [
+        "Mudanças buscadas, referências para verificar alcance no tempo e ações propostas aos governos.",
+        "Três nomes idênticos para a habilidade de uma turma.",
+        "Somente porcentagens que dispensam ler os problemas.",
+        "Capítulos de um livro que todos devem seguir na mesma semana."
+      ],
+      "answer": 0,
+      "feedback": [
+        "As funções se articulam no planejamento da política sem equivaler a uma sequência de aula.",
+        "O plano de política tem outra função e escala de decisão.",
+        "Metas e objetivos precisam ser interpretados em seu conteúdo e contexto.",
+        "O PNE não estabelece essa organização automática do ensino."
+      ],
+      "tag": "funções do PNE",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q43",
+      "lesson": "l11",
+      "stem": "Uma questão sobre política educacional em 2018 cita o PNE de 2014. Como interpretar a referência?",
+      "options": [
+        "Descartar a referência porque o estudo ocorre em 2026.",
+        "Concluir que o PNE de 2014 é o novo plano vigente de 2026.",
+        "Usar a data da reimpressão para provar que o dispositivo nunca mudou.",
+        "Considerar o documento pertinente ao período, sem substituí-lo automaticamente pelo plano de 2026."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Isso apagaria o contexto temporal informado no enunciado.",
+        "O novo PNE foi aprovado pela Lei 15.388/2026.",
+        "A capa não comprova atualização nem vigência de um conteúdo.",
+        "O recorte histórico orienta a leitura; vigência atual e pertinência histórica são questões diferentes."
+      ],
+      "tag": "tempo e política",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q44",
+      "lesson": "l11",
+      "stem": "A melhora de uma turma demonstra, sozinha, o cumprimento de uma meta nacional?",
+      "options": [
+        "Resultados escolares nunca podem contribuir para estudar políticas.",
+        "É preciso examinar o alcance, as referências e o período da meta, além das evidências pertinentes.",
+        "Sim, porque qualquer resultado local representa todo o país.",
+        "Sim, se a atividade usou a sigla PNE no título."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Eles podem contribuir, desde que interpretados com critérios e fontes adequados.",
+        "Uma produção local e uma conclusão de política nacional têm amplitudes diferentes.",
+        "A generalização ultrapassa o alcance da evidência apresentada.",
+        "O nome não altera o alcance do resultado observado."
+      ],
+      "tag": "alcance das evidências",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q45",
+      "lesson": "l12",
+      "stem": "O PNLD, no recorte estudado, contribui principalmente para:",
+      "options": [
+        "Revogar dispositivos da LDB pela escolha de uma coleção.",
+        "Garantir aprendizagem apenas pela entrega dos livros.",
+        "Avaliar e disponibilizar materiais de apoio à prática educativa, segundo as regras do programa.",
+        "Definir sozinho a sequência de cada aula de Geografia."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Uma decisão de material não produz esse efeito legal.",
+        "Disponibilização precisa se realizar em condições de uso e mediação.",
+        "Essa função não equivale a substituir currículo, proposta escolar e planejamento.",
+        "O uso dos materiais exige articulação com as aprendizagens e o contexto."
+      ],
+      "tag": "função do PNLD",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q46",
+      "lesson": "l12",
+      "stem": "A matriz de uma avaliação deve ser interpretada como:",
+      "options": [
+        "Um recorte para construir e interpretar instrumentos, sem equivaler ao currículo completo.",
+        "A totalidade de tudo que a escola tem direito e dever de ensinar.",
+        "Uma prova de que conteúdos ausentes perderam todo valor.",
+        "Uma referência idêntica para todos os exames e anos."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A seleção de dimensões observadas não esgota todas as finalidades e aprendizagens escolares.",
+        "Currículo e formação não se reduzem ao recorte de um instrumento.",
+        "Ausência no teste não demonstra ausência de pertinência curricular.",
+        "Finalidades, etapas e edições precisam ser conferidas."
+      ],
+      "tag": "matriz e currículo",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q47",
+      "lesson": "l12",
+      "stem": "O teste informa que os estudantes localizam pontos. Para concluir sobre explicação de conexões, Lia deve:",
+      "options": [
+        "Usar o acerto de nomes como prova suficiente de todo raciocínio.",
+        "Descartar os resultados porque nenhuma avaliação informa algo útil.",
+        "Exigir apenas a repetição da letra correta do primeiro exercício.",
+        "Examinar produções em que eles relacionem informações e justifiquem conexões."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Reconhecimento de pontos e explicação de relações não são equivalentes.",
+        "Resultados podem ajudar, desde que se reconheça seu alcance.",
+        "A memorização da resposta não demonstra uso da relação.",
+        "Uma evidência de localização não comprova sozinha todas as operações de explicação."
+      ],
+      "tag": "avaliação e inferência",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q48",
+      "lesson": "l12",
+      "stem": "Como escolher e usar uma atividade de livro para a sequência?",
+      "options": [
+        "Presumir que a atividade já demonstra o que todos aprenderam.",
+        "Examinar sua relação com objetivo, fontes, currículo e condições de aprendizagem.",
+        "Seguir a ordem editorial sem considerar conhecimentos anteriores.",
+        "Escolher apenas pela quantidade de imagens."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Aprendizagem precisa ser acompanhada nas produções e explicações.",
+        "O julgamento docente conecta o apoio oferecido pelo material à tarefa necessária para a turma.",
+        "A ordem pode não corresponder ao percurso e às necessidades da turma.",
+        "Recursos visuais precisam de função na aprendizagem e de interpretação das fontes."
+      ],
+      "tag": "uso do material",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q49",
+      "lesson": "l13",
+      "stem": "Uma apostila de 2026 reproduz dispositivo anterior à alteração legal. Qual é o cuidado central?",
+      "options": [
+        "Aplicar a frase apenas porque está destacada em negrito.",
+        "Desconsiderar qualquer fonte oficial que explique alterações.",
+        "Confrontar conteúdo, redação e alcance com a fonte oficial e o período de aplicação.",
+        "Considerar todo conteúdo vigente pelo ano de impressão."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Destaque visual não comprova vigência ou competência.",
+        "A conferência das mudanças é necessária para interpretar a situação.",
+        "A data da capa não demonstra atualização de cada dispositivo.",
+        "Reedição e atualização normativa não são a mesma coisa."
+      ],
+      "tag": "atualização de fontes",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q50",
+      "lesson": "l13",
+      "stem": "Vigência e implementação devem ser tratadas como:",
+      "options": [
+        "Funções temporais que precisam ser lidas no ato e nas regras pertinentes à oferta.",
+        "Prova de mudança idêntica e instantânea em toda situação.",
+        "Permissão para ignorar toda norma já publicada.",
+        "Termos que a data de uma notícia resolve sozinha."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A aplicação a uma turma pode exigir conferir transição e organização do sistema.",
+        "A conclusão pode ignorar condições e regras temporais expressas.",
+        "É preciso verificar os efeitos, não dispensar automaticamente a leitura.",
+        "O anúncio não substitui os dispositivos que regulam esses efeitos."
+      ],
+      "tag": "vigência e implementação",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q51",
+      "lesson": "l13",
+      "stem": "O enunciado não informa a matriz semanal da rede. O candidato deve:",
+      "options": [
+        "Dividir qualquer total igualmente por todas as disciplinas.",
+        "Atribuir a todas as escolas a matriz encontrada em outro estado.",
+        "Concluir que Geografia não integra a formação.",
+        "Delimitar a conclusão e indicar a referência necessária, sem inventar a distribuição."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Essa operação não decorre automaticamente da norma ou dos dados.",
+        "A referência de outra oferta não demonstra aplicação ao caso.",
+        "A falta da grade no enunciado não apaga a referência legal ao componente.",
+        "Ler o alcance das informações é parte do raciocínio fundamentado."
+      ],
+      "tag": "limite da conclusão",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q52",
+      "lesson": "l13",
+      "stem": "Que registro de estudo ajuda a retomar uma norma com precisão?",
+      "options": [
+        "Uma conclusão universal sem registrar o caso.",
+        "Identificação, dispositivo, função, período e consequência para a decisão analisada.",
+        "Apenas o número, sem órgão ou ano.",
+        "Uma frase sem indicação da origem."
+      ],
+      "answer": 1,
+      "feedback": [
+        "A consequência pode depender de etapa, oferta e contexto temporal.",
+        "O registro permite reconstruir o raciocínio e conferir futuras alterações.",
+        "A identificação pode coincidir com outros atos e assuntos.",
+        "A ausência de fonte dificulta verificar natureza e aplicação."
+      ],
+      "tag": "registro fundamentado",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q53",
+      "lesson": "l14",
+      "stem": "Qual argumento articula documento e decisão de ensino?",
+      "options": [
+        "O livro foi entregue, portanto todo o currículo foi realizado.",
+        "O PPP existe, então nenhuma outra norma precisa ser lida.",
+        "Uma habilidade orienta a comparação; Lia seleciona fontes e avalia justificativas em relação ao currículo e à proposta escolar.",
+        "A habilidade foi copiada, então a aprendizagem está comprovada."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Disponibilização não comprova uso, mediação e aprendizagem.",
+        "Os instrumentos se articulam e têm funções e alcances distintos.",
+        "O argumento explica funções e mostra a realização da referência em planejamento e evidências.",
+        "A identificação não demonstra a relação construída pelos estudantes."
+      ],
+      "tag": "documento e ensino",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q54",
+      "lesson": "l14",
+      "stem": "Antes de responder a um caso normativo, qual leitura é mais consistente?",
+      "options": [
+        "Identificar problema, período, oferta e função dos instrumentos citados.",
+        "Escolher a sigla mais repetida sem examinar o enunciado.",
+        "Assumir que todo caso histórico usa a redação atual.",
+        "Transformar o exemplo local em regra nacional sem conferir fonte."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A interpretação precisa relacionar a norma e o alcance de seus efeitos ao caso.",
+        "Frequência de uma palavra não define a função requerida.",
+        "O período explícito pode exigir outra referência histórica.",
+        "A generalização exige examinar competência e abrangência."
+      ],
+      "tag": "interpretação de casos",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q55",
+      "lesson": "l14",
+      "stem": "Uma redação que apenas lista Constituição, LDB e BNCC precisa ser desenvolvida por:",
+      "options": [
+        "Mais siglas sem função ou relação com o exemplo.",
+        "Uma opinião sem fontes sobre qual documento parece melhor.",
+        "Uma previsão de nota baseada somente no número de leis citadas.",
+        "Explicação das funções e análise de uma decisão concreta com evidência de aprendizagem."
+      ],
+      "answer": 3,
+      "feedback": [
+        "A quantidade não substitui a construção do raciocínio.",
+        "Preferência não explica natureza, alcance e aplicação.",
+        "Citar atos não demonstra sozinho precisão e qualidade da argumentação.",
+        "A lista se torna argumento quando mostra relações e consequências no problema proposto."
+      ],
+      "tag": "escrita argumentativa",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "q56",
+      "lesson": "l14",
+      "stem": "Como interpretar o resultado do simulado autoral desta unidade?",
+      "options": [
+        "Como comprovação de que os enunciados são oficiais.",
+        "Como evidência de treino que orienta revisão, sem prever a nota da seleção.",
+        "Como garantia de desempenho idêntico na seleção.",
+        "Como substituição do estudo das demais unidades."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Os casos foram produzidos para estudo e identificados como autorais.",
+        "O exercício cobre o recorte da unidade e não equivale ao programa completo ou à prova oficial.",
+        "Questões, condições e abrangência da avaliação oficial são diferentes.",
+        "O programa tem outros itens que não se esgotam neste treino."
+      ],
+      "tag": "uso do treino",
+      "pool": "lesson",
+      "type": "single"
+    },
+    {
+      "id": "f01",
+      "lesson": "l01",
+      "stem": "Lia quer que uma turma compare paisagens em tempos diferentes. Qual encaminhamento articula melhor as referências ao trabalho docente?",
+      "options": [
+        "Escolher o capítulo mais recente e usá-lo como fundamento suficiente de toda obrigação curricular.",
+        "Selecionar somente relatos locais e afastar a base comum porque o contexto é conhecido.",
+        "Interpretar a habilidade e o currículo, relacioná-los à proposta escolar e planejar fontes, comparação e avaliação.",
+        "Reproduzir apenas o código da BNCC, pois a identificação já determina a aprendizagem de cada estudante."
+      ],
+      "answer": 2,
+      "feedback": [
+        "A data do material não transforma a organização editorial em referência normativa completa.",
+        "Contextualização e formação comum precisam se articular, sem essa exclusão.",
+        "A decisão realiza funções distintas em um percurso: referência, organização e mediação, com evidências da aprendizagem.",
+        "O código localiza a habilidade; não executa a tarefa nem demonstra compreensão."
+      ],
+      "tag": "articulação de instrumentos",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f02",
+      "lesson": "l02",
+      "stem": "O PPP aprova uma regra que exige concordância com a posição do professor para obter nota alta em um debate. Como examinar a decisão?",
+      "options": [
+        "Confrontar o critério com direitos e princípios e avaliar conceitos, fontes e argumentos, revendo a regra incompatível.",
+        "Considerar a regra válida porque a decisão coletiva substitui todos os fundamentos externos à escola.",
+        "Aceitar qualquer afirmação como verdadeira, sem avaliar evidências, para garantir o pluralismo.",
+        "Evitar toda discussão de perspectivas para impedir que surjam posições diferentes."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A participação na proposta escolar não dá poder de cancelar fundamentos de liberdade e pluralismo.",
+        "O PPP deve respeitar direitos e normas aplicáveis; a forma coletiva não resolve qualquer incompatibilidade.",
+        "Pluralismo não exige abandonar critérios de conhecimento e consistência.",
+        "Confrontar interpretações pode participar da aprendizagem, com critérios e respeito aos direitos."
+      ],
+      "tag": "pluralismo e PPP",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f03",
+      "lesson": "l12",
+      "stem": "Uma coleção do PNLD organiza capítulos em ordem diferente do percurso que a turma necessita. Qual análise é mais adequada?",
+      "options": [
+        "A aprovação da coleção torna obrigatória a mesma ordem em todas as aulas, dispensando o currículo.",
+        "Qualquer divergência de ordem prova que o material é ilegal e deve ser descartado sem exame.",
+        "O livro deve substituir a proposta da escola porque foi publicado em data posterior.",
+        "O material é apoio e pode ser organizado e complementado em relação ao currículo, à proposta escolar e à aprendizagem."
+      ],
+      "answer": 3,
+      "feedback": [
+        "A função do programa não equivale a essa determinação completa da mediação.",
+        "A adequação do uso exige análise; a diferença, sozinha, não sustenta essa conclusão.",
+        "Data editorial e função normativa ou pedagógica não produzem essa substituição automática.",
+        "A ordem editorial não substitui julgamento sobre objetivos, fontes, condições e progressão."
+      ],
+      "tag": "material e decisão docente",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f04",
+      "lesson": "l05",
+      "stem": "O plano de Lia cita EF06GE01, mas a tarefa pede escolher a foto mais bonita sem datas ou análise dos usos. Qual revisão enfrenta diretamente o problema?",
+      "options": [
+        "Considerar que toda imagem se torna um registro temporal adequado por ser usada na aula.",
+        "Propor comparação de registros identificados e justificativas sobre mudanças e permanências, com mediação e critérios.",
+        "Acrescentar mais códigos ao plano, preservando a tarefa sem comparação.",
+        "Repetir a definição de paisagem como evidência suficiente de comparação temporal."
+      ],
+      "answer": 1,
+      "feedback": [
+        "É necessário examinar identificação e condições de comparação, não apenas a presença da imagem.",
+        "A tarefa passa a exigir a relação da aprendizagem, em vez de usar o código como comprovação suficiente.",
+        "A quantidade de identificações não corrige a relação ausente na atividade.",
+        "A repetição de um conceito não demonstra o uso das fontes para comparar momentos."
+      ],
+      "tag": "habilidade tarefa e evidência",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f05",
+      "lesson": "l04",
+      "stem": "Uma questão trata dos PCN em 1998; outra pede interpretar uma decisão escolar atual. Qual leitura conserva o papel dos documentos?",
+      "options": [
+        "Tomar os PCN como lei atual que fixa a sequência de qualquer escola.",
+        "Descartar qualquer contribuição dos PCN porque a referência é anterior à BNCC.",
+        "Analisar o contexto histórico na primeira e articular referências e normas atuais pertinentes na segunda.",
+        "Usar sempre o documento mais novo, mesmo que a primeira pergunta peça analisar outra época."
+      ],
+      "answer": 2,
+      "feedback": [
+        "O instrumento pedagógico não tem essa função universal atribuída.",
+        "Uma leitura histórica e pedagógica continua possível, com distinção de contexto e efeitos.",
+        "Pertinência histórica não equivale a declarar a mesma função e vigência para todas as situações.",
+        "Isso pode apagar o recorte histórico explícito do problema."
+      ],
+      "tag": "tempo e natureza documental",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f06",
+      "lesson": "l06",
+      "stem": "Uma notícia informa que um parecer discutiu nova organização curricular. Antes de apresentá-la como obrigação vigente, é necessário:",
+      "options": [
+        "Identificar o instrumento, sua homologação quando pertinente e os atos, publicação e efeitos relacionados à regra.",
+        "Usar a notícia como substituta suficiente do texto, porque seu título contém a palavra obrigatório.",
+        "Considerar todo parecer irrelevante, sem examinar seu contexto e efeitos.",
+        "Tratar parecer e lei como nomes equivalentes e aplicar a frase a qualquer etapa."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Debate, fundamentação e norma aplicável precisam ser distinguidos e ligados ao caso.",
+        "O vocabulário da notícia não produz por si só a vigência e o alcance de um ato.",
+        "Pareceres homologados podem ter efeitos pertinentes; a rejeição genérica também é inadequada.",
+        "Natureza, competência e abrangência dos instrumentos são diferentes."
+      ],
+      "tag": "parecer notícia e norma",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f07",
+      "lesson": "l07",
+      "stem": "O enunciado descreve a regra geral de formação do Ensino Médio após a Lei 14.945/2024, sem oferta técnica. Qual afirmação é sustentada?",
+      "options": [
+        "As 2.400 horas pertencem exclusivamente a Geografia e devem ser repartidas igualmente entre os anos.",
+        "O mínimo de 600 horas corresponde a toda a formação geral básica.",
+        "A organização em áreas significa que Geografia foi excluída da formação.",
+        "A formação geral básica tem mínimo de 2.400 horas e os itinerários, mínimo de 600; isso não fixa sozinho a grade semanal de Geografia."
+      ],
+      "answer": 3,
+      "feedback": [
+        "A carga citada não é de um único componente nem impõe essa divisão.",
+        "O valor está relacionado aos itinerários, não ao total geral básico da regra apresentada.",
+        "O art. 35-D inclui Geografia em Ciências Humanas e Sociais Aplicadas.",
+        "Os totais referem-se à composição da formação. A distribuição concreta exige as referências da oferta."
+      ],
+      "tag": "regra geral do Ensino Médio",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f08",
+      "lesson": "l07",
+      "stem": "Um resumo aplica a qualquer oferta técnica os mesmos números da regra geral e afirma que sempre são necessárias 300 horas extras. Qual leitura enfrenta o erro?",
+      "options": [
+        "Dividir as 300 horas igualmente entre Geografia e História por não haver matriz no enunciado.",
+        "Consultar a especificidade legal: mínimo de 2.100 horas de formação geral e possibilidade de destinar até 300 de suas horas ao aprofundamento relacionado à formação técnica.",
+        "Considerar o título formação técnica como dispensa de qualquer aprendizagem da BNCC.",
+        "Manter os números sem ler a oferta, porque a data posterior da apostila resolve a aplicação."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Essa divisão não decorre do dispositivo e inventa a informação ausente.",
+        "O parágrafo único do art. 35-C apresenta condições próprias; não estabelece a obrigação universal de acrescentar exatamente 300 horas.",
+        "A especificidade da composição não elimina as exigências e aprendizagens pertinentes.",
+        "Uma capa recente não corrige a generalização nem substitui a fonte."
+      ],
+      "tag": "especificidade técnica",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f09",
+      "lesson": "l11",
+      "stem": "Em outubro de 2026, um candidato apresenta o PNE de 2014 como se tivesse sido prorrogado automaticamente por mais dez anos. Qual correção é pertinente?",
+      "options": [
+        "O plano de 2026 vale como currículo integral de cada aula e substitui toda habilidade.",
+        "O documento de 2014 perde qualquer pertinência para uma questão histórica sobre 2018.",
+        "A prorrogação da Lei 14.934/2024 foi até 31/12/2025; o novo PNE foi aprovado pela Lei 15.388/2026, com dez anos a contar da publicação.",
+        "O PNE só passa a existir quando cada professor escolhe o livro da turma."
+      ],
+      "answer": 2,
+      "feedback": [
+        "O plano de política e o planejamento de ensino têm funções diferentes.",
+        "Vigência atual e análise do documento de um período histórico não se confundem.",
+        "A identificação e a duração precisam ser relacionadas aos atos, não deduzidas de uma extensão automática.",
+        "A aprovação do plano é uma decisão legal de política, não uma escolha de material."
+      ],
+      "tag": "atualização do PNE",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f10",
+      "lesson": "l11",
+      "stem": "Um exemplo didático distingue a mudança buscada, referências para acompanhá-la em certo prazo e ações governamentais para alcançá-la. No estudo do PNE, essas funções correspondem a:",
+      "options": [
+        "Objetivo, meta e estratégia, respectivamente.",
+        "Habilidade, capítulo de livro e código da BNCC.",
+        "Três nomes da mesma tarefa de aula, sem diferenças de função.",
+        "Regimento, fotografia e prova final."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A distinção segue as funções de planejamento da política; o exemplo não precisa ser tomado como uma meta oficial específica.",
+        "Esses instrumentos não expressam as funções de política descritas.",
+        "A mudança, seu acompanhamento e as ações têm funções articuladas, mas distintas.",
+        "A sequência não corresponde ao papel dos elementos apresentados."
+      ],
+      "tag": "objetivos metas estratégias",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f11",
+      "lesson": "l13",
+      "stem": "Uma lei prevê vigência e também regras de implementação. Para determinar a organização aplicável a uma turma, é adequado:",
+      "options": [
+        "Usar somente a data da notícia, sem ler o ato e as regras de transição.",
+        "Ignorar toda norma enquanto existir alguma implementação em andamento.",
+        "Aplicar uma regra futura não publicada porque o projeto parece definitivo.",
+        "Conferir os dispositivos temporais e as normas pertinentes ao sistema, à oferta e ao percurso da turma."
+      ],
+      "answer": 3,
+      "feedback": [
+        "O anúncio não substitui as disposições que regulam os efeitos.",
+        "É necessário interpretar efeitos e etapas, não suspender genericamente a leitura.",
+        "Proposta e obrigação vigente precisam ser distinguidas.",
+        "Aplicação concreta não deve ser deduzida de uma mudança idêntica e instantânea em qualquer situação."
+      ],
+      "tag": "vigência e implementação",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f12",
+      "lesson": "l08",
+      "stem": "Lia recebe o Documento Curricular do Pará de 2019 para Educação Infantil e Ensino Fundamental e precisa organizar uma turma de Ensino Médio em 2026. Qual conclusão é sustentada?",
+      "options": [
+        "Por ser de 2019, o documento nunca pode contribuir para uma análise pedagógica.",
+        "A referência pode ser estudada em seu alcance; a organização da turma exige documentos e normas pertinentes à etapa e ao período.",
+        "O fato de citar o mesmo estado torna o documento suficiente para qualquer etapa e ano.",
+        "O documento substitui a LDB porque é mais localizado."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Uma referência pode ser estudada historicamente e no seu alcance sem ser aplicada indevidamente.",
+        "O título e a edição não comprovam uma matriz atual de outra etapa.",
+        "Coincidência territorial não resolve diferenças de oferta, tempo e função.",
+        "Proximidade do contexto não produz essa competência normativa."
+      ],
+      "tag": "documento e etapa",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f13",
+      "lesson": "l08",
+      "stem": "Um colega usa uma matriz de outro estado para afirmar quantas aulas de Geografia Lia terá por semana. Qual análise é mais consistente?",
+      "options": [
+        "A matriz dispensa todo exame da base e das diretrizes por ser mais detalhada.",
+        "A distribuição deve ser inventada dividindo o total em parcelas iguais.",
+        "A matriz pode ser comparada, mas é necessário conferir a organização pertinente à rede, à oferta e ao período de Lia.",
+        "A matriz é suficiente porque qualquer regra estadual tem abrangência nacional."
+      ],
+      "answer": 2,
+      "feedback": [
+        "Detalhamento não elimina a articulação e a compatibilidade entre os instrumentos.",
+        "A operação não decorre das informações normativas e curriculares apresentadas.",
+        "O exemplo externo não demonstra a distribuição da turma em questão.",
+        "A competência e a abrangência precisam ser examinadas."
+      ],
+      "tag": "alcance da matriz local",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f14",
+      "lesson": "l10",
+      "stem": "Uma escola pretende cumprir o art. 26-A da LDB apenas com uma imagem em uma data comemorativa, sem relação com o currículo. Qual revisão é mais pertinente?",
+      "options": [
+        "Organizar abordagem curricular com fontes, sujeitos e relações, reconhecendo a contribuição da Geografia e a diversidade histórica e contemporânea.",
+        "Restringir a abordagem somente às áreas mencionadas com destaque e proibir contribuição de Geografia.",
+        "Usar a mesma narrativa como retrato completo de qualquer povo ou comunidade.",
+        "Adiar toda abordagem até que o livro apresente uma seção específica."
+      ],
+      "answer": 0,
+      "feedback": [
+        "A exigência não se esgota na presença de uma ilustração isolada ou numa representação uniforme dos grupos.",
+        "O destaque legal não exclui o trabalho no âmbito de todo o currículo.",
+        "A generalização apaga diferenças e exige confronto com fontes e sujeitos.",
+        "A obrigação curricular não depende dessa condição editorial."
+      ],
+      "tag": "direitos e relações étnico-raciais",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f15",
+      "lesson": "l10",
+      "stem": "O plano registra educação ambiental, mas prevê apenas mostrar uma foto de rio sem pergunta, continuidade ou avaliação. O que falta desenvolver?",
+      "options": [
+        "Uma declaração de que nenhuma outra aula poderá discutir o ambiente.",
+        "A afirmação de que a foto já comprova todos os efeitos e riscos locais.",
+        "A troca do código da habilidade por uma lei, sem alterar o trabalho dos alunos.",
+        "Relações e objetivos integrados ao percurso, com fontes, mediação e acompanhamento, em coerência com a prática contínua e permanente."
+      ],
+      "answer": 3,
+      "feedback": [
+        "A exclusão contraria a integração e permanência estudadas.",
+        "Uma imagem isolada não produz esse diagnóstico ou explicação completa.",
+        "Mudar a identificação no plano não constrói sozinho as relações de aprendizagem.",
+        "O registro do tema e a presença de um recurso não demonstram a realização da abordagem curricular."
+      ],
+      "tag": "educação ambiental e planejamento",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f16",
+      "lesson": "l10",
+      "stem": "Uma escola do campo precisa adequar sua organização a condições regionais. À luz do art. 28 da LDB, qual encaminhamento é adequado?",
+      "options": [
+        "Excluir todas as aprendizagens comuns, porque a parte diversificada é independente.",
+        "Consultar as referências e organizar adequações de conteúdos, metodologias e condições da oferta no âmbito responsável, preservando os direitos.",
+        "Permitir que qualquer docente elimine dias e aprendizagens sem verificar norma ou organização do sistema.",
+        "Tratar todos os estudantes rurais como portadores das mesmas experiências e necessidades."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Contexto e formação comum precisam ser articulados.",
+        "A adequação reconhece peculiaridades com responsabilidade; não equivale a reduzir a formação por decisão isolada.",
+        "O dispositivo não autoriza essa supressão individual e irrestrita.",
+        "A diversidade das condições deve ser investigada, não presumida."
+      ],
+      "tag": "adequações e direitos",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f17",
+      "lesson": "l02",
+      "stem": "Parte da turma não consegue usar o mapa escolhido. Qual decisão articula melhor o direito à participação e o objetivo conceitual?",
+      "options": [
+        "Abandonar qualquer relação geográfica para quem encontra dificuldade com o suporte.",
+        "Avaliar apenas rapidez de leitura visual, embora o objetivo seja explicar conexões.",
+        "Examinar as barreiras e organizar apoios ou fontes acessíveis que permitam construir e avaliar a relação pretendida.",
+        "Manter o suporte sem ajuste, tomando o mesmo arquivo como prova de condições iguais."
+      ],
+      "answer": 2,
+      "feedback": [
+        "A dificuldade de acesso pede análise e apoio, não exclusão automática da aprendizagem.",
+        "O critério não se alinha necessariamente à relação conceitual escolhida.",
+        "Adequar o acesso pode preservar a aprendizagem e ampliar participação, sem reduzir o estudante a um rótulo.",
+        "Disponibilidade idêntica não garante possibilidade efetiva de uso."
+      ],
+      "tag": "acessibilidade e aprendizagem",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f18",
+      "lesson": "l12",
+      "stem": "Uma matriz de avaliação não inclui uma relação presente no currículo. Um grupo propõe retirar essa relação de todas as aulas. Qual análise enfrenta a proposta?",
+      "options": [
+        "A matriz é um recorte de avaliação; sua seleção não esgota a formação nem prova a perda de pertinência curricular.",
+        "Todo currículo deve ser reduzido exatamente aos itens do teste, porque avaliar equivale a formar integralmente.",
+        "A ausência do item comprova que nenhuma fonte ou conceito relacionado tem valor de estudo.",
+        "Nenhum resultado de avaliação pode contribuir para replanejar."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Os instrumentos têm funções distintas, e resultados devem ser interpretados no seu alcance.",
+        "O recorte de um instrumento não representa a totalidade dos direitos e finalidades educativas.",
+        "Essa conclusão extrapola o que a matriz informa.",
+        "Resultados podem ser úteis quando articulados ao objetivo e a outras evidências."
+      ],
+      "tag": "matriz e formação",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f19",
+      "lesson": "l09",
+      "stem": "A equipe escreveu compromissos no PPP, mas as produções indicam que a turma ainda não compara fontes. Qual decisão é mais coerente?",
+      "options": [
+        "Considerar a aprendizagem comprovada pela existência do texto coletivo.",
+        "Excluir as respostas que desafiam a expectativa e manter somente exemplos favoráveis.",
+        "Dispensar o plano de trabalho docente porque há proposta escolar.",
+        "Examinar intervenções e condições, replanejar e discutir apoios coletivos para realizar os compromissos."
+      ],
+      "answer": 3,
+      "feedback": [
+        "Um registro de intenção não demonstra o que os estudantes conseguem fazer.",
+        "A seleção impede examinar dificuldades e o alcance da interpretação.",
+        "As funções se articulam; a proposta não elimina a responsabilidade de planejar.",
+        "O acompanhamento liga o documento à aprendizagem e permite revisar escolhas e condições."
+      ],
+      "tag": "projeto e acompanhamento",
+      "pool": "final",
+      "type": "single"
+    },
+    {
+      "id": "f20",
+      "lesson": "l14",
+      "stem": "Qual trecho desenvolve um argumento sobre normas e ensino de Geografia?",
+      "options": [
+        "“Se o plano cita muitos números de leis, o domínio dos alunos já está demonstrado.”",
+        "“A habilidade orienta uma comparação; o currículo e o PPP situam o percurso. A professora seleciona fontes, media a análise e examina justificativas em outro caso.”",
+        "“Constituição, LDB e BNCC são importantes porque possuem siglas que devem aparecer no plano.”",
+        "“A data mais recente de uma apostila basta para confirmar a vigência de todo o seu conteúdo.”"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Quantidade de referências não comprova a relação aprendida.",
+        "O trecho explica a contribuição dos instrumentos e a relaciona a mediação e evidência de aprendizagem.",
+        "A frase não explica funções nem consequências para o problema de ensino.",
+        "A atualização precisa ser conferida nos atos e dispositivos pertinentes."
+      ],
+      "tag": "argumentação fundamentada",
+      "pool": "final",
+      "type": "single"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "c01",
+      "front": "Qual documento consultar?",
+      "back": "Identifique a pergunta: direito, organização, aprendizagem, currículo, proposta da escola ou mediação. Os instrumentos têm funções articuladas, não idênticas."
+    },
+    {
+      "id": "c02",
+      "front": "Constituição, arts. 205 e 206",
+      "back": "Finalidades e princípios do ensino fundamentam decisões sobre participação, pluralismo e aprendizagem. Não fornecem um método único de aula."
+    },
+    {
+      "id": "c03",
+      "front": "Autonomia docente",
+      "back": "Decisões profissionais precisam de justificativa e relação com direitos, normas e aprendizagens. Autonomia não dispensa responsabilidade."
+    },
+    {
+      "id": "c04",
+      "front": "LDB consolidada",
+      "back": "Consulte a redação e as alterações do dispositivo. O ano de origem da lei não comprova que todos os parágrafos continuam com o texto inicial."
+    },
+    {
+      "id": "c05",
+      "front": "Base comum e parte diversificada",
+      "back": "O art. 26 da LDB articula formação e características regionais e locais. Contextualizar não significa excluir a aprendizagem comum."
+    },
+    {
+      "id": "c06",
+      "front": "LDB, arts. 12 e 13",
+      "back": "A escola elabora e executa a proposta, com participação docente; o plano de trabalho se articula a ela. Uma função não elimina a outra."
+    },
+    {
+      "id": "c07",
+      "front": "Avaliação contínua e cumulativa",
+      "back": "O art. 24, V, valoriza o percurso e aspectos qualitativos. Não proíbe todo uso de notas nem reduz a aprendizagem a uma prova final."
+    },
+    {
+      "id": "c08",
+      "front": "PCN",
+      "back": "Referências pedagógicas históricas podem contribuir para analisar concepções e propostas. Não são uma lei que determina a mesma aula para todos."
+    },
+    {
+      "id": "c09",
+      "front": "Orientações de 2006",
+      "back": "Podem ser estudadas em seu contexto. Valor pedagógico de uma leitura não comprova que toda organização normativa permanece atual."
+    },
+    {
+      "id": "c10",
+      "front": "DCN e BNCC",
+      "back": "Diretrizes organizam princípios e normas no seu alcance; a BNCC define aprendizagens essenciais. As funções se articulam sem equivalência."
+    },
+    {
+      "id": "c11",
+      "front": "Código EF06GE01",
+      "back": "EF: Fundamental; 06: ano; GE: Geografia; 01: identificação no conjunto. O número não é uma semana obrigatória nem a aprendizagem já realizada."
+    },
+    {
+      "id": "c12",
+      "front": "Habilidade e tarefa",
+      "back": "Interpretar a relação, selecionar fontes e apoios e pedir produção pertinente. Copiar o código não substitui a mediação."
+    },
+    {
+      "id": "c13",
+      "front": "Competência e habilidade",
+      "back": "Competência mobiliza conhecimentos, habilidades, atitudes e valores; a habilidade explicita aprendizagens mais delimitadas no percurso. Leia suas relações."
+    },
+    {
+      "id": "c14",
+      "front": "Parecer e resolução",
+      "back": "Parecer analisa e fundamenta; resolução dispõe normativamente. Confira competência, homologação quando pertinente e efeitos do ato."
+    },
+    {
+      "id": "c15",
+      "front": "Identificação completa",
+      "back": "Órgão, espécie, número, ano e assunto. Um número isolado pode identificar documentos diferentes."
+    },
+    {
+      "id": "c16",
+      "front": "Geografia na LDB, art. 35-D",
+      "back": "Integra Ciências Humanas e Sociais Aplicadas com Filosofia, História e Sociologia. Integração por área não significa ausência do componente."
+    },
+    {
+      "id": "c17",
+      "front": "Ensino Médio: regra geral de horas",
+      "back": "Após a Lei 14.945/2024, FGB mínima de 2.400 horas e itinerários de, no mínimo, 600, com especificidades da oferta técnica e profissional."
+    },
+    {
+      "id": "c18",
+      "front": "Oferta técnica e formação geral",
+      "back": "O art. 35-C prevê mínimo de 2.100 horas e possibilidade de destinar até 300 de suas horas ao aprofundamento da BNCC ligado à formação técnica oferecida."
+    },
+    {
+      "id": "c19",
+      "front": "Total de horas e grade semanal",
+      "back": "O total da formação não define sozinho a distribuição de aulas de Geografia. Consulte matriz e normas pertinentes à oferta."
+    },
+    {
+      "id": "c20",
+      "front": "Currículo da rede",
+      "back": "Leia etapa, edição, atos e organização aplicável. Uma matriz de outro estado não demonstra a organização da turma."
+    },
+    {
+      "id": "c21",
+      "front": "PPP, regimento e planos",
+      "back": "PPP expressa compromissos coletivos; regimento organiza regras e procedimentos; planos organizam percurso e intervenções. Devem respeitar normas e direitos."
+    },
+    {
+      "id": "c22",
+      "front": "História e cultura afro-brasileira e indígena",
+      "back": "O art. 26-A da LDB prevê estudo no currículo do Fundamental e do Médio. O destaque a certas áreas não exclui a contribuição da Geografia."
+    },
+    {
+      "id": "c23",
+      "front": "Educação ambiental",
+      "back": "Lei 9.795/1999: integrada, contínua e permanente. A Lei 14.926/2024 inclui temas como clima, biodiversidade e riscos nos projetos pertinentes."
+    },
+    {
+      "id": "c24",
+      "front": "Educação do campo",
+      "back": "Art. 28 da LDB: adequações a peculiaridades rurais e regionais com organização responsável. Não é autorização individual para cancelar direitos."
+    },
+    {
+      "id": "c25",
+      "front": "Inclusão e barreiras",
+      "back": "Apoios e acessibilidade precisam permitir participação e aprendizagem. Mesmo arquivo para todos não significa condições iguais de uso."
+    },
+    {
+      "id": "c26",
+      "front": "PNE no recorte de 2026",
+      "back": "Lei 15.388/2026: novo plano com dez anos a contar da publicação. O PNE de 2014 teve prorrogação até 31/12/2025 pela Lei 14.934/2024."
+    },
+    {
+      "id": "c27",
+      "front": "Objetivo, meta e estratégia",
+      "back": "Mudança buscada; referências de alcance em um intervalo; ações propostas aos governos. Não são três nomes de uma tarefa de aula."
+    },
+    {
+      "id": "c28",
+      "front": "PNLD",
+      "back": "Programa de avaliação e disponibilização de apoio didático, conforme regras e ciclo. O material não substitui currículo e julgamento docente."
+    },
+    {
+      "id": "c29",
+      "front": "Matriz de avaliação",
+      "back": "Recorte para construir e interpretar instrumentos. Não equivale à totalidade da formação e das aprendizagens escolares."
+    },
+    {
+      "id": "c30",
+      "front": "Aplicar uma norma",
+      "back": "Confira identificação, fonte oficial, redação, tempo, alcance e oferta. Conclua dentro do que as informações permitem, indicando o que ainda exige outra fonte."
+    }
+  ],
+  "references": [
+    {
+      "title": "Edital PROFGEO-UFPA n. 03/2026 — Anexo III, item 1.4",
+      "author": "UFPA / PROFGEO",
+      "year": 2026,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#edital",
+      "note": "Fonte do programa; PDF fornecido pelo estudante. Fontes selecionadas para estudo, sem atribuir ao edital uma lista obrigatória que ele não apresenta."
+    },
+    {
+      "title": "Constituição da República Federativa do Brasil — educação",
+      "author": "Brasil / órgão responsável",
+      "year": 1988,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#constituicao",
+      "note": "Arts. 205, 206, 210, 211 e 214; leitura do texto consolidado para os fundamentos e funções discutidos."
+    },
+    {
+      "title": "Lei 9.394/1996 — LDB, redação consolidada",
+      "author": "Brasil / órgão responsável",
+      "year": 1996,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#ldb",
+      "note": "Recortes: arts. 12 a 14, 24, 26, 26-A, 28 e 35-B a 36. Conferência em 26/10/2026; a lei recebeu alterações."
+    },
+    {
+      "title": "Parâmetros Curriculares Nacionais: Geografia",
+      "author": "MEC / Secretaria de Educação Fundamental",
+      "year": 1998,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#pcn-e-orientacoes",
+      "note": "Terceiro e quarto ciclos do Ensino Fundamental. Leitura histórica e pedagógica, sem tratar o texto como equivalente à BNCC."
+    },
+    {
+      "title": "Orientações curriculares para o Ensino Médio: Ciências Humanas e suas Tecnologias",
+      "author": "MEC / Secretaria de Educação Básica",
+      "year": 2006,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#pcn-e-orientacoes",
+      "note": "Volume 3, com Geografia. Referência histórica de orientação pedagógica, sem inferir vigência atual de toda organização."
+    },
+    {
+      "title": "Resoluções CNE/CEB 4/2010 e 7/2010",
+      "author": "Conselho Nacional de Educação",
+      "year": 2010,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#diretrizes",
+      "note": "Diretrizes gerais para Educação Básica e diretrizes do Ensino Fundamental de nove anos. Confira etapa e alcance."
+    },
+    {
+      "title": "Base Nacional Comum Curricular",
+      "author": "Ministério da Educação",
+      "year": 2018,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#bncc",
+      "note": "Documento de aprendizagem; exemplo EF06GE01 e organização de Geografia no Fundamental. Resoluções CNE/CP 2/2017 e 4/2018 situam a instituição da BNCC."
+    },
+    {
+      "title": "Lei 14.945/2024 — alterações na organização do Ensino Médio",
+      "author": "Brasil / órgão responsável",
+      "year": 2024,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#ensino-medio",
+      "note": "Leia em articulação com LDB consolidada, oferta e implementação. FGB, itinerários e especificidades técnicas não são grades semanais universais."
+    },
+    {
+      "title": "Resolução CNE/CEB 2/2024 — DCNEM",
+      "author": "Conselho Nacional de Educação",
+      "year": 2024,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#ensino-medio",
+      "note": "Diretrizes Curriculares Nacionais para o Ensino Médio, de 13/11/2024. Texto oficial e cópia em secretaria estadual indicados na ficha."
+    },
+    {
+      "title": "Resolução CNE/CEB 4/2025 — Itinerários Formativos de Aprofundamento",
+      "author": "Conselho Nacional de Educação",
+      "year": 2025,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#ensino-medio",
+      "note": "Parâmetros Nacionais para Oferta dos IFAs, de 12/05/2025. A unidade usa sua identificação e função, sem inventar uma matriz da rede."
+    },
+    {
+      "title": "Documento Curricular do Estado do Pará — Educação Infantil e Ensino Fundamental",
+      "author": "Pará / Secretaria de Estado de Educação",
+      "year": 2019,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#para",
+      "note": "Exemplo identificado por etapa e edição. Não é apresentado como matriz atual do Ensino Médio nem como adoção automática em qualquer rede."
+    },
+    {
+      "title": "Leis 10.639/2003 e 11.645/2008 — relações étnico-raciais no currículo",
+      "author": "Brasil / órgão responsável",
+      "year": 2008,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#direitos",
+      "note": "Leitura relacionada ao art. 26-A da LDB: contribuição curricular da Geografia sem restringir a abordagem a uma ilustração ou data."
+    },
+    {
+      "title": "Lei 9.795/1999, com alterações da Lei 14.926/2024",
+      "author": "Brasil / órgão responsável",
+      "year": 2024,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#direitos",
+      "note": "Política Nacional de Educação Ambiental. Recorte de integração, continuidade e temas nos projetos institucionais e pedagógicos."
+    },
+    {
+      "title": "Lei 13.146/2015 — Lei Brasileira de Inclusão",
+      "author": "Brasil / órgão responsável",
+      "year": 2015,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#direitos",
+      "note": "Recorte de direito à educação, participação, aprendizagem e condições de acessibilidade."
+    },
+    {
+      "title": "Lei 15.388/2026 — Plano Nacional de Educação",
+      "author": "Brasil / órgão responsável",
+      "year": 2026,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#pne",
+      "note": "Plano atual no recorte da unidade: dez anos a contar da publicação. Funções de objetivos, metas e estratégias."
+    },
+    {
+      "title": "Lei 14.934/2024 — prorrogação do PNE de 2014",
+      "author": "Brasil / órgão responsável",
+      "year": 2024,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#pne",
+      "note": "Prorrogação até 31/12/2025, distinguida da aprovação do novo plano de 2026."
+    },
+    {
+      "title": "Decreto 9.099/2017, com alterações do Decreto 12.021/2024",
+      "author": "Brasil / órgão responsável",
+      "year": 2024,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#materiais-e-avaliacao",
+      "note": "Programa Nacional do Livro e do Material Didático: apoio didático, regras e uso fundamentado."
+    },
+    {
+      "title": "Saeb — matrizes e escalas",
+      "author": "Inep",
+      "year": 2026,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#materiais-e-avaliacao",
+      "note": "Página institucional consultada para a função das matrizes; o ano indica a consulta, não a origem de todas as matrizes."
+    },
+    {
+      "title": "Créditos e recursos visuais da unidade 1.4",
+      "author": "ProfGeo / Wikimedia Commons",
+      "year": 2026,
+      "url": "https://github.com/emanoelb5-lgtm/ProfGeo/blob/main/docs/UNIDADE_1_4.md#recursos-visuais",
+      "note": "Seis esquemas novos, três fotos identificadas e quatro cenas existentes contextualizadas; todos em 16:9."
+    }
+  ],
+  "essay": {
+    "title": "Oficina de redação · das referências à aprendizagem em Geografia",
+    "prompt": "Analise como documentos curriculares e normas orientam o ensino de Geografia sem substituir o planejamento docente. Distinga pelo menos dois instrumentos, analise uma decisão de ensino com contexto, fontes e mediação e indique uma evidência de aprendizagem. Considere o alcance e o período das referências utilizadas.",
+    "maxLines": 20,
+    "note": "Tema autoral, em até 20 linhas digitadas, com autoavaliação formativa. Não é questão oficial nem correção automática do conteúdo.",
+    "rubric": [
+      "Apresentei uma ideia central que responde ao tema.",
+      "Distingui pelo menos dois instrumentos por sua função, sem limitar-me às siglas.",
+      "Respeitei período, etapa e alcance das referências que utilizei.",
+      "Analisei uma decisão concreta de ensino de Geografia.",
+      "Relacionei aprendizagem, contexto, fontes e mediação.",
+      "Indiquei uma evidência de uso das relações, além de copiar o código ou a definição.",
+      "Delimitei as conclusões e escrevi com clareza em até 20 linhas."
+    ],
+    "model": "Normas e referências curriculares orientam direitos e aprendizagens, mas sua realização exige interpretação e planejamento. Reconhecer a função dos documentos é necessário para não confundir uma base comum com uma aula pronta.\nA LDB articula base nacional comum e parte diversificada, além de relacionar proposta escolar e plano de trabalho. A BNCC define aprendizagens essenciais. Currículo e PPP situam compromissos e organização, sem autorizar a supressão dos direitos previstos nas normas.\nAo comparar mudanças de paisagens, a professora pode usar um contexto significativo, selecionar registros identificados e orientar justificativas. A aprendizagem escolhida participa da tarefa; a simples presença de um código no plano não demonstra que os alunos construíram a relação.\nApresentar outra situação e examinar mudanças, permanências e fontes oferece evidências para avaliar e replanejar. Também é necessário organizar apoios e enfrentar barreiras para ampliar participação e aprendizagem.\nAssim, a autonomia docente se realiza em escolhas fundamentadas e acompanhadas. A interpretação deve respeitar período, etapa, competência e alcance das fontes, evitando transformar uma regra geral ou um material de apoio em solução automática para qualquer escola."
+  }
+}

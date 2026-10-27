@@ -10,7 +10,15 @@
 Android 8 ou superior · Sem conta · Estudo offline · Conteúdo expansível
 </div>
 
-## Nova unidade disponível — 1.3
+## Nova unidade disponível — 1.4
+
+**Programas, documentos e regulamentações que disciplinam e orientam o ensino de Geografia**: direitos, LDB, PCN, BNCC, diretrizes, currículo, PPP, PNE e materiais são explicados nas decisões de uma escola fictícia. A unidade distingue norma, aprendizagem e planejamento, com **fontes oficiais conferidas em 26/10/2026**, incluindo o novo **PNE da Lei 15.388/2026** e a organização do Ensino Médio após 2024.
+
+São **14 lições**, **56 questões de prática**, **20 casos no simulado**, **30 cartões**, **14 atividades** e redação comentada. Seis esquemas novos, três fotos e quatro cenas contextualizadas permanecem em **16:9**. Tempo sugerido: aproximadamente **4h50**, em sessões ajustáveis.
+
+Abra **Ajustes → Buscar novas unidades → Unidades → 1.4**. O APK 1.1.1 recebe o conteúdo sem reinstalação e conserva os estudos anteriores. [Percurso, fontes oficiais e recorte de atualização](docs/UNIDADE_1_4.md).
+
+## Unidade disponível — 1.3
 
 **Conceitos, categorias e conteúdos de geografia no Ensino Fundamental e Médio**: uma investigação acompanhada liga espaço geográfico, paisagem, lugar, território, região, redes e escalas a conteúdos e decisões de ensino. Inclui natureza e sociedade, produção, população e propostas para os anos iniciais, anos finais e Ensino Médio.
 
@@ -71,7 +79,7 @@ O aplicativo não solicita acesso a contatos, câmera ou localização. As respo
 
 ## Como novas unidades chegam
 
-O plano completo contém os **3 módulos e os 15 itens do Anexo III**. As unidades **1.1, 1.2 e 1.3 estão disponíveis**; as demais aparecem como **planejadas**. O APK publicado inclui a versão inicial da 1.1, e o mecanismo de conteúdo recebe as revisões e as novas unidades.
+O plano completo contém os **3 módulos e os 15 itens do Anexo III**. As unidades **1.1 a 1.4 estão disponíveis**; as demais aparecem como **planejadas**. O APK publicado inclui a versão inicial da 1.1, e o mecanismo de conteúdo recebe as revisões e as novas unidades.
 
 Quando você pedir **“Faça a próxima unidade do ProfGeo”**, o próximo conteúdo será produzido e publicado neste repositório. No app, abra **Ajustes → Buscar novas unidades**. Com a busca automática ativada, o app também verifica ao abrir, com intervalo mínimo de seis horas.
 
@@ -83,7 +91,7 @@ As unidades são arquivos JSON e pacotes ZIP declarativos com imagens. O aplicat
 
 | Módulo | Unidades | Situação |
 |---|---|---|
-| 1 — Saberes e conhecimentos da Geografia no espaço escolar | 1.1 a 1.5 | 1.1 a 1.3 disponíveis; 1.4 e 1.5 planejadas |
+| 1 — Saberes e conhecimentos da Geografia no espaço escolar | 1.1 a 1.5 | 1.1 a 1.4 disponíveis; 1.5 planejada |
 | 2 — Formação docente em Geografia | 2.1 a 2.5 | Planejadas |
 | 3 — As linguagens no ensino de Geografia | 3.1 a 3.5 | Planejadas |
 
